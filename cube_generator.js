@@ -1,40 +1,6 @@
-function create_cube_3D([u11,u12,u13,u21,u22,u23,u31,u32,u33],[f11,f12,f13,f21,f22,f23,f31,f32,f33],[r11,r12,r13,r21,r22,r23,r31,r32,r33])
+function create_cube_3x3x3_2D([u11,u12,u13,u21,u22,u23,u31,u32,u33],[b1,b2,b3],[l1,l2,l3],[r1,r2,r3],[f1,f2,f3])
 {
-	document.write('<div class="cube_3D"><div class="face haut">');
-		document.write('<div class="sticker ' + u11 + '"></div>');
-		document.write('<div class="sticker ' + u12 + '"></div>');
-		document.write('<div class="sticker ' + u13 + '"></div>');
-		document.write('<div class="sticker ' + u21 + '"></div>');
-		document.write('<div class="sticker ' + u22 + '"></div>');
-		document.write('<div class="sticker ' + u23 + '"></div>');
-		document.write('<div class="sticker ' + u31 + '"></div>');
-		document.write('<div class="sticker ' + u32 + '"></div>');
-		document.write('<div class="sticker ' + u33 + '"></div></div>');
-	document.write('<div class="face avant">');
-		document.write('<div class="sticker ' + f11 + '"></div>');
-		document.write('<div class="sticker ' + f12 + '"></div>');
-		document.write('<div class="sticker ' + f13 + '"></div>');
-		document.write('<div class="sticker ' + f21 + '"></div>');
-		document.write('<div class="sticker ' + f22 + '"></div>');
-		document.write('<div class="sticker ' + f23 + '"></div>');
-		document.write('<div class="sticker ' + f31 + '"></div>');
-		document.write('<div class="sticker ' + f32 + '"></div>');
-		document.write('<div class="sticker ' + f33 + '"></div></div>');
-	document.write('<div class="face droite">');
-		document.write('<div class="sticker ' + r11 + '"></div>');
-		document.write('<div class="sticker ' + r12 + '"></div>');
-		document.write('<div class="sticker ' + r13 + '"></div>');
-		document.write('<div class="sticker ' + r21 + '"></div>');
-		document.write('<div class="sticker ' + r22 + '"></div>');
-		document.write('<div class="sticker ' + r23 + '"></div>');
-		document.write('<div class="sticker ' + r31 + '"></div>');
-		document.write('<div class="sticker ' + r32 + '"></div>');
-		document.write('<div class="sticker ' + r33 + '"></div></div></div>');
-}
-
-function create_cube_2D(u11,u12,u13,u21,u22,u23,u31,u32,u33,b1,b2,b3,l1,l2,l3,r1,r2,r3,f1,f2,f3)
-{
-	document.write('<div class="cube_2D"><div class="face arriere"><div class="face_arriere">');
+	document.write('<div class="cube_3x3x3_2D"><div class="face arriere"><div class="face_arriere">');
 		document.write('<div id="b1" class="sticker ' + b1 + '"></div>');
 		document.write('<div id="b2" class="sticker ' + b2 + '"></div>');
 		document.write('<div id="b3" class="sticker ' + b3 + '"></div></div></div>');
@@ -62,21 +28,33 @@ function create_cube_2D(u11,u12,u13,u21,u22,u23,u31,u32,u33,b1,b2,b3,l1,l2,l3,r1
 		document.write('<div id="u33" class="sticker ' + u33 + '"></div></div></div>');
 }
 
-function create_cube_2x2x2_3D([u11,u12,u21,u22],[f11,f12,f21,f22],[r11,r12,r21,r22])
+function create_cube_NxNxN_3D(taille,u,f,r)
 {
-	document.write('<div class="cube_2x2x2_3D"><div class="face haut">');
-		document.write('<div class="sticker ' + u11 + '"></div>');
-		document.write('<div class="sticker ' + u12 + '"></div>');
-		document.write('<div class="sticker ' + u21 + '"></div>');
-		document.write('<div class="sticker ' + u22 + '"></div></div>');
-	document.write('<div class="face avant">');
-		document.write('<div class="sticker ' + f11 + '"></div>');
-		document.write('<div class="sticker ' + f12 + '"></div>');
-		document.write('<div class="sticker ' + f21 + '"></div>');
-		document.write('<div class="sticker ' + f22 + '"></div></div>');
-	document.write('<div class="face droite">');
-		document.write('<div class="sticker ' + r11 + '"></div>');
-		document.write('<div class="sticker ' + r12 + '"></div>');
-		document.write('<div class="sticker ' + r21 + '"></div>');
-		document.write('<div class="sticker ' + r22 + '"></div></div></div>');
+	var faces = { 'haut': u, 'avant': f, 'droite': r };
+	var html = '<div class="cube_'+taille+'x'+taille+'x'+taille+'_3D">';
+	for (var face in faces) {
+		html += '<div class="face ' + face + '">';
+		for (var color of faces[face])
+			html += '<div class="sticker ' + color + '"></div>';
+		html += '</div>';
+	}
+	html += '</div>';
+	document.write(html);
+}
+
+function create_cube_NxNxN_2D(taille,u,f,r)
+{
+	var faces = { 'arriere': b, 'gauche': l, 'droite': r , 'avant': f};
+	var html = '<div class="cube_'+taille+'x'+taille+'x'+taille+'_2D">';
+	for (var face in faces) {
+		html += '<div class="face ' + face + '"><div class="face_' + face + '">';
+		for (var color of faces[face])
+			html += '<div class="sticker ' + color + '"></div>';
+		html += '</div></div>';
+	}
+	html += '<div class="face haut">';
+	for (var color of u)
+		html += '<div class="sticker ' + color + '"></div>';
+	html += '</div></div>';
+	document.write(html);
 }
