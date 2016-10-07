@@ -6,7 +6,7 @@ function nav()
 	document.write('		<ul>');
 	document.write('			<li><a href="index.html">Accueil</a></li>');
 	document.write('			<li><a href="pll_simple.html">PLL simples</a></li>');
-	document.write('			<li><a href="page_inexistante.html">OLL</a></li>');
+	document.write('			<li><a href="oll.html">OLL</a></li>');
 	document.write('			<li><a href="page_inexistante.html">PLL sous tous les angles</a></li>');
 	document.write('			<li><a href="page_inexistante.html">ELL</a></li>');
 	document.write('			<li><a href="page_inexistante.html">CLL</a></li>');
