@@ -21,7 +21,7 @@ function nav()
 	document.write('	<section>');
 	document.write('		<div class="en-tete">Autres</div>');
 	document.write('		<ul>');
-	document.write('			<li><a href="#">M\'envoyer un MP</a></li>');
+	document.write('			<li><a href="http://forum.francocube.com/ucp.php?i=pm&mode=compose&u=4736">M\'envoyer un MP</a></li>');
 	document.write('			<li><a href="cube_generator.html">Générateur d\'images de cube</a></li>');
 	document.write('		</ul>');
 	document.write('	</section>');
