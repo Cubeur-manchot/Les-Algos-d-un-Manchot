@@ -7,132 +7,244 @@
 		<link href="mise_en_forme_generale.css" type="text/css" rel="stylesheet" media="all">
 		<link href="CSS_methodes.css" type="text/css" rel="stylesheet" media="all">
 		<script src="parallelisation.js" type="text/javascript"></script>
-		<link href="cube_generator.css" type="text/css" rel="stylesheet" media="all">
-		<script src="cube_generator.js" type="text/javascript"></script>
+		<script src="liens.js" type="text/javascript"></script>
+		<link href="nouvelle_forme.css" type="text/css" rel="stylesheet" media="all">
 	</head>
 	<body>
 	<script>nav();</script>
 	<section id="corps_de_page">
-		<section>
-			<h1>Les OLL d'un Manchot</h1>
-			<h2>Algos ajoutés : 15 sur 57</h2>
-			<ul class="liste_cas_etape">
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["gris","jaune","gris","jaune","jaune","jaune","jaune","jaune","jaune"],["jaune","gris","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL Headlights : <a href="#" class="bouton_animation">R' U2 R F U' R' U' R U F'</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["gris","jaune","jaune","jaune","jaune","jaune","gris","jaune","jaune"],["jaune","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["jaune","gris","gris"]);</script>
-				<p>OLL Caméléon adjacent : <a href="#" class="bouton_animation">r U R' U' L' U l F'</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["gris","jaune","jaune","jaune","jaune","jaune","jaune","jaune","gris"],["gris","gris","gris"],["jaune","gris","gris"],["gris","gris","gris"],["gris","gris","jaune"]);</script>
-				<p>OLL Caméléon opposé : <a href="#" class="bouton_animation">x U' L U R' U' L' U l</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","gris","jaune","jaune","jaune","gris","jaune","gris"],["gris","gris","gris"],["gris","gris","jaune"],["jaune","gris","gris"],["gris","gris","jaune"]);</script>
-				<p>OLL Sune : <a href="#" class="bouton_animation">L' U2 L U L' U L</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["gris","jaune","jaune","jaune","jaune","jaune","gris","jaune","gris"],["gris","gris","gris"],["jaune","gris","gris"],["gris","gris","jaune"],["jaune","gris","gris"]);</script>
-				<p>OLL Anti-Sune : <a href="#" class="bouton_animation">R U2' R' U' R U' R'</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["gris","jaune","gris","jaune","jaune","jaune","gris","jaune","gris"],["gris","gris","jaune"],["jaune","gris","jaune"],["gris","gris","gris"],["gris","gris","jaune"]);</script>
-				<p>OLL Double-Headlights : <a href="#" class="bouton_animation">R U R' U R U' R' U R U2' R'</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["gris","jaune","gris","jaune","jaune","jaune","gris","jaune","gris"],["gris","gris","gris"],["jaune","gris","jaune"],["jaune","gris","jaune"],["gris","gris","gris"]);</script>
-				<p>OLL Pi : <a href="#" class="bouton_animation">R U2' R2' U' R2 U' R2' U2 R</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"],["gris","gris","gris"]);</script>
-				<p>OLL truc : <a href="#" class="bouton_animation">Blurp</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","gris","jaune","gris","jaune","gris","gris","gris","gris"],["gris","jaune","gris"],["gris","jaune","jaune"],["gris","jaune","jaune"],["gris","jaune","gris"]);</script>
-				<p>OLL Mickey pas souligné : <a href="#" class="bouton_animation">r' U2 R U R' U r2 U2 R' U' R U' r'</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","gris","jaune","gris","jaune","gris","gris","gris","gris"],["gris","jaune","gris"],["gris","jaune","gris"],["gris","jaune","gris"],["jaune","jaune","jaune"]);</script>
-				<p>OLL Mickey souligné : <a href="#" class="bouton_animation">r U R' U R U2 r2' U' R U' R' U2 r</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["gris","gris","gris","gris","jaune","gris","jaune","gris","gris"],["jaune","jaune","gris"],["gris","jaune","gris"],["jaune","jaune","gris"],["gris","jaune","jaune"]);</script>
-				<p>OLL Horloge : <a href="#" class="bouton_animation">M R U R' U r U2 r' U M'</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["gris","gris","gris","gris","jaune","gris","gris","gris","jaune"],["gris","jaune","jaune"],["jaune","jaune","gris"],["gris","jaune","gris"],["jaune","jaune","gris"]);</script>
-				<p>OLL Horloge sym : <a href="#" class="bouton_animation">M L' U' L U l' U2 l U' M'</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","gris","gris","gris","jaune","gris","gris","gris","jaune"],["gris","jaune","jaune"],["gris","jaune","jaune"],["gris","jaune","gris"],["gris","jaune","gris"]);</script>
-				<p>OLL Diagonale : <a href="#" class="bouton_animation">R U R' U R' F R F' U2 R' F R F'</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["gris","gris","gris","gris","jaune","gris","gris","gris","gris"],["gris","jaune","gris"],["jaune","jaune","jaune"],["jaune","jaune","jaune"],["gris","jaune","gris"]);</script>
-				<p>OLL Point avec 2 barres : <a href="#" class="bouton_animation">R U2 R2' F R F' U2 R' F R F'</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["gris","gris","gris","gris","jaune","gris","gris","gris","gris"],["gris","jaune","jaune"],["jaune","jaune","jaune"],["gris","jaune","gris"],["gris","jaune","jaune"]);</script>
-				<p>OLL Point avec 3 barres : <a href="#" class="bouton_animation">F R U R' U' S R U R' U' f'</a></p></li>
-				<li class="cas_etape"><script>create_cube_3x3x3_2D(["jaune","gris","jaune","gris","jaune","gris","jaune","gris","jaune"],["gris","jaune","gris"],["gris","jaune","gris"],["gris","jaune","gris"],["gris","jaune","gris"]);</script>
-				<p>OLL 4 Edge-flips : <a href="#" class="bouton_animation">M U R U R' U' M2 U R U' r'</a></p></li>
-			</ul>
-		</section>
+		<h1>Les OLL d'un Manchot</h1>
+		<ul class="liste_cas">
+			<li class="cas">
+				<div class="nom">Headlights</div>
+				<div class="algo" data-set="OLL">R' U2 R F U' R' U' R U F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">T sans barre</div>
+				<div class="algo" data-set="OLL">F R U R' U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">P avec barre (normal)</div>
+				<div class="algo" data-set="OLL">F U R U' R' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">P avec barre (sym)</div>
+				<div class="algo" data-set="OLL">F' U' L' U L F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Dot avec 3 barres</div>
+				<div class="algo" data-set="OLL">F R U R' U' S R U R' U' f'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">2 Edges Flip (opposées)</div>
+				<div class="algo" data-set="OLL">R U R' U' M' U R U' r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Z (normal)</div>
+				<div class="algo" data-set="OLL">R' F R U R' U' F' U R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">V + coin (normal)</div>
+				<div class="algo" data-set="OLL">R' U' x R U R' U' B U R U' x'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">R + Caméléon (sym)</div>
+				<div class="algo" data-set="OLL">L' U' L U L' U L F U F' L' U' L</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Anti-Sune gauche</div>
+				<div class="algo" data-set="OLL">L' U2 L U L' U L</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Fat Anti-Sune gauche</div>
+				<div class="algo" data-set="OLL">l' U2 L U L' U l</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Mickey soliigné</div>
+				<div class="algo" data-set="OLL">r U R' U R U2 r2' U' R U' R' U2 r</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Éclair Sune (normal)</div>
+				<div class="algo" data-set="OLL">M R U R' U R U2' R' U M'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Éclair Sune (sym)</div>
+				<div class="algo" data-set="OLL">M L' U' L U' L' U2 L U' M'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Dot avec 2 barres</div>
+				<div class="algo" data-set="OLL">R U2 R2' F R F' U2 R' F R F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">C sans barre</div>
+				<div class="algo" data-set="OLL">R U R' U' B' R' F R F' B</div>
+			</li>
+			<li class="cas">
+				<div class="nom">R + Headlights (sym)</div>
+				<div class="algo" data-set="OLL">R U2' R' U' R U' R'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Anti-Sune droite</div>
+				<div class="algo" data-set="OLL">L' U' L U' L' U2 L F' L' U' L U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Fat Anti-Sune droite</div>
+				<div class="algo" data-set="OLL">r U2 R' U' R U' r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Mickey sans barre</div>
+				<div class="algo" data-set="OLL">r' U2 R U R' U r2 U2 R' U' R U' r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Horloge (normal)</div>
+				<div class="algo" data-set="OLL">M R U R' U r U2 r' U M'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Horloge (sym)</div>
+				<div class="algo" data-set="OLL">M L' U' L U l' U2 l U' M'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">4 Edges Flip</div>
+				<div class="algo" data-set="OLL">M U R U R' U' M2 U R U' r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">C avec barre</div>
+				<div class="algo" data-set="OLL">R' U' R' F R F' U R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">R + Headlignts (normal)</div>
+				<div class="algo" data-set="OLL">R U R' U R U2' R' F R U R' U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Pi</div>
+				<div class="algo" data-set="OLL">R U2 R2' U R U R2' U2 R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">V sans barre (normal)</div>
+				<div class="algo" data-set="OLL">F (R U R' U')2 F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">V sans barre (sym)</div>
+				<div class="algo" data-set="OLL">F' (L' U' L U)2 F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">V avec gande barre (normal)</div>
+				<div class="algo" data-set="OLL">r U2 R' U' R U R' U' R U' r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">V avec grande barre (sym)</div>
+				<div class="algo" data-set="OLL">l' U2 L U L' U' L U L' U l</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Poisson avec bares</div>
+				<div class="algo" data-set="OLL">F R U' R' U' R U R' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L avec 1 barre (sym)</div>
+				<div class="algo" data-set="OLL">l U M' U L' U' l U' l'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">W (sym)</div>
+				<div class="algo" data-set="OLL">L' U' L U' L' U L U L F' L' F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Caméléon adjacents</div>
+				<div class="algo" data-set="OLL">r U R' U' r' F R F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">T avec barres</div>
+				<div class="algo" data-set="OLL">R U R' U' R' F R F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">P sans barre (normal)</div>
+				<div class="algo" data-set="OLL">L U F L' U' L U F' U' L'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">P sans barre (sym)</div>
+				<div class="algo" data-set="OLL">R' U' F U R U' R' F' U R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Diagonale</div>
+				<div class="algo" data-set="OLL">R U R' U R' F R F' U2 R' F R F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">2 Edges Flip (adjacentes)</div>
+				<div class="algo" data-set="OLL">r U R' U' M U R U' R'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Z (sym)</div>
+				<div class="algo" data-set="OLL">L F' L' U' L U F U' L'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">V + coin (sym)</div>
+				<div class="algo" data-set="OLL">L U x L' U' L U B' U' L' U x'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Caméléon opposés</div>
+				<div class="algo" data-set="OLL">F' r U R' U' L' U l</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Fat Sune droite</div>
+				<div class="algo" data-set="OLL">r U R' U R U2 r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Fat Sune gauche</div>
+				<div class="algo" data-set="OLL">l' U' L U' L' U2 l</div>
+			</li>
+			<li class="cas">
+				<div class="nom">V avec 2 barres (normal)</div>
+				<div class="algo" data-set="OLL">F R' F2 L F2 R F2 L' F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">V avec 2 barres (sym)</div>
+				<div class="algo" data-set="OLL">F' L F2 R' F2 L' F2 R F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Poisson sans barre</div>
+				<div class="algo" data-set="OLL">R U2 R2' F R F' R U2 R'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L avec 1 barre (normal)</div>
+				<div class="algo" data-set="OLL">r' U' M' U' R U r' U r</div>
+			</li>
+			<li class="cas">
+				<div class="nom">W (normal)</div>
+				<div class="algo" data-set="OLL">R U R' U' R U' R' U' R' F R F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">H</div>
+				<div class="algo" data-set="OLL">F (U R U' R')2 F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">I + 2 petites barres</div>
+				<div class="algo" data-set="OLL">R U R' U R U' R U R U2' R'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">I avec 2 barres</div>
+				<div class="algo" data-set="OLL">R U2 R2' U' R U' R' U2 F R F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">I avec 1 barre</div>
+				<div class="algo" data-set="OLL">R' U' R U' R' U y L' U L F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">I sans barre</div>
+				<div class="algo" data-set="OLL">F R U R' U' R F' r U R' U' r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L avec 2 barres (normal)</div>
+				<div class="algo" data-set="OLL">F U R U2' R' U' R U R' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L avec 2 barres (sym)</div>
+				<div class="algo" data-set="OLL">F' U' L' U2 L U L' U' L F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">R + Caméléon (normal)</div>
+				<div class="algo" data-set="OLL">R U R' U' R U' R' F' U' F R U R'</div>
+			</li>
+		</ul>
+		<script>liens();</script>
 	</section>
 	<script>footer();</script>
 	</body>
