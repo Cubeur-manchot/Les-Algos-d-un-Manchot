@@ -74,11 +74,7 @@ footer
 
 /*____________ ALGOS ____________*/
 
-.liste_cas
-{
-	border: 1px dotted red;
-	text-align: center;
-}
+.liste_cas { text-align: center; }
 .cas
 {
 	display: inline-block;

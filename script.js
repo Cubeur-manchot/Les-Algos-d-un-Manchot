@@ -7,7 +7,7 @@ function nav()
 	html += '<li><a href="wv.html">WV</a></li>';
 	html += '<li><a href="page_inexistante.html">SV (en apprentissage)</a></li>';
 	html += '<li><a href="mw.html">MW (en rédaction)</a></li>';
-	html += '<li><a href="page_inexistante.html">2GLL (indisponible)</a></li>';
+	html += '<li><a href="2gll.html">2GLL (en rédaction)</a></li>';
 	html += '<li><a href="page_inexistante.html">CLL (indisponible)</a></li>';
 	html += '<li><a href="page_inexistante.html">PLL angles et AUFs (indisponible)</a></li>';
 	html += '<li><a href="page_inexistante.html">PLL OH (en apprentissage)</a></li>';
@@ -40,7 +40,7 @@ function liens()
 		var step = algos[i].getAttribute('data-set');
 		switch(step)
 		{
-			case 'PLL': case 'ELL': default: step = 'pll'; break;
+			case 'PLL': case 'ELL': case '2GLL': default: step = 'pll'; break;
 			case 'OLL': step = 'oll'; break;
 			case 'WV': case 'MW': step = 'wv'; break;
 		}
