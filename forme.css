@@ -1,0 +1,162 @@
+/*____________ GÉNÉRAL ____________*/
+
+nav
+{
+	position: fixed;
+	display: inline-block;
+	width: 200px;
+	left: 15px;
+	top: 15px;
+	padding: 0px;
+	color: black;
+	font-size: 14px;
+}
+nav section
+{
+	border-radius: 4px;
+	overflow: hidden;
+	border: 1px solid #868686;
+	margin-bottom: 15px;
+}
+nav .en-tete
+{
+	display: block;
+	margin: 0px;
+	background-color: rgb(160,0,30);
+	text-align: center;
+	color: white;
+	text-shadow: black 1px 1px 2px;
+	text-decoration: none;
+}
+nav ul { list-style-type: none; margin: 0px; padding: 0px; }
+nav li { margin: 3px 10px -1px 10px; border-bottom: 1px dotted #868686; font-size: 12px; }
+nav a { display: block; text-decoration: none; color: blue; }
+nav a:hover { color: red; }
+
+body { margin: 0px; padding: 0px; background-color: #DDF2FE; }
+#corps_de_page
+{
+	margin: 15px 15px 0px 230px;
+	display: inline-block;
+	padding: 0px;
+	min-width: 460px;
+}
+#corps_de_page section { display: inline-block; margin: 0px; padding: 0px; }
+h1
+{
+	margin-top: 15px;
+	text-align: center;
+	color: black;
+	font-size: 50px;
+	text-shadow: grey 2px 2px 2px;
+	font-family: "Harrington";
+	font-style : italic;
+}
+p
+{
+	margin-left: 3px;
+	font-size: 1em;
+	text-align: justify;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+footer
+{
+	width: 55%;
+	margin: 50px auto 5px auto;
+	border-top: 1px solid #868686;
+	border-bottom: 1px solid #868686;
+	text-align: center;
+	color: black;
+	font-size: 9px;
+}
+
+/*____________ ALGOS ____________*/
+
+.liste_cas
+{
+	border: 1px dotted red;
+	text-align: center;
+}
+.cas
+{
+	display: inline-block;
+	width: 160px;
+	height: 238px;
+	margin: 5px;
+	border: 1px solid black;
+	padding: 0px;
+	list-style: none;
+	vertical-align: top;
+}
+.cas .nom
+{
+	display: inline-block;
+	width: 150px;
+	height: 38px;
+	margin: 5px 5px 0px 5px;
+	background-color: grey;
+	text-align: center;
+	top: 50%
+}
+.cas img
+{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin: 5px 5px 0px 5px;
+	background-image: url("images/image_introuvable.png");
+}
+.cas .algo
+{
+	display: inline-block;
+	margin: 0px;
+	width: 128px;
+	margin-bottom: 0px;
+	border: none;
+	border-top: 1px solid black;
+	font-size: 12px;
+	padding: 5px 0px 0px 32px;
+	text-align: left;
+}
+.cas .bouton_animation
+{
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-top: 165px;
+	margin-left: -154px;
+	border: 1px dotted grey;
+	border-radius: 3px;
+	background-color: #cfcfcf;
+}
+
+/*____________ TABLEAU DES RECORDS ____________*/
+
+table
+{
+	border: 1px solid black;
+	border-radius: 7px 7px 3px 3px;
+	overflow: hidden;
+	border-collapse: collapse;
+	box-shadow: 3px 3px 2px grey;
+	font-size: 12px;
+	margin: 10px;
+	padding: 0px;
+}
+td
+{
+	border: 1px solid black;
+	background-color: #F3F3F3;
+	padding: 1px 5px 1px 5px;
+	text-align: center;
+}
+th
+{
+	border: 1px solid black;
+	background-color: #FFA000;
+	height: 20px;
+	text-align: center;
+}
