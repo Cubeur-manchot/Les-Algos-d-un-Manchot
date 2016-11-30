@@ -5,13 +5,13 @@ function nav()
 	html += '<li><a href="oll.html">OLL</a></li>';
 	html += '<li><a href="ell.html">ELL</a></li>';
 	html += '<li><a href="wv.html">WV</a></li>';
-	html += '<li><a href="page_inexistante.html">SV (en apprentissage)</a></li>';
+	html += '<li><a href="page_inexistante.html">SV (X)</a></li>';
 	html += '<li><a href="mw.html">MW (en rédaction)</a></li>';
 	html += '<li><a href="2gll.html">2GLL (en rédaction)</a></li>';
-	html += '<li><a href="page_inexistante.html">CLL (indisponible)</a></li>';
-	html += '<li><a href="page_inexistante.html">PLL angles et AUFs (indisponible)</a></li>';
-	html += '<li><a href="page_inexistante.html">PLL OH (en apprentissage)</a></li>';
-	html += '<li><a href="page_inexistante.html">PLL Big Cubes (indisponible)</a></li>';
+	html += '<li><a href="page_inexistante.html">CLL (X)</a></li>';
+	html += '<li><a href="page_inexistante.html">PLL angles et AUFs (X)</a></li>';
+	html += '<li><a href="page_inexistante.html">PLL OH (X)</a></li>';
+	html += '<li><a href="page_inexistante.html">PLL Big Cubes (X)</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres</div><ul>';
 	html += '<li><a href="index.html">Accueil</a></li>';
