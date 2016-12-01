@@ -11,131 +11,131 @@
 	<script>nav();</script>
 	<section id="corps_de_page">
 		<h1>Les 2GLL d'un Manchot</h1>
-		<h2>[Page en construction]</h2>
+		<h3>[Page en construction]</h3>
 		<p>Voir en bas de page pour les algos que j'ai appris.</p>
-		<h3>Cas 1-10</h3>
-		<ul class="liste_cas">
+		<h2>Cas de base</h2>
+		<ul class="liste_cas_simple">
 			<li class="cas">
 				<div class="nom">Cas 1</div>
-				<div class="algo" data-set="2GLL">R U R' U R U2 R'</div>
+				<div class="algo" data-set="2GLL">R U R' U R U2 R' (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 2</div>
-				<div class="algo" data-set="2GLL">R' U2 R U R' U R</div>
+				<div class="algo" data-set="2GLL">R' U2 R U R' U R (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 3</div>
-				<div class="algo" data-set="2GLL">R U2 R' U' R U' R'</div>
+				<div class="algo" data-set="2GLL">R U2 R' U' R U' R' (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 4</div>
-				<div class="algo" data-set="2GLL"> 	R' U' R U' R' U2 R</div>
+				<div class="algo" data-set="2GLL">R' U' R U' R' U2 R (U2)</div>
+			</li>
+		</ul>
+		<h2>Set T</h2>
+		<ul class="liste_cas_simple">
+			<li class="cas">
+				<div class="nom">Cas 5</div>
+				<div class="algo" data-set="2GLL">(U') (R U R' U R U2 R') U2 (R' U' R U' R' U2 R) (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 5</div>
-				<div class="algo" data-set="2GLL">[U'] (R U R' U R U2 R') U2 (R' U' R U' R' U2 R)</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 5</div>
-				<div class="algo" data-set="2GLL">[U] (r' F' r U' r' F2 r) (R U R' U R U2 R')</div>
+				<div class="algo" data-set="2GLL">(U) (r' F' r U' r' F2 r) (R U R' U R U2 R') (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 6</div>
-				<div class="algo" data-set="2GLL">[U'] (R U R' U R U2 R') U' (R U2 R' U' R U' R')</div>
+				<div class="algo" data-set="2GLL">(U') (R U R' U R U2 R') U' (R U2 R' U' R U' R') (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 6</div>
-				<div class="algo" data-set="2GLL">R' U R U2 R' U' R U2 R' U' R U' R' U R </div>
+				<div class="algo" data-set="2GLL">R' U R U2 R' U' R U2 R' U' R U' R' U R (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 7</div>
-				<div class="algo" data-set="2GLL">[U'] (R' U' R U' R' U2 R) U (R' U2 R U R' U R)</div>
+				<div class="algo" data-set="2GLL">(U') (R' U' R U' R' U2 R) U (R' U2 R U R' U R)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 7</div>
-				<div class="algo" data-set="2GLL">[U2] R U' R' U2 R U R' U2 R U R' U R U' R'</div>
+				<div class="algo" data-set="2GLL">(U2) R U' R' U2 R U R' U2 R U R' U R U' R'(U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 8</div>
-				<div class="algo" data-set="2GLL"> 	R U2 R' U' R U' R2 U2 R U R' U R</div>
+				<div class="algo" data-set="2GLL">R U2 R' U' R U' R2 U2 R U R' U R</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 9</div>
-				<div class="algo" data-set="2GLL">[U2] R' U2 R U R' U R2 U2 R' U' R U' R'</div>
+				<div class="algo" data-set="2GLL">(U2) R' U2 R U R' U R2 U2 R' U' R U' R' (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 10</div>
-				<div class="algo" data-set="2GLL">[U'] R U R2 U' R2 U' R2 U2 R U' R U' R'</div>
+				<div class="algo" data-set="2GLL">(U') R U R2 U' R2 U' R2 U2 R U' R U' R' (U2)</div>
 			</li>
-		</ul>
-		<h3>Cas 11-20</h3>
-		<ul class="liste_cas">
 			<li class="cas">
 				<div class="nom">Cas 11</div>
-				<div class="algo" data-set="2GLL">[U'] R' U' R2 U R2 U R2 U2 R' U R' U R</div>
+				<div class="algo" data-set="2GLL">(U') R' U' R2 U R2 U R2 U2 R' U R' U R</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 12</div>
-				<div class="algo" data-set="2GLL">[U2] (R' U2 R U R' U R) U' (R' U' R U' R' U2 R)</div>
+				<div class="algo" data-set="2GLL">(U2) (R' U2 R U R' U R) U' (R' U' R U' R' U2 R) (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 13</div>
-				<div class="algo" data-set="2GLL">(R U2 R' U' R U' R') U (R U R' U R U2 R')</div>
+				<div class="algo" data-set="2GLL">(R U2 R' U' R U' R') U (R U R' U R U2 R') (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 14</div>
-				<div class="algo" data-set="2GLL">[U'] R' U' R U' R' U R U' R U R2 U R2 U2 R' </div>
+				<div class="algo" data-set="2GLL">(U') R' U' R U' R' U R U' R U R2 U R2 U2 R' (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 15</div>
-				<div class="algo" data-set="2GLL"> 	[U'] R U R' U R U' R' U R' U' R2 U' R2 U2 R</div>
+				<div class="algo" data-set="2GLL">(U') R U R' U R U' R' U R' U' R2 U' R2 U2 R (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 16</div>
-				<div class="algo" data-set="2GLL">[U2] x' D R U' R' D' R2 D2 R' U R D2 R2' x</div>
+				<div class="algo" data-set="2GLL">(U2 x') D R U' R' D' R2 D2 R' U R D2 R2' (x)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 16</div>
 				<div class="algo" data-set="2GLL">R' U R U2 R' U' R U' R U R' U' R' U' R U R U' R'</div>
 			</li>
+		</ul>
+		<h2>Set U</h2>
+		<ul class="liste_cas_simple">
 			<li class="cas">
 				<div class="nom">Cas 17</div>
-				<div class="algo" data-set="2GLL"> 	[U] R' U2 R U R' U R (U2) R U2 R' U' R U' R' </div>
+				<div class="algo" data-set="2GLL">(U) R' U2 R U R' U R (U2) R U2 R' U' R U' R' (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 17</div>
-				<div class="algo" data-set="2GLL">[U] R U2 R' U' R U' R' (U2) R' U2 R U R' U R</div>
+				<div class="algo" data-set="2GLL">(U) R U2 R' U' R U' R' (U2) R' U2 R U R' U R (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 17</div>
-				<div class="algo" data-set="2GLL">[U'] (R U2 R' U' R U' R') (r' F2 r U r' F) r </div>
+				<div class="algo" data-set="2GLL">(U') (R U2 R' U' R U' R') (r' F2 r U r' F) r (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 18</div>
-				<div class="algo" data-set="2GLL">(R' U' R U' R' U2 R) U' (R' U2 R U R' U R)</div>
+				<div class="algo" data-set="2GLL">(R' U' R U' R' U2 R) U' (R' U2 R U R' U R) (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 18</div>
-				<div class="algo" data-set="2GLL">[U'] R U R' U' R U' R' U2 R U' R' U2 R U R'</div>
+				<div class="algo" data-set="2GLL">(U') R U R' U' R U' R' U2 R U' R' U2 R U R' (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 19</div>
-				<div class="algo" data-set="2GLL">[U2] (R U R' U R U2 R') U (R U2 R' U' R U' R')</div>
+				<div class="algo" data-set="2GLL">(U2) (R U R' U R U2 R') U (R U2 R' U' R U' R') (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 19</div>
-				<div class="algo" data-set="2GLL">[U'] R' U' R U R' U R U2 R' U R U2 R' U' R </div>
+				<div class="algo" data-set="2GLL">(U') R' U' R U R' U R U2 R' U R U2 R' U' R</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 20</div>
 				<div class="algo" data-set="2GLL">R' U' R U' R' U2 R2 U R' U R U2 R'</div>
 			</li>
-		</ul>
-		<h3>Cas 21-30</h3>
-		<ul class="liste_cas">
 			<li class="cas">
 				<div class="nom">Cas 21</div>
-				<div class="algo" data-set="2GLL">[U2] R U R' U R U2 R2 U' R U' R' U2 R </div>
+				<div class="algo" data-set="2GLL">(U2) R U R' U R U2 R2 U' R U' R' U2 R (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 22</div>
@@ -143,196 +143,196 @@
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 22</div>
-				<div class="algo" data-set="2GLL">R' U' R U' R U2 R2 U' R2 U' R2 U R </div>
+				<div class="algo" data-set="2GLL">R' U' R U' R U2 R2 U' R2 U' R2 U R (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 23</div>
-				<div class="algo" data-set="2GLL">[U2] R U R' U R' U' R U' R' U2 R U2 R U2 R'</div>
+				<div class="algo" data-set="2GLL">(U2) R U R' U R' U' R U' R' U2 R U2 R U2 R'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 23</div>
-				<div class="algo" data-set="2GLL">[U2] R U R' U R' U2 R2 U R2 U R2 U' R' </div>
+				<div class="algo" data-set="2GLL">(U2) R U R' U R' U2 R2 U R2 U R2 U' R' (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 24</div>
-				<div class="algo" data-set="2GLL">[U] R U2 R2 U' R2 U' R' U R' U' R U R' U R </div>
+				<div class="algo" data-set="2GLL">(U) R U2 R2 U' R2 U' R' U R' U' R U R' U R (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 25</div>
-				<div class="algo" data-set="2GLL"> 	[U] R' U2 R2 U R2 U R U' R U R' U' R U' R' </div>
+				<div class="algo" data-set="2GLL">(U) R' U2 R2 U R2 U R U' R U R' U' R U' R' (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 26</div>
-				<div class="algo" data-set="2GLL">[U] (R' U2 R U R' U R) U (R' U' R U' R' U2 R) </div>
+				<div class="algo" data-set="2GLL">(U) (R' U2 R U R' U R) U (R' U' R U' R' U2 R) (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 27</div>
-				<div class="algo" data-set="2GLL"> 	[U] (R U2 R' U' R U' R') U' (R U R' U R U2 R') </div>
+				<div class="algo" data-set="2GLL">(U) (R U2 R' U' R U' R') U' (R U R' U R U2 R')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 28</div>
-				<div class="algo" data-set="2GLL"> 	x' R2 D2 R' U' R D2 R2 D R U R' D' x</div>
+				<div class="algo" data-set="2GLL">(x') R2 D2 R' U' R D2 R2 D R U R' D' (x U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 28</div>
 				<div class="algo" data-set="2GLL">R2 U R2 U2' R' U' R U' R U' R U' R2 U2 R'</div>
 			</li>
+		</ul>
+		<h2>Set L</h2>
+		<ul class="liste_cas_simple">
 			<li class="cas">
 				<div class="nom">Cas 29</div>
-				<div class="algo" data-set="2GLL">R U' L' U R' U' R U R' U' L U R U' R'</div>
+				<div class="algo" data-set="2GLL">R U' L' U R' U' R U R' U' L U R U' R' (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 29</div>
-				<div class="algo" data-set="2GLL">R U2' R' U2' R' U' R U R U' R' U2' R' U2 R</div>
+				<div class="algo" data-set="2GLL">R U2' R' U2' R' U' R U R U' R' U2' R' U2 R (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 29</div>
-				<div class="algo" data-set="2GLL">R U2 R' L' U' L U' R U' R' L' U2 L</div>
+				<div class="algo" data-set="2GLL">R U2 R' L' U' L U' R U' R' L' U2 L (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 30</div>
-				<div class="algo" data-set="2GLL">[U2] (R U2 R' U' R U' R') U (R' U2 R U R' U R)</div>
+				<div class="algo" data-set="2GLL">(U2) (R U2 R' U' R U' R') U (R' U2 R U R' U R) (U)</div>
 			</li>
-		</ul>
-		<h3>Cas 31-40</h3>
-		<ul class="liste_cas">
 			<li class="cas">
 				<div class="nom">Cas 31</div>
-				<div class="algo" data-set="2GLL">R2 U R' U R' U' R U' R' U' R U R U' R2</div>
+				<div class="algo" data-set="2GLL">R2 U R' U R' U' R U' R' U' R U R U' R2 (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 32</div>
-				<div class="algo" data-set="2GLL"> 	[U2] (R U2 R' U' R U' R') U2 (R U R' U R U2 R')</div>
+				<div class="algo" data-set="2GLL">(U2) (R U2 R' U' R U' R') U2 (R U R' U R U2 R')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 33</div>
-				<div class="algo" data-set="2GLL"> 	[U2] (R U R' U R U2 R') U2 (R U2 R' U' R U' R') </div>
+				<div class="algo" data-set="2GLL">(U2) (R U R' U R U2 R') U2 (R U2 R' U' R U' R')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 34</div>
-				<div class="algo" data-set="2GLL">[U'] R' U2 R' U' R2 U' R U R' U' R U2 R U' R</div>
+				<div class="algo" data-set="2GLL">(U') R' U2 R' U' R2 U' R U R' U' R U2 R U' R (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 35</div>
-				<div class="algo" data-set="2GLL">[U] (R' U' R U' R' U2 R) U' (R U R' U R U2 R')</div>
+				<div class="algo" data-set="2GLL">(U) (R' U' R U' R' U2 R) U' (R U R' U R U2 R') (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 36</div>
-				<div class="algo" data-set="2GLL">[U'] R2 U' R U' R U R' U R U R' U' R' U R2</div>
+				<div class="algo" data-set="2GLL">(U') R2 U' R U' R U R' U R U R' U' R' U R2</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 37</div>
-				<div class="algo" data-set="2GLL">R U2 R U R2 U R' U' R U R' U2 R' U R'</div>
+				<div class="algo" data-set="2GLL">R U2 R U R2 U R' U' R U R' U2 R' U R' (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 37</div>
-				<div class="algo" data-set="2GLL">[U'] (R' U2 R U R' U) R2 (U2 R' U' R U R' U' R U' R')</div>
+				<div class="algo" data-set="2GLL">(U') (R' U2 R U R' U) R2 (U2 R' U' R U R' U' R U' R') (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 38</div>
-				<div class="algo" data-set="2GLL"> 	[U] (R' U2 R U R' U R) U' (R U2 R' U' R U' R')</div>
+				<div class="algo" data-set="2GLL">(U) (R' U2 R U R' U R) U' (R U2 R' U' R U' R')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 39</div>
-				<div class="algo" data-set="2GLL"> 	[U2] (R U R' U R U2 R') U (R' U' R U' R' U2 R)</div>
+				<div class="algo" data-set="2GLL">(U2) (R U R' U R U2 R') U (R' U' R U' R' U2 R) (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 40</div>
-				<div class="algo" data-set="2GLL">[U'] R' U' R U' R' U R U' R' U R U' R' U2 R</div>
+				<div class="algo" data-set="2GLL">(U') R' U' R U' R' U R U' R' U R U' R' U2 R (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 40</div>
-				<div class="algo" data-set="2GLL">R U2 R' U' R U R' U' R U R' U' R U' R'</div>
+				<div class="algo" data-set="2GLL">R U2 R' U' R U R' U' R U R' U' R U' R' (U2)</div>
 			</li>
 		</ul>
-		<h3>Cas 41-50</h3>
-		<ul class="liste_cas">
+		<h2>Set Pi</h2>
+		<ul class="liste_cas_simple">
 			<li class="cas">
 				<div class="nom">Cas 41</div>
 				<div class="algo" data-set="2GLL">(F R U R' U' R U R' U' F') (R U R' U' M' U R U' r')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 41</div>
-				<div class="algo" data-set="2GLL">(R U R' U') (R' U' R U) (R U R' U') (R' U R U') (R U' R')</div>
+				<div class="algo" data-set="2GLL">(R U R' U') (R' U' R U) (R U R' U') (R' U R U') (R U' R') (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 42</div>
-				<div class="algo" data-set="2GLL"> 	(R U2 R' U' R U' R') U' (R U2 R' U' R U' R')</div>
+				<div class="algo" data-set="2GLL">(R U2 R' U' R U' R') U' (R U2 R' U' R U' R') (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 42</div>
-				<div class="algo" data-set="2GLL"> [U'] (R' U' R U' R' U2 R) U' (R' U' R U' R' U2 R) </div>
+				<div class="algo" data-set="2GLL">(U') (R' U' R U' R' U2 R) U' (R' U' R U' R' U2 R) (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 43</div>
-				<div class="algo" data-set="2GLL"> 	R' U2 R2 U R2 U R2 U2 R'</div>
+				<div class="algo" data-set="2GLL">R' U2 R2 U R2 U R2 U2 R' (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 44</div>
-				<div class="algo" data-set="2GLL"> 	[U'] R U2 R' U2 R U' R' U2 R U' R' U2 R U R'</div>
+				<div class="algo" data-set="2GLL">(U') R U2 R' U2 R U' R' U2 R U' R' U2 R U R'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 45</div>
-				<div class="algo" data-set="2GLL">[U] R' U2 R U2 R' U R U2 R' U R U2 R' U' R</div>
+				<div class="algo" data-set="2GLL">(U) R' U2 R U2 R' U R U2 R' U R U2 R' U' R</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 46</div>
-				<div class="algo" data-set="2GLL">(R U R' U R U2 R') U' (R U R' U R U2 R')</div>
+				<div class="algo" data-set="2GLL">(R U R' U R U2 R') U' (R U R' U R U2 R') (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 46</div>
-				<div class="algo" data-set="2GLL">[U] (R U2 R' U' R U' R') U (R U2 R' U' R U' R')</div>
+				<div class="algo" data-set="2GLL">(U) (R U2 R' U' R U' R') U (R U2 R' U' R U' R') (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 47</div>
-				<div class="algo" data-set="2GLL">(R' U' R U' R' U2 R) U (R' U' R U' R' U2 R) </div>
+				<div class="algo" data-set="2GLL">(R' U' R U' R' U2 R) U (R' U' R U' R' U2 R) (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 48</div>
-				<div class="algo" data-set="2GLL">[U'] R' U2 R U R' U R2 U R' U R U2 R'</div>
+				<div class="algo" data-set="2GLL">(U') R' U2 R U R' U R2 U R' U R U2 R' (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 49</div>
-				<div class="algo" data-set="2GLL">[U] R U2 R' U' R U' R2 U' R U' R' U2 R</div>
+				<div class="algo" data-set="2GLL">(U) R U2 R' U' R U' R2 U' R U' R' U2 R (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 50</div>
-				<div class="algo" data-set="2GLL"> 	R U2 R2 U' R2 U' R2 U2 R</div>
+				<div class="algo" data-set="2GLL">R U2 R2 U' R2 U' R2 U2 R (U2)</div>
 			</li>
-		</ul>
-		<h3>Cas 51-60</h3>
-		<ul class="liste_cas">
 			<li class="cas">
 				<div class="nom">Cas 51</div>
-				<div class="algo" data-set="2GLL"> 	[U2] R U' R' U2 R U R' U2 R U R' U2 R U2 R'</div>
+				<div class="algo" data-set="2GLL">(U2) R U' R' U2 R U R' U2 R U R' U2 R U2 R' (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 52</div>
-				<div class="algo" data-set="2GLL">[U2] R' U R U2 R' U' R U2 R' U' R U2 R' U2 R</div>
+				<div class="algo" data-set="2GLL">(U2) R' U R U2 R' U' R U2 R' U' R U2 R' U2 R (U)</div>
 			</li>
+		</ul>
+		<h2>Set H</h2>
+		<ul class="liste_cas_simple">
 			<li class="cas">
 				<div class="nom">Cas 53</div>
-				<div class="algo" data-set="2GLL"> 	[U] (R U2 R' U' R U' R') U' (R' U' R U' R' U2 R)</div>
+				<div class="algo" data-set="2GLL">(U) (R U2 R' U' R U' R') U' (R' U' R U' R' U2 R)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 54</div>
-				<div class="algo" data-set="2GLL">[U'] (R' U2 R U R' U R) U (R U R' U R U2 R')</div>
+				<div class="algo" data-set="2GLL">(U') (R' U2 R U R' U R) U (R U R' U R U2 R')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 55</div>
-				<div class="algo" data-set="2GLL"> 	[U'] R U R' U R' U' R U R' U' R2 U' R2 U R U2 R' U2 R</div>
+				<div class="algo" data-set="2GLL">(U') R U R' U R' U' R U R' U' R2 U' R2 U R U2 R' U2 R (U2)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 56</div>
-				<div class="algo" data-set="2GLL"> 	[U'] R U2 R' U' R U R' U' R U' R' </div>
+				<div class="algo" data-set="2GLL">(U') R U2 R' U' R U R' U' R U' R' (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 57</div>
-				<div class="algo" data-set="2GLL"> 	[U] R' U2 R U R' U' R U R' U R</div>
+				<div class="algo" data-set="2GLL">(U) R' U2 R U R' U' R U R' U R (U')</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 57</div>
-				<div class="algo" data-set="2GLL"> [U'] L' U2 L U L' U' L U L' U L</div>
+				<div class="algo" data-set="2GLL">(U') L' U2 L U L' U' L U L' U L (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 58</div>
@@ -340,15 +340,15 @@
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 59</div>
-				<div class="algo" data-set="2GLL">[U2] R U R' U R U' R' U R U2 R'</div>
+				<div class="algo" data-set="2GLL">R U R' U R U' R' U R U2 R'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 60</div>
-				<div class="algo" data-set="2GLL">(R' U' R U' R' U2 R) U (R U2 R' U' R U' R')</div>
+				<div class="algo" data-set="2GLL">(R' U' R U' R' U2 R) U (R U2 R' U' R U' R') (U')</div>
 			</li>
 		</ul>
-		<h3>Cas 61-70</h3>
-		<ul class="liste_cas">
+		<h2>Set Sune + Antisune</h2>
+		<ul class="liste_cas_simple">
 			<li class="cas">
 				<div class="nom">Cas 61</div>
 				<div class="algo" data-set="2GLL">(y) R U' R2 U' R U' R' U2 R' U2 R' U' R U' R2</div>
@@ -371,7 +371,7 @@
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 62</div>
-				<div class="algo" data-set="2GLL">(L U' L U L U L U' L' U' L2) U (L' U2 L U L' U L) (U perm U Antisune)</div>
+				<div class="algo" data-set="2GLL">(L U' L U L U L U' L' U' L2) U (L' U2 L U L' U L)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 63</div>
@@ -435,9 +435,6 @@
 				<div class="nom">Cas 70</div>
 				<div class="algo" data-set="2GLL">L' U' L U' (L U L' U L U2 L') U' L' U L</div>
 			</li>
-		</ul>
-		<h3>Cas 71-80</h3>
-		<ul class="liste_cas">
 			<li class="cas">
 				<div class="nom">Cas 71</div>
 				<div class="algo" data-set="2GLL">(y') R2 U R U' R' U' R U2 R U' R2 U' R2</div>
@@ -498,9 +495,6 @@
 				<div class="nom">Cas 80</div>
 				<div class="algo" data-set="2GLL">-</div>
 			</li>
-		</ul>
-		<h3>Cas 81-84</h3>
-		<ul class="liste_cas">
 			<li class="cas">
 				<div class="nom">Cas 81</div>
 				<div class="algo" data-set="2GLL">-</div>
@@ -518,9 +512,18 @@
 				<div class="algo" data-set="2GLL">-</div>
 			</li>
 		</ul>
-		<p>Dans la suite je classe les cas que j'ai appris...</p>
+		_____________________________________________________________________________________
+		<h2>Algos appris</h2>
+		<ul>
+			<li>Samedi 26 Novembre 2016 : Barre 3x1 orientation T + sym</li>
+			<li>Dimanche 27 Novembre 2016 : Pur Pi</li>
+			<li>Lundi 28 Novembre 2016 : Pur Caméléon Adjacent</li>
+			<li>Mardi 29 Novembre 2016 : Pur H (purs terminés)</li>
+			<li>Mercredi 30 Novembre 2016 : H Sune + sym</li>
+			<li>Jeudi 1 Décembre 2016 : H Pi</li>
+		</ul>
 		<h2>Cas de base</h2>
-		<ul class="liste_cas">
+		<ul class="liste_cas_simple">
 			<li class="cas">
 				<div class="nom">Sune</div>
 				<div class="algo" data-set="2GLL">R U R' U R U2 R'</div>
@@ -539,14 +542,14 @@
 			</li>
 		</ul>
 		<h2>Cas Purs (7 cas)</h2>
-		<ul class="liste_cas">
+		<ul class="liste_cas_simple">
 			<li class="cas">
 				<div class="nom">Pur Headlights</div>
-				<div class="algo" data-set="2GLL">R U2 R' U' R U' R' L' U2 L U L' U L</div>
+				<div class="algo" data-set="2GLL">[R U2 R' U' R U' R'] [L' U2 L U L' U L]</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Pur Caméléon Adjacent</div>
-				<div class="algo" data-set="2GLL">R U R' U R U2 R' L' U' L U' L' U2 L</div>
+				<div class="algo" data-set="2GLL">[R U R' U R U2 R'] [L' U' L U' L' U2 L]</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Pur Caméléon Opposé</div>
@@ -566,15 +569,15 @@
 			</li>
 			<li class="cas">
 				<div class="nom">Pur Pi</div>
-				<div class="algo" data-set="2GLL">R U R' U' R' U' R U R U R' U' R' U R U' R U' R' (U)</div>
+				<div class="algo" data-set="2GLL">[R U R' U'] [R' U' R U] [R U R' U'] R' U R U' R U' R' (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Pur H</div>
 				<div class="algo" data-set="2GLL">R U' R U R U R' U' R' U' R2 U' R U R' U' R U' R'</div>
 			</li>
 		</ul>
-		<h2>Permutation H (8 cas)</h2>
-		<ul class="liste_cas">
+		<h2>Permutation H (8 cas) [3 à ajouter]</h2>
+		<ul class="liste_cas_simple">
 			<li class="cas">
 				<div class="nom">PLL H</div>
 				<div class="algo" data-set="2GLL">M2' U M2' U2 M2' U M2'</div>
@@ -593,33 +596,24 @@
 			</li>
 			<li class="cas">
 				<div class="nom">H Antisune</div>
-				<div class="algo" data-set="2GLL">R U2 R2' U' R2 U' R' U R' U R (U2)</div>
+				<div class="algo" data-set="2GLL">R U2 R2' U' R2 U' R' U R' U R</div>
 			</li>
 			<li class="cas">
 				<div class="nom">H Sune</div>
-				<div class="algo" data-set="2GLL">L' U2 L2 U L2' U L U' L U' L' (U2)</div>
+				<div class="algo" data-set="2GLL">L' U2 L2 U L2' U L U' L U' L'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">H Pi</div>
-				<div class="algo" data-set="2GLL">-</div>
+				<div class="algo" data-set="2GLL">[R U2 R' U' R U' R'] U' [R U2 R' U' R U' R'] (U)</div>
 			</li>
 			<li class="cas">
 				<div class="nom">H H</div>
 				<div class="algo" data-set="2GLL">-</div>
 			</li>
 		</ul>
-		<h2>S/A + AUF + S/A</h2>
-		<h2>Sortie de paire + WV</h2>
-		<h2>Autres cas</h2>
-		___________________________________________________________
-		<h2>Algos appris</h2>
-		<ul>
-			<li>Samedi 26 Novembre 2016 : Sune U' Antisune (U) + sym</li>
-			<li>Dimanche 27 Novembre 2016 : Pur Pi</li>
-			<li>Lundi 28 Novembre 2016 : Pur Caméléon Adjacent</li>
-			<li>Mardi 29 Novembre 2016 : Pur H (purs terminés)</li>
-			<li>Mercredi 30 Novembre 2016 : H Sune</li>
-		</ul>
+		<h3>S/A + AUF + S/A [À Remplir]</h3>
+		<h3>Sortie de paire + WV [À Remplir]</h3>
+		<h3>Autres cas [À Remplir]</h3>
 		<script>liens();</script>
 	</section>
 	<script>footer();</script>

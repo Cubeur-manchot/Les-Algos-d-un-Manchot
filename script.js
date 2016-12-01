@@ -31,13 +31,11 @@ function footer()
 function liens()
 {
 	var cas = document.getElementsByClassName('cas');
-	var noms = document.getElementsByClassName('nom');
-	var algos = document.getElementsByClassName('algo');
-	for (var i=0; i < algos.length; i++)
+	for (var i=0; i < cas.length; i++)
 	{
-		var nom = noms[i].innerHTML;
-		var algo = algos[i].innerHTML;
-		var step = algos[i].getAttribute('data-set');
+		var nom = cas[i].getElementsByClassName('nom')[0].innerHTML;
+		var algo = cas[i].getElementsByClassName('algo')[0].innerHTML;
+		var step = cas[i].getElementsByClassName('algo')[0].getAttribute('data-set');
 		switch(step)
 		{
 			case 'PLL': case 'ELL': case '2GLL': default: step = 'pll'; break;

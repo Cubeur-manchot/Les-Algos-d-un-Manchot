@@ -74,8 +74,8 @@ footer
 
 /*____________ ALGOS ____________*/
 
-.liste_cas { text-align: center; }
-.cas
+.liste_cas_simple { text-align: center; }
+.liste_cas_simple .cas
 {
 	display: inline-block;
 	width: 160px;
@@ -86,7 +86,7 @@ footer
 	list-style: none;
 	vertical-align: top;
 }
-.cas .nom
+.liste_cas_simple .cas .nom
 {
 	display: inline-block;
 	width: 150px;
@@ -96,7 +96,7 @@ footer
 	text-align: center;
 	top: 50%
 }
-.cas img
+.liste_cas_simple .cas img
 {
 	display: inline-block;
 	width: 150px;
@@ -104,7 +104,7 @@ footer
 	margin: 5px 5px 0px 5px;
 	background-image: url("images/image_introuvable.png");
 }
-.cas .algo
+.liste_cas_simple .cas .algo
 {
 	display: inline-block;
 	margin: 0px;
@@ -116,7 +116,7 @@ footer
 	padding: 5px 0px 0px 32px;
 	text-align: left;
 }
-.cas .bouton_animation
+.liste_cas_simple .cas .bouton_animation
 {
 	display: inline-block;
 	position: absolute;
