@@ -30,22 +30,55 @@ function footer()
 
 function liens()
 {
-	var cas = document.getElementsByClassName('cas');
-	for (var i=0; i < cas.length; i++)
+	var listes_simples = document.getElementsByClassName('liste_cas_simple');
+	for (var h=0; h < listes_simples.length; h++)
 	{
-		var nom = cas[i].getElementsByClassName('nom')[0].innerHTML;
-		var algo = cas[i].getElementsByClassName('algo')[0].innerHTML;
-		var step = cas[i].getElementsByClassName('algo')[0].getAttribute('data-set');
-		switch(step)
+		var cas_simples = listes_simples[h].getElementsByClassName('cas');
+		for (var i=0; i < cas_simples.length; i++)
 		{
-			case 'PLL': case 'ELL': case '2GLL': default: step = 'pll'; break;
-			case 'OLL': step = 'oll'; break;
-			case 'WV': case 'MW': step = 'wv'; break;
+			var nom = cas_simples[i].getElementsByClassName('nom')[0].innerHTML;
+			var algo = cas_simples[i].getElementsByClassName('algo')[0].innerHTML;
+			var stage = cas_simples[i].getElementsByClassName('algo')[0].getAttribute('data-set');
+			var stage0 = stage;
+			switch(stage)
+			{
+				case 'PLL': case 'ELL': case '2GLL': default: stage = 'pll'; break;
+				case 'OLL': stage = 'oll'; break;
+				case 'WV': case 'MW': stage = 'wv'; break;
+			}
+			var html = '<div class="nom">' + nom + '</div>';
+			html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&case=' + algo + '&stage=' + stage + '"/>';
+			html += '<a href="http://alg.cubing.net/?alg=' + algo + '&setup=(' + algo + ')\'" class="bouton_animation" title="Animation"></a>';
+			html += '<div class="algo" data-set="' + stage0 + '">' + algo + '</div>';
+			cas_simples[i].innerHTML = html;
 		}
-		var html = '<div class="nom">' + nom + '</div>';
-		html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&case=' + algo + '&stage=' + step + '"/>';
-		html += '<a href="http://alg.cubing.net/?alg=' + algo + '&setup=(' + algo + ')\'" class="bouton_animation" title="Animation"></a>';
-		html += '<div class="algo" data-set="' + step + '">' + algo + '</div>';
-		cas[i].innerHTML = html;
+	}
+	var listes_multiples = document.getElementsByClassName('liste_cas_multiple');
+	for (var h=0; h < listes_multiples.length; h++)
+	{
+		var cas_multiples = listes_multiples[h].getElementsByClassName('cas');
+		for (var i=0; i < cas_multiples.length; i++)
+		{
+			var nom = cas_multiples[i].getElementsByClassName('nom')[0].innerHTML;
+			var algos = cas_multiples[i].getElementsByClassName('algo');
+			var stage = algos[0].getAttribute('data-set');
+			var stage2 = stage;
+			switch(stage)
+			{
+				case 'PLL': case 'ELL': case '2GLL': default: stage2 = 'pll'; break;
+				case 'OLL': stage2 = 'oll'; break;
+				case 'WV': case 'MW': stage2 = 'wv'; break;
+			}
+			var algo = algos[0].innerHTML;
+			var html = '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&case=' + algo + '&stage=' + stage + '"/>';
+			html += '<div class="nom">' + nom + '</div>';
+			for (var j=0; j < algos.length; j++)
+			{
+				algo = algos[j].innerHTML;
+				html += '<a href="http://alg.cubing.net/?alg=' + algo + '&setup=(' + algo + ')\'" class="bouton algo' + j + '" title="Animation"></a>';
+				html += '<div class="algo" data-set="' + stage2 + '">' + algo + '</div>';
+			}
+			cas_multiples[i].innerHTML = html;
+		}
 	}
 }

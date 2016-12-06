@@ -129,6 +129,65 @@ footer
 	background-color: #cfcfcf;
 }
 
+.liste_cas_multiple { text-align: center; }
+.liste_cas_multiple .cas
+{
+	display: inline-block;
+	width: 486px;
+	height: 150px;
+	margin: 5px;
+	border: 1px solid black;
+	padding: 0px;
+	list-style: none;
+	vertical-align: top;
+	text-align: left;
+}
+.liste_cas_multiple .cas .nom
+{
+	display: inline-block;
+	width: 326px;
+	height: 20px;
+	margin: 0px 0px 0px 150px;
+	padding: 5px 5px 3px 5px;
+	background-color: rgb(180,180,180);
+	text-align: center;
+	top: 50%
+}
+.liste_cas_multiple .cas img
+{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border-right: 1px solid black;
+	background-image: url("images/image_introuvable.png");
+}
+.liste_cas_multiple .cas .algo
+{
+	display: inline-block;
+	width: 300px;
+	height: 20px;
+	margin: 0px 0px -5px 0px;
+	padding: 5px 5px 0px 5px;
+	vertical-align: top;
+	border-bottom: 1px dotted grey;
+	font-size: 12px;
+	text-align: left;
+}
+.liste_cas_multiple .cas .bouton
+{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 0px 0px -5px 150px;
+	border: 1px solid black;
+	background-image: linear-gradient(#CFCFCF, #CFCFCF);
+	border-radius: 3px;
+}
+.liste_cas_multiple .cas .bouton:hover
+{
+	background-image: linear-gradient(#AFAFAF, #E5E5E5);
+}
+
 /*____________ TABLEAU DES RECORDS ____________*/
 
 table
