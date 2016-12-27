@@ -5,8 +5,8 @@ function nav()
 	html += '<li><a href="oll.html">OLL</a></li>';
 	html += '<li><a href="ell.html">ELL</a></li>';
 	html += '<li><a href="wv.html">WV</a></li>';
-	html += '<li><a href="page_inexistante.html">SV (X)</a></li>';
-	html += '<li><a href="mw.html">MW (en rédaction)</a></li>';
+	html += '<li><a href="mw.html">MW</a></li>';
+	html += '<li><a href="sv.html">SV (en rédaction)</a></li>';
 	html += '<li><a href="2gll.html">2GLL (en rédaction)</a></li>';
 	html += '<li><a href="page_inexistante.html">CLL (X)</a></li>';
 	html += '<li><a href="page_inexistante.html">PLL angles et AUFs (X)</a></li>';
