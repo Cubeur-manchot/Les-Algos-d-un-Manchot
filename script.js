@@ -6,9 +6,9 @@ function nav()
 	html += '<li><a href="ell.html">ELL</a></li>';
 	html += '<li><a href="wv.html">WV</a></li>';
 	html += '<li><a href="mw.html">MW</a></li>';
+	html += '<li><a href="pll_oh.html">PLL OH</a></li>';
 	html += '<li><a href="sv.html">SV (en rédaction)</a></li>';
 	html += '<li><a href="2gll.html">2GLL (en rédaction)</a></li>';
-	html += '<li><a href="pll_oh.html">PLL OH (en rédaction)</a></li>';
 	html += '<li><a href="page_inexistante.html">CLL (X)</a></li>';
 	html += '<li><a href="page_inexistante.html">PLL angles et AUFs (X)</a></li>';
 	html += '<li><a href="page_inexistante.html">PLL Big Cubes (X)</a></li>';
