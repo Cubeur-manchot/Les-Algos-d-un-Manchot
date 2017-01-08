@@ -4,14 +4,17 @@ function nav()
 	html += '<li><a href="pll.html">PLL</a></li>';
 	html += '<li><a href="oll.html">OLL</a></li>';
 	html += '<li><a href="ell.html">ELL</a></li>';
+	html += '<li><a href="6-9htm.html">6-9HTM 1LLL</a></li>';
 	html += '<li><a href="wv.html">WV</a></li>';
 	html += '<li><a href="mw.html">MW</a></li>';
 	html += '<li><a href="pll_oh.html">PLL OH</a></li>';
+	html += '<li><a href="pll_big_cubes.html">PLL Big Cubes</a></li>';
 	html += '<li><a href="sv.html">SV (en rédaction)</a></li>';
 	html += '<li><a href="2gll.html">2GLL (en rédaction)</a></li>';
 	html += '<li><a href="page_inexistante.html">CLL (X)</a></li>';
 	html += '<li><a href="page_inexistante.html">PLL angles et AUFs (X)</a></li>';
-	html += '<li><a href="page_inexistante.html">PLL Big Cubes (X)</a></li>';
+	html += '<li><a href="page_inexistante.html">22LL (X)</a></li>';
+	html += '<li><a href="page_inexistante.html">Tripod 1LLL (X)</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres</div><ul>';
 	html += '<li><a href="index.html">Accueil</a></li>';
