@@ -19,6 +19,7 @@ function nav()
 	html += '<section><div class="en-tete">Autres</div><ul>';
 	html += '<li><a href="index.html">Accueil</a></li>';
 	html += '<li><a href="algos_a_apprendre.html">Algos à apprendre</a></li>';
+	html += '<li><a href="365_en_365.html">365 en 365</a></li>';
 	html += '<li><a href="records.html">Records perso</a></li>';
 	html += '<li><a href="http://forum.francocube.com/ucp.php?i=pm&mode=compose&u=4736">M\'envoyer un MP</a></li>';
 	html += '<li><a href="https://drive.google.com/folderview?id=0B23xBbKROAE4fjlDSWNZSFAyUHJvSm1HelpUdHpsMzlMTVdQa0VqdldIbHc5RThnVVFvX2M&usp=sharing">Mon Drive</a></li>';
