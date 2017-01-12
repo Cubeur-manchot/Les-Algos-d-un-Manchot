@@ -11,10 +11,12 @@ function nav()
 	html += '<li><a href="pll_big_cubes.html">PLL Big Cubes</a></li>';
 	html += '<li><a href="sv.html">SV (en rédaction)</a></li>';
 	html += '<li><a href="2gll.html">2GLL (en rédaction)</a></li>';
+	html += '<li><a href="tripod_1lll.html">Tripod 1LLL (en rédaction)</a></li>';
 	html += '<li><a href="page_inexistante.html">CLL (X)</a></li>';
 	html += '<li><a href="page_inexistante.html">PLL angles et AUFs (X)</a></li>';
 	html += '<li><a href="page_inexistante.html">22LL (X)</a></li>';
-	html += '<li><a href="page_inexistante.html">Tripod 1LLL (X)</a></li>';
+	html += '<li><a href="page_inexistante.html">Line 1LLL (X)</a></li>';
+	html += '<li><a href="page_inexistante.html">Flipped Line 1LLL (X)</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres</div><ul>';
 	html += '<li><a href="index.html">Accueil</a></li>';
