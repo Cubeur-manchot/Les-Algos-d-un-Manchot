@@ -22,8 +22,20 @@
 				<div class="algo" data-set="1LLL">R U2' R' U' R U' R' L' U2 L U L' U L</div>
 			</li>
 			<li class="cas">
+				<div class="nom">Pur L</div>
+				<div class="algo" data-set="1LLL">R U2 R' L' U' L U' R U' R' L' U2 L</div>
+			</li>
+			<li class="cas">
 				<div class="nom">Pur T</div>
 				<div class="algo" data-set="1LLL">R U R' U R U2 R' U2 R' U' R U' R' U2 R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Pur Anti-Sune</div>
+				<div class="algo" data-set="1LLL">R U' R2 U' R U' R' U2 R' U2 R' U' R U' R2</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Pur Sune</div>
+				<div class="algo" data-set="1LLL">L' U L2' U L' U L U2 L U2 L U L' U L2'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Pur P Barre</div>
@@ -41,12 +53,107 @@
 				<div class="nom">Pur P Sans Barre sym</div>
 				<div class="algo" data-set="1LLL">F R U' R' U' R U R' F' R U R' U' R' F R2 U R' U' F'</div>
 			</li>
+			<li class="cas">
+				<div class="nom">Pur Poisson Barres</div>
+				<div class="algo" data-set="1LLL">r U2 r' U' M' U' R U r' U' R U' R' U2 r U2 r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Pur Poisson Sans Barres</div>
+				<div class="algo" data-set="1LLL">r U2 r' U2 R U R' U r U' R' U M U r U2 r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Pur Carré</div>
+				<div class="algo" data-set="1LLL">R' F R' F' R2 d' R U' R'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Pur Carré sym</div>
+				<div class="algo" data-set="1LLL">L F' L F L2' d L' U L</div>
+			</li>
 		</ul>
 		<h2>Les PLL</h2>
 		<ul class="liste_cas_simple">
 			<li class="cas">
+				<div class="nom">PLL Aa</div>
+				<div class="algo" data-set="1LLL">r U' L D2' L' U L D2' L2' (x')</div>
+			</li>
+			<li class="cas">
+				<div class="nom">PLL Ab</div>
+				<div class="algo" data-set="1LLL">l' U R' u2 L U' L' u2 R2 (x')</div>
+			</li>
+			<li class="cas">
 				<div class="nom">PLL Ja</div>
 				<div class="algo" data-set="1LLL">L' U' L F L' U' L U L F' L2' U L</div>
+			</li>
+			<li class="cas">
+				<div class="nom">PLL Jb</div>
+				<div class="algo" data-set="1LLL">R U R' F' R U R' U' R' F R2 U' R'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">PLL V</div>
+				<div class="algo" data-set="1LLL">R' U R' d' R' F' R2 U' R' U R' F R F</div>
+			</li>
+		</ul>
+		<h2>Les L3C</h2>
+		<ul class="liste_cas_simple">
+			<li class="cas">
+				<div class="nom">Niklas</div>
+				<div class="algo" data-set="1LLL">R U' L' U R' U' L (U)</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Niklas sym</div>
+				<div class="algo" data-set="1LLL">L' U R U' L U R' (U')</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C Commutateur Pur L</div>
+				<div class="algo" data-set="1LLL">l U R' D R U' R' D' (x)</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C Commutateur Pur sym</div>
+				<div class="algo" data-set="1LLL">r' U' L D' L' U L D (x)</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C Commutateur Pur L</div>
+				<div class="algo" data-set="1LLL">R2 D' R U' R' D R U R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C U A9</div>
+				<div class="algo" data-set="1LLL">R2' D' R U2 R' D R U2 R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C A9 U sym</div>
+				<div class="algo" data-set="1LLL">L2 D L' U2 L D' L' U2 L'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C A9 L</div>
+				<div class="algo" data-set="1LLL">R' U2 R' D' R U2 R' D R2</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C A9 L sym</div>
+				<div class="algo" data-set="1LLL">L U2 L D L' U2 L D' L2'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C A9 Opposé U</div>
+				<div class="algo" data-set="1LLL">x' R2 D2' R' U2 R D2' R' U2 l'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C A9 Opposé U sym</div>
+				<div class="algo" data-set="1LLL">r2' B2' r U2 r' B2' r U2 L (x)</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C A9 Opposé T</div>
+				<div class="algo" data-set="1LLL">l U2 R D2' R' U2 R D2' R2' (x)</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C A9 Opposé T sym</div>
+				<div class="algo" data-set="1LLL">r' U2 L' D2' L U2 L' D2' r2 (x')</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C Cyclic Shift</div>
+				<div class="algo" data-set="1LLL">R' F U2 F' R F R' U2 l D' (x)</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L3C Cyclic Shift sym</div>
+				<div class="algo" data-set="1LLL">F R' U2 R F' R' F U2 F' R</div>
 			</li>
 		</ul>
 		<h2>Les 22LL</h2>
@@ -68,6 +175,14 @@
 				<div class="algo" data-set="1LLL">L' U L U2 R' L' U L U' R</div>
 			</li>
 			<li class="cas">
+				<div class="nom">Ja 2EO</div>
+				<div class="algo" data-set="1LLL">x' R2 U2' R' U' R U2' L' U R' U' M'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Jb 2EO</div>
+				<div class="algo" data-set="1LLL">x' L2' U2 L U L' U2 R U' L U M'</div>
+			</li>
+			<li class="cas">
 				<div class="nom">Ja 2EO U</div>
 				<div class="algo" data-set="1LLL">x R2 U R' d' R' F' R2 U' R' U l' U R U2 (z')</div>
 			</li>
@@ -76,35 +191,27 @@
 				<div class="algo" data-set="1LLL">f R' U R' d' R' F' R2 U' R' U l' U R U R'</div>
 			</li>
 			<li class="cas">
-				<div class="nom">Jb 2EO</div>
-				<div class="algo" data-set="1LLL">x' L2' U2 L U L' U2 R U' L U M'</div>
+				<div class="nom">Ja 2EO T</div>
+				<div class="algo" data-set="1LLL">F' L2' U' L U L F' L2' U L U L' U' r U L U (x')</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Jb 2EO T</div>
+				<div class="algo" data-set="1LLL">F R2 U R' U' R' F R2 U' R' U' R U l' U' R' U' (x')</div>
+			</li>
+			<li class="cas">
+				<div class="nom">V 2 Barres</div>
+				<div class="algo" data-set="1LLL">l' U R U R' F' R U R' U' R' F R2 U' R' U2 l</div>
 			</li>
 		</ul>
-		<h2>Les autres cas en vrac</h2>
+		<h2>Les autres cas en vrac (reste 60 à trier)</h2>
 		<ul class="liste_cas_simple">
 			<li class="cas">
-				<div class="nom">Cas 18</div>
-				<div class="algo" data-set="1LLL">B' U R' U' R' F R2 U' R' U' R U R' F' R</div>
+				<div class="nom">9HTM Barre U</div>
+				<div class="algo" data-set="1LLL">R2' D' r U2 r' D R U2 R</div>
 			</li>
 			<li class="cas">
-				<div class="nom">Cas 19</div>
-				<div class="algo" data-set="1LLL">F R2 U R' U' R' F R2 U' R' U' R U R' F' R' F'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 20</div>
-				<div class="algo" data-set="1LLL">R U R' F' R U R' U' R' F R2 U' R'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 21</div>
-				<div class="algo" data-set="1LLL">l R U R' F' R U R' U' R' F R2 U' R' U' l'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 22</div>
-				<div class="algo" data-set="1LLL">R2 D' r U2 r' D R U2 R</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 23</div>
-				<div class="algo" data-set="1LLL">R2 D r' U2 r D' R' U2 R'</div>
+				<div class="nom">9HTM Barre U sym</div>
+				<div class="algo" data-set="1LLL">L2 D l' U2 l D' L' U2 L'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 24</div>
@@ -131,20 +238,8 @@
 				<div class="algo" data-set="1LLL">F U' R U R2 D' R U' R' D R U2 F'</div>
 			</li>
 			<li class="cas">
-				<div class="nom">Cas 30</div>
-				<div class="algo" data-set="1LLL">x R' U R' u2 L U' L' u2 R2 x'</div>
-			</li>
-			<li class="cas">
 				<div class="nom">Cas 31</div>
 				<div class="algo" data-set="1LLL">R' D' r U r' D R U2 r' D' r U r' D r</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 32</div>
-				<div class="algo" data-set="1LLL">R2 D R' U2 R D' R' U2 R'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 33</div>
-				<div class="algo" data-set="1LLL">R2 D' R U2 R' D R U2 R</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 34</div>
@@ -155,14 +250,6 @@
 				<div class="algo" data-set="1LLL">F R U' R' U' R U R2 F' R U R U' R'</div>
 			</li>
 			<li class="cas">
-				<div class="nom">Cas 36</div>
-				<div class="algo" data-set="1LLL">R' U' R' D' R U R' D R2</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 37</div>
-				<div class="algo" data-set="1LLL">R U R D R' U' R D' R2</div>
-			</li>
-			<li class="cas">
 				<div class="nom">Cas 38</div>
 				<div class="algo" data-set="1LLL">R' U' R U R' U R U R U R' U' R' U' F R F'</div>
 			</li>
@@ -171,20 +258,8 @@
 				<div class="algo" data-set="1LLL">R U R2 F' U' F U R U' F' U2 F R U' R'</div>
 			</li>
 			<li class="cas">
-				<div class="nom">Cas 40</div>
-				<div class="algo" data-set="1LLL">x R2 D2 R U R' D2 R U' R x'</div>
-			</li>
-			<li class="cas">
 				<div class="nom">Cas 41</div>
 				<div class="algo" data-set="1LLL">r' D' r U' r' D r U2 R' D' r U' r' D R</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 42</div>
-				<div class="algo" data-set="1LLL">x' R2 D2 R' U2 R D2 R' U2 R' x</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 43</div>
-				<div class="algo" data-set="1LLL">x R2 D2 R U2 R' D2 R U2 R x'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 44</div>
@@ -193,14 +268,6 @@
 			<li class="cas">
 				<div class="nom">Cas 45</div>
 				<div class="algo" data-set="1LLL">R' U r' D' r U r' D r U' R</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 46</div>
-				<div class="algo" data-set="1LLL">x R' U2 R' D2 R U2 R' D2 R2 x'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 47</div>
-				<div class="algo" data-set="1LLL">R U2 R D2 R' U2 R D2 R2</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 48</div>
@@ -213,10 +280,6 @@
 			<li class="cas">
 				<div class="nom">Cas 50</div>
 				<div class="algo" data-set="1LLL">F' U2 F U R U R' U R' F R F' R U R' U' R U R' U'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 51</div>
-				<div class="algo" data-set="1LLL">R' U R' U' y R' F' R2 U' R' U R' F R F</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 52</div>
@@ -249,38 +312,6 @@
 			<li class="cas">
 				<div class="nom">Cas 59</div>
 				<div class="algo" data-set="1LLL">R' U R U R' U F' r' F' r U' r' F r U F R</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 60</div>
-				<div class="algo" data-set="1LLL">R U2 R' U2 R' U' R U R U' R' U2 R' U2 R</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 61</div>
-				<div class="algo" data-set="1LLL">R U2 R' U2 R' U' R U R U' R' U2 R' U2 R</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 62</div>
-				<div class="algo" data-set="1LLL">r U2 r' U' M' U' R U r' U' R U' R' U2 r U2</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 63</div>
-				<div class="algo" data-set="1LLL">r' U2 r U2 R' U' R U' r' U R U' M' U' r' U2 (x)</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 64</div>
-				<div class="algo" data-set="1LLL">R' U R2 U R' U R U2 R U2 R U R' U R2</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 65</div>
-				<div class="algo" data-set="1LLL">R U' R2 U' R U' R' U2 R' U2 R' U' R U' R</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 66</div>
-				<div class="algo" data-set="1LLL">R' U' R U' y x' R2 U' R' U l'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 67</div>
-				<div class="algo" data-set="1LLL">R U R' U y' x R2 U R U' l</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 68</div>
@@ -347,28 +378,12 @@
 				<div class="algo" data-set="1LLL">r' D R2 U R' U' R U' R2 D' r</div>
 			</li>
 			<li class="cas">
-				<div class="nom">Cas 84</div>
-				<div class="algo" data-set="1LLL">R' U2 R' D' R U2 R' D R2</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 85</div>
-				<div class="algo" data-set="1LLL">R2 D R' U R D' R' U' R'</div>
-			</li>
-			<li class="cas">
 				<div class="nom">Cas 86</div>
 				<div class="algo" data-set="1LLL">R U R' U' R' F R2 U' R' U R U R' F'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 87</div>
 				<div class="algo" data-set="1LLL">F U2 R' D' R U R' D R2 U' R' U F'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 88</div>
-				<div class="algo" data-set="1LLL">R' D R2 D' R2 U R2 D R2 D' R2 U' R'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 89</div>
-				<div class="algo" data-set="1LLL">R U R2 D R2 D' R2 U' R2 D R2 D' R</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 90</div>
@@ -379,28 +394,12 @@
 				<div class="algo" data-set="1LLL">F U' R2 D R' U' R D' R2 U F'</div>
 			</li>
 			<li class="cas">
-				<div class="nom">Cas 92</div>
-				<div class="algo" data-set="1LLL">R U2 R D R' U2 R D' R2</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 93</div>
-				<div class="algo" data-set="1LLL">R2 D' R U' R' D R U R</div>
-			</li>
-			<li class="cas">
 				<div class="nom">Cas 94</div>
 				<div class="algo" data-set="1LLL">r' F' r U r U' r2 F r U' r' F' r F</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 95</div>
-				<div class="algo" data-set="1LLL">R' U' R' F R F' U R U' F R U' R' U R U R'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 96</div>
-				<div class="algo" data-set="1LLL">R U' L' U R' U' L</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 97</div>
-				<div class="algo" data-set="1LLL">R' U L U' R U L'</div>
+				<div class="algo" data-set="1LLL">R' U' R' F R F' U R U' F R U' R' U R U R' F'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 98</div>
@@ -417,10 +416,6 @@
 			<li class="cas">
 				<div class="nom">Cas 102</div>
 				<div class="algo" data-set="1LLL">F R U R2 F R F' R U' R' F'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">Cas 103</div>
-				<div class="algo" data-set="1LLL">l' U R U R' F' R U R' U' R' F R2 U' R' U2 l</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Cas 104</div>
