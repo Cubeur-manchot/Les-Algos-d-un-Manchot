@@ -2,7 +2,7 @@
 
 nav
 {
-	position: fixed;
+	position: absolute;
 	display: inline-block;
 	width: 200px;
 	left: 15px;
@@ -78,7 +78,7 @@ footer
 .liste_cas_simple .cas
 {
 	display: inline-block;
-	width: 160px;
+	width: 150px;
 	height: 238px;
 	margin: 5px;
 	border: 1px solid black;
@@ -91,9 +91,10 @@ footer
 	display: inline-block;
 	width: 150px;
 	height: 38px;
-	margin: 5px 5px 0px 5px;
+	margin: 0px 0px 0px 0px;
 	background-color: grey;
 	text-align: center;
+	border-bottom: 1px solid black;
 	top: 50%
 }
 .liste_cas_simple .cas img
@@ -101,15 +102,14 @@ footer
 	display: inline-block;
 	width: 150px;
 	height: 150px;
-	margin: 5px 5px 0px 5px;
+	margin: 0px 0px 0px 0px;
 	background-image: url("images/image_introuvable.png");
 }
 .liste_cas_simple .cas .algo
 {
 	display: inline-block;
-	margin: 0px;
-	width: 128px;
-	margin-bottom: 0px;
+	margin: -5px 0px 0px 0px;
+	width: 118px;
 	border: none;
 	border-top: 1px solid black;
 	font-size: 12px;
@@ -122,8 +122,8 @@ footer
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	margin-top: 165px;
-	margin-left: -154px;
+	margin-top: 153px;
+	margin-left: -144px;
 	border: 1px dotted grey;
 	border-radius: 3px;
 	background-color: #cfcfcf;
