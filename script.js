@@ -27,6 +27,7 @@ function nav()
 	html += '<li><a href="records.html">Records perso</a></li>';
 	html += '<li><a href="http://forum.francocube.com/ucp.php?i=pm&mode=compose&u=4736">M\'envoyer un MP</a></li>';
 	html += '<li><a href="https://drive.google.com/folderview?id=0B23xBbKROAE4fjlDSWNZSFAyUHJvSm1HelpUdHpsMzlMTVdQa0VqdldIbHc5RThnVVFvX2M&usp=sharing">Mon Drive</a></li>';
+	html += '<li><a href="2_sides_pll.html">Reconnaissance des PLL</a></li>';
 	html += '</ul></section></nav>';
 	document.write(html);
 }
