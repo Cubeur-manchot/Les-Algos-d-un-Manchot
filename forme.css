@@ -206,7 +206,6 @@ td
 	border: 1px solid black;
 	background-color: #F3F3F3;
 	padding: 1px 5px 1px 5px;
-	text-align: center;
 }
 th
 {
@@ -214,4 +213,13 @@ th
 	background-color: #FFA000;
 	height: 20px;
 	text-align: center;
+}
+#records td {
+	text-align: center;
+}
+#algos_appris td {
+	text-align: left;
+}
+#algos_appris ul {
+	margin-left: -10px;
 }
