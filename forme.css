@@ -217,6 +217,12 @@ th
 #records td {
 	text-align: center;
 }
+#records .unr {
+	background-color: rgb(150,150,255);
+}
+#records .uwr {
+	background-color: rgb(150,50,255);
+}
 #algos_appris td {
 	text-align: left;
 }
