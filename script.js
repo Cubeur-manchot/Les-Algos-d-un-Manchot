@@ -21,6 +21,11 @@ function nav()
 	html += '<li><a href="sv.html">(en rédaction) SV</a></li>';
 	html += '<li><a href="page_inexistante.html">(indisponible) CLS</a></li>';
 	html += '</ul></section>';
+	html += '<section><div class="en-tete">Autres Puzzles</div><ul>';
+	html += '<li><a href="l2e.html">L2E du 5x5</a></li>';
+	html += '<li><a href="page_inexistante.html">CLS du Kilominx (indisponible)</a></li>';
+	html += '<li><a href="page_inexistante.html">L4C Skewb Diamond (indisponible)</a></li>';
+	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres pages du site</div><ul>';
 	html += '<li><a href="index.html">Accueil</a></li>';
 	html += '<li><a href="365_en_365.html">365 en 365</a></li>';
