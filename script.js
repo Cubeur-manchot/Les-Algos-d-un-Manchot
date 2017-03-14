@@ -9,22 +9,16 @@ function nav()
 	html += '<li><a href="6-9htm.html">6-9HTM 1LLL</a></li>';
 	html += '<li><a href="2gll.html">(en rédaction) 2GLL</a></li>';
 	html += '<li><a href="tripod_1lll.html">(en rédaction) Tripod 1LLL</a></li>';
-	html += '<li><a href="page_inexistante.html">(indisponible) CLL</a></li>';
-	html += '<li><a href="page_inexistante.html">(indisponible) PLL angles et AUFs</a></li>';
-	html += '<li><a href="page_inexistante.html">(indisponible) 22LL</a></li>';
-	html += '<li><a href="page_inexistante.html">(indisponible) Line 1LLL</a></li>';
-	html += '<li><a href="page_inexistante.html">(indisponible) Flipped Line 1LLL</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Les algos de LSLL</div><ul>';
 	html += '<li><a href="wv.html">WV</a></li>';
 	html += '<li><a href="mw.html">MW</a></li>';
 	html += '<li><a href="sv.html">(en rédaction) SV</a></li>';
-	html += '<li><a href="page_inexistante.html">(indisponible) CLS</a></li>';
+	html += '<li><a href="els.html">(en rédaction) ELS</a></li>';
+	html += '<li><a href="cls.html">(en rédaction) CLS</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres Puzzles</div><ul>';
 	html += '<li><a href="l2e.html">L2E du 5x5</a></li>';
-	html += '<li><a href="page_inexistante.html">CLS du Kilominx (indisponible)</a></li>';
-	html += '<li><a href="page_inexistante.html">L4C Skewb Diamond (indisponible)</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres pages du site</div><ul>';
 	html += '<li><a href="index.html">Accueil</a></li>';
@@ -42,31 +36,34 @@ function footer()
 	document.write('<footer>Ce site est uniquement un endroit où j\'entrepose mes algos de cube, et aura uniquement ce but.<br/>De ce fait il ne remplace en aucun cas La Tête Dans Le Cube qui est un site visant à centraliser toutes les connaissances sur le cube.</footer>');
 }
 
+function step(set) {
+	var stage = '';
+	switch(set)
+	{
+		case 'PLL': case 'ELL': case '2GLL': default: stage = 'pll'; break;
+		case 'OLL': stage = 'oll'; break;
+		case 'WV': case 'SV': case 'MW': case 'CLS': stage = 'wv'; break;
+		case 'EOLS': stage = 'oels'; break;
+	}
+	return (stage);
+}
+
 function liens()
 {
 	var listes_simples = document.getElementsByClassName('liste_cas_simple');
 	for (var h=0; h < listes_simples.length; h++)
 	{
-		var liste_simples = listes_simples[h];
-		var taille = liste_simples.getAttribute('data-taille');
-		var cas_simples = liste_simples.getElementsByClassName('cas');
+		var liste_simple = listes_simples[h];
+		var taille = liste_simple.getAttribute('data-taille');
+		var set = liste_simple.getAttribute('data-set');
+		var stage = step(set);
+		var cas_simples = liste_simple.getElementsByClassName('cas');
 		for (var i=0; i < cas_simples.length; i++)
 		{
-			var nom = cas_simples[i].getElementsByClassName('nom')[0].innerHTML;
-			var algo = cas_simples[i].getElementsByClassName('algo')[0].innerHTML;
-			var stage = cas_simples[i].getElementsByClassName('algo')[0].getAttribute('data-set');
-			var stage0 = stage;
-			switch(stage)
-			{
-				case 'PLL': case 'ELL': case '2GLL': default: stage = 'pll'; break;
-				case 'OLL': stage = 'oll'; break;
-				case 'WV': case 'MW': stage = 'wv'; break;
-			}
-			var html = '<div class="nom">' + nom + '</div>';
-			html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&pzl=' + taille + '&case=' + algo + '&stage=' + stage + '"/>';
-			html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=(' + algo + ')\'" class="bouton_animation" title="Animation"></a>';
-			html += '<div class="algo" data-set="' + stage0 + '">' + algo + '</div>';
-			cas_simples[i].innerHTML = html;
+			var cas_simple = cas_simples[i]
+			var nom = cas_simple.getElementsByClassName('nom')[0].innerHTML;
+			var algo = cas_simple.getElementsByClassName('algo')[0].innerHTML;
+			cas_simples[i].innerHTML = html_algo_simple(nom,algo,set,taille,stage);
 		}
 	}
 	var listes_multiples = document.getElementsByClassName('liste_cas_multiple');
@@ -77,24 +74,30 @@ function liens()
 		{
 			var nom = cas_multiples[i].getElementsByClassName('nom')[0].innerHTML;
 			var algos = cas_multiples[i].getElementsByClassName('algo');
-			var stage = algos[0].getAttribute('data-set');
-			var stage2 = stage;
-			switch(stage)
-			{
-				case 'PLL': case 'ELL': case '2GLL': default: stage2 = 'pll'; break;
-				case 'OLL': stage2 = 'oll'; break;
-				case 'WV': case 'MW': stage2 = 'wv'; break;
-			}
+			var set = algos[0].getAttribute('data-set');
+			var stage = step(set);
 			var algo = algos[0].innerHTML;
-			var html = '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&case=' + algo + '&stage=' + stage + '"/>';
-			html += '<div class="nom">' + nom + '</div>';
-			for (var j=0; j < algos.length; j++)
-			{
-				algo = algos[j].innerHTML;
-				html += '<a href="http://alg.cubing.net/?alg=' + algo + '&setup=(' + algo + ')\'" class="bouton algo' + j + '" title="Animation"></a>';
-				html += '<div class="algo" data-set="' + stage2 + '">' + algo + '</div>';
-			}
-			cas_multiples[i].innerHTML = html;
+			cas_multiples[i].innerHTML = html_algo_multiple(nom,algos,set,taille,stage);
 		}
 	}
+}
+
+function html_algo_simple(nom,algo,set,taille,stage) {
+	var html = '<div class="nom">' + nom + '</div>';
+	html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&pzl=' + taille + '&case=' + algo + '&stage=' + stage + '"/>';
+	html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=(' + algo + ')\'" class="bouton_animation" title="Animation"></a>';
+	html += '<div class="algo" data-set="' + set + '">' + algo + '</div>';
+	return (html);
+}
+
+function html_algo_multiple(nom,algos,set,taille,stage) {
+	var html = '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&pzl=' + taille + '&case=' + algos[0].innerHTML + '&stage=' + stage + '"/>';
+	html += '<div class="nom">' + nom + '</div>';
+	for (var j=0; j < algos.length; j++)
+	{
+		var algo = algos[j].innerHTML;
+		html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=(' + algo + ')\'" class="bouton_animation" title="Animation"></a>';
+		html += '<div class="algo" data-set="' + set + '">' + algo + '</div>';
+	}
+	return (html);
 }
