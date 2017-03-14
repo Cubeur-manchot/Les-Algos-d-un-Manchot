@@ -13,7 +13,7 @@ function nav()
 	html += '<section><div class="en-tete">Les algos de LSLL</div><ul>';
 	html += '<li><a href="wv.html">WV</a></li>';
 	html += '<li><a href="mw.html">MW</a></li>';
-	html += '<li><a href="sv.html">(en rédaction) SV</a></li>';
+	html += '<li><a href="sv.html">SV</a></li>';
 	html += '<li><a href="els.html">(en rédaction) ELS</a></li>';
 	html += '<li><a href="cls.html">(en rédaction) CLS</a></li>';
 	html += '</ul></section>';
