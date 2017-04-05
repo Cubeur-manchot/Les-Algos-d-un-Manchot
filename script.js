@@ -14,11 +14,12 @@ function nav()
 	html += '<li><a href="wv.html">WV</a></li>';
 	html += '<li><a href="mw.html">MW</a></li>';
 	html += '<li><a href="sv.html">SV</a></li>';
-	html += '<li><a href="els.html">(en rédaction) ELS</a></li>';
+	html += '<li><a href="els.html">ELS</a></li>';
 	html += '<li><a href="cls.html">(en rédaction) CLS</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres Puzzles</div><ul>';
 	html += '<li><a href="l2e.html">L2E du 5x5</a></li>';
+	html += '<li><a href="l2e.html">(en rédaction) EG du 2x2</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres pages du site</div><ul>';
 	html += '<li><a href="index.html">Accueil</a></li>';
@@ -43,7 +44,7 @@ function step(set) {
 		case 'PLL': case 'ELL': case '2GLL': default: stage = 'pll'; break;
 		case 'OLL': stage = 'oll'; break;
 		case 'WV': case 'SV': case 'MW': case 'CLS': stage = 'wv'; break;
-		case 'EOLS': stage = 'oels'; break;
+		case 'ELS': stage = 'els'; break;
 	}
 	return (stage);
 }
