@@ -19,7 +19,7 @@ function nav()
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres Puzzles</div><ul>';
 	html += '<li><a href="l2e.html">L2E du 5x5</a></li>';
-	html += '<li><a href="l2e.html">(en rédaction) EG du 2x2</a></li>';
+	html += '<li><a href="eg.html">(en rédaction) EG du 2x2</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres pages du site</div><ul>';
 	html += '<li><a href="index.html">Accueil</a></li>';
