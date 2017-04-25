@@ -1,33 +1,34 @@
 function nav()
 {
-	var html = '<nav><section><div class="en-tete">Les algos de LL</div><ul>';
+	var html = '<nav><section><div class="en-tete">Algos de LL</div><ul>';
 	html += '<li><a href="oll.html">OLL</a></li>';
 	html += '<li><a href="pll.html">PLL</a></li>';
 	html += '<li><a href="pll_oh.html">PLL OH</a></li>';
 	html += '<li><a href="pll_big_cubes.html">PLL Big Cubes</a></li>';
 	html += '<li><a href="ell.html">ELL</a></li>';
 	html += '<li><a href="6-9htm.html">6-9HTM 1LLL</a></li>';
-	html += '<li><a href="2gll.html">(en rédaction) 2GLL</a></li>';
-	html += '<li><a href="tripod_1lll.html">(en rédaction) Tripod 1LLL</a></li>';
 	html += '</ul></section>';
-	html += '<section><div class="en-tete">Les algos de LSLL</div><ul>';
+	html += '<section><div class="en-tete">Algos de LSLL</div><ul>';
 	html += '<li><a href="wv.html">WV</a></li>';
 	html += '<li><a href="mw.html">MW</a></li>';
 	html += '<li><a href="sv.html">SV</a></li>';
 	html += '<li><a href="els.html">ELS</a></li>';
-	html += '<li><a href="cls.html">(en rédaction) CLS</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres Puzzles</div><ul>';
 	html += '<li><a href="l2e.html">L2E du 5x5</a></li>';
-	html += '<li><a href="eg.html">(en rédaction) EG du 2x2</a></li>';
 	html += '</ul></section>';
-	html += '<section><div class="en-tete">Autres pages du site</div><ul>';
+	html += '<section><div class="en-tete">En rédaction</div><ul>';
+	html += '<li><a href="2gll.html">2GLL</a></li>';
+	html += '<li><a href="tripod_1lll.html">Tripod 1LLL</a></li>';
+	html += '<li><a href="cls.html">CLS</a></li>';
+	html += '<li><a href="eg.html">EG du 2x2</a></li>';
+	html += '</ul></section>';
+	html += '<section><div class="en-tete">Autres pages</div><ul>';
 	html += '<li><a href="index.html">Accueil</a></li>';
 	html += '<li><a href="365_en_365.html">365 en 365</a></li>';
 	html += '<li><a href="records.html">Records perso</a></li>';
 	html += '<li><a href="http://forum.francocube.com/ucp.php?i=pm&mode=compose&u=4736">M\'envoyer un MP</a></li>';
 	html += '<li><a href="https://drive.google.com/folderview?id=0B23xBbKROAE4fjlDSWNZSFAyUHJvSm1HelpUdHpsMzlMTVdQa0VqdldIbHc5RThnVVFvX2M&usp=sharing">Mon Drive</a></li>';
-	html += '<li><a href="2_sides_pll.html">Reconnaissance des PLL</a></li>';
 	html += '</ul></section></nav>';
 	document.write(html);
 }
