@@ -4,7 +4,6 @@ function nav()
 	html += '<li><a href="oll.html">OLL</a></li>';
 	html += '<li><a href="pll.html">PLL</a></li>';
 	html += '<li><a href="pll_oh.html">PLL OH</a></li>';
-	html += '<li><a href="pll_big_cubes.html">PLL Big Cubes</a></li>';
 	html += '<li><a href="ell.html">ELL</a></li>';
 	html += '<li><a href="6-9htm.html">6-9HTM 1LLL</a></li>';
 	html += '</ul></section>';
@@ -15,6 +14,7 @@ function nav()
 	html += '<li><a href="els.html">ELS</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres Puzzles</div><ul>';
+	html += '<li><a href="pll_big_cubes.html">PLL Big Cubes</a></li>';
 	html += '<li><a href="l2e.html">L2E du 5x5</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">En rédaction</div><ul>';
@@ -35,7 +35,7 @@ function nav()
 
 function footer()
 {
-	document.write('<footer>Ce site est uniquement un endroit où j\'entrepose mes algos de cube, et aura uniquement ce but.<br/>De ce fait il ne remplace en aucun cas La Tête Dans Le Cube qui est un site visant à centraliser toutes les connaissances sur le cube.</footer>');
+	document.write('<footer>Ce site est l\'endroit où j\'entrepose mes algos de cube, dans le but que ça serve aux autres cubeurs, n\'hésitez donc pas à piocher des algos dedans !<br/>S\'il y a un problème quelconque, envoyez-moi un MP sur le forum Francocube :)</footer>');
 }
 
 function step(set) {
