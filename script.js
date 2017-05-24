@@ -12,6 +12,7 @@ function nav()
 	html += '<li><a href="mw.html">MW</a></li>';
 	html += '<li><a href="sv.html">SV</a></li>';
 	html += '<li><a href="els.html">ELS</a></li>';
+	html += '<li><a href="3rd_slot_eo.html">3rd Slot EO</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Autres Puzzles</div><ul>';
 	html += '<li><a href="pll_big_cubes.html">PLL Big Cubes</a></li>';
@@ -46,6 +47,7 @@ function step(set) {
 		case 'OLL': stage = 'oll'; break;
 		case 'WV': case 'SV': case 'MW': case 'CLS': stage = 'wv'; break;
 		case 'ELS': stage = 'els'; break;
+		case '3SEO' : stage = 'vh'; break;
 	}
 	return (stage);
 }
