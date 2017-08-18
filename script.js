@@ -6,6 +6,7 @@ function nav()
 	html += '<li><a href="pll_oh.html">PLL OH</a></li>';
 	html += '<li><a href="ell.html">ELL</a></li>';
 	html += '<li><a href="6-9htm.html">6-9HTM 1LLL</a></li>';
+	html += '<li><a href="parity_pll.html">OPPLL</a></li>';
 	html += '</ul></section>';
 	html += '<section><div class="en-tete">Algos de LSLL</div><ul>';
 	html += '<li><a href="wv.html">WV</a></li>';
@@ -89,7 +90,7 @@ function liens()
 function html_algo_simple(nom,algo,set,taille,stage) {
 	var html = '<div class="nom">' + nom + '</div>';
 	html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&pzl=' + taille + '&case=' + algo + '&stage=' + stage + '"/>';
-	html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=(' + algo + ')\'" class="bouton_animation" title="Animation"></a>';
+	html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=(' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank"></a>';
 	html += '<div class="algo" data-set="' + set + '">' + algo + '</div>';
 	return (html);
 }
