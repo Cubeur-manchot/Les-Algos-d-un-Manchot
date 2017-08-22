@@ -11,9 +11,15 @@
 	<script>nav();</script>
 	<section id="corps_de_page">
 		<h1>Les L2E d'un Manchot</h1>
-		<p>Note d'un Manchot : Les cas sont divisés en 2 catégories :<br/>
-		- 10 cas qui affectent uniquement le LL. En prenant uniquement la tranche interne pour Rw et Lw, les algos affectent même uniquement les pièces non résolues (et préservent la PLL, ça peut être pratique selon le cas).<br/>
-		- 5 cas qui sont en fait des [Slice][Retournement][Slice']. Pour que les algos de ces cas préservent le reste du cube, il faut utiliser des commutateurs (le slice est le même et le retournement est du type R U' R' F' U2 F, à symétriser et inverser dans tous les sens, des commutateurs quoi). Si l'utilisation des commutateurs n'est pas claire je peux rajouter les algos, demandez moi par MP.</p>
+		<h2>Algos qui ne préservent rien</h2>
+		<p>Ces algos sont ceux à utiliser en réduction classique.</p>
+		{Liste algos réduction classique à ajouter}
+		<br/>
+		<h2>Algos qui n'affectent que le LL</h2>
+		<p>Ces algos préservent tout sauf le LL, mais sont moins rapides que ceux qui ne préservent rien. Ils sont utilisables pour des méthodes de résolution directe comme K5 ou Manchot.</p>
+		{liste algos LL à ajouter}
+		<br/>
+		<h2>L'ancienne liste (à dispatcher) :</h2>
 		<ul class="liste_cas_simple" data-taille="5" data-set="L2E">
 			<li class="cas">
 				<div class="nom">3-Cycle Proche</div>
