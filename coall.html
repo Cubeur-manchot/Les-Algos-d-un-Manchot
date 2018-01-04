@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Les COALL d'un Manchot</title>
+		<link href="images/avatar.png" type="img/ico" rel="icon"/>
+		<link href="forme.css" type="text/css" rel="stylesheet" media="all">
+		<script src="script.js" type="text/javascript"></script>
+	</head>
+	<body>
+	<script>nav();</script>
+	<section id="corps_de_page">
+		<h1>Les COALL d'un Manchot</h1>
+		<p>En cours de construction</p>
+		<p>Pour rappel :</p>
+		<ul>
+			<li>CP = Corner Permutation</li>
+			<li>OLL 0 : coins et arêtes bien orientés</li>
+			<li>OLL 20 : coins bien orientés, arêtes mal orientées</li>
+			<li>OLL 28 : coins bien orientés, 2 arêtes adjacentes mal orientées</li>
+			<li>OLL 57 : coins bien orientés, 2 arêtes opposées mal orientées</li>
+		</ul>
+		<h2>CP résolue (ELL)</h2>
+		<h3>CP résolue OLL 0 (EPLL)</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom">EPLL H</div>
+				<div class="algo">M2' U M2' U2 M2' U M2'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">EPLL Ua</div>
+				<div class="algo">M2' U M U2 M' U M2'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">EPLL Ub</div>
+				<div class="algo">M2' U' M U2 M' U' M2</div>
+			</li>
+			<li class="cas">
+				<div class="nom">EPLL Z</div>
+				<div class="algo">M2' U M2' U M' U2 M2' U2 M'</div>
+			</li>
+		</ul>
+		<h3>CP résolue OLL 20 (EPLL EF)</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom">Cas pur OLL 20</div>
+				<div class="algo">M' U2 M U2 M' U M U2 M' U2 M</div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL H OLL 20</div>
+				<div class="algo">M U R U R' U' M2' U R U' r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Ua OLL 20</div>
+				<div class="algo">R U R' U M' U' R U' r' U2 M' U' M</div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Ub OLL 20</div>
+				<div class="algo">L' U' L U' M' U L' U l U2 M' U M</div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Z OLL 20</div>
+				<div class="algo">R2' F R F' M2' U M2' U2 M2' U M2' F R' F' R2</div>
+			</li>
+		</ul>
+		<h3>CP résolue OLL 28</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom">Cas pur OLL 28</div>
+				<div class="algo">r U R' U' r' U2 R U R U' R2' U2 R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL H OLL 28</div>
+				<div class="algo">L' U2 L U F R U2 R' U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Ua gentille 1 OLL 28</div>
+				<div class="algo">l' U' L U M U' L' U L</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Ub gentille 1 OLL 28</div>
+				<div class="algo">r U R' U' M U R U' R'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Ua gentille 1 OLL 28</div>
+				<div class="algo">M' U M U2 M' U M</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Ub gentille 2 OLL 28</div>
+				<div class="algo">M' U' M U2' M' U' M</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Ua moyenne OLL 28</div>
+				<div class="algo"></div>
+			</li>
+			<li class="cas">
+				<div class="nom">Ub moyenne OLL 28</div>
+				<div class="algo"></div>
+			</li>
+			<li class="cas">
+				<div class="nom">Ua méchante OLL 28</div>
+				<div class="algo"></div>
+			</li>
+			<li class="cas">
+				<div class="nom">Ub méchante OLL 28</div>
+				<div class="algo"></div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Z séparée OLL 28</div>
+				<div class="algo">F R U R' U' F2 L' U' L U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Z croisée OLL 28</div>
+				<div class="algo">F R U R' U' F' R' U' R' F R F' U R</div>
+			</li>
+		</ul>
+		<h3>CP résolue OLL 57</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom">Cas pur OLL 57</div>
+				<div class="algo">M' U M' U M' U2 M U M U M</div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL H OLL 57</div>
+				<div class="algo">R2' F R U R U' R2' F' R U R U R' U2 R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Ua gentille</div>
+				<div class="algo">R U R' U' M' U R U' r'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Ub gentille</div>
+				<div class="algo">L' U' L U M' U' L' U l</div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Ua méchante</div>
+				<div class="algo"></div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Ub méchante</div>
+				<div class="algo"></div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Z droite OLL 57</div>
+				<div class="algo"></div>
+			</li>
+			<li class="cas">
+				<div class="nom">ELL Z gauche OLL 57</div>
+				<div class="algo"></div>
+			</li>
+		</ul>
+		<h2>CP adjacente</h2>
+		<h3>CP adjacente OLL 0 (PLL adj)</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom"></div>
+				<div class="algo"></div>
+			</li>
+		</ul>
+		<h3>CP adjacente OLL 20 (PLL adj EF)</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom"></div>
+				<div class="algo"></div>
+			</li>
+		</ul>
+		<h3>CP adjacente OLL 28</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom"></div>
+				<div class="algo"></div>
+			</li>
+		</ul>
+		<h3>CP adjacente OLL 57</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom"></div>
+				<div class="algo"></div>
+			</li>
+		</ul>
+		<h2>CP diagonale</h2>
+		<h3>CP diagonale OLL 0 (PLL diag)</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom"></div>
+				<div class="algo"></div>
+			</li>
+		</ul>
+		<h3>CP diagonale OLL 20 (PLL diag EF)</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom"></div>
+				<div class="algo"></div>
+			</li>
+		</ul>
+		<h3>CP diagonale OLL 28</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom"></div>
+				<div class="algo"></div>
+			</li>
+		</ul>
+		<h3>CP diagonale OLL 57</h3>
+		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom"></div>
+				<div class="algo"></div>
+			</li>
+		</ul>
+		<script>liens();</script>
+	</section>
+	<script>footer();</script>
+	</body>
+</html>
