@@ -11,12 +11,24 @@
 	<script>nav();</script>
 	<section id="corps_de_page">
 		<h1>Les EG d'un Manchot</h1>
-		<p>Voici la page où je mettrai tous mes algos de 2x2 (Ortega, CLL, LEG-1, EG-2). Ce n'est pas une faute de frappe, j'apprends bien LEG-1, à savoir les algos d'EG-1 avec le bloc à gauche, et pas au fond comme habituellement, pour différentes raisons.</p>
+		<p>Les sets sont organisés par orientation (O,L,U,T,H,Pi,S,AS) et pas par permutation de la première face (CLL, EG-1, LEG-1, EG-2), puisque c'est dans cet ordre que j'apprends les algos.</p>
+		<h2>Orientation O (Ortega)</h2>
+		<h2>Orientation L</h2>
+			<h3>CLL L</h3>
+			<h3>BEG-1 L</h3>
+			<h3>LEG-1 L</h3>
+			<h3>EG-2 L</h3>
+		<h2>Orientation U</h2>
+		<h2>Orientation T</h2>
+		<h2>Orientation H</h2>
+		<h2>Orientation Pi</h2>
+		<h2>Orientation S</h2>
+		<h2>Orientation AS</h2>
 		<h2>Ortega</h2>
 		<ul class="liste_cas_simple" data-set="ortega" data-taille="2">
 			<li class="cas">
 				<div class="nom">Opposé-Résolu</div>
-				<div class="algo">F2 U' R U' R' U F2 U R U R's</div>
+				<div class="algo">F2 U' R U' R' U F2 U R U R'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Adjacent-Résolu</div>
@@ -46,6 +58,40 @@
 				<div class="nom">Adjacent-Adjacent</div>
 				<div class="algo">R2 U' R2' U2 y R2 U' R2'</div>
 			</li>
+		</ul>
+		<ul class="liste_cas_simple" data-set="ortega" data-taille="2"><table>
+			<tr><td><li class="cas">
+				<div class="nom">Opposé-Résolu</div>
+				<div class="algo">F2 U' R U' R' U F2 U R U R's</div>
+			</li></td>
+			<td><li class="cas">
+				<div class="nom">Adjacent-Résolu</div>
+				<div class="algo">R U2 R' U' R U2 L' U R' U' L</div>
+			</li></td></tr>
+			<tr><td><li class="cas">
+				<div class="nom">Résolu-Opposé</div>
+				<div class="algo"></div>
+			</li></td>
+			<td><li class="cas">
+				<div class="nom">Opposé-Opposé</div>
+				<div class="algo">R2' F2 R2</div>
+			</li></td>
+			<td><li class="cas">
+				<div class="nom">Adjacent-Opposé</div>
+				<div class="algo">R U' L U2 R' U L'</div>
+			</li></td></tr>
+			<tr><td><li class="cas">
+				<div class="nom">Résolu-Adjacent</div>
+				<div class="algo"></div>
+			</li></td>
+			<td><li class="cas">
+				<div class="nom">Opposé-Adjacent</div>
+				<div class="algo"></div>
+			</li></td>
+			<td><li class="cas">
+				<div class="nom">Adjacent-Adjacent</div>
+				<div class="algo">R2 U' R2' U2 y R2 U' R2'</div>
+			</li></td></tr></table>
 		</ul>
 		<h2>CLL</h2>
 		<ul class="liste_cas_simple" data-set="ortega" data-taille="2">

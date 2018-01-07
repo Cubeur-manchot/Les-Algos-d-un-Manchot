@@ -173,7 +173,7 @@ footer
 	font-size: 12px;
 	text-align: left;
 }
-.liste_cas_multiple .cas .bouton
+.liste_cas_multiple .cas .bouton_animation
 {
 	display: inline-block;
 	width: 24px;
@@ -200,6 +200,7 @@ table
 	font-size: 12px;
 	margin: 10px;
 	padding: 0px;
+	display: none;
 }
 td
 {
@@ -228,4 +229,45 @@ th
 }
 #algos_appris ul {
 	margin-left: -10px;
+}
+
+/*_______________ PAGE D'ACCUEIL _______________*/
+
+.liste_accueil {
+	text-align: center;
+	padding: 0px;
+}
+.set {
+	list-style: none;
+	display: inline-block;
+	border: 1px solid rgb(200,200,200);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	height: 220px;
+	width: 170px;
+	margin: 0px;
+	text-decoration: none;
+	color: black;
+}
+.set .titre {
+	font-size: 20px;
+	font-family: Verdana;
+	padding-top: 5px;
+}
+.set .nombre {
+	font-size: 15px;
+	font-family: Verdana;
+	padding-top: 5px;
+}
+.appris img {
+	border: 0px;
+	width: 150px;
+	height: 150px;
+}
+.appris {
+	background-color: white;
+}
+.envisage {
+	background-color: rgb(200,200,200);
 }
