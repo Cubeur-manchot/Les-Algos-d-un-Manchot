@@ -213,13 +213,13 @@ th
 	border-radius: 5px;
 	overflow: hidden;
 	height: 220px;
-	width: 170px;
+	width: 180px;
 	margin: 0px;
 	text-decoration: none;
 	color: black;
 }
 .set .titre {
-	font-size: 20px;
+	font-size: 19px;
 	font-family: Verdana;
 	padding-top: 5px;
 }
