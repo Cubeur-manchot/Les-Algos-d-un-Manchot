@@ -1,33 +1,3 @@
-function nav()
-{
-	var html = '<nav><section><div class="en-tete">Algos de LL</div><ul>';
-	html += '<li><a href="parity_pll.html">OPPLL</a></li>';
-	html += '</ul></section>';
-	html += '<section><div class="en-tete">Algos de LSLL</div><ul>';
-	html += '<li><a href="wv.html">WV</a></li>';
-	html += '<li><a href="mw.html">MW</a></li>';
-	html += '<li><a href="sv.html">SV</a></li>';
-	html += '<li><a href="els.html">ELS</a></li>';
-	html += '<li><a href="3rd_slot_eo.html">3rd Slot EO</a></li>';
-	html += '</ul></section>';
-	html += '<section><div class="en-tete">Autres Puzzles</div><ul>';
-	html += '<li><a href="pll_big_cubes.html">PLL Big Cubes</a></li>';
-	html += '<li><a href="l2e.html">L2E du 5x5</a></li>';
-	html += '</ul></section>';
-	html += '<section><div class="en-tete">En rédaction</div><ul>';
-	html += '<li><a href="2gll.html">2GLL</a></li>';
-	html += '<li><a href="cls.html">CLS</a></li>';
-	html += '<li><a href="eg.html">EG du 2x2</a></li>';
-	html += '</ul></section>';
-	html += '<section><div class="en-tete">Autres pages</div><ul>';
-	html += '<li><a href="index.html">Accueil</a></li>';
-	html += '<li><a href="records.html">Records perso</a></li>';
-	html += '<li><a href="http://forum.francocube.com/ucp.php?i=pm&mode=compose&u=4736">M\'envoyer un MP</a></li>';
-	html += '<li><a href="https://drive.google.com/folderview?id=0B23xBbKROAE4fjlDSWNZSFAyUHJvSm1HelpUdHpsMzlMTVdQa0VqdldIbHc5RThnVVFvX2M&usp=sharing">Mon Drive</a></li>';
-	html += '</ul></section></nav>';
-	document.write(html);
-}
-
 function footer()
 {
 	document.write('<footer>Ce site est l\'endroit où j\'entrepose mes algos de cube, dans le but que ça serve aux autres cubeurs, n\'hésitez donc pas à piocher des algos dedans !<br/>S\'il y a un problème quelconque, envoyez-moi un MP sur le forum Francocube :)</footer>');

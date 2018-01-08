@@ -1,42 +1,9 @@
 /*____________ GÉNÉRAL ____________*/
 
-nav
-{
-	position: absolute;
-	display: inline-block;
-	width: 200px;
-	left: 15px;
-	top: 15px;
-	padding: 0px;
-	color: black;
-	font-size: 14px;
-}
-nav section
-{
-	border-radius: 4px;
-	overflow: hidden;
-	border: 1px solid #868686;
-	margin-bottom: 15px;
-}
-nav .en-tete
-{
-	display: block;
-	margin: 0px;
-	background-color: rgb(160,0,30);
-	text-align: center;
-	color: white;
-	text-shadow: black 1px 1px 2px;
-	text-decoration: none;
-}
-nav ul { list-style-type: none; margin: 0px; padding: 0px; }
-nav li { margin: 3px 10px -1px 10px; border-bottom: 1px dotted #868686; font-size: 12px; }
-nav a { display: block; text-decoration: none; color: blue; }
-nav a:hover { color: red; }
-
 body { margin: 0px; padding: 0px; background-color: #DDF2FE; }
 #corps_de_page
 {
-	margin: 15px 15px 0px 230px;
+	margin: 15px 15px 0px 15px;
 	display: inline-block;
 	padding: 0px;
 	min-width: 460px;
@@ -192,15 +159,13 @@ footer
 
 table
 {
-	border: 1px solid black;
-	border-radius: 7px 7px 3px 3px;
+	border: 1px solid red;
 	overflow: hidden;
 	border-collapse: collapse;
 	box-shadow: 3px 3px 2px grey;
 	font-size: 12px;
 	margin: 10px;
 	padding: 0px;
-	display: none;
 }
 td
 {
@@ -223,6 +188,9 @@ th
 }
 #records .uwr {
 	background-color: rgb(150,50,255);
+}
+#algos_appris {
+	display: none;
 }
 #algos_appris td {
 	text-align: left;
