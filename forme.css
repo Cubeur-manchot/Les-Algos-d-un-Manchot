@@ -159,7 +159,6 @@ footer
 
 table
 {
-	border: 1px solid red;
 	overflow: hidden;
 	border-collapse: collapse;
 	box-shadow: 3px 3px 2px grey;
@@ -188,15 +187,6 @@ th
 }
 #records .uwr {
 	background-color: rgb(150,50,255);
-}
-#algos_appris {
-	display: none;
-}
-#algos_appris td {
-	text-align: left;
-}
-#algos_appris ul {
-	margin-left: -10px;
 }
 
 /*_______________ PAGE D'ACCUEIL _______________*/
