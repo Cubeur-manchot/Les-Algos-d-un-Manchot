@@ -11,7 +11,55 @@
 	<script>nav();</script>
 	<section id="corps_de_page">
 		<h1>Les COALL d'un Manchot</h1>
-		<p>En cours de construction</p>
+		<h1>(...Set en construction...)</h1>
+		<h2>Avancement</h2>
+		<table>
+			<tr>
+				<td>OLL / CP</td>
+				<td>Résolue</td>
+				<td>Diag</td>
+				<td>Adj swap F</td>
+				<td>Adj swap B</td>
+				<td>Adj swap L</td>
+				<td>Adj swap R</td>
+			</tr>
+			<tr>
+				<td>OLL 0</td>
+				<td>4/4</td>
+				<td>5/5</td>
+				<td>12/12</td>
+				<td>x</td>
+				<td>x</td>
+				<td>x</td>
+			</tr>
+			<tr>
+				<td>OLL 20</td>
+				<td>5/5</td>
+				<td>5/5</td>
+				<td>12/12</td>
+				<td>x</td>
+				<td>x</td>
+				<td>x</td>
+			</tr>
+			<tr>
+				<td>OLL 28</td>
+				<td>12/12</td>
+				<td>0/12</td>
+				<td>0/12</td>
+				<td>0/12</td>
+				<td>0/12</td>
+				<td>0/12</td>
+			</tr>
+			<tr>
+				<td>OLL 57</td>
+				<td>8/8</td>
+				<td>0/8</td>
+				<td>1/12</td>
+				<td>x</td>
+				<td>0/12</td>
+				<td>x</td>
+			</tr>
+		</table>
 		<h2>OLL 0 (PLL)</h2>
 		<h3>EPLL (PLL H,U,Z)</h3>
 		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
@@ -185,11 +233,23 @@
 		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
 			<li class="cas">
 				<div class="nom">E + 4EO</div>
-				<div class="algo">(r U' r') U2 (R' F R) U2 y' R U2 x D' R' U R U' D x'</div>
+				<div class="algo">r U' r' U2 R' F R U2 y' R U2 x D' R' U R U' D x'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Na + 4EO</div>
+				<div class="algo">R2 U2 R' U2' y L' U2 L R U2 R' y' U2 R U2' R2'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Nb + 4EO</div>
+				<div class="algo">L2' U2 L U2 y' R U2 R' L' U2 L y U2 L' U2 L2</div>
 			</li>
 			<li class="cas">
 				<div class="nom">V + 4EO</div>
 				<div class="algo">R U' R' U' R2 y l' U' l U' R U R' U' R U' R' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Y + 4EO</div>
+				<div class="algo">F R U2 R' U F' R U' L' U M' x' y' R U R'</div>
 			</li>
 		</ul>
 		<h2>OLL 28</h2>
