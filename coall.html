@@ -44,20 +44,20 @@
 			<tr>
 				<td>OLL 28</td>
 				<td>12/12</td>
-				<td>0/12</td>
-				<td>0/12</td>
-				<td>0/12</td>
-				<td>0/12</td>
-				<td>0/12</td>
+				<td>2/12</td>
+				<td>2/12</td>
+				<td>4/12</td>
+				<td>4/12</td>
+				<td>3/12</td>
 			</tr>
 			<tr>
 				<td>OLL 57</td>
 				<td>8/8</td>
-				<td>0/8</td>
+				<td>2/8</td>
+				<td>x</td>
+				<td>3/12</td>
+				<td>x</td>
 				<td>1/12</td>
-				<td>x</td>
-				<td>0/12</td>
-				<td>x</td>
 			</tr>
 		</table>
 		<h2>OLL 0 (PLL)</h2>
@@ -326,6 +326,14 @@
 				<div class="nom">Gb + 2EO + bloc + droite</div>
 				<div class="algo">r U R' F' R U R' U' R' F R2 U' r'</div>
 			</li>
+			<li class="cas">
+				<div class="nom">Gd + 2EO + bloc + droite</div>
+				<div class="algo">R' U2 R y U R U' R' U' R U' R' U2 F' U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">22LL Rb</div>
+				<div class="algo">M' U R U R' F' R U R' U' R' F R2 U' R' U2 M</div>
+			</li>
 		</ul>
 		<h4>OLL 28 CP adjacente Swap L</h4>
 		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
@@ -334,8 +342,16 @@
 				<div class="algo">L2' U' L2 U' F2' l' U' l F2' L' F L</div>
 			</li>
 			<li class="cas">
+				<div class="nom">Gb + 2EO + bloc + gauche</div>
+				<div class="algo">L U2 L' y' U' L' U L U L' U L U2 F U' F'</div>
+			</li>
+			<li class="cas">
 				<div class="nom">Gd + 2EO + bloc + gauche</div>
 				<div class="algo">l' U' L F L' U' L U L F' L2' U l</div>
+			</li>
+			<li class="cas">
+				<div class="nom">22LL Ra</div>
+				<div class="algo">M' U' L' U' L F L' U' L U L F' L2' U L U2 M</div>
 			</li>
 		</ul>
 		<h4>OLL 28 CP adjacente Swap R</h4>
@@ -356,8 +372,12 @@
 		<h3>OLL 28 CP Diagonale</h3>
 		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
 			<li class="cas">
-				<div class="nom"></div>
-				<div class="algo"></div>
+				<div class="nom">22LL V</div>
+				<div class="algo">R U' R' U R' U' F' U F R y' R2 U2' R U R' U R2</div>
+			</li>
+			<li class="cas">
+				<div class="nom">22LL Y</div>
+				<div class="algo">R' U2 R U R' U  F' U' F U' L U2 L' U' L U' L' R</div>
 			</li>
 		</ul>
 		<h2>OLL 57</h2>
@@ -399,6 +419,14 @@
 		<h3>OLL 57 CP Adjacente</h3>
 		<h4>OLL 57 CP adjacente Swap B</h4>
 		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
+			<li class="cas">
+				<div class="nom">Ga + 2EO + bloc</div>
+				<div class="algo">R U R' y U2 L' U' L U' L' U' L y' U R U2 R'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Gc + 2EO + bloc</div>
+				<div class="algo">R' U' R y U2 R U R' U R U R' U' F' U2 F</div>
+			</li>
 			<li class="cas">
 				<div class="nom">22LL T</div>
 				<div class="algo">x' R2 U' R' U l' F' U' F R U R'</div>
