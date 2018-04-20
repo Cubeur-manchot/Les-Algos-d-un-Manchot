@@ -7,7 +7,7 @@ function step(set) {
 	var stage = '';
 	switch(set)
 	{
-		case 'PLL': case 'ELL': case '2GLL': default: stage = 'pll'; break;
+		case 'PLL': case 'ELL': case '2GLL': case 'COALL': case 'BLD': default: stage = 'pll'; break;
 		case 'OLL' : case 'WV': case 'SV': case 'MW': case 'CLS': stage = 'wv'; break;
 		case 'ELS': stage = 'els'; break;
 		case '3SEO' : stage = 'vh'; break;
@@ -51,9 +51,26 @@ function liens()
 
 function html_algo_simple(nom,algo,set,taille,stage) {
 	var html = '<div class="nom">' + nom + '</div>';
-	html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&bg=white&pzl=' + taille + '&case=' + algo + '&stage=' + stage + '"/>';
-	html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=(' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank"></a>';
-	html += '<div class="algo" data-set="' + set + '">' + algo + '</div>';
+	if (set == 'BLD') {
+		html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=z2 (' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank">';
+		html += '<img class="image_gauche" src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&bg=white&pzl=' + taille + '&case=' + algo + 'y2&stage=' + stage + '"/>';
+		html += '<img class="image_droite" src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&bg=white&pzl=' + taille + '&case=y2' + algo + 'y2&stage=' + stage + '"/>';
+		html += '</a>';
+		if (algo.length > 56) {
+			html += '<div class="algo long" data-set="' + set + '">' + algo + '</div>';
+		} else {
+			html += '<div class="algo" data-set="' + set + '">' + algo + '</div>';
+		}
+	} else {
+		html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=z2 (' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank">'
+		html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&bg=white&pzl=' + taille + '&case=' + algo + '&stage=' + stage + '"/>';
+		html += '</a>';
+		if (algo.length > 26) {
+			html += '<div class="algo long" data-set="' + set + '">' + algo + '</div>';
+		} else {
+			html += '<div class="algo" data-set="' + set + '">' + algo + '</div>';
+		}
+	}
 	return (html);
 }
 

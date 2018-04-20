@@ -53,49 +53,46 @@ footer
 	list-style: none;
 	vertical-align: top;
 }
+.bld .cas { width: 300px; }
 .liste_cas_simple .cas .nom
 {
 	display: inline-block;
-	width: 150px;
+	width: 100%;
 	height: 38px;
 	margin: 0px 0px 0px 0px;
 	background-color: grey;
 	text-align: center;
-	border-bottom: 1px solid black;
-	top: 50%
+	top: 50%;
 }
 .liste_cas_simple .cas img
 {
+	position: absolute;
 	display: inline-block;
 	width: 150px;
 	height: 150px;
 	margin: 0px 0px 0px 0px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	background-image: url("images/image_introuvable.png");
+	transform: translate(-150px,37px);
 }
+.bld .cas .image_gauche { transform: translate(-300px,37px); }
+.bld .cas .image_droite { transform: translate(-150px,37px); }
 .liste_cas_simple .cas .algo
 {
 	display: inline-block;
-	margin: -5px 0px 0px 0px;
-	width: 118px;
+	margin: 160px 0px 0px 0px;
 	border: none;
-	border-top: 1px solid black;
 	font-size: 12px;
-	padding: 5px 0px 0px 32px;
-	text-align: left;
+	padding: 0px 7px 0px 7px;
+	text-align: center;
+	transform: translate(0px,50%);
 }
-.liste_cas_simple .cas .bouton_animation
+.liste_cas_simple .cas .long
 {
-	display: inline-block;
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	margin-top: 153px;
-	margin-left: -144px;
-	border: 1px dotted grey;
-	border-radius: 3px;
-	background-color: #cfcfcf;
+	margin: 145px 0px 0px 0px;
+	transform: translate(0px,50%);
 }
-
 .liste_cas_multiple { text-align: center; }
 .liste_cas_multiple .cas
 {
@@ -139,20 +136,6 @@ footer
 	border-bottom: 1px dotted grey;
 	font-size: 12px;
 	text-align: left;
-}
-.liste_cas_multiple .cas .bouton_animation
-{
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	margin: 0px 0px -5px 150px;
-	border: 1px solid black;
-	background-image: linear-gradient(#CFCFCF, #CFCFCF);
-	border-radius: 3px;
-}
-.liste_cas_multiple .cas .bouton:hover
-{
-	background-image: linear-gradient(#AFAFAF, #E5E5E5);
 }
 
 /*____________ TABLEAU DES RECORDS ____________*/
