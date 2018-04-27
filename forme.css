@@ -53,7 +53,7 @@ footer
 	list-style: none;
 	vertical-align: top;
 }
-.non_plan .cas { width: 300px; }
+.double_vue .cas { width: 300px; }
 .liste_cas_simple .cas .nom
 {
 	display: inline-block;
@@ -76,8 +76,8 @@ footer
 	background-image: url("images/image_introuvable.png");
 	transform: translate(-150px,37px);
 }
-.non_plan .cas .image_gauche { transform: translate(-300px,37px); }
-.non_plan .cas .image_droite { transform: translate(-150px,37px); }
+.double_vue .cas .image_gauche { transform: translate(-298.5px,37px); }
+.double_vue .cas .image_droite { transform: translate(-149px,37px); }
 .liste_cas_simple .cas .algo
 {
 	display: inline-block;

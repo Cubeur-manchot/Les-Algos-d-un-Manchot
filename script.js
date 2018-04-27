@@ -67,10 +67,9 @@ function html_algo_simple(nom,algo,set,taille,stage) {
 		}
 	} else if (set == '3SEO') {
 		html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=z2 (' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank">';
-		html += '<img class="image_gauche" src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&bg=white&pzl=' + taille + '&case=' + algo + 'y2&stage=' + stage + '&fd=nunuuununnnnllnllnnnnbbbbbbddddddddnnnnrrrrrrnnnuffnff"/>';
-		html += '<img class="image_droite" src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&bg=white&pzl=' + taille + '&case=y2' + algo + 'y2&stage=' + stage + '&fd=nunuuununnnnllnllnnnnbbbbbbddddddddnnnnrrrrrrnnnuffnff"/>';
+		html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&bg=white&pzl=' + taille + '&case=' + algo + 'y2&stage=' + stage + '&fd=nunuuununnnnllnllnnnnbbbbbbddddddddnnnnrrrrrrnnnuffnff"/>';
 		html += '</a>';
-		if (algo.length > 56) {
+		if (algo.length > 26) {
 			html += '<div class="algo long" data-set="' + set + '">' + algo + '</div>';
 		} else {
 			html += '<div class="algo" data-set="' + set + '">' + algo + '</div>';
