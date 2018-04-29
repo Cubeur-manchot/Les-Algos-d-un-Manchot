@@ -68,16 +68,19 @@ footer
 {
 	position: absolute;
 	display: inline-block;
-	width: 150px;
-	height: 150px;
-	margin: 0px 0px 0px -1px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	width: 149.9px;
+	height: 149.9px;
+	border-top-color: black;
+	border-bottom-color: black;
+	border-right-color: white;
+	border-left-color: transparent;
+	border-style: solid;
+	border-width: 1px 0px 1.05px 0px;
 	background-image: url("images/image_introuvable.png");
-	transform: translate(-150px,37px);
+	transform: translate(-149.9px,37.1px);
 }
-.double_vue .cas .image_gauche { transform: translate(-298.5px,37px); }
-.double_vue .cas .image_droite { transform: translate(-149px,37px); }
+.double_vue .cas .image_gauche { transform: translate(-299.85px,37.1px); }
+.double_vue .cas .image_droite { transform: translate(-150px,37.1px); }
 .liste_cas_simple .cas .algo
 {
 	display: inline-block;
