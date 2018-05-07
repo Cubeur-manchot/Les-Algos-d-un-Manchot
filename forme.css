@@ -1,16 +1,14 @@
 /*____________ GÉNÉRAL ____________*/
 
 body { margin: 0px; padding: 0px; background-color: #DDF2FE; }
-#corps_de_page
-{
+#corps_de_page {
 	margin: 15px 15px 0px 15px;
 	display: inline-block;
 	padding: 0px;
 	min-width: 460px;
 }
 #corps_de_page section { display: inline-block; margin: 0px; padding: 0px; }
-h1
-{
+h1 {
 	margin-top: 15px;
 	text-align: center;
 	color: black;
@@ -19,17 +17,14 @@ h1
 	font-family: "Harrington";
 	font-style : italic;
 }
-p
-{
+p {
 	margin-left: 3px;
 	font-size: 1em;
 	text-align: justify;
 	margin-top: 3px;
 	margin-bottom: 3px;
 }
-
-footer
-{
+footer {
 	width: 55%;
 	margin: 50px auto 5px auto;
 	border-top: 1px solid #868686;
@@ -42,8 +37,7 @@ footer
 /*____________ ALGOS ____________*/
 
 .liste_cas_simple { text-align: center; }
-.liste_cas_simple .cas
-{
+.liste_cas_simple .cas {
 	display: inline-block;
 	width: 150px;
 	height: 238px;
@@ -54,8 +48,7 @@ footer
 	vertical-align: top;
 }
 .double_vue .cas { width: 300px; }
-.liste_cas_simple .cas .nom
-{
+.liste_cas_simple .cas .nom {
 	display: inline-block;
 	width: 100%;
 	height: 38px;
@@ -64,8 +57,7 @@ footer
 	text-align: center;
 	top: 50%;
 }
-.liste_cas_simple .cas img
-{
+.liste_cas_simple .cas img {
 	position: absolute;
 	display: inline-block;
 	width: 149.9px;
@@ -81,8 +73,8 @@ footer
 }
 .double_vue .cas .image_gauche { transform: translate(-299.85px,37.1px); }
 .double_vue .cas .image_droite { transform: translate(-150px,37.1px); }
-.liste_cas_simple .cas .algo
-{
+.S3EOplus .cas img { transform: translate(-50.7px,0px); }
+.liste_cas_simple .cas .algo {
 	display: inline-block;
 	margin: 160px 0px 0px 0px;
 	border: none;
@@ -91,14 +83,12 @@ footer
 	text-align: center;
 	transform: translate(0px,50%);
 }
-.liste_cas_simple .cas .long
-{
+.liste_cas_simple .cas .long {
 	margin: 145px 0px 0px 0px;
 	transform: translate(0px,50%);
 }
 .liste_cas_multiple { text-align: center; }
-.liste_cas_multiple .cas
-{
+.liste_cas_multiple .cas {
 	display: inline-block;
 	width: 486px;
 	height: 150px;
@@ -109,8 +99,7 @@ footer
 	vertical-align: top;
 	text-align: left;
 }
-.liste_cas_multiple .cas .nom
-{
+.liste_cas_multiple .cas .nom {
 	display: inline-block;
 	width: 326px;
 	height: 20px;
@@ -120,16 +109,14 @@ footer
 	text-align: center;
 	top: 50%
 }
-.liste_cas_multiple .cas img
-{
+.liste_cas_multiple .cas img {
 	position: absolute;
 	width: 150px;
 	height: 150px;
 	border-right: 1px solid black;
 	background-image: url("images/image_introuvable.png");
 }
-.liste_cas_multiple .cas .algo
-{
+.liste_cas_multiple .cas .algo {
 	display: inline-block;
 	width: 300px;
 	height: 20px;
@@ -143,8 +130,7 @@ footer
 
 /*____________ TABLEAU DES RECORDS ____________*/
 
-table
-{
+table {
 	overflow: hidden;
 	border-collapse: collapse;
 	box-shadow: 3px 3px 2px grey;
@@ -152,14 +138,12 @@ table
 	margin: 10px;
 	padding: 0px;
 }
-td
-{
+td {
 	border: 1px solid black;
 	background-color: #F3F3F3;
 	padding: 1px 5px 1px 5px;
 }
-th
-{
+th {
 	border: 1px solid black;
 	background-color: #FFA000;
 	height: 20px;
@@ -174,6 +158,37 @@ th
 #records .uwr {
 	background-color: rgb(150,50,255);
 }
+
+/*______________ PAGE LIENS UTILES _____________*/
+
+.liens_timers {
+	list-style: none;
+}
+.liens_timers li {
+	display: inline-block;
+	height: 120px;
+	width: 100px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	text-align: center;
+	margin: 5px;
+	vertical-align: top;
+	overflow: hidden;
+}
+.liens_timers img {
+	width: 70px;
+	height: 70px;
+	margin: 10px auto 5px auto;
+}
+.liens_timers a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	width: 100%;
+	height: 100%;
+}
+
 
 /*_______________ PAGE D'ACCUEIL _______________*/
 
