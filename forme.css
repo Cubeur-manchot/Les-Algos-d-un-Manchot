@@ -46,6 +46,7 @@ footer {
 	padding: 0px;
 	list-style: none;
 	vertical-align: top;
+	text-align: center;
 }
 .double_vue .cas { width: 300px; }
 .liste_cas_simple .cas .nom {
@@ -59,7 +60,7 @@ footer {
 }
 .liste_cas_simple .cas img {
 	position: absolute;
-	display: inline-block;
+	display: block;
 	width: 149.9px;
 	height: 149.9px;
 	border-top-color: black;
@@ -69,11 +70,12 @@ footer {
 	border-style: solid;
 	border-width: 1px 0px 1.05px 0px;
 	background-image: url("images/image_introuvable.png");
-	transform: translate(-149.9px,37.1px);
+	/*transform: translate(-100%,37.1px);*/
+	vertical-align: right;
+	clip: rect(0px,150px,152px,0px);
 }
 .double_vue .cas .image_gauche { transform: translate(-299.85px,37.1px); }
 .double_vue .cas .image_droite { transform: translate(-150px,37.1px); }
-.S3EOplus .cas img { transform: translate(-50.7px,0px); }
 .liste_cas_simple .cas .algo {
 	display: inline-block;
 	margin: 160px 0px 0px 0px;

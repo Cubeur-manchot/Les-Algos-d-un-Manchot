@@ -11,34 +11,19 @@
 	<script>nav();</script>
 	<section id="corps_de_page">
 		<h1>Les 3rd Slot EO d'un Manchot</h1>
+		<h2>FL bien orienté - Version de base</h2>
 		<ul class="liste_cas_simple" data-taille="3" data-set="3SEO">
 			<li class="cas">
 				<div class="nom">0 Flip</div>
 				<div class="algo">R U' R'</div>
 			</li>
 			<li class="cas">
-				<div class="nom">Double Slot</div>
-				<div class="algo">(U') R' F R U F'</div>
-			</li>
-			<li class="cas">
-				<div class="nom">L + Slot L</div>
-				<div class="algo">F' U' R' F2 R U F</div>
-			</li>
-			<li class="cas">
 				<div class="nom">L + Slot R</div>
 				<div class="algo">(U') R' F R F'</div>
 			</li>
 			<li class="cas">
-				<div class="nom">B + Slot L</div>
-				<div class="algo">R U' R' F U' F'</div>
-			</li>
-			<li class="cas">
 				<div class="nom">B + Slot R</div>
 				<div class="algo">F' L' U' L F</div>
-			</li>
-			<li class="cas">
-				<div class="nom">R + Slot L</div>
-				<div class="algo">F' R' F2 R U F</div>
 			</li>
 			<li class="cas">
 				<div class="nom">R + Slot R</div>
@@ -49,20 +34,43 @@
 				<div class="algo">(U') R' F R2 U' R' F'</div>
 			</li>
 			<li class="cas">
-				<div class="nom">L + B + Double Slot</div>
-				<div class="algo">(U') R' F R U' F'</div>
-			</li>
-			<li class="cas">
 				<div class="nom">L + R</div>
 				<div class="algo">(U) F U' R U' R2' F' R</div>
 			</li>
 			<li class="cas">
-				<div class="nom">L + R + Double Slot</div>
-				<div class="algo">(U') R' F R U2 F'</div>
-			</li>
-			<li class="cas">
 				<div class="nom">B + R</div>
 				<div class="algo">(x') R2 U' R' U F' l'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Full Top + Slot R</div>
+				<div class="algo">(U2) R' F R F' U2 R' F R F'</div>
+			</li>
+		</ul>
+		<h2>FL mal orientée - Version de base</h2>
+		<ul class="liste_cas_simple" data-taille="3" data-set="3SEO">
+			<li class="cas">
+				<div class="nom">Double Slot</div>
+				<div class="algo">(U') R' F R U F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L + Slot L</div>
+				<div class="algo">F' U' R' F2 R U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">B + Slot L</div>
+				<div class="algo">R U' R' F U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">R + Slot L</div>
+				<div class="algo">F' R' F2 R U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L + B + Double Slot</div>
+				<div class="algo">(U') R' F R U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L + R + Double Slot</div>
+				<div class="algo">(U') R' F R U2 F'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">B + R + Double Slot</div>
@@ -72,9 +80,311 @@
 				<div class="nom">Full Top + Slot L</div>
 				<div class="algo">(U) F R U2 R2' F' R</div>
 			</li>
+		</ul>
+		<h2>FL mal orientée - Version améliorée</h2>
+		<h3>Double Slot (à choisir)</h3>
+		<ul class="liste_cas_simple S3EOplus" data-taille="3" data-set="3SEOplus">
 			<li class="cas">
-				<div class="nom">Full Top + Slot R</div>
-				<div class="algo">F' r' F' U L' U' r2 U x'</div>
+				<div class="nom">DS - FL en FL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U F'&setup=z2 (U' R' F R U F' U2 L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U F' U2 L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">DS - FL en UL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U F'&setup=z2 (U' R' F R U F')'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U F'y2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">DS - FL en UB</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U F'&setup=z2 (U' R' F R U F' L' U' L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U F' L' U' Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">DS - FL en UR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U F'&setup=z2 (U' R' F R U F' L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U F' L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">R' F R U F' / d R2' F R F' R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">DS - FL en FR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=R U' R' y'&setup=z2 (U' R' F R U F' L' U L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U F' L' U Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">R U' R' y'</div>
+			</li>
+		</ul>
+		<h3>L + Slot L (à choisir)</h3>
+		<ul class="liste_cas_simple S3EOplus" data-taille="3" data-set="3SEOplus">
+			<li class="cas">
+				<div class="nom">L + FL - FL en FL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=F' U' R' F2 R U F&setup=z2 (F' U' R' F2 R U F U2 L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' U' R' F2 R U F U2 L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R2 U' R' F' y' / (U) L' U' L R U2 R' y' / F' U' R' F2 R U F / R U L' U' L U2 R' y' / R U' M' U' r F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L + FL - FL en UL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=F' U' R' F2 R U F&setup=z2 (F' U' R' F2 R U F)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' U' R' F2 R U Fy2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">R U' R' y'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L + FL - FL en UB</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=F' U' R' F2 R U F&setup=z2 (F' U' R' F2 R U F L' U' L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' U' R' F2 R U F L' U' Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">F' U' R' F2 R U F / (U') R' F R2 U2 R' F' y'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L + FL - FL en UR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=F' U' R' F2 R U F&setup=z2 (F' U' R' F2 R U F L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' U' R' F2 R U F L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">F' U' R' F2 R U F / (U') R' F R2 U R' F' y'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">L + FL - FL en FR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R F' y'&setup=z2 (F' U' R' F2 R U F L' U L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' U' R' F2 R U F L' U Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R F' y'</div>
+			</li>
+		</ul>
+		<h3>B + Slot L</h3>
+		<ul class="liste_cas_simple S3EOplus" data-taille="3" data-set="3SEOplus">
+			<li class="cas">
+				<div class="nom">B + FL - FL en FL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=R U' R' F U' F'&setup=z2 (R U' R' F U' F' L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=R U' R' F U' F' L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">R U' R' F U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">B + FL - FL en UL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=R U' R' F U' F'&setup=z2 (R U' R' F U' F' L' U L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=R U' R' F U' F' L' U Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">R U' R' F U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">B + FL - FL en UB</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=R U' R' F U' F'&setup=z2 (R U' R' F U' F')'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=R U' R' F U' F'y2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">R U' R' F U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">B + FL - FL en UR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=R U' R' F U' F'&setup=z2 (R U' R' F U' F' L' U' L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=R U' R' F U' F' L' U' Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">R U' R' F U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">B + FL - FL en FR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=y' R' F' U' F R&setup=z2 (R U' R' F U' F' U2 L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=R U' R' F U' F' U2 L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">y' R' F' U' F R</div>
+			</li>
+		</ul>
+		<h3>R + Slot L</h3>
+		<ul class="liste_cas_simple S3EOplus" data-taille="3" data-set="3SEOplus">
+			<li class="cas">
+				<div class="nom">R + FL - FL en FL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=F' R' F2 R U F&setup=z2 (F' R' F2 R U F U2 L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' R' F2 R U F U2 L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">F' R' F2 R U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">R + FL - FL en UL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=F' R' F2 R U F&setup=z2 (F' R' F2 R U F L' U' L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' R' F2 R U F L' U' Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">F' R' F2 R U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">R + FL - FL en UB</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=F' R' F2 R U F&setup=z2 (F' R' F2 R U F L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' R' F2 R U F L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">F' R' F2 R U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">R + FL - FL en UR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=R U' R' y'&setup=z2 (F' R' F2 R U F L' U L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' R' F2 R U F L' U Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">R U' R' y'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">R + FL - FL en FR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=d R2' F R F' R&setup=z2 (F' R' F2 R U F)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' R' F2 R U Fy2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">d R2' F R F' R</div>
+			</li>
+		</ul>
+		<h3>L + B + Double Slot</h3>
+		<ul class="liste_cas_simple S3EOplus" data-taille="3" data-set="3SEOplus">
+			<li class="cas">
+				<div class="nom">LB + DS - FL en FL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U' F'&setup=z2 (U' R' F R U' F' L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U' F' L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">LB + DS - FL en UL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=y' R' F' U' F R&setup=z2 (U' R' F R U' F' L' U' L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U' F' L' U' Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">y' R' F' U' F R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">LB + DS - FL en UB</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U' F'&setup=z2 (U' R' F R U' F')'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U' F'y2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">LB + DS - FL en UR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U' F'&setup=z2 (U' R' F R U' F' U2 L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U' F' U2 L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">LB + DS - FL en FR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U' F'&setup=z2 (U' R' F R U' F' L' U L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U' F' L' U Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U' F'</div>
+			</li>
+		</ul>
+		<h3>L + R + Double Slot</h3>
+		<ul class="liste_cas_simple S3EOplus" data-taille="3" data-set="3SEOplus">
+			<li class="cas">
+				<div class="nom">LR + DS - FL en FL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U2 F'&setup=z2 (U' R' F R U2 F' L' U' L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U2 F' L' U' Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U2 F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">LR + DS - FL en UL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U2 F'&setup=z2 (U' R' F R U2 F' U2 L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U2 F' U2 L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U2 F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">LR + DS - FL en UB</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U2 F'&setup=z2 (U' R' F R U2 F' L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U2 F' L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U2 F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">LR + DS - FL en UR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R U2 F'&setup=z2 (U' R' F R U2 F')'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U2 F'y2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R U2 F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">LR + DS - FL en FR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U') R' F R2 U R' F'&setup=z2 (U' R' F R U2 F' L' U L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U' R' F R U2 F' L' U Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R2 U R' F'</div>
+			</li>
+		</ul>
+		<h3>B + R + Double Slot (à choisir)</h3>
+		<ul class="liste_cas_simple S3EOplus" data-taille="3" data-set="3SEOplus">
+			<li class="cas">
+				<div class="nom">BR + DS - FL en FL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=F' U R' F2 R U F&setup=z2 (F' U R' F2 R U F U2 L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' U R' F2 R U F U2 L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">F' U R' F2 R U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">BR + DS - FL en UL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=F' U R' F2 R U F&setup=z2 (F' U R' F2 R U F L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' U R' F2 R U F L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">F' U R' F2 R U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">BR + DS - FL en UB</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=d R2' F R F' R&setup=z2 (F' U R' F2 R U F L' U L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' U R' F2 R U F L' U Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">d R2' F R F' R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">BR + DS - FL en UR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=y' R' F' U' F R&setup=z2 (F' U R' F2 R U F)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' U R' F2 R U Fy2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">y' R' F' U' F R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">BR + DS - FL en FR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=F' U R' F2 R U F&setup=z2 (F' U R' F2 R U F L' U' L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=F' U R' F2 R U F L' U' Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U) R' F R y' R F R F' R / (U) F R' F' R2 U2' R' y' / F' U R' F2 R U F </div>
+			</li>
+		</ul>
+		<h3>Full Top + Slot L (à choisir) (ATTENTION LE CHOIX DE CE CAS DÉTERMINE L'ALGO DE BASE POUR CETTE FAMILLE)</h3>
+		<ul class="liste_cas_simple S3EOplus" data-taille="3" data-set="3SEOplus">
+			<li class="cas">
+				<div class="nom">Top + FL - FL en FL</div>
+				<a class="bouton_animation" href="http://a
+				lg.cubing.net/?puzzle=3x3x3&alg=(U) F R U2 R2' F' R&setup=z2 (U F R U2 R2' F' R L' U' L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U F R U2 R2' F' R L' U' Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R2 U2' R' F' / (U) F R U2' R2' F' R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Top + FL - FL en UL</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U) F R U2 R2' F' R&setup=z2 (U F R U2 R2' F' R)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U F R U2 R2' F' Ry2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R2 U2' R' F' / (U) F R U2' R2' F' R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Top + FL - FL en UB</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U) F R U2 R2' F' R&setup=z2 (U F R U2 R2' F' R L' U L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U F R U2 R2' F' R L' U Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R2 U2' R' F' / (U) F R U2' R2' F' R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Top + FL - FL en UR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U) F R U2 R2' F' R&setup=z2 (U F R U2 R2' F' R U2 L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U F R U2 R2' F' R U2 L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R2 U2' R' F' / (U) F R U2' R2' F' R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Top + FL - FL en FR</div>
+				<a class="bouton_animation" href="http://alg.cubing.net/?puzzle=3x3x3&alg=(U) F R U2 R2' F' R&setup=z2 (U F R U2 R2' F' R L' U2 L)'" class="bouton_animation" title="Animation" target="_blank">
+					<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=3&case=U F R U2 R2' F' R L' U2 Ly2&stage=pll&fd=nunuuununnnnlllllnnnnbbbbbbddddddddnnnnrrrrrrnnnfffnff"/>
+				</a>
+				<div class="algo" data-set="3SEOplus">(U') R' F R2 U2' R' F' / (U) F R U2' R2' F' R</div>
 			</li>
 		</ul>
 		<script>liens();</script>
