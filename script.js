@@ -8,7 +8,7 @@ function step(set) {
 	switch(set)
 	{
 		case 'PLL': case 'ELL': case '2GLL': case 'COALL': case 'BLD': default: stage = 'pll'; break;
-		case 'OLL' : case 'WV': case 'SV': case 'MW': case 'CLS': stage = 'wv'; break;
+		case 'OLL' : case 'WV': case 'SV': case 'MW': case 'CLS': case 'JTLE': stage = 'wv'; break;
 		case 'ELS': stage = 'els'; break;
 		case '3SEO' : stage = 'vh'; break;
 	}
@@ -30,7 +30,9 @@ function liens()
 			var cas_simple = cas_simples[i]
 			var nom = cas_simple.getElementsByClassName('nom')[0].innerHTML;
 			var algo = cas_simple.getElementsByClassName('algo')[0].innerHTML;
-			cas_simples[i].innerHTML = html_algo_simple(nom,algo,set,taille,stage);
+			if (set != "3SEOplus") {
+				cas_simples[i].innerHTML = html_algo_simple(nom,algo,set,taille,stage);
+			}
 		}
 	}
 	var listes_multiples = document.getElementsByClassName('liste_cas_multiple');
@@ -65,9 +67,18 @@ function html_algo_simple(nom,algo,set,taille,stage) {
 		} else {
 			html += '<div class="algo" data-set="' + set + '">' + algo + '</div>';
 		}
+	} else if (set == 'L2C') {
+		html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=z2 (' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank">';
+		html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=' + taille + '&case=' + algo + '&stage=' + stage + '&fd=nnnnnnuuunnuuunnuuunnnnnnnnnnnnlllnnlllnnlllnnnnnnnnnnnnbbbnnbbbnnbbbnnnnnn&r=x-35"/>';
+		html += '</a>';
+		if (algo.length > 26) {
+			html += '<div class="algo long" data-set="' + set + '">' + algo + '</div>';
+		} else {
+			html += '<div class="algo" data-set="' + set + '">' + algo + '</div>';
+		}
 	} else if (set == '3SEO') {
 		html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=z2 (' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank">';
-		html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&bg=white&pzl=' + taille + '&case=' + algo + 'y2&stage=' + stage + '&fd=nunuuununnnnllnllnnnnbbbbbbddddddddnnnnrrrrrrnnnuffnff"/>';
+		html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=' + taille + '&case=' + algo + 'y2&stage=' + stage + '&fd=nunuuununnnnllnllnnnnbbbbbbddddddddnnnnrrrrrrnnnuffnff"/>';
 		html += '</a>';
 		if (algo.length > 26) {
 			html += '<div class="algo long" data-set="' + set + '">' + algo + '</div>';
