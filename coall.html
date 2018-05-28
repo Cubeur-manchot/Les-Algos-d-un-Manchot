@@ -46,8 +46,8 @@
 				<td>12/12</td>
 				<td>2/12</td>
 				<td>2/12</td>
-				<td>4/12</td>
-				<td>4/12</td>
+				<td>7/12</td>
+				<td>5/12</td>
 				<td>3/12</td>
 			</tr>
 			<tr>
@@ -55,9 +55,9 @@
 				<td>8/8</td>
 				<td>2/8</td>
 				<td>x</td>
-				<td>3/12</td>
+				<td>5/12</td>
 				<td>x</td>
-				<td>1/12</td>
+				<td>3/12</td>
 			</tr>
 		</table>
 		<h2>OLL 0 (PLL)</h2>
@@ -312,8 +312,8 @@
 				<div class="algo">r U R2' F' R U R U' R' F R U' r'</div>
 			</li>
 			<li class="cas">
-				<div class="nom">22LL Jb</div>
-				<div class="algo">x' R2 U R' F' R U R' U' R' F R2 U' R' U' R' x</div>
+				<div class="nom">22LL Ja</div>
+				<div class="algo">M' U L U' R U2' L' U L U2 L2 x'</div>
 			</li>
 		</ul>
 		<h4>OLL 28 CP adjacente Swap B</h4>
@@ -327,8 +327,20 @@
 				<div class="algo">r U R' F' R U R' U' R' F R2 U' r'</div>
 			</li>
 			<li class="cas">
+				<div class="nom">Gc + 2EO + bloc + gauche</div>
+				<div class="algo">L U2 L' U2 L F' r U r' U' L' U' L U2 L'</div>
+			</li>
+			<li class="cas">
 				<div class="nom">Gd + 2EO + bloc + droite</div>
-				<div class="algo">R' U2 R y U R U' R' U' R U' R' U2 F' U F</div>
+				<div class="algo">F' U2 F U R U' R' U' R U' R' U2 F' U F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">23LL Ja adj sans barre</div>
+				<div class="algo">R' U R U2' R2' U' F' U F R U R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">23LL Jb adj sans barre</div>
+				<div class="algo">R U' R' U2 R2 y U R U' R' F' U' F'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">22LL Rb</div>
@@ -340,6 +352,10 @@
 			<li class="cas">
 				<div class="nom">Aa + 2EO + bloc</div>
 				<div class="algo">L2' U' L2 U' F2' l' U' l F2' L' F L</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Ga + 2EO + bloc + droite</div>
+				<div class="algo">R' U2 R U2' R' F R' F' R U R U R' U2 R</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Gb + 2EO + bloc + gauche</div>
@@ -421,11 +437,19 @@
 		<ul class="liste_cas_simple" data-set="COALL" data-taille="3">
 			<li class="cas">
 				<div class="nom">Ga + 2EO + bloc</div>
-				<div class="algo">R U R' y U2 L' U' L U' L' U' L y' U R U2 R'</div>
+				<div class="algo">F U F' U2 L' U' L U' L' U' L U F U2 F'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">Gc + 2EO + bloc</div>
-				<div class="algo">R' U' R y U2 R U R' U R U R' U' F' U2 F</div>
+				<div class="algo">F' U' F U2 R U R' U R U R' U' F' U2 F</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Ja + 2EO opp sans barre</div>
+				<div class="algo">R' U' R' F' U' F U R2 U2' R' U' R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Jb + 2EO opp sans barre</div>
+				<div class="algo">F U F R U R' U' y' R2 U2' R U R'</div>
 			</li>
 			<li class="cas">
 				<div class="nom">22LL T</div>
@@ -437,6 +461,14 @@
 			<li class="cas">
 				<div class="nom">22LL F</div>
 				<div class="algo">R U2' R' U2 R' F R U R U2' R' U' R U R' F'</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Gb + 2EO + bloc + opp</div>
+				<div class="algo">R' U2 R U' R' U' R' F R F' R U2' R' U2 R</div>
+			</li>
+			<li class="cas">
+				<div class="nom">Gd + 2EO + bloc + opp</div>
+				<div class="algo">L U2 L' U L U L F' L' F L' U2 L U2 L'</div>
 			</li>
 		</ul>
 		<h3>OLL 57 CP Diagonale</h3>
