@@ -8,7 +8,7 @@ function step(set) {
 	switch(set)
 	{
 		case 'PLL': case 'ELL': case '2GLL': case 'COALL': case 'BLD': default: stage = 'pll'; break;
-		case 'OLL' : case 'WV': case 'SV': case 'MW': case 'CLS': case 'JTLE': stage = 'wv'; break;
+		case 'OLL' : case 'WV': case 'SV': case 'MW': case 'CLS': case 'OPF2L': case 'JTLE': stage = 'wv'; break;
 		case 'ELS': stage = 'els'; break;
 		case '3SEO' : stage = 'vh'; break;
 	}
