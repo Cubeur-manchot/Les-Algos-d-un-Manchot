@@ -29,7 +29,7 @@
     <ul class="pllRecognitionCaseList">
         <li class="pllRecognitionCase">
             <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll">
-            <div>Deux arêtes résolues :<br> skip</div>
+            <div>Deux arêtes résolues :<br>skip</div>
         </li>
         <li class="pllRecognitionCase">
             <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U7U1&ac=666666&alg=U' M2' U' M U2 M' U' M2 U">
@@ -37,7 +37,7 @@
         </li>
         <li class="pllRecognitionCase">
             <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U5U3&ac=666666&alg=U2 M2' U M U2 M' U M2' U2">
-            <div>Bloc 1x3 à gauche + arête opposée : <br>Ub</div>
+            <div>Bloc 1x3 à gauche + arête opposée :<br>Ub</div>
         </li>
         <li class="pllRecognitionCase">
             <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U3U5&ac=666666&alg=U2 M2' U' M U2 M' U' M2 U2">
@@ -45,15 +45,15 @@
         </li>
         <li class="pllRecognitionCase">
             <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U1U7&ac=666666&alg=U' M2' U M U2 M' U M2' U">
-            <div>Bloc 1x3 à droite + arête adjacente : <br>Ub</div>
+            <div>Bloc 1x3 à droite + arête adjacente :<br>Ub</div>
         </li>
         <li class="pllRecognitionCase">
             <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U1U7,U7U1,U3U5,U5U3&ac=666666&alg=M2' U M2' U2 M2' U M2'">
-            <div>Deux arêtes opposées : <br>H</div>
+            <div>Deux arêtes opposées :<br>H</div>
         </li>
         <li class="pllRecognitionCase">
             <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U1U3,U3U1,U5U7,U7U5&ac=666666&alg=M2' U M2' U M' U2 M2' U2 M' U2">
-            <div>Deux arêtes adjacentes, 2 couleurs visibles : <br>Z</div>
+            <div>Deux arêtes adjacentes, 2 couleurs visibles :<br>Z</div>
         </li>
         <li class="pllRecognitionCase">
             <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U1U5,U5U1,U3U7,U7U3&ac=666666&alg=U M2' U M2' U M' U2 M2' U2 M' U">
@@ -77,21 +77,60 @@
         </li>
     </ul>
     <h3>CP Diagonale : PLL ENVY</h3>
-    <ul>
-        <li>2 Blocs<ul>
-            <li>Adjacents (Blocs Internes) : V</li>
-            <li>Opposés (Blocs Externes): Y</li>
-            <li>1 Blocs Interne et 1 Bloc Externe : Na ou Na selon quel bloc est interne et quel bloc est externe</li>
-        </ul></li>
-        <li>1 Bloc<ul>
-            <li>Interne : Y</li>
-            <li>Externe : V</li>
-        </ul></li>
-        <li>0 Bloc<ul>
-            <li>Damier Interne (en forme de V) : V</li>
-            <li>Damier Externe : Y</li>
-            <li>Pas de Damier : E, la position du coin interne définit si la E est verticale ou horizontale</li>
-        </ul></li>
+    <p>La CP est facile à repérer, les stickers des coins sont opposés sur les deux faces :</p>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=coll&alg=F R U' R' U' R U R' F' R U R' U' R' F R F'" alt="corner solved">
+    <br>
+    <br>
+    <p>Ensuite il y a 12 cas distincts :</p>
+    <ul class="pllRecognitionCaseList">
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U6,U6U2,U1U3,U3U1&ac=666666&&alg=U' R' U R' d' R' F' R2 U' R' U R' F R F y' U'">
+            <div>Bloc 2x2 :<br>V</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U0U8,U8U0,U1U3,U3U1&ac=666666&&alg=F R U' R' U' R U R' F' R U R' U' R' F R F'">
+            <div>2 blocs 1x2 externes :<br>Y</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U3U5,U5U3,U0U8,U8U0&ac=666666&&alg=U' R' U L' U2 R U' L R' U L' U2 R U' L">
+            <div>2 blocs 1x2 à gauche :<br>Nb</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U1U7,U7U1,U0U8,U8U0&ac=666666&&alg=U2 R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'">
+            <div>2 blocs 1x2 à droite :<br>Na</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U6,U6U2,U1U5,U5U1&ac=666666&&alg=U F R U' R' U' R U R' F' R U R' U' R' F R F' U">
+            <div>Bloc 1x2 interne à gauche :<br>Y</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U6,U6U2,U3U7,U7U3&ac=666666&&alg=U' F R U' R' U' R U R' F' R U R' U' R' F R F' U'">
+            <div>Bloc 1x2 interne à droite :<br>Y</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U3U5,U5U3,U0U8,U8U0&ac=666666&&alg=R' U R' d' R' F' R2 U' R' U R' F R F y'">
+            <div>Bloc 1x2 externe à gauche :<br>V</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U3U5,U5U3,U0U8,U8U0&ac=666666&&alg=U2 R' U R' d' R' F' R2 U' R' U R' F R F y' U2">
+            <div>Bloc 1x2 externe à droite :<br>V</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U6,U6U2,U5U7,U7U5&ac=666666&&alg=U R' U R' d' R' F' R2 U' R' U R' F R F y' U">
+            <div>Pas de bloc, damier intérieur :<br>V</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U0U8,U8U0,U5U7,U7U5&ac=666666&&alg=U2 F R U' R' U' R U R' F' R U R' U' R' F R F' U2">
+            <div>Pas de bloc, damier extérieur :<br>Y</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U0U2,U2U0,U6U8,U8U6&ac=666666&&alg=U2 l U' R' D R U R' D' R U R' D R U' R' D' (x) U">
+            <div>Pas de bloc, pas de damier, le coin interne match l'arête de gauche :<br>E</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U0U6,U6U0,U2U8,U8U2&ac=666666&&alg=U l U' R' D R U R' D' R U R' D R U' R' D' (x)">
+            <div>Pas de bloc, pas de damier, le coin interne match l'arête de droite :<br>E</div>
+        </li>
     </ul>
     <h3>CP Adjacente + Headlights</h3>
     <ul>
