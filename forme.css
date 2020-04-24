@@ -130,6 +130,20 @@ footer {
 	text-align: left;
 }
 
+ul.pllRecognitionCaseList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li.pllRecognitionCase {
+	display: inline-block;
+	margin-right: 20px;
+	width: 160px;
+	vertical-align: top;
+	text-align: center;
+}
+
 /*____________ TABLEAU DES RECORDS ____________*/
 
 table {
