@@ -1,6 +1,6 @@
 "use strict";
 
-function loadXml() // load 3x3Algs.xml and store it in window.xml3x3Algs
+function loadXml() // load 3x3algs.xml and store it in window.xml3x3algs
 {
 	let xmlHttp;
 	if(window.XMLHttpRequest) {
