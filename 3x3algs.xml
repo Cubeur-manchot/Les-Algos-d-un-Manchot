@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <algs>
+        <lastLayerAlgs>
+            <alg sequence="l' U R' D2' R U' R' D2' R2' (x')" name="PLL Aa" id="0Aa"/>
+            <alg sequence="r U' L D2' L' U L D2' L2' (x')" name="PLL Ab" id="0Ab"/>
+            <alg sequence="l U' R' D R U R' D' R U R' D R U' R' D' (x)" name="PLL E" id="0E"/>
+            <alg sequence="R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R" name="PLL F" id="0F"/>
+            <alg sequence="R2 u R' U R' U' R u' R2' F' U F" name="PLL Ga" id="0Ga"/>
+            <alg sequence="D R' U' R D' U R2 U R' U R U' R U' R2'" name="PLL Gb" id="0Gb"/>
+            <alg sequence="R2' F2 R U2 R U2' R' F R U R' U' R' F R2" name="PLL Gc" id="0Gc"/>
+            <alg sequence="D' R U R' U' D R2 U' R U' R' U R' U R2" name="PLL Gd" id="0Gd"/>
+            <alg sequence="M2' U M2' U2 M2' U M2'" name="PLL H" id="0H"/>
+            <alg sequence="L' U' L F L' U' L U L F' L2' U L" name="PLL Ja" id="0Ja"/>
+            <alg sequence="R U R' F' R U R' U' R' F R2 U' R'" name="PLL Jb" id="0Jb"/>
+            <alg sequence="R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'" name="PLL Na" id="0Na"/>
+            <alg sequence="R' U L' U2 R U' L R' U L' U2 R U' L" name="PLL Nb" id="0Nb"/>
+            <alg sequence="L U2 L' U2 L F' L' U' L U L F L2'" name="PLL Ra" id="0Ra"/>
+            <alg sequence="R' U2 R' D' R U' R' D R U R U' R' U' R" name="PLL Rb" id="0Rb"/>
+            <alg sequence="R U R' U' R' F R2 U' R' U' R U R' F'" name="PLL T" id="0T"/>
+            <alg sequence="M2' U M U2 M' U M2'" name="PLL Ua" id="0Ua"/>
+            <alg sequence="M2' U' M U2 M' U' M2" name="PLL Ub" id="0Ub"/>
+            <alg sequence="R' U R' d' R' F' R2 U' R' U R' F R F" name="PLL V" id="0V"/>
+            <alg sequence="F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Y" id="0Y"/>
+            <alg sequence="M2' U M2' U M' U2 M2' U2 M'" name="PLL Z" id="0Z"/>
+        </lastLayerAlgs>
+    </algs>
+    <sets>
+        <set name="PLL" caseList="0Aa 0Ab 0E 0F 0Ga 0Gb 0Gc 0Gd 0H 0Ja 0Jb 0Na 0Nb 0Ra 0Rb 0T 0Ua 0Ub 0V 0Y 0Z"/>
+    </sets>
+</xml>
