@@ -8,18 +8,18 @@ function loadXml() // load 3x3Algs.xml and store it in window.xml3x3Algs
 	} else {
 		xmlHttp = new ActiveXObject("Microsoft.xmlHttp");
 	}
-	xmlHttp.open("get", "3x3Algs.xml", false);
+	xmlHttp.open("get", "3x3algs.xml", false);
 	xmlHttp.send();
-	window.xml3x3Algs = xmlHttp.responseXML.querySelector("xml");
+	window.xml3x3algs = xmlHttp.responseXML.querySelector("xml");
 }
 
 function generatePage(setName) // generates the page corresponding to the chosen set
 {
 	let ulHtmlTag = document.querySelector("ul.liste_cas_simple");
-	for (let set of window.xml3x3Algs.querySelector("sets").querySelectorAll("set")) {
+	for (let set of window.xml3x3algs.querySelector("sets").querySelectorAll("set")) {
 		if (set.getAttribute("name") === setName) {
 			for (let algCase of set.getAttribute("caseList").split(" ")) {
-				for (let alg of window.xml3x3Algs.querySelector("algs").querySelectorAll("alg")) {
+				for (let alg of window.xml3x3algs.querySelector("algs").querySelectorAll("alg")) {
 					if (alg.getAttribute("id") === algCase) {
 						ulHtmlTag.appendChild(makeAlgCard(alg));
 						break;
