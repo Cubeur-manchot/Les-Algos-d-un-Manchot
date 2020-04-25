@@ -20,7 +20,7 @@
             <li>Reconnaître la CP : détermination de la famille EPLL / PLL adjacente / PLL diagonale</li>
             <li>Repérer les headlights et/ou les blocs : détermination de la PLL et de l'AUF</li>
         </ul>
-    <h3>CP Correcte : EPLL</h3>
+    <h2>CP Correcte : EPLL</h2>
     <p>On les repère facilement, les coins sont résolus :</p>
     <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=coll">
     <br>
@@ -76,7 +76,7 @@
             <div>Deux arêtes adjacentes, celle en R va en F :<br>Ub</div>
         </li>
     </ul>
-    <h3>CP Diagonale : PLL ENVY</h3>
+    <h2>CP Diagonale : PLL ENVY</h2>
     <p>La CP est facile à repérer, les stickers des coins sont opposés sur les deux faces :</p>
     <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=coll&alg=F R U' R' U' R U R' F' R U R' U' R' F R F'">
     <br>
@@ -132,7 +132,7 @@
             <div>Pas de bloc, pas de damier, le coin interne match l'arête de droite :<br>E</div>
         </li>
     </ul>
-    <h3>CP Adjacente + Headlights</h3>
+    <h2>CP Adjacente + Headlights</h2>
     <p>La CP est facile à repérer grâce aux headlights, qui peuvent être à droite ou à gauche :</p>
     <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=coll&alg=U2 R U R' U' R' F R2 U' R' U' R U R' F' U2">
     <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=coll&alg=U R U R' U' R' F R2 U' R' U' R U R' F' U'">
@@ -237,32 +237,110 @@
             <div>Pas de bloc + damier 4 stickers à droite :<br>Ga</div>
         </li>
     </ul>
-    <br><br><br>
-    <h3>CP Adjacente + Pas de Headlights</h3>
-    <ul>
-        <li>2 Blocs<ul>
-            <li>2x1 Externe + 2x1 Interne : Ja ou Jb, les 2 blocs à échanger sont les 2 blocs visibles</li>
-            <li>2x2 : Aa ou Ab, le coin résolu est le coin interne</li>
-        </ul></li>
-        <li>1 Bloc<ul>
-            <li>3x1 : F</li>
-            <li>2x1 Interne : G</li>
-            <li>2x1 Externe + Couleur Opposée à côté du bloc<ul>
-                <li>3 Couleurs Visibles : Gb ou Gd</li>
-                <li>4 Couleurs Visibles : Aa ou Ab, le coin résolu est celui du bloc</li>
-            </ul></li>
-            <li>2x1 Externe + Couleur Adjacente à côté du bloc<ul>
-                <li>3 Couleurs Visibles : Ra ou Rb, les headlights sont du côté du bloc</li>
-                <li>4 Couleurs Visibles : T</li>
-            </ul></li>
-        </ul></li>
-        <li>0 Bloc<ul>
-            <li>3 Couleurs Visibles : F, le bloc est opposé aux coins opposés</li>
-            <li>4 Couleurs Visibles<ul>
-                <li>1 coin extérieur et l'arête à côté sont opposés : Ga ou Gc, le bloc est près des pièces opposées</li>
-                <li>1 coin intérieur et une arête à côté sont opposés : Ra ou Rb, le bloc est loin et opposé aux pièces opposées</li>
-            </ul></li>
-        </ul></li>
+    <h2>CP Adjacente + Pas de Headlights</h2>
+    <p>La CP est plus difficile à repérer, ce sont ces deux cas :</p>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=coll&alg=R U R' U' R' F R2 U' R' U' R U R' F'">
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=coll&alg=U' R U R' U' R' F R2 U' R' U' R U R' F' U">
+    <br>
+    <br>
+    <p>Ensuite il y a 24 cas distincts :</p>
+    <ul class="pllRecognitionCaseList">
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U6U0,U0U2&ac=666666&alg=U r U' L D2' L' U L D2' L2' (x')">
+            <div>Bloc 2x2 + coin opposé à gauche :<br>Aa</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U0,U0U6&ac=666666&alg=l' U R' D2' R U' R' D2' R2' (x') U'">
+            <div>Bloc 2x2 + coin opposé à droite :<br>Ab</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U8,U8U2,U5U7,U7U5&ac=666666&alg=R U R' F' R U R' U' R' F R2 U' R' U'">
+            <div>Deux blocs 2x1 à droite + coin interne opposé à l'arête :<br>Jb</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U6U8,U8U6,U7U5,U5U7&ac=666666&alg=U L' U' L F L' U' L U L F' L2' U L">
+            <div>Deux blocs 2x1 à gauche + coin interne opposé à l'arête :<br>Ja</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U8,U8U2,U1U5,U5U1&ac=666666&alg=U2 L' U' L F L' U' L U L F' L2' U L U'">
+            <div>Deux blocs 2x1 à gauche + coin interne adjacent à l'arête :<br>Ja</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U6U8,U8U6,U3U7,U7U3&ac=666666&alg=U' R U R' F' R U R' U' R' F R2 U' R'">
+            <div>Deux blocs 2x1 à droite + coin interne adjacent à l'arête :<br>Jb</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&fd=uuuuuduudbbfnnnnnnflrnnnnnn&sch=y,r,b,bbbb00,o,g">
+            <div>Bloc 1x2 opposé interne à droite :<br>Gd</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&fd=uuuuuuuddfbrnnnnnnrllnnnnnn&sch=y,r,b,bbbb00,o,g">
+            <div>Bloc 1x2 opposé interne à gauche :<br>Gb</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U6U8,U0U6&ac=666666&alg=U l' U R' D2' R U' R' D2' R2' (x') U2">
+            <div>Bloc 1x2 opposé externe à droite + 4 couleurs visibles :<br>Ab</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U0U2,U2U8&ac=666666&alg=r U' L D2' L' U L D2' L2' (x') U">
+            <div>Bloc 1x2 opposé externe à gauche + 4 couleurs visibles :<br>Aa</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&fd=uuduuduuubffnnnnnnfbrnnnnnn&sch=y,r,b,bbbb00,o,g">
+            <div>Bloc 1x2 opposé externe à droite + 3 couleurs visibles :<br>Gb</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&fd=uuuuuudduflrnnnnnnrrlnnnnnn&sch=y,r,b,bbbb00,o,g">
+            <div>Bloc 1x2 opposé externe à gauche + 3 couleurs visibles :<br>Gd</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&fd=uuuuuuuddblfnnnnnnfrrnnnnnn&sch=y,r,b,bbbb00,o,g">
+            <div>Bloc 1x2 adjacent interne à gauche :<br>Ga</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&fd=uuuuuduudffrnnnnnnrblnnnnnn&sch=y,r,b,bbbb00,o,g">
+            <div>Bloc 1x2 adjacent interne à droite :<br>Gc</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U8,U8U2,U3U5,U5U3&ac=666666&alg=R U R' U' R' F R2 U' R' U' R U R' F'">
+            <div>Bloc 1x2 adjacent externe à gauche + 4 couleurs visibles :<br>T</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U6U8,U8U6,U1U7,U7U1&ac=666666&alg=U' R U R' U' R' F R2 U' R' U' R U R' F' U">
+            <div>Bloc 1x2 adjacent externe à droite + 4 couleurs visibles :<br>T</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U8,U8U2,U1U3,U3U1&ac=666666&alg=U' L U2 L' U2 L F' L' U' L U L F L2' U2">
+            <div>Bloc 1x2 adjacent externe à gauche + 3 couleurs visibles :<br>Ra</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U6U8,U8U6,U1U3,U3U1&ac=666666&alg=U2 R' U2 R' D' R U' R' D R U R U' R' U' R U">
+            <div>Bloc 1x2 adjacent externe à droite + 3 couleurs visibles :<br>Rb</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U8,U8U2,U1U7,U7U1&ac=666666&alg=R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R">
+            <div>Pas de bloc + 3 couleurs visibles + stickers opposés à gauche :<br>F</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U6U8,U8U6,U3U5,U5U3&ac=666666&alg=U' R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R U">
+            <div>Pas de bloc + 3 couleurs visibles + stickers opposés à droite :<br>F</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U2U8,U8U2,U3U7,U7U3&ac=666666&alg=U' R' U2 R' D' R U' R' D R U R U' R' U' R">
+            <div>Pas de bloc + arêtes opposées + coins opposés à droite :<br>Rb</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&stage=ll&arw=U6U8,U8U6,U1U5,U5U1&ac=666666&alg=U2 L U2 L' U2 L F' L' U' L U L F L2' U'">
+            <div>Pas de bloc + arêtes opposées + coins opposés à gauche :<br>Ra</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&fd=udduuuuuublfnnnnnnfbrnnnnnn&sch=y,r,b,bbbb00,o,g">
+            <div>Pas de bloc + arêtes adjacentes + coins opposés à droite :<br>Gc</div>
+        </li>
+        <li class="pllRecognitionCase">
+            <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&fd=uuuduuduuflrnnnnnnrblnnnnnn&sch=y,r,b,bbbb00,o,g">
+            <div>Pas de bloc + arêtes adjacentes + coins opposés à gauche :<br>Ga</div>
+        </li>
     </ul>
 </section>
 </body>
