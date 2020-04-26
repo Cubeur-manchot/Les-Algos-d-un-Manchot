@@ -1,12 +1,17 @@
 /*____________ GÉNÉRAL ____________*/
 
-body { margin: 0px; padding: 0px; background-color: #DDF2FE; }
+body {
+	margin: 15px 15px 0 15px;
+	padding: 0;
+	min-width: 460px;
+	background-color: #DDF2FE;
+}
+
 #corps_de_page {
-	margin: 15px 15px 0px 15px;
 	display: inline-block;
 	padding: 0px;
-	min-width: 460px;
 }
+
 #corps_de_page section { display: inline-block; margin: 0px; padding: 0px; }
 h1 {
 	margin-top: 15px;

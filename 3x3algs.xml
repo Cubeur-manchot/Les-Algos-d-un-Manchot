@@ -22,10 +22,41 @@
             <alg sequence="M2' U' M U2 M' U' M2" name="PLL Ub" id="0Ub"/>
             <alg sequence="R' U R' d' R' F' R2 U' R' U R' F R F" name="PLL V" id="0V"/>
             <alg sequence="F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Y" id="0Y"/>
-            <alg sequence="M2' U M2' U M' U2 M2' U2 M'" name="PLL Z" id="0Z"/>
+            <alg sequence="M2' U M2' U M' U2 M2' U2 M' (U2)" name="PLL Z" id="0Z"/>
+            <alg sequence="M' U2 M U2 M' U M U2 M' U2 M (U')" name="Cas pur OLL 20" id="20Pur"/>
+            <alg sequence="M U R U R' U' M2' U R U' r' (U')" name="ELL H 4-flip" id="20H"/>
+            <alg sequence="R U R' U M' U' R U' r' U2 M' U' M (U')" name="ELL Ua 4-flip" id="20Ua"/>
+            <alg sequence="L' U' L U' M' U L' U l U2 M' U M (U)" name="ELL Un 4-flip" id="20Ub"/>
+            <alg sequence="l U' M2' U R' F2 R U' M2' U l' (U2)" name="ELL Z 4-flip" id="20Z"/>
+            <alg sequence="r U R' U' r' U2 R U R U' R2' U2 R" name="Cas pur OLL 28" id="28Pur"/>
+            <alg sequence="M' U M U M' U M U M' U M (U')" name="ELL H OLL 28" id="28H"/>
+            <alg sequence="F R U R' U' F2 L' U' L U F" name="ELL Z séparée OLL 28" id="28Z1"/>
+            <alg sequence="F R U R' U' F' R' U' R' F R F' U R" name="ELL Z croisée OLL 28" id="28Z2"/>
+            <alg sequence="r' U' R U M' U' R' U R" name="ELL Ua Type 1 OLL 28" id="28Ua1"/>
+            <alg sequence="r U R' U' M U R U' R'" name="ELL Ub Type 1 OLL 28" id="28Ub1"/>
+            <alg sequence="R U R' U R U2' R' U' r' U' r U' R' U R r' U r (U)" name="ELL Ua Type 2 OLL 28" id="28Ua2"/>
+            <alg sequence="R' U' R U' R' U2 R U r U r' U R U' R' r U' r' (U')" name="ELL Ub Type 2 OLL 28" id="28Ub2"/>
+            <alg sequence="M' U M U2 M' U M" name="ELL Ua Type 3 OLL 28" id="28Ua3"/>
+            <alg sequence="M' U' M U2' M' U' M" name="ELL Ub Type 3 OLL 28" id="28Ub3"/>
+            <alg sequence="M' U M' U2 M U M2 U M' (U')" name="ELL Ua Type 4 OLL 28" id="28Ua4"/>
+            <alg sequence="M' U' M' U2 M U' M2 U' M' (U)" name="ELL Ub Type 4 OLL 28" id="28Ub4"/>
+            <alg sequence="M' U2 M U R' F' R S R' F R S' (U)" name="Cas Pur OLL 57" id="57Pur"/>
+            <alg sequence="R2' F R U R U' R2' F' R U R U R' U2 R" name="ELL H OLL 57" id="57H"/>
+            <alg sequence="M' U' M U M' U' M U' M' U2 M" name="ELL Z droite OLL 57" id="57Zd"/>
+            <alg sequence="M' U M U' M' U M U M' U2 M" name="ELL Z droite OLL 57" id="57Zg"/>
+            <alg sequence="R U R' U' M' U R U' r'" name="ELL Ua Type 1 OLL 57" id="57Ua1"/>
+            <alg sequence="R' U' R U M U' R' U r" name="ELL Ub Type 1 OLL 57" id="57Ub1"/>
+            <alg sequence="r U r' R U R' U' r U' r' U' R' U2 R U R' U R (U)" name="ELL Ua Type 2 OLL 57" id="57Ua2"/>
+            <alg sequence="r' U' r R' U' R U r' U r U R U2 R' U' R U' R' (U')" name="ELL Ub Type 2 OLL 57" id="57Ub2"/>
         </lastLayerAlgs>
     </algs>
     <sets>
         <set name="PLL" caseList="0Aa 0Ab 0E 0F 0Ga 0Gb 0Gc 0Gd 0H 0Ja 0Jb 0Na 0Nb 0Ra 0Rb 0T 0Ua 0Ub 0V 0Y 0Z"/>
+        <set name="ELL">
+            <subset name="OLL 0 (EPLL)" caseList="0H 0Z 0Ua 0Ub" keepAUF="true"/>
+            <subset name="OLL 20 (4-flip)" caseList="20Pur 20H 20Z 20Ua 20Ub" keepAUF="true"/>
+            <subset name="OLL 28 (2-flip adjacent)" caseList="28Pur 28H 28Z1 28Z2 28Ua1 28Ub1 28Ua2 28Ub2 28Ua3 28Ub3 28Ua4 28Ub4" keepAUF="true"/>
+            <subset name="OLL 57 (2-flip opposé)" caseList="57Pur 57H 57Zd 57Zg 57Ua1 57Ub1 57Ua2 57Ub2" keepAUF="true"/>
+        </set>
     </sets>
 </xml>
