@@ -54,7 +54,7 @@ function makeAlgCard(alg, keepAUF)
 	liHtmlTag.appendChild(createHtmlTagWithClassNameAndTextContent("div", "nom", alg.getAttribute("name")));
 	let moveSequence = alg.getAttribute("sequence");
 	if (keepAUF !== "true") {
-		moveSequence = moveSequence.replace(/ \(.*\)/,""); // remove things in parenthesis
+		moveSequence = moveSequence.replace(/ \(U.*\)/,""); // remove things in parenthesis
 	}
 	let aHtmlTag = createHtmlTagWithClassNameHrefAndTextContent("a", "bouton_animation",
 		"http://alg.cubing.net/?puzzle=3x3x3&alg=" + moveSequence + "&setup=z2 (" + moveSequence + ")'");
