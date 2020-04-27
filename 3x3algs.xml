@@ -2,52 +2,110 @@
 <xml>
     <algs>
         <lastLayerAlgs>
-            <alg sequence="l' U R' D2' R U' R' D2' R2' (x')" name="PLL Aa" id="0Aa"/>
-            <alg sequence="r U' L D2' L' U L D2' L2' (x')" name="PLL Ab" id="0Ab"/>
-            <alg sequence="l U' R' D R U R' D' R U R' D R U' R' D' (x)" name="PLL E" id="0E"/>
-            <alg sequence="R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R" name="PLL F" id="0F"/>
-            <alg sequence="R2 u R' U R' U' R u' R2' F' U F" name="PLL Ga" id="0Ga"/>
-            <alg sequence="D R' U' R D' U R2 U R' U R U' R U' R2'" name="PLL Gb" id="0Gb"/>
-            <alg sequence="R2' F2 R U2 R U2' R' F R U R' U' R' F R2" name="PLL Gc" id="0Gc"/>
-            <alg sequence="D' R U R' U' D R2 U' R U' R' U R' U R2" name="PLL Gd" id="0Gd"/>
-            <alg sequence="M2' U M2' U2 M2' U M2'" name="PLL H" id="0H"/>
-            <alg sequence="L' U' L F L' U' L U L F' L2' U L" name="PLL Ja" id="0Ja"/>
-            <alg sequence="R U R' F' R U R' U' R' F R2 U' R'" name="PLL Jb" id="0Jb"/>
-            <alg sequence="R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'" name="PLL Na" id="0Na"/>
-            <alg sequence="R' U L' U2 R U' L R' U L' U2 R U' L" name="PLL Nb" id="0Nb"/>
-            <alg sequence="L U2 L' U2 L F' L' U' L U L F L2'" name="PLL Ra" id="0Ra"/>
-            <alg sequence="R' U2 R' D' R U' R' D R U R U' R' U' R" name="PLL Rb" id="0Rb"/>
-            <alg sequence="R U R' U' R' F R2 U' R' U' R U R' F'" name="PLL T" id="0T"/>
-            <alg sequence="M2' U M U2 M' U M2'" name="PLL Ua" id="0Ua"/>
-            <alg sequence="M2' U' M U2 M' U' M2" name="PLL Ub" id="0Ub"/>
-            <alg sequence="R' U R' d' R' F' R2 U' R' U R' F R F" name="PLL V" id="0V"/>
-            <alg sequence="F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Y" id="0Y"/>
-            <alg sequence="M2' U M2' U M' U2 M2' U2 M' (U2)" name="PLL Z" id="0Z"/>
-            <alg sequence="M' U2 M U2 M' U M U2 M' U2 M (U')" name="Cas pur OLL 20" id="20Pur"/>
-            <alg sequence="M U R U R' U' M2' U R U' r' (U')" name="ELL H 4-flip" id="20H"/>
-            <alg sequence="R U R' U M' U' R U' r' U2 M' U' M (U')" name="ELL Ua 4-flip" id="20Ua"/>
-            <alg sequence="L' U' L U' M' U L' U l U2 M' U M (U)" name="ELL Un 4-flip" id="20Ub"/>
-            <alg sequence="l U' M2' U R' F2 R U' M2' U l' (U2)" name="ELL Z 4-flip" id="20Z"/>
-            <alg sequence="r U R' U' r' U2 R U R U' R2' U2 R" name="Cas pur OLL 28" id="28Pur"/>
-            <alg sequence="M' U M U M' U M U M' U M (U')" name="ELL H OLL 28" id="28H"/>
-            <alg sequence="F R U R' U' F2 L' U' L U F" name="ELL Z séparée OLL 28" id="28Z1"/>
-            <alg sequence="F R U R' U' F' R' U' R' F R F' U R" name="ELL Z croisée OLL 28" id="28Z2"/>
-            <alg sequence="r' U' R U M' U' R' U R" name="ELL Ua Type 1 OLL 28" id="28Ua1"/>
-            <alg sequence="r U R' U' M U R U' R'" name="ELL Ub Type 1 OLL 28" id="28Ub1"/>
-            <alg sequence="R U R' U R U2' R' U' r' U' r U' R' U R r' U r (U)" name="ELL Ua Type 2 OLL 28" id="28Ua2"/>
-            <alg sequence="R' U' R U' R' U2 R U r U r' U R U' R' r U' r' (U')" name="ELL Ub Type 2 OLL 28" id="28Ub2"/>
-            <alg sequence="M' U M U2 M' U M" name="ELL Ua Type 3 OLL 28" id="28Ua3"/>
-            <alg sequence="M' U' M U2' M' U' M" name="ELL Ub Type 3 OLL 28" id="28Ub3"/>
-            <alg sequence="M' U M' U2 M U M2 U M' (U')" name="ELL Ua Type 4 OLL 28" id="28Ua4"/>
-            <alg sequence="M' U' M' U2 M U' M2 U' M' (U)" name="ELL Ub Type 4 OLL 28" id="28Ub4"/>
-            <alg sequence="M' U2 M U R' F' R S R' F R S' (U)" name="Cas Pur OLL 57" id="57Pur"/>
-            <alg sequence="R2' F R U R U' R2' F' R U R U R' U2 R" name="ELL H OLL 57" id="57H"/>
-            <alg sequence="M' U' M U M' U' M U' M' U2 M" name="ELL Z droite OLL 57" id="57Zd"/>
-            <alg sequence="M' U M U' M' U M U M' U2 M" name="ELL Z droite OLL 57" id="57Zg"/>
-            <alg sequence="R U R' U' M' U R U' r'" name="ELL Ua Type 1 OLL 57" id="57Ua1"/>
-            <alg sequence="R' U' R U M U' R' U r" name="ELL Ub Type 1 OLL 57" id="57Ub1"/>
-            <alg sequence="r U r' R U R' U' r U' r' U' R' U2 R U R' U R (U)" name="ELL Ua Type 2 OLL 57" id="57Ua2"/>
-            <alg sequence="r' U' r R' U' R U r' U r U R U2 R' U' R U' R' (U')" name="ELL Ub Type 2 OLL 57" id="57Ub2"/>
+            <oneLookLastLayerAlgs>
+                <alg sequence="l' U R' D2' R U' R' D2' R2' (x')" name="PLL Aa" id="0Aa"/>
+                <alg sequence="r U' L D2' L' U L D2' L2' (x')" name="PLL Ab" id="0Ab"/>
+                <alg sequence="l U' R' D R U R' D' R U R' D R U' R' D' (x)" name="PLL E" id="0E"/>
+                <alg sequence="R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R" name="PLL F" id="0F"/>
+                <alg sequence="R2 u R' U R' U' R u' R2' F' U F" name="PLL Ga" id="0Ga"/>
+                <alg sequence="D R' U' R D' U R2 U R' U R U' R U' R2'" name="PLL Gb" id="0Gb"/>
+                <alg sequence="R2' F2 R U2 R U2' R' F R U R' U' R' F R2" name="PLL Gc" id="0Gc"/>
+                <alg sequence="D' R U R' U' D R2 U' R U' R' U R' U R2" name="PLL Gd" id="0Gd"/>
+                <alg sequence="M2' U M2' U2 M2' U M2'" name="PLL H" id="0H"/>
+                <alg sequence="L' U' L F L' U' L U L F' L2' U L" name="PLL Ja" id="0Ja"/>
+                <alg sequence="R U R' F' R U R' U' R' F R2 U' R'" name="PLL Jb" id="0Jb"/>
+                <alg sequence="R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'" name="PLL Na" id="0Na"/>
+                <alg sequence="R' U L' U2 R U' L R' U L' U2 R U' L" name="PLL Nb" id="0Nb"/>
+                <alg sequence="L U2 L' U2 L F' L' U' L U L F L2'" name="PLL Ra" id="0Ra"/>
+                <alg sequence="R' U2 R' D' R U' R' D R U R U' R' U' R" name="PLL Rb" id="0Rb"/>
+                <alg sequence="R U R' U' R' F R2 U' R' U' R U R' F'" name="PLL T" id="0T"/>
+                <alg sequence="M2' U M U2 M' U M2'" name="PLL Ua" id="0Ua"/>
+                <alg sequence="M2' U' M U2 M' U' M2" name="PLL Ub" id="0Ub"/>
+                <alg sequence="R' U R' d' R' F' R2 U' R' U R' F R F" name="PLL V" id="0V"/>
+                <alg sequence="F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Y" id="0Y"/>
+                <alg sequence="M2' U M2' U M' U2 M2' U2 M' (U2)" name="PLL Z" id="0Z"/>
+                <alg sequence="M' U2 M U2 M' U M U2 M' U2 M (U')" name="Cas pur OLL 20" id="20Pur"/>
+                <alg sequence="r U R' U' M2' U R U' R' U' M' (U)" name="ELL H 4-flip" id="20H"/>
+                <alg sequence="R U R' U M' U' R U' r' U2 M' U' M (U')" name="ELL Ua 4-flip" id="20Ua"/>
+                <alg sequence="L' U' L U' M' U L' U l U2 M' U M (U)" name="ELL Un 4-flip" id="20Ub"/>
+                <alg sequence="l U' M2' U R' F2 R U' M2' U l' (U2)" name="ELL Z 4-flip" id="20Z"/>
+                <alg sequence="r U R' U' r' U2 R U R U' R2' U2 R" name="Cas pur OLL 28" id="28Pur"/>
+                <alg sequence="M' U M U M' U M U M' U M (U')" name="ELL H OLL 28" id="28H"/>
+                <alg sequence="F R U R' U' F2 L' U' L U F" name="ELL Z séparée OLL 28" id="28Z1"/>
+                <alg sequence="F R U R' U' F' R' U' R' F R F' U R" name="ELL Z croisée OLL 28" id="28Z2"/>
+                <alg sequence="r' U' R U M' U' R' U R" name="ELL Ua Type 1 OLL 28" id="28Ua1"/>
+                <alg sequence="r U R' U' M U R U' R'" name="ELL Ub Type 1 OLL 28" id="28Ub1" alternativeName="OLL 28 - Deux arêtes adjacentes"/>
+                <alg sequence="R U R' U R U2' R' U' r' U' r U' R' U R r' U r (U)" name="ELL Ua Type 2 OLL 28" id="28Ua2"/>
+                <alg sequence="R' U' R U' R' U2 R U r U r' U R U' R' r U' r' (U')" name="ELL Ub Type 2 OLL 28" id="28Ub2"/>
+                <alg sequence="M' U M U2 M' U M" name="ELL Ua Type 3 OLL 28" id="28Ua3"/>
+                <alg sequence="M' U' M U2' M' U' M" name="ELL Ub Type 3 OLL 28" id="28Ub3"/>
+                <alg sequence="M' U M' U2 M U M2 U M' (U')" name="ELL Ua Type 4 OLL 28" id="28Ua4"/>
+                <alg sequence="M' U' M' U2 M U' M2 U' M' (U)" name="ELL Ub Type 4 OLL 28" id="28Ub4"/>
+                <alg sequence="M' U2 M U R' F' R S R' F R S' (U)" name="Cas Pur OLL 57" id="57Pur"/>
+                <alg sequence="R2' F R U R U' R2' F' R U R U R' U2 R" name="ELL H OLL 57" id="57H"/>
+                <alg sequence="M' U' M U M' U' M U' M' U2 M" name="ELL Z droite OLL 57" id="57Zd"/>
+                <alg sequence="M' U M U' M' U M U M' U2 M" name="ELL Z droite OLL 57" id="57Zg"/>
+                <alg sequence="R U R' U' M' U R U' r'" name="ELL Ua Type 1 OLL 57" id="57Ua1" alternativeName="OLL 57 - Deux arêtes opposées"/>
+                <alg sequence="R' U' R U M U' R' U r" name="ELL Ub Type 1 OLL 57" id="57Ub1"/>
+                <alg sequence="r U r' R U R' U' r U' r' U' R' U2 R U R' U R (U)" name="ELL Ua Type 2 OLL 57" id="57Ua2"/>
+                <alg sequence="r' U' r R' U' R U r' U r U R U2 R' U' R U' R' (U')" name="ELL Ub Type 2 OLL 57" id="57Ub2"/>
+            </oneLookLastLayerAlgs>
+            <otherLastLayerAlgs>
+                <alg sequence="R U2' R2' F R F' U2 R' F R F'" name="OLL 1 - OLL Dot H" id="OLL1"/>
+                <alg sequence="F R U R' U' S R U R' U' f'" name="OLL 2 - OLL Dot Pi" id="OLL2"/>
+                <alg sequence="f R U R' U' f' U' F R U R' U' F'" name="OLL 3 - OLL Dot Sune" id="OLL3"/>
+                <alg sequence="f R U R' U' f' U F R U R' U' F'" name="OLL 4 - OLL Dot Antisune" id="OLL4"/>
+                <alg sequence="r' U2 R U R' U r" name="OLL 5 - Carré devant" id="OLL5"/>
+                <alg sequence="r U2 R' U' R U' r'" name="OLL 6 - Carré derrière" id="OLL6"/>
+                <alg sequence="r U R' U R U2' r'" name="OLL 7 - Éclair devant avec barres" id="OLL7"/>
+                <alg sequence="r' U' R U' R' U2 r" name="OLL 8 - Éclair derrière avec barres" id="OLL8"/>
+                <alg sequence="R U R' U' R' F R2 U R' U' F'" name="OLL 9 - Poisson barre à gauche" id="OLL9"/>
+                <alg sequence="R U R' U R' F R F' R U2 R'" name="OLL 10 - Poisson barre à droite" id="OLL10"/>
+                <alg sequence="R U R' U R' F R F' R U2 R'" name="OLL 11 - Éclair devant sans barres" id="OLL11"/>
+                <alg sequence="M L' U' L U' L' U2 L U' M'" name="OLL 12 - Éclair derrière sans barres" id="OLL12"/>
+                <alg sequence="F U R U2 R' U' R U R' F'" name="OLL 13 - L gauche avec barre" id="OLL13"/>
+                <alg sequence="F' U' L' U2 L U L' U' L F" name="OLL 14 - L droite avec barre" id="OLL14"/>
+                <alg sequence="r' U' r R' U' R U r' U r" name="OLL 15 - OLL L gauche sans barre" id="OLL15"/>
+                <alg sequence="r U r' R U R' U' r U' r'" name="OLL 16 - OLL L droite sans barre" id="OLL16"/>
+                <alg sequence="R U R' U R' F R F' U2 R' F R F'" name="OLL 17 - OLL Cross L" id="OLL17"/>
+                <alg sequence="r U R' U R U2' r2' U' R U' R' U2 r" name="OLL 18 - OLL Cross U" id="OLL18"/>
+                <alg sequence="r U2 R' U' R U' r2' U2 R U R' U r" name="OLL 19 - OLL Cross T" id="OLL19"/>
+                <alg sequence="R U2 R' U' R U R' U' R U' R'" name="OLL 21 - OLL Cross H" id="OLL21"/>
+                <alg sequence="R U2' R2' U' R2 U' R2' U2' R" name="OLL 22 - OLL Cross Pi" id="OLL22"/>
+                <alg sequence="R2' D' R U2 R' D R U2 R" name="OLL 23 - OLL Cross U" id="OLL23"/>
+                <alg sequence="r U R' U' r' F R F'" name="OLL 24 - OLL Cross T" id="OLL24"/>
+                <alg sequence="R' U2 R' D' R U2 R' D R2" name="OLL 25 - OLL Cross L" id="OLL25"/>
+                <alg sequence="R U2 R' U' R U' R'" name="OLL 26 - OLL Cross Antisune" id="OLL26"/>
+                <alg sequence="R U R' U R U2' R'" name="OLL 27 - OLL Cross Sune" id="OLL27"/>
+                <alg sequence="r2' D' r U r' D r2 U' r' U' r" name="OLL 29 - Y gauche avec barre" id="OLL29"/>
+                <alg sequence="F U R U2 R' U' R U2 R' U' F'" name="OLL 30 - Y droite avec barre" id="OLL30"/>
+                <alg sequence="R' U' F U R U' R' F' R" name="OLL 31 - P droite sans barre" id="OLL31"/>
+                <alg sequence="L U F' U' L' U L F L'" name="OLL 32 - P gauche sans barre" id="OLL32"/>
+                <alg sequence="R U R' U' R' F R F'" name="OLL 33 - T avec barres" id="OLL33"/>
+                <alg sequence="R U R' U' B' R' F R F' B" name="OLL 34 - C moche" id="OLL34"/>
+                <alg sequence="R U2 R2 F R F' R U2 R'" name="OLL 35 - Poisson sans barre" id="OLL35"/>
+                <alg sequence="L' U' L U' L' U L U L F' L' F" name="OLL 36 - W gauche" id="OLL36"/>
+                <alg sequence="F R U' R' U' R U R' F'" name="OLL 37 - Poisson deux barres" id="OLL37"/>
+                <alg sequence="R U R' U R U' R' U' R' F R F'" name="OLL 38 - W droite" id="OLL38"/>
+                <alg sequence="L F' L' U' L U F U' L'" name="OLL 39 - Z gauche" id="OLL39"/>
+                <alg sequence="R' F R U R' U' F' U R" name="OLL 40 - Z droite" id="OLL40"/>
+                <alg sequence="R U R' U R U2' R' F R U R' U' F'" name="OLL 41 - Y droite sans barre" id="OLL41"/>
+                <alg sequence="R' U' R U' R' U2 R F R U R' U' F'" name="OLL 42 - Y gauche sans barre" id="OLL42"/>
+                <alg sequence="R' U' F' U F R" name="OLL 43 - P gauche avec barre" id="OLL43"/>
+                <alg sequence="F U R U' R' F'" name="OLL 44 - P droite avec barre" id="OLL44"/>
+                <alg sequence="F R U R' U' F'" name="OLL 45 - T sans barre" id="OLL45"/>
+                <alg sequence="R' U' R' F R F' U R" name="OLL 46 - C bien" id="OLL46"/>
+                <alg sequence="F' L' U' L U L' U' L U F" name="OLL 47 - OLL V petite barre à gauche" id="OLL47"/>
+                <alg sequence="F R U R' U' R U R' U' F'" name="OLL 48 - OLL V petite barre à droite" id="OLL48"/>
+                <alg sequence="r U' r2' U r2 U r2' U' r" name="OLL 49 - OLL V deux barres devant" id="OLL49"/>
+                <alg sequence="r' U r2 U' r2' U' r2 U r'" name="OLL 50 - OLL V deux barres derrière" id="OLL50"/>
+                <alg sequence="F U R U' R' U R U' R' F'" name="OLL 51 - OLL I deux petites barres" id="OLL51"/>
+                <alg sequence="R' U' R U' R' U F' U F R" name="OLL 52 - OLL I une grande barre" id="OLL52"/>
+                <alg sequence="l' U2 L U L' U' L U L' U l" name="OLL 53 - OLL V grande barre à gauche" id="OLL53"/>
+                <alg sequence="r U2 R' U' R U R' U' R U' r'" name="OLL 54 - OLL V grande barre à droite" id="OLL54"/>
+                <alg sequence="R U2' R2 U' R U' R' U2' F R F'" name="OLL 55 - OLL I deux grandes barres" id="OLL55"/>
+                <alg sequence="r U r' U R U' R' U R U' R' r U' r'" name="OLL 56 - OLL I sans barre" id="OLL56"/>
+            </otherLastLayerAlgs>
         </lastLayerAlgs>
     </algs>
     <sets>
@@ -57,6 +115,18 @@
             <subset name="OLL 20 (4-flip)" caseList="20Pur 20H 20Z 20Ua 20Ub" keepAUF="true"/>
             <subset name="OLL 28 (2-flip adjacent)" caseList="28Pur 28H 28Z1 28Z2 28Ua1 28Ub1 28Ua2 28Ub2 28Ua3 28Ub3 28Ua4 28Ub4" keepAUF="true"/>
             <subset name="OLL 57 (2-flip opposé)" caseList="57Pur 57H 57Zd 57Zg 57Ua1 57Ub1 57Ua2 57Ub2" keepAUF="true"/>
+        </set>
+        <set name="OLL" options="&amp;stage=oll" useAlternativeName="true">
+            <subset name="OLL Cross" caseList="OLL23 OLL24 OLL25 OLL21 OLL22 OLL27 OLL26"/>
+            <subset name="OLL Dot" caseList="20H OLL18 OLL19 OLL17 OLL1 OLL2 OLL3 OLL4"/>
+            <subset name="Z Shapes" caseList="OLL7 OLL8 OLL40 OLL39 OLL11 OLL12"/>
+            <subset name="V Shapes" caseList="OLL48 OLL47 OLL54 OLL53 OLL49 OLL50"/>
+            <subset name="P Shapes" caseList="OLL31 OLL32 OLL43 OLL44"/>
+            <subset name="L Shapes" caseList="OLL13 OLL14 OLL15 OLL16"/>
+            <subset name="I Shapes" caseList="OLL55 OLL52 OLL51 OLL56"/>
+            <subset name="Fish Shapes" caseList="OLL37 OLL35 OLL9 OLL10"/>
+            <subset name="Y Shapes" caseList="OLL29 OLL30 OLL41 OLL42"/>
+            <subset name="Other Shapes" caseList="OLL33 OLL45 OLL5 OLL6 OLL46 OLL34 OLL38 OLL36 28Ub1 57Ua1"/>
         </set>
     </sets>
 </xml>
