@@ -24,7 +24,9 @@
                 <alg sequence="R' U R' d' R' F' R2 U' R' U R' F R F" name="PLL V" id="0V"/>
                 <alg sequence="F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Y" id="0Y"/>
                 <alg sequence="M2' U M2' U M' U2 M2' U2 M' (U2)" name="PLL Z" id="0Z"/>
+				<alg sequence="F' U' F2 R' F' R2 U' R' (U2)" name="Cas pur - carré sune (optimal)" id="5PurOpt"/>
                 <alg sequence="r' U2 R U R' U r (U2)" name="Fat Back Antisune" id="5Ua3b" alternativeName="OLL 5 - Carré devant"/>
+				<alg sequence="R U R2' F R F2 U F (U2)" name="Cas pur - carré antisune (optimal)" id="6PurOpt"/>
                 <alg sequence="r U2 R' U' R U' r' (U2)" name="Fat Antisune" id="6Ub3b" alternativeName="OLL 6 - Carré derrière"/>
                 <alg sequence="L' U2 L U2 L F' L' F" name="Éclair gauche barre derrière" id="7Gbbor"/>
                 <alg sequence="F R' F' R U2 R U2' R'" name="Éclair gauche barre devant" id="7Gcbof"/>
@@ -102,13 +104,19 @@
                 <alg sequence="f' L F L' F2 R' F' R F' U L' U' L U' S" name="22LL Rb U + 2-flip" id="41Rb22"/>
                 <alg sequence="f R' F' R F2 r U r' F U' R U R' U S'" name="22LL Ra U + 2-flip" id="42Ra22"/>
                 <alg sequence="x R2' U R' d' R' F' R2 U' R' U R' F R F2 z'" name="22LL Ja U + 2-flip" id="43Ja22"/>
+				<alg sequence="R U R' F' L' U' L F" name="OLL P barre gauche + deux barres opposées" id="43Nb"/>
+				<alg sequence="R' U' F R' F' R U R" name="P droite barre flippée + petite barre" id="43Vbfb"/>
 				<alg sequence="R' U' F' U F R (U)" name="6-move P gauche" id="43Ybol" alternativeName="OLL 43 - P gauche avec barre"/>
                 <alg sequence="f R' U R' d' R' F' R2 U' R' U l' U R U R'" name="22LL Jb U + 2-flip" id="44Jb22"/>
+                <alg sequence="F R U' R' F' L' U L" name="OLL P barre droite + deux barres opposées" id="44Na"/>
+				<alg sequence="L U F' L F L' U' L'" name="P gauche barre flippée + petite barre" id="44Vbfb"/>
                 <alg sequence="F U R U' R' F' (U')" name="6-move P droite" id="44Ybob" alternativeName="OLL 44 - P droite avec barre"/>
                 <alg sequence="L' R U R' U' r U2 L U r' F U' R U R' (U)" name="22LL F T + 2-flip" id="45F22"/>
                 <alg sequence="F R U R' U' F' (U)" name="6-move T droite" id="45Ybor" alternativeName="OLL 45 - T sans barre"/>
                 <alg sequence="R' F' U' F U R (U')" name="6-move T gauche" id="45Ybol"/>
                 <alg sequence="R2 U' R2' F R F' R d' R U2 R' F' U F'" name="22LL T U + 2-flip" id="46T22"/>
+                <alg sequence="L U L F' L' F U' L'" name="OLL C barre gauche" id="46Vbob"/>
+                <alg sequence="R' U' R' F R F' U R" name="OLL C barre droite" id="46Vbof" alternativeName="OLL 46 - C bien"/>
                 <alg sequence="M' U2 M U R' F' R S R' F R S' (U)" name="Cas Pur OLL 57" id="57Pur"/>
                 <alg sequence="R U2' R' U2 R' F R U R U2' R' U' R U R' F'" name="22LL F + 2-flip" id="57F22"/>
                 <alg sequence="R2' F R U R U' R2' F' R U R U R' U2 R" name="ELL H OLL 57" id="57H"/>
@@ -155,7 +163,6 @@
                 <alg sequence="R' F R U R' U' F' U R" name="OLL 40 - Z droite" id="OLL40"/>
                 <alg sequence="R U R' U R U2' R' F R U R' U' F'" name="OLL 41 - Y droite sans barre" id="OLL41"/>
                 <alg sequence="R' U' R U' R' U2 R F R U R' U' F'" name="OLL 42 - Y gauche sans barre" id="OLL42"/>
-                <alg sequence="R' U' R' F R F' U R" name="OLL 46 - C bien" id="OLL46"/>
                 <alg sequence="F' L' U' L U L' U' L U F" name="OLL 47 - OLL V petite barre à gauche" id="OLL47"/>
                 <alg sequence="F R U R' U' R U R' U' F'" name="OLL 48 - OLL V petite barre à droite" id="OLL48"/>
                 <alg sequence="r U' r2' U r2 U r2' U' r" name="OLL 49 - OLL V deux barres devant" id="OLL49"/>
@@ -187,7 +194,7 @@
             <subset name="I Shapes" caseList="OLL55 OLL52 OLL51 OLL56"/>
             <subset name="Fish Shapes" caseList="OLL37 OLL35 OLL9 OLL10"/>
             <subset name="Y Shapes" caseList="OLL29 OLL30 OLL41 OLL42"/>
-            <subset name="Other Shapes" caseList="OLL33 45Ybor 5Ua3b 6Ub3b OLL46 OLL34 OLL38 OLL36 28Ub1 57Ua1"/>
+            <subset name="Other Shapes" caseList="OLL33 45Ybor 5Ua3b 6Ub3b 46Vbof OLL34 OLL38 OLL36 28Ub1 57Ua1"/>
         </set>
         <set name="22LL">
             <subset name="Permutation F" caseList="0F 23F22 24F22 57F22 45F22 33F22"/>
@@ -201,7 +208,7 @@
 		<set name="6-9HTM">
 			<subset name="6 HTM" caseList="45Ybor 45Ybol 44Ybob 43Ybol"/>
 			<subset name="7 HTM" caseList="27Ubbol 26Uabor 26Uabob 27Ubbof 7Ua3b 6Ub3b 8Ub3b 5Ua3b 27Abbk 26Aabk"/>
-			<subset name="8 HTM" caseList="24Abbkf 25Aabkr 24Aabkb 25Abbkr 33Rb3b 33Ra3b 37Rb3b 37Ra3b 8Gdbor 7Gcbof 7Gbbor 8Gabob"/>
+			<subset name="8 HTM" caseList="24Abbkf 25Aabkr 24Aabkb 25Abbkr 33Rb3b 33Ra3b 37Rb3b 37Ra3b 8Gdbor 7Gcbof 7Gbbor 8Gabob 46Vbof 46Vbob 43Vbfb 44Vbfb 5PurOpt 6PurOpt 44Na 43Nb"/>
 			<subset name="9 HTM" caseList=""/>
 		</set>
     </sets>
