@@ -26,7 +26,11 @@
                 <alg sequence="M2' U M2' U M' U2 M2' U2 M' (U2)" name="PLL Z" id="0Z"/>
                 <alg sequence="r' U2 R U R' U r (U2)" name="Fat Back Antisune" id="5Ua3b" alternativeName="OLL 5 - Carré devant"/>
                 <alg sequence="r U2 R' U' R U' r' (U2)" name="Fat Antisune" id="6Ub3b" alternativeName="OLL 6 - Carré derrière"/>
+                <alg sequence="L' U2 L U2 L F' L' F" name="Éclair gauche barre derrière" id="7Gbbor"/>
+                <alg sequence="F R' F' R U2 R U2' R'" name="Éclair gauche barre devant" id="7Gcbof"/>
                 <alg sequence="r U R' U R U2' r' (U2)" name="Fat Sune" id="7Ua3b" alternativeName="OLL 7 - Éclair devant avec barres"/>
+                <alg sequence="F' L F L' U2' L' U2 L" name="Éclair droite barre devant" id="8Gabob"/>
+                <alg sequence="R U2' R' U2 R' F R F'" name="Éclair droite barre derrière" id="8Gdbor"/>
                 <alg sequence="r' U' R U' R' U2 r (U2)" name="Fat Back Sune" id="8Ub3b" alternativeName="OLL 8 - Éclair derrière avec barres"/>
                 <alg sequence="M' U2 M U2 M' U M U2 M' U2 M (U')" name="Cas pur OLL 20" id="20Pur"/>
                 <alg sequence="r U R' U' M2' U R U' R' U' M' (U)" name="ELL H 4-flip" id="20H"/>
@@ -197,7 +201,7 @@
 		<set name="6-9HTM">
 			<subset name="6 HTM" caseList="45Ybor 45Ybol 44Ybob 43Ybol"/>
 			<subset name="7 HTM" caseList="27Ubbol 26Uabor 26Uabob 27Ubbof 7Ua3b 6Ub3b 8Ub3b 5Ua3b 27Abbk 26Aabk"/>
-			<subset name="8 HTM" caseList="24Abbkf 25Aabkr 24Aabkb 25Abbkr 33Rb3b 33Ra3b 37Rb3b 37Ra3b"/>
+			<subset name="8 HTM" caseList="24Abbkf 25Aabkr 24Aabkb 25Abbkr 33Rb3b 33Ra3b 37Rb3b 37Ra3b 8Gdbor 7Gcbof 7Gbbor 8Gabob"/>
 			<subset name="9 HTM" caseList=""/>
 		</set>
     </sets>
