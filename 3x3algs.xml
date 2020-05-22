@@ -27,12 +27,32 @@
                 <alg sequence="M' U2 M U2 M' U M U2 M' U2 M (U')" name="Cas pur OLL 20" id="20Pur"/>
                 <alg sequence="r U R' U' M2' U R U' R' U' M' (U)" name="ELL H 4-flip" id="20H"/>
                 <alg sequence="R U R' U M' U' R U' r' U2 M' U' M (U')" name="ELL Ua 4-flip" id="20Ua"/>
-                <alg sequence="L' U' L U' M' U L' U l U2 M' U M (U)" name="ELL Un 4-flip" id="20Ub"/>
+                <alg sequence="L' U' L U' M' U L' U l U2 M' U M (U)" name="ELL Ub 4-flip" id="20Ub"/>
                 <alg sequence="l U' M2' U R' F2 R U' M2' U l' (U2)" name="ELL Z 4-flip" id="20Z"/>
+                <alg sequence="R' U R U' R' U L' U' L U' F2 R' F2 R2" name="22LL F U" id="23F22"/>
+                <alg sequence="F R' F' R F2 r U r' F U' R U R' (U)" name="22LL Ja U" id="23Ja22"/>
+                <alg sequence="F' L F L' F2 R' F' R F' U L' U' L (U')" name="22LL Jb U" id="23Jb22"/>
+                <alg sequence="R' F' R U R' U' R' F R2 U' R' U2 R U' R' U2 R U R' U R (U)" name="22LL Ra U" id="23Ra22"/>
+                <alg sequence="R' U2 R' D' r U2 r' D R2 U' R U2 R' U' R U' R' (U2)" name="22LL Rb U" id="23Rb22"/>
+                <alg sequence="L U R' U L' U2 R U' R' L U L' U2 R (U')" name="22LL T U" id="23T22"/>
+                <alg sequence="R' U' R2 U R' F' R U R' U' R' F R2 U' R' U' R' U R" name="22LL F T" id="24F22"/>
+                <alg sequence="L' U L U2 R' L' U L U' R (U2)" name="22LL Ja T" id="24Ja22"/>
+                <alg sequence="R U' R' U2 L R U' R' U L' (U2)" name="22LL Jb T" id="24Jb22"/>
+                <alg sequence="F' U' F R U R' U' x' R2 U' R' U R' x" name="22LL Ra T" id="24Ra22"/>
+                <alg sequence="R U R' F' U' F U F2 r U r' F" name="22LL Rb T" id="24Rb22"/>
+                <alg sequence="r U' r U2' R' F R U2' r2' F" name="22LL T T" id="24T22"/>
+                <alg sequence="R' U' R U R' U' R' F R2 U' R' U' R U R' F' U R" name="22LL Na L" id="25Na22"/>
+                <alg sequence="F R U R' U' R' F R2 U' R' U' R U R' F2" name="22LL Nb L" id="25Nb22"/>
+                <alg sequence="F R U R2' F R F' R U' R' F' (U)" name="22LL V L intérieur" id="25V22i"/>
+                <alg sequence="R U D' R U R' D R2 U' R U R2 U2' R'" name="22LL V L extérieur" id="25V22e"/>
+                <alg sequence="L' U2 R U' R' U2 L R U' R' (U)" name="22LL Y L gauche" id="25Y22l"/>
+                <alg sequence="R' U' R U R' F' R U R' U' R' F R2 (U')" name="22LL Y L droite" id="25Y22r"/>
                 <alg sequence="r U R' U' r' U2 R U R U' R2' U2 R" name="Cas pur OLL 28" id="28Pur"/>
                 <alg sequence="M' U M U M' U M U M' U M (U')" name="ELL H OLL 28" id="28H"/>
-                <alg sequence="F R U R' U' F2 L' U' L U F" name="ELL Z séparée OLL 28" id="28Z1"/>
-                <alg sequence="F R U R' U' F' R' U' R' F R F' U R" name="ELL Z croisée OLL 28" id="28Z2"/>
+                <alg sequence="M' U L U' R U2' L' U L U2 L2 x'" name="22LL Ja + 2-flip" id="28Ja22"/>
+                <alg sequence="M' U' R' U L' U2 R U' R' U2 R2 x'" name="22LL Jb + 2-flip" id="28Jb22"/>
+                <alg sequence="M U' R' U2 R' D' R U' R' D R U R U' R' U' r" name="22LL Ra + 2-flip" id="28Ra22"/>
+                <alg sequence="M' U R U R' F' R U R' U' R' F R2 U' R' U2 M" name="22LL Rb + 2-flip" id="28Rb22"/>
                 <alg sequence="r' U' R U M' U' R' U R" name="ELL Ua Type 1 OLL 28" id="28Ua1"/>
                 <alg sequence="r U R' U' M U R U' R'" name="ELL Ub Type 1 OLL 28" id="28Ub1" alternativeName="OLL 28 - Deux arêtes adjacentes"/>
                 <alg sequence="R U R' U R U2' R' U' r' U' r U' R' U R r' U r (U)" name="ELL Ua Type 2 OLL 28" id="28Ua2"/>
@@ -41,14 +61,40 @@
                 <alg sequence="M' U' M U2' M' U' M" name="ELL Ub Type 3 OLL 28" id="28Ub3"/>
                 <alg sequence="M' U M' U2 M U M2 U M' (U')" name="ELL Ua Type 4 OLL 28" id="28Ua4"/>
                 <alg sequence="M' U' M' U2 M U' M2 U' M' (U)" name="ELL Ub Type 4 OLL 28" id="28Ub4"/>
+                <alg sequence="F U R U' R' U R U' R' F' R' F' U' F U' R U R' U R (U)" name="22LL Y + 2-flip" id="28Y22"/>
+                <alg sequence="F R U R' U' F2 L' U' L U F" name="ELL Z séparée OLL 28" id="28Z1"/>
+                <alg sequence="F R U R' U' F' R' U' R' F R F' U R" name="ELL Z croisée OLL 28" id="28Z2"/>
+                <alg sequence="R2 U R' U R U2' R2' F R U R' U' F' U F' U' F (U)" name="22LL V + 2-flip" id="28V22"/>
+                <alg sequence="R' U' R U' R' U2 F R U R' U' F' U R (U2)" name="22LL Ra T + 2-flip" id="29Ra22"/>
+                <alg sequence="R U2 R' U' F' U F R U R' U' R U' R' (U2)" name="22LL Rb T + 2-flip" id="30Rb22"/>
+                <alg sequence="L' U2 L U F U' L' U' L U L F' L2' U L (U2)" name="22LL Ja T + 2-flip" id="31Ja22"/>
+                <alg sequence="R' U' F' U R U R' U' R' F R2 U' R' U2 R (U2)" name="22LL Jb T + 2-flip" id="32Jb22"/>
+                <alg sequence="r U' r' U' r U r' U2 r' D' r U' r' D r (U')" name="ELL Ub Type 4 OLL 28" id="33F22"/>
+                <alg sequence="F R' F' R U R U R' F2 r U r' F (U')" name="22LL T T + 2-flip" id="34T22"/>
+                <alg sequence="f R U R' U' f' R U R' U R U2 R' (U)" name="22LL V L + 2-flip sans barre" id="35V22"/>
+                <alg sequence="F U R U' R' F2 U' F U' l2 F' l' U l' (U)" name="22LL Y L droite + 2-flip" id="36Y22"/>
+                <alg sequence="r' U' R U R' F' R U R' U' R' F R2 U' M'" name="22LL V L + 2-flip avec barre" id="37V22"/>
+                <alg sequence="R' U' F' U F R2 U R' U F2 r U r' F (U')" name="22LL Y L gauche + 2-flip" id="38Y22"/>
+                <alg sequence="F R U' R' F' U' F2 R' F' R F' (U)" name="22LL Na L + 2-flip" id="39Na22"/>
+                <alg sequence="R' F' U F R U R2' F R F' R (U')" name="22LL Nb L + 2-flip" id="40Nb22"/>
+                <alg sequence="f' L F L' F2 R' F' R F' U L' U' L U' S" name="22LL Rb U + 2-flip" id="41Rb22"/>
+                <alg sequence="f R' F' R F2 r U r' F U' R U R' U S'" name="22LL Ra U + 2-flip" id="42Ra22"/>
+                <alg sequence="x R2' U R' d' R' F' R2 U' R' U R' F R F2 z'" name="22LL Ja U + 2-flip" id="43Ja22"/>
+                <alg sequence="f R' U R' d' R' F' R2 U' R' U l' U R U R'" name="22LL Jb U + 2-flip" id="44Jb22"/>
+                <alg sequence="L' R U R' U' r U2 L U r' F U' R U R' (U)" name="22LL F T + 2-flip" id="45F22"/>
+                <alg sequence="R2 U' R2' F R F' R d' R U2 R' F' U F'" name="22LL T U + 2-flip" id="46T22"/>
                 <alg sequence="M' U2 M U R' F' R S R' F R S' (U)" name="Cas Pur OLL 57" id="57Pur"/>
+                <alg sequence="R U2' R' U2 R' F R U R U2' R' U' R U R' F'" name="22LL F + 2-flip" id="57F22"/>
                 <alg sequence="R2' F R U R U' R2' F' R U R U R' U2 R" name="ELL H OLL 57" id="57H"/>
-                <alg sequence="M' U' M U M' U' M U' M' U2 M" name="ELL Z droite OLL 57" id="57Zd"/>
-                <alg sequence="M' U M U' M' U M U M' U2 M" name="ELL Z droite OLL 57" id="57Zg"/>
+                <alg sequence="L' U L2 F' L' F L' d L' U2 L F" name="22LL Na + 2-flip" id="57Na22"/>
+                <alg sequence="R U' R2' F R F' R d' R U2 R' F'" name="22LL Nb + 2-flip" id="57Nb22"/>
+                <alg sequence="x' R2 U' R' U l' F' U' F R U R' (U')" name="22LL T + 2-flip" id="57T22"/>
                 <alg sequence="R U R' U' M' U R U' r'" name="ELL Ua Type 1 OLL 57" id="57Ua1" alternativeName="OLL 57 - Deux arêtes opposées"/>
                 <alg sequence="R' U' R U M U' R' U r" name="ELL Ub Type 1 OLL 57" id="57Ub1"/>
                 <alg sequence="r U r' R U R' U' r U' r' U' R' U2 R U R' U R (U)" name="ELL Ua Type 2 OLL 57" id="57Ua2"/>
                 <alg sequence="r' U' r R' U' R U r' U r U R U2 R' U' R U' R' (U')" name="ELL Ub Type 2 OLL 57" id="57Ub2"/>
+                <alg sequence="M' U' M U M' U' M U' M' U2 M" name="ELL Z droite OLL 57" id="57Zd"/>
+                <alg sequence="M' U M U' M' U M U M' U2 M" name="ELL Z droite OLL 57" id="57Zg"/>
             </oneLookLastLayerAlgs>
             <otherLastLayerAlgs>
                 <alg sequence="R U2' R2' F R F' U2 R' F R F'" name="OLL 1 - OLL Dot H" id="OLL1"/>
@@ -127,6 +173,15 @@
             <subset name="Fish Shapes" caseList="OLL37 OLL35 OLL9 OLL10"/>
             <subset name="Y Shapes" caseList="OLL29 OLL30 OLL41 OLL42"/>
             <subset name="Other Shapes" caseList="OLL33 OLL45 OLL5 OLL6 OLL46 OLL34 OLL38 OLL36 28Ub1 57Ua1"/>
+        </set>
+        <set name="22LL">
+            <subset name="Permutation F" caseList="0F 23F22 24F22 57F22 45F22 33F22"/>
+            <subset name="Permutation Ja et Jb" caseList="0Ja 0Jb 23Ja22 23Jb22 24Ja22 24Jb22 28Ja22 28Jb22 43Ja22 44Jb22 31Ja22 32Jb22"/>
+            <subset name="Permutation Na et Nb" caseList="0Na 0Nb 25Na22 25Nb22 57Na22 57Nb22 39Na22 40Nb22"/>
+            <subset name="Permutation Ra et Rb" caseList="0Ra 0Rb 23Ra22 23Rb22 24Ra22 24Rb22 28Ra22 28Rb22 42Ra22 41Rb22 29Ra22 30Rb22"/>
+            <subset name="Permutation T" caseList="0T 23T22 24T22 57T22 46T22 34T22"/>
+            <subset name="Permutation V" caseList="0V 25V22i 25V22e 28V22 37V22 35V22"/>
+            <subset name="Permutation Y" caseList="0Y 25Y22l 25Y22r 28Y22 38Y22 36Y22"/>
         </set>
     </sets>
 </xml>
