@@ -24,6 +24,10 @@
                 <alg sequence="R' U R' d' R' F' R2 U' R' U R' F R F" name="PLL V" id="0V"/>
                 <alg sequence="F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Y" id="0Y"/>
                 <alg sequence="M2' U M2' U M' U2 M2' U2 M' (U2)" name="PLL Z" id="0Z"/>
+                <alg sequence="r' U2 R U R' U r (U2)" name="Fat Back Antisune" id="5Ua3b" alternativeName="OLL 5 - Carré devant"/>
+                <alg sequence="r U2 R' U' R U' r' (U2)" name="Fat Antisune" id="6Ub3b" alternativeName="OLL 6 - Carré derrière"/>
+                <alg sequence="r U R' U R U2' r' (U2)" name="Fat Sune" id="7Ua3b" alternativeName="OLL 7 - Éclair devant avec barres"/>
+                <alg sequence="r' U' R U' R' U2 r (U2)" name="Fat Back Sune" id="8Ub3b" alternativeName="OLL 8 - Éclair derrière avec barres"/>
                 <alg sequence="M' U2 M U2 M' U M U2 M' U2 M (U')" name="Cas pur OLL 20" id="20Pur"/>
                 <alg sequence="r U R' U' M2' U R U' R' U' M' (U)" name="ELL H 4-flip" id="20H"/>
                 <alg sequence="R U R' U M' U' R U' r' U2 M' U' M (U')" name="ELL Ua 4-flip" id="20Ua"/>
@@ -47,6 +51,12 @@
                 <alg sequence="R U D' R U R' D R2 U' R U R2 U2' R'" name="22LL V L extérieur" id="25V22e"/>
                 <alg sequence="L' U2 R U' R' U2 L R U' R' (U)" name="22LL Y L gauche" id="25Y22l"/>
                 <alg sequence="R' U' R U R' F' R U R' U' R' F R2 (U')" name="22LL Y L droite" id="25Y22r"/>
+                <alg sequence="L' U R U' L U R' (U')" name="Niklas gauche" id="26Aabk"/>
+                <alg sequence="R U2 R' U' R U' R' (U2)" name="Antisune" id="26Uabor" alternativeName="OLL 26 - OLL Cross Antisune"/>
+                <alg sequence="R' U' R U' R' U2 R (U2)" name="Back Sune" id="26Uabob"/>
+                <alg sequence="R U' L' U R' U' L (U)" name="Niklas droite" id="27Abbk"/>
+                <alg sequence="R' U2 R U R' U R (U2)" name="Back Antisune" id="27Ubbof"/>
+                <alg sequence="R U R' U R U2' R' (U2)" name="Sune" id="27Ubbol" alternativeName="OLL 27 - OLL Cross Sune"/>
                 <alg sequence="r U R' U' r' U2 R U R U' R2' U2 R" name="Cas pur OLL 28" id="28Pur"/>
                 <alg sequence="M' U M U M' U M U M' U M (U')" name="ELL H OLL 28" id="28H"/>
                 <alg sequence="M' U L U' R U2' L' U L U2 L2 x'" name="22LL Ja + 2-flip" id="28Ja22"/>
@@ -105,10 +115,6 @@
                 <alg sequence="F R U R' U' S R U R' U' f'" name="OLL 2 - OLL Dot Pi" id="OLL2"/>
                 <alg sequence="f R U R' U' f' U' F R U R' U' F'" name="OLL 3 - OLL Dot Sune" id="OLL3"/>
                 <alg sequence="f R U R' U' f' U F R U R' U' F'" name="OLL 4 - OLL Dot Antisune" id="OLL4"/>
-                <alg sequence="r' U2 R U R' U r" name="OLL 5 - Carré devant" id="OLL5"/>
-                <alg sequence="r U2 R' U' R U' r'" name="OLL 6 - Carré derrière" id="OLL6"/>
-                <alg sequence="r U R' U R U2' r'" name="OLL 7 - Éclair devant avec barres" id="OLL7"/>
-                <alg sequence="r' U' R U' R' U2 r" name="OLL 8 - Éclair derrière avec barres" id="OLL8"/>
                 <alg sequence="R U R' U' R' F R2 U R' U' F'" name="OLL 9 - Poisson barre à gauche" id="OLL9"/>
                 <alg sequence="R U R' U R' F R F' R U2 R'" name="OLL 10 - Poisson barre à droite" id="OLL10"/>
                 <alg sequence="R U R' U R' F R F' R U2 R'" name="OLL 11 - Éclair devant sans barres" id="OLL11"/>
@@ -125,8 +131,6 @@
                 <alg sequence="R2' D' R U2 R' D R U2 R" name="OLL 23 - OLL Cross U" id="OLL23"/>
                 <alg sequence="r U R' U' r' F R F'" name="OLL 24 - OLL Cross T" id="OLL24"/>
                 <alg sequence="R' U2 R' D' R U2 R' D R2" name="OLL 25 - OLL Cross L" id="OLL25"/>
-                <alg sequence="R U2 R' U' R U' R'" name="OLL 26 - OLL Cross Antisune" id="OLL26"/>
-                <alg sequence="R U R' U R U2' R'" name="OLL 27 - OLL Cross Sune" id="OLL27"/>
                 <alg sequence="r2' D' r U r' D r2 U' r' U' r" name="OLL 29 - Y gauche avec barre" id="OLL29"/>
                 <alg sequence="F U R U2 R' U' R U2 R' U' F'" name="OLL 30 - Y droite avec barre" id="OLL30"/>
                 <alg sequence="R' U' F U R U' R' F' R" name="OLL 31 - P droite sans barre" id="OLL31"/>
@@ -164,16 +168,16 @@
             <subset name="OLL 57 (2-flip opposé)" caseList="57Pur 57H 57Zd 57Zg 57Ua1 57Ub1 57Ua2 57Ub2" keepAUF="true"/>
         </set>
         <set name="OLL" options="&amp;stage=oll" useAlternativeName="true">
-            <subset name="OLL Cross" caseList="OLL23 OLL24 OLL25 OLL21 OLL22 OLL27 OLL26"/>
+            <subset name="OLL Cross" caseList="OLL23 OLL24 OLL25 OLL21 OLL22 27Ubbol 26Uabor"/>
             <subset name="OLL Dot" caseList="20H OLL18 OLL19 OLL17 OLL1 OLL2 OLL3 OLL4"/>
-            <subset name="Z Shapes" caseList="OLL7 OLL8 OLL40 OLL39 OLL11 OLL12"/>
+            <subset name="Z Shapes" caseList="7Ua3b 8Ub3b OLL40 OLL39 OLL11 OLL12"/>
             <subset name="V Shapes" caseList="OLL48 OLL47 OLL54 OLL53 OLL49 OLL50"/>
             <subset name="P Shapes" caseList="OLL31 OLL32 43Ybol 44Ybob"/>
             <subset name="L Shapes" caseList="OLL13 OLL14 OLL15 OLL16"/>
             <subset name="I Shapes" caseList="OLL55 OLL52 OLL51 OLL56"/>
             <subset name="Fish Shapes" caseList="OLL37 OLL35 OLL9 OLL10"/>
             <subset name="Y Shapes" caseList="OLL29 OLL30 OLL41 OLL42"/>
-            <subset name="Other Shapes" caseList="OLL33 45Ybor OLL5 OLL6 OLL46 OLL34 OLL38 OLL36 28Ub1 57Ua1"/>
+            <subset name="Other Shapes" caseList="OLL33 45Ybor 5Ua3b 6Ub3b OLL46 OLL34 OLL38 OLL36 28Ub1 57Ua1"/>
         </set>
         <set name="22LL">
             <subset name="Permutation F" caseList="0F 23F22 24F22 57F22 45F22 33F22"/>
@@ -186,7 +190,7 @@
         </set>
 		<set name="6-9HTM">
 			<subset name="6 HTM" caseList="45Ybor 45Ybol 44Ybob 43Ybol"/>
-			<subset name="7 HTM" caseList=""/>
+			<subset name="7 HTM" caseList="27Ubbol 26Uabor 26Uabob 27Ubbof 7Ua3b 6Ub3b 8Ub3b 5Ua3b 27Abbk 26Aabk"/>
 			<subset name="8 HTM" caseList=""/>
 			<subset name="9 HTM" caseList=""/>
 		</set>
