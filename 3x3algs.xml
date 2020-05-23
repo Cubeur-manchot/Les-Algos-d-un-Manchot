@@ -79,7 +79,9 @@
                 <alg sequence="F R U R2' F R F' R U' R' F' (U)" name="22LL V L intérieur" id="25V22i"/>
                 <alg sequence="R U D' R U R' D R2 U' R U R2 U2' R'" name="22LL V L extérieur" id="25V22e"/>
                 <alg sequence="L' U2 R U' R' U2 L R U' R' (U)" name="22LL Y L gauche" id="25Y22l"/>
+                <alg sequence="l' U2 L2 F' L' F L' U2 l (U')" name="22LL Y L gauche (optimal)" id="25Y22lOpt"/>
                 <alg sequence="R' U' R U R' F' R U R' U' R' F R2 (U')" name="22LL Y L droite" id="25Y22r"/>
+                <alg sequence="r U2' R2' F R F' R U2' r' (U)" name="22LL Y L droite (optimal)" id="25Y22rOpt"/>
                 <alg sequence="L' U R U' L U R' (U')" name="Niklas gauche" id="26Aabk"/>
                 <alg sequence="R U2 R' U' R U' R' (U2)" name="Antisune" id="26Uabor" alternativeName="OLL 26 - OLL Cross Antisune"/>
                 <alg sequence="R' U' R U' R' U2 R (U2)" name="Back Sune" id="26Uabob"/>
@@ -87,6 +89,10 @@
                 <alg sequence="R' U2 R U R' U R (U2)" name="Back Antisune" id="27Ubbof"/>
                 <alg sequence="R U R' U R U2' R' (U2)" name="Sune" id="27Ubbol" alternativeName="OLL 27 - OLL Cross Sune"/>
                 <alg sequence="r U R' U' r' U2 R U R U' R2' U2 R" name="Cas pur OLL 28" id="28Pur"/>
+                <alg sequence="r U' L U2 R' U R U2' L2' (x')" name="COALL - Ga 28 barre devant (optimal)" id="28GabolOpt"/>
+                <alg sequence="x' r2 U2' R' U' R U2' L' U r'" name="COALL - Gb 28 barre derrière (optimal)" id="28GbbobOpt"/>
+                <alg sequence="R' F R' F2 r U' r' F2 R2" name="COALL - Gc 28 barre derrière" id="28Gcbob"/>
+                <alg sequence="R2' F2 r U r' F2 R F' R" name="COALL - Gd 28 barre derrière" id="28Gdbol"/>
                 <alg sequence="M' U M U M' U M U M' U M (U')" name="ELL H OLL 28" id="28H"/>
                 <alg sequence="M' U L U' R U2' L' U L U2 L2 x'" name="22LL Ja + 2-flip" id="28Ja22"/>
                 <alg sequence="M' U' R' U L' U2 R U' R' U2 R2 x'" name="22LL Jb + 2-flip" id="28Jb22"/>
@@ -232,6 +238,7 @@
 			<subset name="9 HTM (Tripod)" caseList="0AaOpt 0AbOpt 23Abbkl 25Aabkl 23Aabkr 25Abbkl 23Jbbk 25Jbbkbol 23Jabk 25Jabkbof 24Abbkb 23Aabkl 24Aabkf 23Abbkr"/>
 			<subset name="9 HTM (ELL optimales)" caseList="0UaOpt 0UbOpt 0HOpt 28Ua3Opt 28Ub3Opt"/>
 			<subset name="9 HTM (OLL simples)" caseList="22Ubsof 22Uasob 49Uasob 50Ubsof 31Jagbof 32Jbgbof 40Jagbof 39Jbgbof 35Ynb4cot 37Ynb4acot"/>
+			<subset name="9 HTM (Autres 1LLL)" caseList="25Y22lOpt 25Y22rOpt 28GabolOpt 28GbbobOpt 28Gcbob 28Gdbol"/>
 		</set>
     </sets>
 </xml>
