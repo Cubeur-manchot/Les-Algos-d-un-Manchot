@@ -14,6 +14,7 @@
                 <alg sequence="R2' F2 R U2 R U2' R' F R U R' U' R' F R2" name="PLL Gc" id="0Gc"/>
                 <alg sequence="D' R U R' U' D R2 U' R U' R' U R' U R2" name="PLL Gd" id="0Gd"/>
                 <alg sequence="M2' U M2' U2 M2' U M2'" name="PLL H" id="0H"/>
+                <alg sequence="R2' S2 R2 U' R2' S2 R2 U'" name="PLL H (optimal)" id="0HOpt"/>
                 <alg sequence="L' U' L F L' U' L U L F' L2' U L" name="PLL Ja" id="0Ja"/>
                 <alg sequence="R U R' F' R U R' U' R' F R2 U' R'" name="PLL Jb" id="0Jb"/>
                 <alg sequence="R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'" name="PLL Na" id="0Na"/>
@@ -22,7 +23,9 @@
                 <alg sequence="R' U2 R' D' R U' R' D R U R U' R' U' R" name="PLL Rb" id="0Rb"/>
                 <alg sequence="R U R' U' R' F R2 U' R' U' R U R' F'" name="PLL T" id="0T"/>
                 <alg sequence="M2' U M U2 M' U M2'" name="PLL Ua" id="0Ua"/>
+                <alg sequence="F2 U' M' U2 M U' F2" name="PLL Ua (optimal)" id="0UaOpt"/>
                 <alg sequence="M2' U' M U2 M' U' M2" name="PLL Ub" id="0Ub"/>
+				<alg sequence="F2 U M' U2 M U F2" name="PLL Ub (optimal)" id="0UbOpt"/>
                 <alg sequence="R' U R' d' R' F' R2 U' R' U R' F R F" name="PLL V" id="0V"/>
                 <alg sequence="F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Y" id="0Y"/>
                 <alg sequence="M2' U M2' U M' U2 M2' U2 M' (U2)" name="PLL Z" id="0Z"/>
@@ -92,7 +95,9 @@
                 <alg sequence="R U R' U R U2' R' U' r' U' r U' R' U R r' U r (U)" name="ELL Ua Type 2 OLL 28" id="28Ua2"/>
                 <alg sequence="R' U' R U' R' U2 R U r U r' U R U' R' r U' r' (U')" name="ELL Ub Type 2 OLL 28" id="28Ub2"/>
                 <alg sequence="M' U M U2 M' U M" name="ELL Ua Type 3 OLL 28" id="28Ua3"/>
-                <alg sequence="M' U' M U2' M' U' M" name="ELL Ub Type 3 OLL 28" id="28Ub3"/>
+                <alg sequence="R u2' R2' f R2 u2' R2' f R" name="ELL Ua Type 3 OLL 28 (optimal)" id="28Ua3Opt"/>
+                <alg sequence="M' U' M U2 M' U' M" name="ELL Ub Type 3 OLL 28" id="28Ub3"/>
+                <alg sequence="R b R2' u2' R2 b R2' u2' R" name="ELL Ub Type 3 OLL 28 (optimal)" id="28Ub3Opt"/>
                 <alg sequence="M' U M' U2 M U M2 U M' (U')" name="ELL Ua Type 4 OLL 28" id="28Ua4"/>
                 <alg sequence="M' U' M' U2 M U' M2 U' M' (U)" name="ELL Ub Type 4 OLL 28" id="28Ub4"/>
                 <alg sequence="F U R U' R' U R U' R' F' R' F' U' F U' R U R' U R (U)" name="22LL Y + 2-flip" id="28Y22"/>
@@ -221,7 +226,7 @@
 			<subset name="6 HTM" caseList="45Ybor 45Ybol 44Ybob 43Ybol"/>
 			<subset name="7 HTM" caseList="27Ubbol 26Uabor 26Uabob 27Ubbof 7Ua3b 6Ub3b 8Ub3b 5Ua3b 27Abbk 26Aabk"/>
 			<subset name="8 HTM" caseList="24Abbkf 25Aabkr 24Aabkb 25Abbkr 33Rb3b 33Ra3b 37Rb3b 37Ra3b 8Gdbor 7Gcbof 7Gbbor 8Gabob 46Vbof 46Vbob 43Vbfb 44Vbfb 5PurOpt 6PurOpt 44Na 43Nb"/>
-			<subset name="9 HTM" caseList="0AaOpt 0AbOpt 23Abbkl 25Aabkl 23Aabkr 25Abbkl 23Jbbk 25Jbbkbol 23Jabk 25Jabkbof 24Abbkb 23Aabkl 24Aabkf 23Abbkr"/>
+			<subset name="9 HTM" caseList="0AaOpt 0AbOpt 23Abbkl 25Aabkl 23Aabkr 25Abbkl 23Jbbk 25Jbbkbol 23Jabk 25Jabkbof 24Abbkb 23Aabkl 24Aabkf 23Abbkr 0UaOpt 0UbOpt 0HOpt 28Ua3Opt 28Ub3Opt"/>
 		</set>
     </sets>
 </xml>
