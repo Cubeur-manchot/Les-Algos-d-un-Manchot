@@ -99,7 +99,7 @@
                 <alg sequence="M' U M U2 M' U M" name="ELL Ua Type 3 OLL 28" id="28Ua3"/>
                 <alg sequence="R u2' R2' f R2 u2' R2' f R" name="ELL Ua Type 3 OLL 28 (optimal)" id="28Ua3Opt"/>
                 <alg sequence="M' U' M U2 M' U' M" name="ELL Ub Type 3 OLL 28" id="28Ub3"/>
-                <alg sequence="R b R2' u2' R2 b R2' u2' R" name="ELL Ub Type 3 OLL 28 (optimal)" id="28Ub3Opt"/>
+                <alg sequence="R' f' R2 u2' R2' f' R2 U2' R'" name="ELL Ub Type 3 OLL 28 (optimal)" id="28Ub3Opt"/>
                 <alg sequence="M' U M' U2 M U M2 U M' (U')" name="ELL Ua Type 4 OLL 28" id="28Ua4"/>
                 <alg sequence="M' U' M' U2 M U' M2 U' M' (U)" name="ELL Ub Type 4 OLL 28" id="28Ub4"/>
                 <alg sequence="F U R U' R' U R U' R' F' R' F' U' F U' R U R' U R (U)" name="22LL Y + 2-flip" id="28Y22"/>
