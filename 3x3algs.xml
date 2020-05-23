@@ -226,9 +226,10 @@
 		<set name="6-9HTM">
 			<subset name="6 HTM" caseList="45Ybor 45Ybol 44Ybob 43Ybol"/>
 			<subset name="7 HTM" caseList="27Ubbol 26Uabor 26Uabob 27Ubbof 7Ua3b 6Ub3b 8Ub3b 5Ua3b 27Abbk 26Aabk"/>
-			<subset name="8 HTM" caseList="24Abbkf 25Aabkr 24Aabkb 25Abbkr 33Rb3b 33Ra3b 37Rb3b 37Ra3b 8Gdbor 7Gcbof 7Gbbor 8Gabob 46Vbof 46Vbob 43Vbfb 44Vbfb 5PurOpt 6PurOpt 44Na 43Nb"/>
 			<subset name="9 HTM (Dernières pièces)" caseList="0AaOpt 0AbOpt 23Abbkl 25Aabkl 23Aabkr 25Abbkl 23Jbbk 25Jbbkbol 23Jabk 25Jabkbof 24Abbkb 23Aabkl 24Aabkf 23Abbkr 0UaOpt 0UbOpt 0HOpt 28Ua3Opt 28Ub3Opt"/>
 			<subset name="9 HTM (OLL simples)" caseList="22Ubsof 22Uasob 49Uasob 50Ubsof"/>
+			<subset name="8 HTM (Sexy Sledges)" caseList="24Abbkf 25Aabkr 24Aabkb 25Abbkr 33Rb3b 33Ra3b 37Rb3b 37Ra3b"/>
+			<subset name="8 HTM (Autres 1LLL)" caseList="8Gdbor 7Gcbof 7Gbbor 8Gabob 46Vbof 46Vbob 43Vbfb 44Vbfb 5PurOpt 6PurOpt 44Na 43Nb"/>
 		</set>
     </sets>
 </xml>
