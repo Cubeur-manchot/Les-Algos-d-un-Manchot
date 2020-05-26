@@ -44,7 +44,7 @@
                 <alg sequence="R U R' U M' U' R U' r' U2 M' U' M (U')" name="ELL Ua 4-flip" id="20Ua"/>
                 <alg sequence="L' U' L U' M' U L' U l U2 M' U M (U)" name="ELL Ub 4-flip" id="20Ub"/>
                 <alg sequence="l U' M2' U R' F2 R U' M2' U l' (U2)" name="ELL Z 4-flip" id="20Z"/>
-                <alg sequence="R' U2 R2' U R2 U R2' U2' R" name="2GLL - OLL Pi derrière" id="22Uasob"/>
+                <alg sequence="R' U2 R2 U R2' U R2 U2' R'" name="2GLL - OLL Pi derrière" id="22Uasob"/>
                 <alg sequence="R U2' R2' U' R2 U' R2' U2' R" name="2GLL - OLL Pi devant" id="22Ubsof" alternativeName="OLL 22 - OLL Cross Pi"/>
                 <alg sequence="R2 D R' U2 R D' R' U2 R'" name="L3C - A9 adjacent gauche" id="23Aabkr"/>
                 <alg sequence="x R2' D2 R U2 R' D2 R U2 l" name="L3C - A9 Opposé U devant" id="23Aabkl"/>
