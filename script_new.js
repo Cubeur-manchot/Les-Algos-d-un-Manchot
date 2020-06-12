@@ -11,11 +11,13 @@ function loadXml() // load algs.xml and store it in window.xml3x3algs
 	xmlHttp.open("get", "algs.xml", false);
 	xmlHttp.send();
 	window.xmlalgs = document.querySelector("xml");
+	console.log(window.xmlalgs);
 }
 
 function generatePage(setName) // generates the page corresponding to the chosen set
 {
 	let algZoneHtmlTag = createHtmlTagWithId("section", "algZone");
+	console.log(window.xmlalgs);
 	for (let set of window.xmlalgs.querySelector("sets").querySelectorAll("set")) {
 		if (set.getAttribute("name") === setName) {
 			let options = set.getAttribute("options");
