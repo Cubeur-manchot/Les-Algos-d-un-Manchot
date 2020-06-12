@@ -50,6 +50,7 @@
                 <alg sequence="l U' M2' U R' F2 R U' M2' U l' (U2)" name="ELL Z 4-flip" id="20Z"/>
                 <alg sequence="R' U2 R2' U R2 U R2' U2' R" name="2GLL - OLL Pi derrière" id="22Uasob"/>
                 <alg sequence="R U2' R2' U' R2 U' R2' U2' R" name="2GLL - OLL Pi devant" id="22Ubsof" alternativeName="OLL 22 - OLL Cross Pi"/>
+                <alg sequence="R2 U' R' U R' U' R2 U R2' U R U' R U R2' (U')" name="Cas Pur - OLL 23" id="23Pur"/>
                 <alg sequence="R2 D R' U2 R D' R' U2 R'" name="L3C - A9 adjacent gauche" id="23Aabkr"/>
                 <alg sequence="x R2' D2 R U2 R' D2 R U2 l" name="L3C - A9 Opposé U devant" id="23Aabkl"/>
                 <alg sequence="R2' D' R U2 R' D R U2 R" name="L3C - A9 adjacent droite" id="23Abbkl" alternativeName="OLL 23 - OLL Cross U"/>
@@ -62,6 +63,7 @@
                 <alg sequence="R' F' R U R' U' R' F R2 U' R' U2 R U' R' U2 R U R' U R (U)" name="22LL Ra U" id="23Ra22"/>
                 <alg sequence="R' U2 R' D' r U2 r' D R2 U' R U2 R' U' R U' R' (U2)" name="22LL Rb U" id="23Rb22"/>
                 <alg sequence="L U R' U L' U2 R U' R' L U L' U2 R (U')" name="22LL T U" id="23T22"/>
+                <alg sequence="R2 U' R' U R' U' R2 U' R2' U R U' R U R2' (U)" name="Cas Pur - OLL 24" id="24Pur"/>
                 <alg sequence="l' U' L U l F' L' F" name="L3C - OLL Cross T gauche" id="24Aabkb"/>
                 <alg sequence="l U2 R D2 R' U2 R D2 R2' (x)" name="L3C - A9 Opposé T derrière" id="24Aabkf"/>
                 <alg sequence="l' U2 R' D2 R U2 R' D2 R2 (x')" name="L3C - A9 Opposé T devant" id="24Abbkb"/>
@@ -72,6 +74,7 @@
                 <alg sequence="F' U' F R U R' U' x' R2 U' R' U R' x" name="22LL Ra T" id="24Ra22"/>
                 <alg sequence="R U R' F' U' F U F2 r U r' F" name="22LL Rb T" id="24Rb22"/>
                 <alg sequence="r U' r U2' R' F R U2' r2' F" name="22LL T T" id="24T22"/>
+                <alg sequence="R U' R' U R' U' R2 U' R2' U R U' R U R2' U R" name="Cas Pur - OLL 25" id="25Pur"/>
                 <alg sequence="R' U2 R' D' R U2 R' D R2" name="L3C - A9 L devant" id="25Aabkl" alternativeName="OLL 25 - OLL Cross L"/>
                 <alg sequence="R U2 R D R' U2 R D' R2'" name="L3C - A9 L derrière" id="25Abbkl"/>
                 <alg sequence="F' R' F' r U R U' r'" name="L3C - OLL Cross L droite" id="25Aabkr"/>
@@ -86,9 +89,11 @@
                 <alg sequence="l' U2 L2 F' L' F L' U2 l (U')" name="22LL Y L gauche (optimal)" id="25Y22lOpt"/>
                 <alg sequence="R' U' R U R' F' R U R' U' R' F R2 (U')" name="22LL Y L droite" id="25Y22r"/>
                 <alg sequence="r U2' R2' F R F' R U2' r' (U)" name="22LL Y L droite (optimal)" id="25Y22rOpt"/>
+                <alg sequence="R U' R2' U' R U' R' U2 R' U2' R' U' R U' R2' (U')" name="Cas Pur - OLL 26" id="26Pur"/>
                 <alg sequence="L' U R U' L U R' (U')" name="Niklas gauche" id="26Aabk"/>
                 <alg sequence="R U2 R' U' R U' R' (U2)" name="Antisune" id="26Uabor" alternativeName="OLL 26 - OLL Cross Antisune"/>
                 <alg sequence="R' U' R U' R' U2 R (U2)" name="Back Sune" id="26Uabob"/>
+                <alg sequence="R2 U R' U R U2 R U2 R U R' U R2 U R' (U)" name="Cas Pur - OLL 27" id="27Pur"/>
                 <alg sequence="R U' L' U R' U' L (U)" name="Niklas droite" id="27Abbk"/>
                 <alg sequence="R' U2 R U R' U R (U2)" name="Back Antisune" id="27Ubbof"/>
                 <alg sequence="R U R' U R U2' R' (U2)" name="Sune" id="27Ubbol" alternativeName="OLL 27 - OLL Cross Sune"/>
@@ -146,6 +151,7 @@
                 <alg sequence="R U R' F' L' U' L F" name="OLL P barre gauche + deux barres opposées" id="43Nb"/>
                 <alg sequence="R' U' F R' F' R U R" name="P droite barre flippée + petite barre" id="43Vbfb"/>
                 <alg sequence="R' U' F' U F R (U)" name="6-move P gauche" id="43Ybol" alternativeName="OLL 43 - P gauche avec barre"/>
+                <alg sequence="F U R U2 R' U' R U R' F' R U R' U' R' F R F' (U')" name="Cas Pur - OLL 44" id="44Pur"/>
                 <alg sequence="f R' U R' d' R' F' R2 U' R' U l' U R U R'" name="22LL Jb U + 2-flip" id="44Jb22"/>
                 <alg sequence="F R U' R' F' L' U L" name="OLL P barre droite + deux barres opposées" id="44Na"/>
                 <alg sequence="L U F' L F L' U' L'" name="P gauche barre flippée + petite barre" id="44Vbfb"/>
@@ -159,6 +165,7 @@
                 <alg sequence="r U' r2' U r2 U r2' U' r" name="OLL V deux barres devant" id="49Uasob" alternativeName="OLL 49 - OLL V deux barres devant"/>
                 <alg sequence="r' U r2 U' r2' U' r2 U r'" name="OLL V deux barres derrière" id="50Ubsof" alternativeName="OLL 50 - OLL V deux barres derrière"/>
                 <alg sequence="M' U2 M U R' F' R S R' F R S' (U)" name="Cas Pur OLL 57" id="57Pur"/>
+                <alg sequence="M' U M' U M' U2 M U M U M (U2)" name="Cas Pur OLL 57" id="57PurBig"/>
                 <alg sequence="R U2' R' U2 R' F R U R U2' R' U' R U R' F'" name="22LL F + 2-flip" id="57F22"/>
                 <alg sequence="R2' F R U R U' R2' F' R U R U R' U2 R" name="ELL H OLL 57" id="57H"/>
                 <alg sequence="L' U L2 F' L' F L' d L' U2 L F" name="22LL Na + 2-flip" id="57Na22"/>
@@ -215,7 +222,7 @@
             <subset name="OLL 28 (2-flip adjacent)" caseList="28Pur 28H 28Z1 28Z2 28Ua1 28Ub1 28Ua2 28Ub2 28Ua3 28Ub3 28Ua4 28Ub4" keepAUF="true"/>
             <subset name="OLL 57 (2-flip opposé)" caseList="57Pur 57H 57Zd 57Zg 57Ua1 57Ub1 57Ua2 57Ub2" keepAUF="true"/>
         </set>
-        <set name="ELL BigCubes">
+        <set name="ELL BigCubes" pzl="5">
             <subset name="OLL 0 (EPLL)" caseList="0H 0Z 0UaBig 0UbBig" keepAUF="true"/>
             <subset name="OLL 20 (4-flip)" caseList="20Pur 20H 20Z 20UaBig 20UbBig" keepAUF="true"/>
             <subset name="OLL 28 (2-flip adjacent)" caseList="28Pur 28HBig 28Z1 28Z2Big 28Ua1 28Ub1 28Ua2 28Ub2 28Ua3 28Ub3 28Ua4 28Ub4" keepAUF="true"/>
@@ -251,6 +258,12 @@
             <subset name="9 HTM (ELL optimales)" caseList="0UaOpt 0UbOpt 0HOpt 28Ua3Opt 28Ub3Opt"/>
             <subset name="9 HTM (OLL simples)" caseList="22Ubsof 22Uasob 49Uasob 50Ubsof 31Jagbof 32Jbgbof 40Jagbof 39Jbgbof 35Ynb4cot 37Ynb4acot"/>
             <subset name="9 HTM (Autres 1LLL)" caseList="25Y22lOpt 25Y22rOpt 28GabolOpt 28GbbobOpt 28Gcbob 28Gdbol"/>
+        </set>
+        <set name="TripodLL">
+            <subset name="Cas purs, arêtes bien orientées" caseList="23Pur 24Pur 25Pur 26Pur 27Pur"/>
+            <subset name="PLL" caseList="0Aa 0Ab 0Ja 0Jb 0V"/>
+            <subset name="Cas purs, arêtes mal orientées" caseList="28Pur 44Pur 43Pur 31Pur 32Pur 37Pur 35Pur"/>
+            <subset name="PLL 2-flip" caseList=""/>
         </set>
     </sets>
 </xml>
