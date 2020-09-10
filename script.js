@@ -59,8 +59,8 @@ function html_algo_simple(nom,algo,set,taille,stage) {
 	var html = '<div class="nom">' + nom + '</div>';
 	if (set == 'BLD') {
 		html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=z2 (' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank">';
-		html += '<img class="image_gauche" src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&bg=white&pzl=' + taille + '&case=' + algo + 'y2&stage=' + stage + '"/>';
-		html += '<img class="image_droite" src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&bg=white&pzl=' + taille + '&case=y2' + algo + 'y2&stage=' + stage + '"/>';
+		html += '<img class="image_gauche" src="http://roudai.net/visualcube/visualcube.php?fmt=svg&size=150&bg=white&pzl=' + taille + '&case=' + algo + 'y2&stage=' + stage + '"/>';
+		html += '<img class="image_droite" src="http://roudai.net/visualcube/visualcube.php?fmt=svg&size=150&bg=white&pzl=' + taille + '&case=y2' + algo + 'y2&stage=' + stage + '"/>';
 		html += '</a>';
 		if (algo.length > 56) {
 			html += '<div class="algo long" data-set="' + set + '">' + algo + '</div>';
@@ -69,7 +69,7 @@ function html_algo_simple(nom,algo,set,taille,stage) {
 		}
 	} else if (set == 'L2C') {
 		html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=z2 (' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank">';
-		html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=' + taille + '&case=' + algo + '&stage=' + stage + '&fd=nnnnnnuuunnuuunnuuunnnnnnnnnnnnlllnnlllnnlllnnnnnnnnnnnnbbbnnbbbnnbbbnnnnnn&r=x-35"/>';
+		html += '<img src="http://roudai.net/visualcube/visualcube.php?fmt=svg&bg=white&pzl=' + taille + '&case=' + algo + '&stage=' + stage + '&fd=nnnnnnuuunnuuunnuuunnnnnnnnnnnnlllnnlllnnlllnnnnnnnnnnnnbbbnnbbbnnbbbnnnnnn&r=x-35"/>';
 		html += '</a>';
 		if (algo.length > 26) {
 			html += '<div class="algo long" data-set="' + set + '">' + algo + '</div>';
@@ -78,7 +78,7 @@ function html_algo_simple(nom,algo,set,taille,stage) {
 		}
 	} else if (set == '3SEO') {
 		html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=z2 (' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank">';
-		html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&bg=white&pzl=' + taille + '&case=' + algo + 'y2&stage=' + stage + '&fd=nunuuununnnnllnllnnnnbbbbbbddddddddnnnnrrrrrrnnnuffnff"/>';
+		html += '<img src="http://roudai.net/visualcube/visualcube.php?fmt=svg&bg=white&pzl=' + taille + '&case=' + algo + 'y2&stage=' + stage + '&fd=nunuuununnnnllnllnnnnbbbbbbddddddddnnnnrrrrrrnnnuffnff"/>';
 		html += '</a>';
 		if (algo.length > 26) {
 			html += '<div class="algo long" data-set="' + set + '">' + algo + '</div>';
@@ -87,7 +87,7 @@ function html_algo_simple(nom,algo,set,taille,stage) {
 		}
 	} else {
 		html += '<a href="http://alg.cubing.net/?puzzle=' + taille + 'x' + taille + 'x' + taille + '&alg=' + algo + '&setup=z2 (' + algo + ')\'" class="bouton_animation" title="Animation" target="_blank">'
-		html += '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&bg=white&pzl=' + taille + '&case=' + algo + '&stage=' + stage + '"/>';
+		html += '<img src="http://roudai.net/visualcube/visualcube.php?fmt=svg&size=150&view=plan&bg=white&pzl=' + taille + '&case=' + algo + '&stage=' + stage + '"/>';
 		html += '</a>';
 		if (algo.length > 26) {
 			html += '<div class="algo long" data-set="' + set + '">' + algo + '</div>';
@@ -99,7 +99,7 @@ function html_algo_simple(nom,algo,set,taille,stage) {
 }
 
 function html_algo_multiple(nom,algos,set,taille,stage) {
-	var html = '<img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&bg=white&pzl=' + taille + '&case=' + algos[0].innerHTML + '&stage=' + stage + '"/>';
+	var html = '<img src="http://roudai.net/visualcube/visualcube.php?fmt=svg&size=150&view=plan&bg=white&pzl=' + taille + '&case=' + algos[0].innerHTML + '&stage=' + stage + '"/>';
 	html += '<div class="nom">' + nom + '</div>';
 	for (var j=0; j < algos.length; j++)
 	{
