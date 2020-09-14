@@ -136,7 +136,7 @@
                 <alg sequence="R2' F2 r U r' F2 R F' R" name="COALL - Gd 28 barre derrière" id="28Gdbol"/>
                 <alg sequence="M' U M U M' U M U M' U M (U')" name="ELL H OLL 28" id="28H"/>
                 <alg sequence="L' U2 L U F R U2 R' U' F'" name="ELL H OLL 28" id="28HBig"/>
-                <alg sequence="M' U L U' R U2' L' U L U2 L2 x'" name="22LL Ja + 2-flip" id="28Ja22"/>
+                <alg sequence="x' R2 U R' F' R U R' U' R' F R2 U' R' U' l'" name="22LL Ja + 2-flip" id="28Ja22"/>
                 <alg sequence="M' U' R' U L' U2 R U' R' U2 R2 x'" name="22LL Jb + 2-flip" id="28Jb22"/>
                 <alg sequence="M U' R' U2 R' D' R U' R' D R U R U' R' U' r" name="22LL Ra + 2-flip" id="28Ra22"/>
                 <alg sequence="M' U R U R' F' R U R' U' R' F R2 U' R' U2 M" name="22LL Rb + 2-flip" id="28Rb22"/>
