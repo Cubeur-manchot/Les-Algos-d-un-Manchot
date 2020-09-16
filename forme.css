@@ -92,7 +92,7 @@ footer {
 }
 .liste_cas_simple .cas .long {
 	margin: 145px 0px 0px 0px;
-	transform: translate(0px,50%);
+	transform: translate(0px,12px);
 }
 .liste_cas_multiple { text-align: center; }
 .liste_cas_multiple .cas {
