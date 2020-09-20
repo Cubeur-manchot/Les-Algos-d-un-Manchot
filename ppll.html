@@ -8,7 +8,7 @@
     <script src="script_new.js"></script>
     <script src="tagCreator.js"></script>
 </head>
-<body onload="loadXml(); generatePage('OPPLL');">
+<body onload="loadXml(); generatePage('PPLL');">
 <section id="corps_de_page">
     <h1>Les Parity PLL d'un Manchot</h1>
 </section>
@@ -292,6 +292,8 @@
         <otherAlgs>
             <alg sequence="M2' U2 M2' U R U R' F' R U R' U' R' F R2 U' R'" name="PLL Ba opposée" id="OPPLLBa"/>
             <alg sequence="M2' U2 M2' U L' U' L F L' U' L U L F' L2' U L" name="PLL Bb opposée" id="OPPLLBb"/>
+            <alg sequence="R U R' F' R U R' U' R' F R2 U' R' M' U M2 U M2' U M" name="PLL Ca opposée" id="OPPLLCa"/>
+            <alg sequence="M' U' M2 U' M2' U' M U R U R' F' R U R' U' R' F R2 U' R'" name="PLL Cb opposée" id="OPPLLCb"/>
             <alg sequence="L' U' L F L' U' L U L F' L2' U L M2' U2 M2'" name="PLL Da opposée" id="OPPLLDa"/>
             <alg sequence="R U R' F' R U R' U' R' F R2 U' R' M2' U2 M2'" name="PLL Db opposée" id="OPPLLDb"/>
             <alg sequence="F R U' R' U' R U R' F' U M2' U2 M2' U R U R' U' R' F R F'" name="PLL Diag opposée" id="OPPLLDiag"/>
@@ -305,21 +307,23 @@
             <alg sequence="R U R' F' R U R' U' R' F R2 U' R' U M2' U2 M2'" name="PLL Pa opposée" id="OPPLLPa"/>
             <alg sequence="M2 U2 M2 R U R' F' R U R' U' R' F R2 U' R'" name="PLL Pb opposée" id="OPPLLPb"/>
             <alg sequence="M2' U2 M2' U l U' R' D R U R' D' R U R' D R U' R' D' (x)" name="PLL Q opposée" id="OPPLLQ"/>
+            <alg sequence="M2' U2 M2' F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Sa opposée" id="OPPLLSa"/>
+            <alg sequence="M2' U2 M2' U' F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Sb opposée" id="OPPLLSb"/>
             <alg sequence="M2' U' M' U2 M U M2'" name="PLL W opposée" id="OPPLLW"/>
             <alg sequence="M2' U2 M2' l U' R' D R U R' D' R U R' D R U' R' D' (x)" name="PLL X opposée" id="OPPLLX"/>
             <alg sequence="R U R' U' R' F R2 U' R' U' R U R' F' U M2' U2 M2'" name="PLL : opposée" id="OPPLL:"/>
         </otherAlgs>
     </algs>
     <sets>
-        <set name="OPPLL">
-            <subset name="OPEPLL" caseList="OPPLLI OPPLLL OPPLLO+ OPPLLO- OPPLLW"/>
-            <subset name="Adjacent OPPLL" caseList="OPPLLBa OPPLLBb OPPLLDa OPPLLDb OPPLLPa OPPLLPb OPPLLCa OPPLLCb OPPLLM OPPLLKa OPPLLKb OPPLL:"/>
-            <subset name="Diag OPPLL" caseList="OPPLLSa OPPLLSb OPPLLQ OPPLLX OPPLLDiag"/>
-        </set>
-        <set name="APPLL">
-            <subset name="APEPLL" caseList="APPLLI APPLLL APPLLO+ APPLLO- APPLLW"/>
-            <subset name="Adjacent APPLL" caseList="APPLLBa APPLLBb APPLLDa APPLLDb APPLLPa APPLLPb APPLLCa APPLLCb APPLLM APPLLKa APPLLKb APPLL:"/>
-            <subset name="Diag APPLL" caseList="APPLLSa APPLLSb APPLLQ APPLLX APPLLDiag"/>
+        <set name="PPLL">
+            <subset name="OPPLL - EPLL" caseList="OPPLLI OPPLLL OPPLLO+ OPPLLO- OPPLLW"/>
+            <subset name="OPPLL - Adjacent PLL" caseList="OPPLLBa OPPLLBb OPPLLDa OPPLLDb OPPLLPa OPPLLPb OPPLLCa OPPLLCb OPPLLM OPPLLKa OPPLLKb OPPLL:"/>
+            <subset name="OPPLL - Diag PLL" caseList="OPPLLSa OPPLLSb OPPLLQ OPPLLX OPPLLDiag"/>
+            <!--
+            <subset name="APPLL - EPLL" caseList="APPLLI APPLLL APPLLO+ APPLLO- APPLLW"/>
+            <subset name="APPLL - Adjacent PLL" caseList="APPLLBa APPLLBb APPLLDa APPLLDb APPLLPa APPLLPb APPLLCa APPLLCb APPLLM APPLLKa APPLLKb APPLL:"/>
+            <subset name="APPLL - Diag PLL" caseList="APPLLSa APPLLSb APPLLQ APPLLX APPLLDiag"/>
+            -->
         </set>
         <set name="PLL" caseList="0Aa 0Ab 0E 0F 0Ga 0Gb 0Gc 0Gd 0H 0Ja 0Jb 0Na 0Nb 0Ra 0Rb 0T 0Ua 0Ub 0V 0Y 0Z"/>
         <set name="ELL">
