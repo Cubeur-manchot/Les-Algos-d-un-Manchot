@@ -274,8 +274,42 @@
                 <alg sequence="r U r' U R U' R' U R U' R' r U' r'" name="OLL 56 - OLL I sans barre" id="OLL56"/>
             </otherLastLayerAlgs>
         </lastLayerAlgs>
+        <otherAlgs>
+            <alg sequence="M2' U2 M2' U R U R' F' R U R' U' R' F R2 U' R'" name="PLL Ba opposée" id="OPPLLBa"/>
+            <alg sequence="M2' U2 M2' U L' U' L F L' U' L U L F' L2' U L" name="PLL Bb opposée" id="OPPLLBb"/>
+            <alg sequence="R U R' F' R U R' U' R' F R2 U' R' M' U M2 U M2' U M" name="PLL Ca opposée" id="OPPLLCa"/>
+            <alg sequence="M' U' M2 U' M2' U' M U R U R' F' R U R' U' R' F R2 U' R'" name="PLL Cb opposée" id="OPPLLCb"/>
+            <alg sequence="L' U' L F L' U' L U L F' L2' U L M2' U2 M2'" name="PLL Da opposée" id="OPPLLDa"/>
+            <alg sequence="R U R' F' R U R' U' R' F R2 U' R' M2' U2 M2'" name="PLL Db opposée" id="OPPLLDb"/>
+            <alg sequence="F R U' R' U' R U R' F' U M2' U2 M2' U R U R' U' R' F R F'" name="PLL Diag opposée" id="OPPLLDiag"/>
+            <alg sequence="M2' U2 M2'" name="PLL I opposée" id="OPPLLI"/>
+            <alg sequence="M2' U2 M2' l' U R' D2' R U' R' D2' R2' (x')" name="PLL Ka opposée" id="OPPLLKa"/>
+            <alg sequence="M2' U2 M2' U l' U R' D2' R U' R' D2' R2' (x')" name="PLL Kb opposée" id="OPPLLKb"/>
+            <alg sequence="R U' R' U M2' U2 M2' U R U R'" name="PLL L opposée" id="OPPLLL"/>
+            <alg sequence="R U R' U' R' F R2 U' R' U' R U R' F' M2' U2 M2'" name="PLL M opposée" id="OPPLLM"/>
+            <alg sequence="M' U' M2 U' M2' U' M" name="PLL O+ opposée" id="OPPLLO+"/>
+            <alg sequence="M' U M2 U M2' U M" name="PLL O+ opposée" id="OPPLLO-"/>
+            <alg sequence="R U R' F' R U R' U' R' F R2 U' R' U M2' U2 M2'" name="PLL Pa opposée" id="OPPLLPa"/>
+            <alg sequence="M2 U2 M2 R U R' F' R U R' U' R' F R2 U' R'" name="PLL Pb opposée" id="OPPLLPb"/>
+            <alg sequence="M2' U2 M2' U l U' R' D R U R' D' R U R' D R U' R' D' (x)" name="PLL Q opposée" id="OPPLLQ"/>
+            <alg sequence="M2' U2 M2' F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Sa opposée" id="OPPLLSa"/>
+            <alg sequence="M2' U2 M2' U' F R U' R' U' R U R' F' R U R' U' R' F R F'" name="PLL Sb opposée" id="OPPLLSb"/>
+            <alg sequence="M2' U' M' U2 M U M2'" name="PLL W opposée" id="OPPLLW"/>
+            <alg sequence="M2' U2 M2' l U' R' D R U R' D' R U R' D R U' R' D' (x)" name="PLL X opposée" id="OPPLLX"/>
+            <alg sequence="R U R' U' R' F R2 U' R' U' R U R' F' U M2' U2 M2'" name="PLL : opposée" id="OPPLL:"/>
+        </otherAlgs>
     </algs>
     <sets>
+        <set name="PPLL">
+            <subset name="OPPLL - EPLL" caseList="OPPLLI OPPLLL OPPLLO+ OPPLLO- OPPLLW"/>
+            <subset name="OPPLL - Adjacent PLL" caseList="OPPLLBa OPPLLBb OPPLLCa OPPLLCb OPPLLDa OPPLLDb OPPLLKa OPPLLKb OPPLLM OPPLLPa OPPLLPb OPPLL:"/>
+            <subset name="OPPLL - Diag PLL" caseList="OPPLLQ OPPLLSa OPPLLSb OPPLLX OPPLLDiag"/>
+            <!--
+            <subset name="APPLL - EPLL" caseList="APPLLI APPLLL APPLLO+ APPLLO- APPLLW"/>
+            <subset name="APPLL - Adjacent PLL" caseList="APPLLBa APPLLBb APPLLDa APPLLDb APPLLPa APPLLPb APPLLCa APPLLCb APPLLM APPLLKa APPLLKb APPLL:"/>
+            <subset name="APPLL - Diag PLL" caseList="APPLLSa APPLLSb APPLLQ APPLLX APPLLDiag"/>
+            -->
+        </set>
         <set name="PLL" caseList="0Aa 0Ab 0E 0F 0Ga 0Gb 0Gc 0Gd 0H 0Ja 0Jb 0Na 0Nb 0Ra 0Rb 0T 0Ua 0Ub 0V 0Y 0Z"/>
         <set name="ELL">
             <subset name="OLL 0 (EPLL)" caseList="0H 0Z 0Ua 0Ub" keepAUF="true"/>
