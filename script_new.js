@@ -83,7 +83,7 @@ function makeAlgCard(alg, keepAUF, useAlternativeName, options, pzl)
 	aHtmlTag.title = "Animation";
 	aHtmlTag.target = "_blank";
 	let imgHtmlTag = createHtmlTag("img");
-	imgHtmlTag.src = "http://roudai.net/visualcube/visualcube.php?fmt=svg&size=150&view=plan&bg=white&pzl=" + pzl
+	imgHtmlTag.src = "http://cube.rider.biz/visualcube.php?fmt=svg&size=150&view=plan&bg=white&pzl=" + pzl
 		+ "&case=" + moveSequenceForImage + options;
 	aHtmlTag.appendChild(imgHtmlTag);
 	liHtmlTag.appendChild(aHtmlTag);
