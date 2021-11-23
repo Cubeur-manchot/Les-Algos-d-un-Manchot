@@ -178,7 +178,7 @@
                 <alg sequence="F' U' L' U2 L F R U R' U' R U R' U' R U' R' (U2)" name="Cas Pur - OLL 35" id="35Pur"/>
                 <alg sequence="F U2 R' D' R U R' D R2 U' R' U F' (U)" name="Tripod Poisson sans barre Aa" id="35Aabk"/>
                 <alg sequence="F U' R F R' F' U R U2 R U2' R2' F'" name="Tripod Poisson sans barre Ab" id="35Abbk"/>
-                <alg sequence="F U2' F2 U2' R' F' R U2 r U r' (U2)" name="Tripod Poisson sans barre Ja" id="35Jabk"/>
+                <alg sequence="R U2' R2' U2' f' U' f U2' F R F'" name="Tripod Poisson sans barre Ja" id="35Jabk"/>
                 <alg sequence="F' U2' F2 U2' r U r' U2 R' F' R (U2)" name="Tripod Poisson sans barre Jb" id="35Jbbk"/>
                 <alg sequence="f R U R' U' f' R U R' U R U2 R' (U)" name="22LL V L + 2-flip sans barre" id="35V22"/>
                 <alg sequence="R U2' R2' F R F' R U2' R'" name="OLL Poisson sans barre" id="35Ynb4cot" alternativeName="OLL 35 - Poisson sans barre"/>
