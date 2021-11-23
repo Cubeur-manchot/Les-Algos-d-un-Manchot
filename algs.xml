@@ -41,7 +41,7 @@
                 <alg sequence="x' R U' R' U R U R' F' R U R' U' R' F R2 U' R' U' x" name="Tripod OLL 3 moves droite" id="5Vbk"/>
                 <alg sequence="R U R' U F2 r U r' F (U2)" name="Cas pur - OLL 6" id="6Pur"/>
                 <alg sequence="R U R2' F R F2 U F (U2)" name="Cas pur - carré antisune (optimal)" id="6PurOpt"/>
-                <alg sequence="R' U R U2 R2 U' F' U F R2 U' R' U2 R" name="Tripod Niklas gauche + 2EO" id="6Aabk"/>
+                <alg sequence="R' U R U2' R2' U' F' U F R2 U' R' U2 R" name="Tripod Niklas gauche + 2EO" id="6Aabk"/>
                 <alg sequence="F U' R2 D R' U' R D' R2' U F' (U)" name="Tripod 2 paires flippées gauche" id="6Abbk"/>
                 <alg sequence="r' D R2 U R' U' R U' R2 D' r (U2)" name="Tripod carré droite Ja" id="6Jabk"/>
                 <alg sequence="r D' R2 U' R U' R' U R2 D r' (U2)" name="Tripod carré droite Jb" id="6Jbbk"/>
