@@ -34,7 +34,7 @@ const navigateTo = url => {
 
 document.addEventListener("DOMContentLoaded", router);
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { // todo group into a single event listener
 	for (let link of document.querySelectorAll("a.navLink")) {
 		link.addEventListener("click", event => {
 			console.log(event);

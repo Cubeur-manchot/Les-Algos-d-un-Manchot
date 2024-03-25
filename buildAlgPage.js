@@ -7,7 +7,3 @@ const loadData = () => {
 const buildAlgPage = algName => {
 
 };
-
-const createHtmlTag = (type, options) => {
-	return {...document.createElement(type), options};
-};
