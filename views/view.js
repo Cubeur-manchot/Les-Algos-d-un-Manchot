@@ -20,6 +20,9 @@ class View {
 	createATag = (options, ...children) => {
 		return this.createHtmlTag("a", options, children);
 	};
+	createBrTag = () => {
+		return this.createHtmlTag("br", null, []);
+	};
 	createDivTag = (options, ...children) => {
 		return this.createHtmlTag("div", options, children);
 	};
@@ -28,6 +31,9 @@ class View {
 	};
 	createNavTag = (options, ...children) => {
 		return this.createHtmlTag("nav", options, children);
+	};
+	createSpanTag = (options, ...children) => {
+		return this.createHtmlTag("span", options, children);
 	};
 };
 

@@ -1,38 +1,25 @@
+import { HomeView } from "./views/homeView.js";
+
 console.log("script loaded !");
 
-const router = () => { // async ?
+const displayView = () => { // async ?
 	let routes = [
-		{path: "/", view: viewDashboard},
-		{path: "/posts", view: viewPosts},
-		{path: "/settings", view: viewSettings},
+		{path: "/home", view: HomeView},
 	];
-	let locationShort = location.pathname.replace(/^.*Manchot\/Test.*SPA/i, "");
-	console.log(locationShort)
-	let view = routes.find(route => route.path === locationShort)?.view ?? viewDashboard;
-	console.log("view")
-	console.log(view)
-};
-
-const viewDashboard = () => {
-	console.log("viewDashboard")
-};
-
-const viewPosts = () => {
-	console.log("viewPosts")
-};
-
-const viewSettings = () => {
-	console.log("viewSettings")
+	let locationShort = location.pathname.replace(/^.*Manchot/i, "");
+	let view = new (routes.find(route => route.path === locationShort)?.view ?? HomeView)();
+	view.buildView();
+	if (view instanceof HomeView) {
+		history.replaceState(null, null, location.pathname.replace(/\/(?!.*Manchot).*/, "/home")); // force home URL for home view
+	}
 };
 
 const navigateTo = url => {
-	console.log("navigate to :")
-	console.log(url)
 	history.pushState(null, null, url);
-	router();
+	displayView();
 };
 
-document.addEventListener("DOMContentLoaded", router);
+document.addEventListener("DOMContentLoaded", displayView);
 
 document.addEventListener("DOMContentLoaded", () => { // todo group into a single event listener
 	for (let link of document.querySelectorAll("a.navLink")) {
