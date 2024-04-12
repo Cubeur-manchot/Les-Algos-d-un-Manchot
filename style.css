@@ -17,10 +17,58 @@ body {
 	font-family: var(--font-inter);
 	height: 100vh;
 }
+
+/* Header */
+header {
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+span#siteTitle {
+	display: flex;
+	align-items: center;
+}
+
 /* Language */
 html[lang=fr] *[lang=en],
 html[lang=en] *[lang=fr] {
 	display: none;
+}
+
+button#toggleLanguage {
+	--flag-width: 32;
+	--flag-height: calc(var(--flag-width) * 0.6);
+	width: calc(var(--flag-width) * 1.4px);
+	height: calc(var(--flag-height) * 1.4px);
+	background-color: transparent;
+	padding: 1px;
+	border-width: 0;
+	position: relative;
+}
+
+img.flag {
+	display: inline-block;
+	width: calc(var(--flag-width) * 1px);
+	height: calc(var(--flag-height) * 1px);
+	border: 1px solid black;
+	border-radius: 3px;
+	position: absolute;
+}
+
+html[lang=fr] img#flag-fr,
+html[lang=en] img#flag-en {
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+}
+
+html[lang=fr] img#flag-en,
+html[lang=en] img#flag-fr {
+	z-index: 0;
+	top: 0;
+	right: 0;
 }
 
 /* Navigation */
