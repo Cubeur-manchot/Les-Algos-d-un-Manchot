@@ -43,9 +43,9 @@ button#toggleLanguage {
 	width: calc(var(--flag-width) * 1.4px);
 	height: calc(var(--flag-height) * 1.4px);
 	background-color: transparent;
-	padding: 1px;
 	border-width: 0;
 	position: relative;
+	cursor: pointer;
 }
 
 img.flag {

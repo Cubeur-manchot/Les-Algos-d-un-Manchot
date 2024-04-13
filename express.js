@@ -40,4 +40,4 @@ app.get(/^[^.]*$/, (req, res) => {
 	res.sendFile(path.resolve(".", "index.html"));
 });
 
-app.listen(1234, () => console.log("Ça tourne..."));
+app.listen(1234, () => console.log("Server started..."));
