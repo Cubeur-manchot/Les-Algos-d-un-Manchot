@@ -32,43 +32,59 @@ span#siteTitle {
 }
 
 /* Language */
-html[lang=fr] *[lang=en],
-html[lang=en] *[lang=fr] {
+html:has(input[type=checkbox]#isEnglish:checked) *[lang|=fr],
+html:has(input[type=checkbox]#isEnglish:not(:checked)) *[lang|=en] {
 	display: none;
 }
 
-button#toggleLanguage {
+div#toggleLanguage {
 	--flag-width: 32;
 	--flag-height: calc(var(--flag-width) * 0.6);
 	width: calc(var(--flag-width) * 1.4px);
 	height: calc(var(--flag-height) * 1.4px);
-	background-color: transparent;
 	border-width: 0;
 	position: relative;
-	cursor: pointer;
 }
 
-img.flag {
-	display: inline-block;
+input[type=checkbox]#isEnglish {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+	appearance: none;
+}
+
+input[type=checkbox]#isEnglish::before,
+input[type=checkbox]#isEnglish::after {
+	content: "";
+	position: absolute;
 	width: calc(var(--flag-width) * 1px);
 	height: calc(var(--flag-height) * 1px);
 	border: 1px solid black;
 	border-radius: 3px;
-	position: absolute;
+	background-size: 100% 100%;
 }
 
-html[lang=fr] img#flag-fr,
-html[lang=en] img#flag-en {
-	z-index: 1;
+input[type=checkbox]#isEnglish::before {
+	top: 0;
+	right: 0;
+}
+
+input[type=checkbox]#isEnglish::after {
 	bottom: 0;
 	left: 0;
 }
 
-html[lang=fr] img#flag-en,
-html[lang=en] img#flag-fr {
-	z-index: 0;
-	top: 0;
-	right: 0;
+html:has(input[type=checkbox]#isEnglish:checked) input[type=checkbox]#isEnglish::before,
+html:has(input[type=checkbox]#isEnglish:not(:checked)) input[type=checkbox]#isEnglish::after {
+	background-image: url(./images/flags/flagFR.png);
+}
+
+html:has(input[type=checkbox]#isEnglish:checked) input[type=checkbox]#isEnglish::after,
+html:has(input[type=checkbox]#isEnglish:not(:checked)) input[type=checkbox]#isEnglish::before {
+	background-image: url(./images/flags/flagUK.png);
 }
 
 /* Navigation */

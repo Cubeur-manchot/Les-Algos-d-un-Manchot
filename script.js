@@ -21,11 +21,6 @@ const navigateTo = url => {
 
 document.addEventListener("DOMContentLoaded", displayView);
 
-const toggleValue = (initialValue, value1, value2) =>
-	initialValue === value1 ? value2 : value1;
-
-document.querySelector("button#toggleLanguage").addEventListener("click", () => {
-	document.documentElement.lang = toggleValue(document.documentElement.lang, "en", "fr");
 });
 
 document.addEventListener("DOMContentLoaded", () => { // todo group into a single event listener
