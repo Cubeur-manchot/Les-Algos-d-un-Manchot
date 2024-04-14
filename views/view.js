@@ -26,6 +26,12 @@ class View {
 	createDivTag = (options, ...children) => {
 		return this.createHtmlTag("div", options, children);
 	};
+	createH1Tag = (options, ...children) => {
+		return this.createHtmlTag("h1", options, children);
+	};
+	createH2Tag = (options, ...children) => {
+		return this.createHtmlTag("h2", options, children);
+	};
 	createImgTag = (options, ...children) => {
 		return this.createHtmlTag("img", options, children);
 	};

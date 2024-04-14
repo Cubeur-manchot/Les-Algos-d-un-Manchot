@@ -1,4 +1,5 @@
 import { HomeView } from "./views/homeView.js";
+import { RecordsView } from "./views/recordsView.js";
 
 const displayView = () => { // async ?
 	let views = [HomeView, RecordsView];
