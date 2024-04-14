@@ -37,23 +37,14 @@ html:has(input[type=checkbox]#isEnglish:not(:checked)) *[lang|=en] {
 	display: none;
 }
 
-div#toggleLanguage {
+input[type=checkbox]#isEnglish {
 	--flag-width: 32;
 	--flag-height: calc(var(--flag-width) * 0.6);
 	width: calc(var(--flag-width) * 1.4px);
 	height: calc(var(--flag-height) * 1.4px);
-	border-width: 0;
-	position: relative;
-}
-
-input[type=checkbox]#isEnglish {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	cursor: pointer;
 	appearance: none;
+	cursor: pointer;
+	position: relative;
 }
 
 input[type=checkbox]#isEnglish::before,
