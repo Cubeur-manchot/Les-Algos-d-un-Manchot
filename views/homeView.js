@@ -3,10 +3,10 @@
 import { View } from "./view.js";
 
 class HomeView extends View {
+	static path = "/home";
+	static title = "Home";
 	constructor() {
 		super();
-		this.path = "/home";
-		this.title = "Home";
 	};
 	getContent = () =>
 		[

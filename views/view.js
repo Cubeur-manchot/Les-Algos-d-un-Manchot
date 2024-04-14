@@ -10,7 +10,7 @@ class View {
 	buildView = () => {
 		this.mainTag.innerHTML = "";
 		this.mainTag.append(...this.getContent());
-		document.title = ["Les Algos d'un Manchot", this.title].filter(Boolean).join(" | ");
+		document.title = ["Les Algos d'un Manchot", this.constructor.title].filter(Boolean).join(" | ");
 	};
 	createHtmlTag = (type, options, children = []) => {
 		let tag = Object.assign(document.createElement(type), options);
