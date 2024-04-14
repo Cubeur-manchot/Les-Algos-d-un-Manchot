@@ -21,6 +21,8 @@ const navigateTo = url => {
 
 document.addEventListener("DOMContentLoaded", displayView);
 
+document.addEventListener("DOMContentLoaded", () => {
+	document.querySelector("input[type=checkbox]#isEnglish").checked = !navigator.language.includes("fr");
 });
 
 document.addEventListener("DOMContentLoaded", () => { // todo group into a single event listener
