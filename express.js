@@ -25,9 +25,9 @@ app.get(/404\.html/, (req, res) => {
 	res.sendFile(path.resolve(".", "404.html"));
 });
 
-// style.css
-app.get(/style\.css/, (req, res) => {
-	res.sendFile(path.resolve(".", "style.css"));
+// /styles/*.css
+app.get(/styles\/.*\.css/, (req, res) => {
+	res.sendFile(path.join(__dirname, req.url));
 });
 
 // *.html
