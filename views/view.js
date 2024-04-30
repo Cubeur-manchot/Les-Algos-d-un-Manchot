@@ -41,6 +41,21 @@ class View {
 	createSpanTag = (options, ...children) => {
 		return this.createHtmlTag("span", options, children);
 	};
+	createTableTag = (options, ...children) => {
+		return this.createHtmlTag("table", options, children);
+	};
+	createTdTag = (options, ...children) => {
+		return this.createHtmlTag("td", options, children);
+	};
+	createTheadTag = (options, ...children) => {
+		return this.createHtmlTag("thead", options, children);
+	};
+	createThTag = (options, ...children) => {
+		return this.createHtmlTag("th", options, children);
+	};
+	createTrTag = (options, ...children) => {
+		return this.createHtmlTag("tr", options, children);
+	};
 };
 
 export {View};

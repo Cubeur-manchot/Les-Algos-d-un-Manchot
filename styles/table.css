@@ -1,0 +1,45 @@
+/* General */
+
+table {
+	width: clamp(500px, 80%, 1500px);
+	margin: 0 auto;
+	border-radius: 10px;
+	overflow: hidden;
+	border-collapse: collapse;
+	background-color: #eaeaea;
+	color: #222;
+	font-family: Open Sans;
+}
+
+thead,
+tr
+{
+	padding-inline: 40px;
+	display: grid;
+	grid-template-columns: minmax(200px, 1fr) repeat(6, 1fr);
+	column-gap: 20px;
+	justify-items: start;
+	row-gap: 0;
+	align-items: center;
+}
+
+thead {
+	height: 60px;
+	background-color: #363640;
+}
+
+th {
+	color: #eaeaea;
+	font-weight: normal;
+}
+
+tr {
+	height: 50px;
+}
+
+/* Numerical columns aligned to the right */
+
+table#records th:not(:first-child),
+table#records td:not(:first-child) {
+	justify-self: end;
+}
