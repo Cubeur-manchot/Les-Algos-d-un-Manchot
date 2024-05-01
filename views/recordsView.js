@@ -5,60 +5,42 @@ import { View } from "./view.js";
 class RecordsView extends View {
 	static path = "/records";
 	static title = "Records";
+	static recordsFormats = [
+		{solveCount: 1, name: "Single"},
+		{solveCount: 3, name: "Mo3"},
+		{solveCount: 5, name: "Ao5"},
+		{solveCount: 12, name: "Ao12"},
+		{solveCount: 50, name: "Ao50"},
+		{solveCount: 100, name: "Ao100"}
+	];
 	constructor() {
 		super();
 	};
-	getContent = () =>
-		[
+	getContent = async () => {
+		let records = await (await fetch("../data/records.json")).json();
+		return [
 			this.createH1Tag({textContent: "Records"}),
 			this.createTableTag({id: "records"},
 				this.createTheadTag({},
 					this.createThTag({textContent: "Event"}),
-					this.createThTag({textContent: "Single"}),
-					this.createThTag({textContent: "Mo3"}),
-					this.createThTag({textContent: "Ao5"}),
-					this.createThTag({textContent: "Ao12"}),
-					this.createThTag({textContent: "Ao50"}),
-					this.createThTag({textContent: "Ao100"})
+					...RecordsView.recordsFormats.map(recordFormat => this.createThTag({textContent: recordFormat.name}))
 				),
-				this.createTrTag({},
-					this.createTdTag({textContent: "2x2"}),
-					this.createTdTag({textContent: "1.03"}),
-					this.createTdTag({textContent: "3.05"}),
-					this.createTdTag({textContent: "3.16"}),
-					this.createTdTag({textContent: "4.98"}),
-					this.createTdTag({textContent: "5.09"}),
-					this.createTdTag({textContent: "19.91"})
-				),
-				this.createTrTag({},
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"})
-				),
-				this.createTrTag({},
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"})
-				),
-				this.createTrTag({},
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"}),
-					this.createTdTag({textContent: "-"})
+				...records.map(recordItem =>
+					this.createTrTag({},
+						this.createTdTag({textContent: [recordItem.event.puzzle, recordItem.event.variation].filter(Boolean).join(" ")}),
+						...RecordsView.recordsFormats.map(recordFormat =>
+							this.createTdTag({textContent:
+								recordItem.records[recordFormat.solveCount]?.time
+									.toString() // convert numerical values to string (string values are not affected)
+									.replace(/(?<!.*\..*)$/, ".00") // add decimal separator if missing (integer values)
+									.replace(/(?<=\.\d)$/, "0") // add extra zero if only one digit after decimal separator
+								?? "-"}) // empty if record not available
+						)
+					)
 				)
 			)
 		];
+	};
 };
 
 export {RecordsView};

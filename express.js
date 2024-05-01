@@ -20,6 +20,11 @@ app.get(/images/, (req, res) => {
 	res.sendFile(path.join(__dirname, req.url));
 });
 
+// /data/*
+app.get(/data/, (req, res) => {
+	res.sendFile(path.join(__dirname, req.url));
+});
+
 // 404.html
 app.get(/404\.html/, (req, res) => {
 	res.sendFile(path.resolve(".", "404.html"));

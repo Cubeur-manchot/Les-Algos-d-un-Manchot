@@ -7,9 +7,9 @@ class View {
 	getContent = () => {
 		throw "Exception : getting content of abstract view.";
 	};
-	buildView = () => {
+	buildView = async () => {
 		this.mainTag.innerHTML = "";
-		this.mainTag.append(...this.getContent());
+		this.mainTag.append(...(await this.getContent()));
 		document.title = ["Les Algos d'un Manchot", this.constructor.title].filter(Boolean).join(" | ");
 	};
 	createHtmlTag = (type, options, children = []) => {
