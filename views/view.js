@@ -44,6 +44,9 @@ class View {
 	createTableTag = (options, ...children) => {
 		return this.createHtmlTag("table", options, children);
 	};
+	createTbodyTag = (options, ...children) => {
+		return this.createHtmlTag("tbody", options, children);
+	};
 	createTdTag = (options, ...children) => {
 		return this.createHtmlTag("td", options, children);
 	};
