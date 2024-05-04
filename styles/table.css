@@ -6,11 +6,9 @@ table {
 	border-radius: 10px;
 	overflow: hidden;
 	border-collapse: collapse;
-	background-color: #eaeaea;
-	color: #222;
 	font-family: Open Sans;
 	--padding-inline: 40px;
-	--scrollbar-width: 10px;
+	--light-color: #eaeaea;
 }
 
 thead,
@@ -29,12 +27,12 @@ thead {
 	height: 60px;
 	padding-right: var(--padding-inline);
 	background-color: #363640;
-	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 	position: relative;
 }
 
 th {
-	color: #eaeaea;
+	color: var(--light-color);
 	font-weight: normal;
 }
 
@@ -42,6 +40,12 @@ tbody {
 	height: clamp(200px, 75vh, calc(100vh - 240px));
 	overflow-y: scroll;
 	display: block;
+	background-color: var(--light-color);
+	color: #222;
+	--scrollbar-width: 10px;
+	--scrollbar-track-color: #e7e7e7;
+	--scrollbar-thumb-color: #c7c7c7;
+	--scrollbar-thumb-hover-color: #c0c0c0;
 }
 
 tr {
@@ -64,18 +68,28 @@ tbody::-webkit-scrollbar {
 }
 
 tbody::-webkit-scrollbar-track {
-	background-color: #e7e7e7;
 	margin-block: 10px;
 	border-radius: calc(var(--scrollbar-width) / 2);
+	background-color: var(--scrollbar-track-color);
 }
 
 tbody::-webkit-scrollbar-thumb {
-	background-color: #c7c7c7;
 	border-radius: calc(var(--scrollbar-width) / 2);
+	border: 1px solid var(--scrollbar-track-color);
+	background-color: var(--scrollbar-thumb-color);
 }
 
 tbody::-webkit-scrollbar-thumb:hover {
-	background-color: #c0c0c0;
+	background-color: var(--scrollbar-thumb-hover-color);
+}
+
+@supports (-moz-appearance: none) {
+	tbody {
+		/* On Chrome, Edge and Opera, the vertical scrollbar takes some place and pushes the content to the left */
+		/* On Firefox, the scrollbar overlaps the content and takes no additional place */
+		--scrollbar-width: 0px;
+		scrollbar-color: var(--scrollbar-thumb-color) transparent;
+	}
 }
 
 /* Numerical columns aligned to the right */
