@@ -1,0 +1,593 @@
+[
+	{
+		"puzzle": {
+			"brand": "X-Man Designs",
+			"model": "X-Man Bell Magnetic Pyraminx",
+			"stickerless": true,
+			"characteristics": {
+				"type": "Pyraminx",
+				"faces": 4,
+				"layers": 3
+			},
+			"main": true
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-06-17",
+			"price": 14.50,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": null,
+			"model": "1x1 cube 25 mm",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 1
+			},
+			"main": true
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-06-17",
+			"price": 3.50,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "X-Man Designs",
+			"model": "X-Man Wingy Magnetic Skewb",
+			"stickerless": true,
+			"characteristics": {
+				"type": "Skewb",
+				"faces": 4,
+				"layers": 2
+			},
+			"main": true
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-06-17",
+			"price": 14.99,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": null,
+			"model": "1x1 Megaminx",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Megaminx",
+				"faces": 12,
+				"layers": 1
+			},
+			"main": true
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-06-17",
+			"price": 4.49,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "Cubicle",
+			"model": "1x1 Pyraminx",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Pyraminx",
+				"faces": 4,
+				"layers": 1
+			},
+			"main": true
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-06-17",
+			"price": 2.50,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "X-Man Designs",
+			"model": "X-Man Designs Spark 7x7 M",
+			"stickerless": true,
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 7
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-11-04",
+			"price": 59.99,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "QiYi",
+			"model": "Valk 5 M",
+			"stickerless": true,
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 5
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-11-04",
+			"price": 50.99,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "DaYan",
+			"model": "DaYan 16-Axis Hexadecagon",
+			"stickerless": true,
+			"characteristics": {
+				"type": "Face-turning",
+				"faces": 16,
+				"layers": 3
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-11-29",
+			"price": 41.99,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "DaYan",
+			"model": "DaYan Wheels of Wisdom",
+			"plastic": "black",
+			"characteristics": {
+				"type": null,
+				"faces": 6,
+				"layers": 3
+			}
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-11-29",
+			"price": 61.99,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "FangGe",
+			"model": "FangCun Carbon Fiber Ghost Cube",
+			"plastic": "transparent",
+			"stickers": "green",
+			"characteristics": {
+				"type": "Cube (mod)",
+				"faces": 6,
+				"layers": 3
+			},
+			"main": true
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-11-29",
+			"price": 19.99,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "FangGe",
+			"model": "FangCun Carbon Fiber Ghost Cube",
+			"plastic": "transparent",
+			"stickers": "6-color",
+			"characteristics": {
+				"type": "Cube (mod)",
+				"faces": 6,
+				"layers": 3
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-11-29",
+			"price": 19.99,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "FangGe",
+			"model": "FangCun Ghost Skewb",
+			"plastic": "black",
+			"stickers": "gold",
+			"characteristics": {
+				"type": "Skewb (mod)",
+				"faces": 6,
+				"layers": 2
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-11-29",
+			"price": 13.99,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "FangGe",
+			"model": "FangCun Carbon Fiber Ghost Cube",
+			"plastic": "transparent",
+			"stickers": "6-color",
+			"characteristics": {
+				"type": "Cube (mod)",
+				"faces": 6,
+				"layers": 3
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2019-11-29",
+			"price": 0,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "FangGe",
+			"model": "FangCun Carbon Fiber Ghost Cube",
+			"plastic": "transparent",
+			"stickers": "red",
+			"characteristics": {
+				"type": "Cube (mod)",
+				"faces": 6,
+				"layers": 3
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2020-01-07",
+			"price": 0,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "YJ",
+			"model": "YJ GuanLong",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 3
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2015-xx-xx",
+			"price": 4.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "DaYan",
+			"model": "DaYan Pyraminx",
+			"stickerless": true,
+			"characteristics": {
+				"type": "Pyraminx",
+				"faces": 4,
+				"layers": 3
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2015-xx-xx",
+			"price": 17.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "MoYu",
+			"model": "MoYu AoChuang 5x5",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Pyraminx",
+				"faces": 4,
+				"layers": 3
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2015-xx-xx",
+			"price": 33.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "MoYu",
+			"model": "MoYu AoFu 7x7",
+			"stickerless": true,
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 7
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2015-xx-xx",
+			"price": 48.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "MoYu",
+			"model": "MoYu HuaLong",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 3
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2015-xx-xx",
+			"price": 16.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "ShengShou",
+			"model": "ShengShou 6x6",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 6
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2015-xx-xx",
+			"price": 24.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "Gan",
+			"model": "Gan 356S V2 (Advanced)",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 3
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2016-xx-xx",
+			"price": 24.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "ShengShou",
+			"model": "ShengShou 9x9",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 9
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2016-xx-xx",
+			"price": 99.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "ShengShou",
+			"model": "ShengShou Gigaminx",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Cube",
+				"faces": 12,
+				"layers": 5
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2016-xx-xx",
+			"price": 62.00,
+			"currency": "USD",
+			"precision": "Ordered an MF8, received a ShengShou."
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "YuXin",
+			"model": "YuXin 5x5",
+			"stickerless": true,
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 5
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2017-xx-xx",
+			"price": 17.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "MoYu",
+			"model": "MoYu AoShi 6x6",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 6
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2017-xx-xx",
+			"price": 39.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "MoYu",
+			"model": "MoYu Cubic AoFu 7x7 GT",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 7
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2017-xx-xx",
+			"price": 49.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "ShengShou",
+			"model": "ShengShou 8x8",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Cube",
+				"faces": 6,
+				"layers": 8
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2017-xx-xx",
+			"price": 66.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "ShengShou",
+			"model": "ShengShou Kilominx",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Megaminx",
+				"faces": 11,
+				"layers": 2
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2017-xx-xx",
+			"price": 11.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "QiYi",
+			"model": "QiYi Square-1",
+			"stickerless": true,
+			"characteristics": {
+				"type": "Square-1",
+				"faces": 6,
+				"layers": 3
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2017-xx-xx",
+			"price": 9.99,
+			"currency": "USD"
+		}
+	},
+	{
+		"puzzle": {
+			"brand": "QiYi",
+			"model": "QiYi Skewb",
+			"plastic": "black",
+			"characteristics": {
+				"type": "Skewb",
+				"faces": 6,
+				"layers": 2
+			},
+			"main": false
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2017-xx-xx",
+			"price": 13.00,
+			"currency": "USD"
+		}
+	},
+	{
+		"bundle": {
+			"name": "SpeedStacks Pro Cube Timer Bundle G4",
+			"items": [
+				"SpeedStacks Gen4 Mat",
+				"StackMat Pro Timer Gen4",
+				"SpeedStacks Gear Bag"
+			]
+		},
+		"acquisition": {
+			"website": "TheCubicle",
+			"date": "2017-xx-xx",
+			"price": 39.50,
+			"currency": "USD"
+		}
+	}
+]
