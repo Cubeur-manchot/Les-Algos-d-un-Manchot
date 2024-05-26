@@ -7,27 +7,23 @@ table {
 	overflow: hidden;
 	border-collapse: collapse;
 	font-family: Open Sans;
-	--padding-inline: 40px;
+	position: relative;
+	/* table variables */
+	--padding-inline: 50px;
+	--column-gap: 20px;
 	--light-color: #eaeaea;
+	--scrollbar-width: 10px;
+	--scrollbar-track-color: #e7e7e7;
+	--scrollbar-thumb-color: #c7c7c7;
+	--scrollbar-thumb-hover-color: #c0c0c0;
 }
 
-thead,
-tr
-{
-	padding-left: var(--padding-inline);
-	display: grid;
-	column-gap: 20px;
-	justify-items: start;
-	row-gap: 0;
-	align-items: center;
+table#records {
+	--padding-right: var(--padding-inline);
 }
 
-table#records :is(thead, tr) {
-	grid-template-columns: minmax(200px, 1fr) repeat(6, 1fr);
-}
-
-table#collection :is(thead, tr) {
-	grid-template-columns: repeat(
+table#collection {
+	--base-template-columns: repeat(
 		calc(
 			var(--col-visibility-1, 0)
 			+ var(--col-visibility-2, 0)
@@ -42,11 +38,38 @@ table#collection :is(thead, tr) {
 		),
 		minmax(150px, 1fr)
 	);
+	--padding-right: calc(var(--padding-inline) + var(--column-gap));
+}
+
+thead,
+tr
+{
+	padding-left: var(--padding-inline);
+	display: grid;
+	column-gap: var(--column-gap);
+	justify-items: start;
+	row-gap: 0;
+	align-items: center;
+}
+
+table#records :is(thead, tr) {
+	grid-template-columns: minmax(200px, 1fr) repeat(6, 1fr);
+}
+
+table#records thead {
+	padding-right: var(--padding-right);
+}
+
+table#collection thead {
+	grid-template-columns: var(--base-template-columns) var(--padding-inline);
+}
+
+table#collection tr {
+	grid-template-columns: var(--base-template-columns);
 }
 
 thead {
 	height: 60px;
-	padding-right: var(--padding-inline);
 	background-color: #363640;
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 	position: relative;
@@ -63,14 +86,10 @@ tbody {
 	display: block;
 	background-color: var(--light-color);
 	color: #222;
-	--scrollbar-width: 10px;
-	--scrollbar-track-color: #e7e7e7;
-	--scrollbar-thumb-color: #c7c7c7;
-	--scrollbar-thumb-hover-color: #c0c0c0;
 }
 
 tr {
-	padding-right: calc(var(--padding-inline) - var(--scrollbar-width));
+	padding-right: calc(var(--padding-right) - var(--scrollbar-width));
 	height: 50px;
 }
 
@@ -80,37 +99,6 @@ tr:nth-child(odd) {
 
 tr:hover {
 	background-color: #e0e0e0;
-}
-
-/* Scrollbar */
-
-tbody::-webkit-scrollbar {
-	width: var(--scrollbar-width);
-}
-
-tbody::-webkit-scrollbar-track {
-	margin-block: 10px;
-	border-radius: calc(var(--scrollbar-width) / 2);
-	background-color: var(--scrollbar-track-color);
-}
-
-tbody::-webkit-scrollbar-thumb {
-	border-radius: calc(var(--scrollbar-width) / 2);
-	border: 1px solid var(--scrollbar-track-color);
-	background-color: var(--scrollbar-thumb-color);
-}
-
-tbody::-webkit-scrollbar-thumb:hover {
-	background-color: var(--scrollbar-thumb-hover-color);
-}
-
-@supports (-moz-appearance: none) {
-	tbody {
-		/* On Chrome, Edge and Opera, the vertical scrollbar takes some place and pushes the content to the left */
-		/* On Firefox, the scrollbar overlaps the content and takes no additional place */
-		--scrollbar-width: 0px;
-		scrollbar-color: var(--scrollbar-thumb-color) transparent;
-	}
 }
 
 /* Numerical columns aligned to the right */
@@ -126,13 +114,12 @@ table#collection :is(th, td):is(
 /* Settings */
 
 input#collectionTableSettingsButton {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	top: 200px;
-	right: 30px;
+	width: 40px;
+	height: 40px;
+	position: relative;
 	appearance: none;
 	outline: none;
+	z-index: 11; /* over everything, including the dialog backdrop */
 }
 
 input#collectionTableSettingsButton::after {
@@ -140,17 +127,26 @@ input#collectionTableSettingsButton::after {
 	position: absolute;
 	inset: 0;
 	cursor: pointer;
-	background: url(../images/icons/settings.svg) center / 80% 80% no-repeat;
+	background: url(../images/icons/settings.svg) center / 65% 65% no-repeat;
 }
 
-div#collectionTableSettingsContainer:has(input#collectionTableSettingsButton:not(:checked)) :is(dialog#collectionTableSettings, label#collectionTableSettingsDialogBackdrop) {
+table#collection:has(input#collectionTableSettingsButton:not(:checked)) :is(dialog#collectionTableSettings, label#collectionTableSettingsDialogBackdrop) {
 	display: none;
 }
 
 dialog#collectionTableSettings {
-	z-index: 10;
-	width: 250px;
-	padding: 20px;
+	z-index: 11; /* over everything, including the dialog backdrop */
+	height: fit-content;
+	min-height: 180px;
+	max-height: calc(100vh - 260px);
+	margin-left: auto;
+	margin-right: 15px;
+	top: 50px;
+	overflow-y: auto;
+	border: none;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	padding: 15px 20px;
 	display: grid;
 	grid-template-columns: 1em 1fr;
 	row-gap: 10px;
@@ -177,9 +173,10 @@ dialog#collectionTableSettings label.displayTogglerLabel {
 label#collectionTableSettingsDialogBackdrop {
 	display: block;
 	position: absolute;
-	background-color: lightsalmon;
 	opacity: 20%;
 	inset: 0;
+	z-index: 10; /* over everything, excluding the settings button and the dialog */
+	cursor: not-allowed;
 }
 
 /* Column visibility */
@@ -236,4 +233,35 @@ main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(9):chec
 }
 main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(10):checked) table#collection {
 	--col-visibility-10: 1;
+}
+
+/* Scrollbar */
+
+:is(tbody, dialog#collectionTableSettings)::-webkit-scrollbar {
+	width: var(--scrollbar-width);
+}
+
+:is(tbody, dialog#collectionTableSettings)::-webkit-scrollbar-track {
+	margin-block: 5px;
+	border-radius: calc(var(--scrollbar-width) / 2);
+	background-color: var(--scrollbar-track-color);
+}
+
+:is(tbody, dialog#collectionTableSettings)::-webkit-scrollbar-thumb {
+	border-radius: calc(var(--scrollbar-width) / 2);
+	border: 1px solid var(--scrollbar-track-color);
+	background-color: var(--scrollbar-thumb-color);
+}
+
+:is(tbody, dialog#collectionTableSettings)::-webkit-scrollbar-thumb:hover {
+	background-color: var(--scrollbar-thumb-hover-color);
+}
+
+@supports (-moz-appearance: none) {
+	:is(tbody, dialog#collectionTableSettings) {
+		/* On Chrome, Edge and Opera, the vertical scrollbar takes some place and pushes the content to the left */
+		/* On Firefox, the scrollbar overlaps the content and takes no additional place */
+		--scrollbar-width: 0px;
+		scrollbar-color: var(--scrollbar-thumb-color) transparent;
+	}
 }
