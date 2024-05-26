@@ -1,8 +1,11 @@
+"use strict";
+
+import { CollectionView } from "./views/collectionView.js";
 import { HomeView } from "./views/homeView.js";
 import { RecordsView } from "./views/recordsView.js";
 
 const displayView = () => { // async ?
-	let views = [HomeView, RecordsView];
+	let views = [HomeView, RecordsView, CollectionView];
 	let locationShort = location.pathname.replace(/^.*Manchot/i, "");
 	let view = views.find(view => view.path == locationShort) ?? HomeView;
 	new view().buildView();

@@ -23,6 +23,9 @@ class View {
 	createBrTag = () => {
 		return this.createHtmlTag("br", null, []);
 	};
+	createDialogTag = (options, ...children) => {
+		return this.createHtmlTag("dialog", options, children);
+	};
 	createDivTag = (options, ...children) => {
 		return this.createHtmlTag("div", options, children);
 	};
@@ -34,6 +37,12 @@ class View {
 	};
 	createImgTag = (options, ...children) => {
 		return this.createHtmlTag("img", options, children);
+	};
+	createInputTag = options => {
+		return this.createHtmlTag("input", options);
+	};
+	createLabelTag = (options, ...children) => {
+		return this.createHtmlTag("label", options, children);
 	};
 	createNavTag = (options, ...children) => {
 		return this.createHtmlTag("nav", options, children);
