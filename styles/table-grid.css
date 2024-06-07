@@ -1,0 +1,51 @@
+:root {
+	--table-grid-column-gap: 20px;
+}
+
+table.table-grid {
+	--padding-right: var(--padding-inline);
+}
+
+table.table-grid :is(thead, tr) {
+	padding-left: var(--table-padding-inline);
+	display: grid;
+	column-gap: var(--table-grid-column-gap);
+	justify-items: start;
+	row-gap: 0;
+	align-items: center;
+}
+
+table.table-grid thead {
+	padding-right: var(--table-padding-inline);
+}
+
+table.table-grid:not(.table-grid-scrollable) tr {
+	padding-right: var(--table-padding-inline);
+}
+
+table.table-grid.table-grid-scrollable tr {
+	padding-right: calc(var(--table-padding-inline) - var(--scrollbar-thickness));
+}
+
+table.table-grid :is(th, td).numeric {
+	justify-self: right;
+}
+
+/* Scrollable */
+
+table.table-grid-scrollable thead {
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+	/* position: relative; */
+}
+
+table.table-grid-scrollable tbody {
+	height: clamp(200px, 75vh, calc(100vh - 240px));
+	display: block;
+	overflow-y: scroll;
+}
+
+/* Instances */
+
+table#records.table-grid :is(thead, tr) {
+	grid-template-columns: minmax(200px, 1fr) repeat(6, 1fr);
+}

@@ -20,23 +20,25 @@ class RecordsView extends View {
 		let records = await (await fetch("../data/records.json")).json();
 		return [
 			this.createH1Tag({textContent: "Records"}),
-			this.createTableTag({id: "records"},
-				this.createTheadTag({},
-					this.createThTag({textContent: "Event"}),
-					...RecordsView.recordsFormats.map(recordFormat => this.createThTag({textContent: recordFormat.name}))
-				),
-				this.createTbodyTag({},
-					...records.map(recordItem =>
-						this.createTrTag({},
-							this.createTdTag({textContent: [recordItem.event.puzzle, recordItem.event.variation].filter(Boolean).join(" ")}),
-							...RecordsView.recordsFormats.map(recordFormat =>
-								this.createTdTag({textContent:
-									recordItem.records[recordFormat.solveCount]?.time
-										.toString() // convert numerical values to string (string values are not affected)
-										.replace(/(?<!.*\..*)$/, ".00") // add decimal separator if missing (integer values)
-										.replace(/(?<=\.\d)$/, "0") // add extra zero if only one digit after decimal separator
-									?? "-" // empty if record not available
-									}
+			this.createDivTag({className: "table-container"},
+				this.createTableTag({id: "records", className: "table-grid table-grid-scrollable"},
+					this.createTheadTag({},
+						this.createThTag({textContent: "Event"}),
+						...RecordsView.recordsFormats.map(recordFormat => this.createThTag({className: "numeric", textContent: recordFormat.name}))
+					),
+					this.createTbodyTag({},
+						...records.map(recordItem =>
+							this.createTrTag({},
+								this.createTdTag({textContent: [recordItem.event.puzzle, recordItem.event.variation].filter(Boolean).join(" ")}),
+								...RecordsView.recordsFormats.map(recordFormat =>
+									this.createTdTag({className: "numeric", textContent:
+										recordItem.records[recordFormat.solveCount]?.time
+											.toString() // convert numerical values to string (string values are not affected)
+											.replace(/(?<!.*\..*)$/, ".00") // add decimal separator if missing (integer values)
+											.replace(/(?<=\.\d)$/, "0") // add extra zero if only one digit after decimal separator
+										?? "-" // empty if record not available
+										}
+									)
 								)
 							)
 						)

@@ -1,0 +1,142 @@
+/* Settings button */
+
+table.table-custom-columns {
+	position: relative;
+}
+
+input.table-settings-button {
+	--settings-button-size: 40px;
+	--settings-button-offset: calc((var(--table-header-height) - var(--settings-button-size)) / 2);
+	width: var(--settings-button-size);
+	height: var(--settings-button-size);
+	position: absolute;
+	right: var(--settings-button-offset);
+	top: var(--settings-button-offset);
+	appearance: none;
+	outline: none;
+	z-index: 11; /* over everything, including the dialog backdrop */
+}
+
+input.table-settings-button::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	cursor: pointer;
+	background: url(../images/icons/settings.svg) center / 65% 65% no-repeat;
+}
+
+/* Settings dialog */
+
+dialog.table-settings {
+	z-index: 11; /* over everything, including the dialog backdrop */
+	height: fit-content;
+	min-height: 180px;
+	max-height: calc(100vh - 260px);
+	margin-left: auto;
+	margin-right: 15px;
+	top: 50px;
+	overflow-y: auto;
+	border: none;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	padding: 15px 20px;
+	display: grid;
+	grid-template-columns: 1em 1fr;
+	row-gap: 10px;
+	align-items: center;
+}
+
+dialog.table-settings input.display-toggler {
+	font-size: 1em;
+	height: calc(1em + 10px);
+	width: 1em;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+dialog.table-settings label.display-toggler-label {
+	cursor: pointer;
+	padding: 5px 10px 5px 10px;
+	padding-left: 10px;
+	user-select: none;
+	translate: 0px 1px;
+}
+
+/* Settings dialog backdrop */
+
+label.table-settings-backdrop {
+	display: block;
+	position: absolute;
+	opacity: 20%;
+	inset: 0;
+	z-index: 10; /* over everything, excluding the settings button and the dialog */
+	cursor: not-allowed;
+}
+
+table.table-custom-columns:has(input.table-settings-button:not(:checked)) :is(dialog.table-settings, label.table-settings-backdrop) {
+	display: none;
+}
+
+/* Column visibility */
+
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(1):not(:checked))
+	:is(th, td):is(:nth-child(1 of :not([lang=en])), :nth-child(1 of :not([lang=fr]))),
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(2):not(:checked))
+	:is(th, td):is(:nth-child(2 of :not([lang=en])), :nth-child(2 of :not([lang=fr]))),
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(3):not(:checked))
+	:is(th, td):is(:nth-child(3 of :not([lang=en])), :nth-child(3 of :not([lang=fr]))),
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(4):not(:checked))
+	:is(th, td):is(:nth-child(4 of :not([lang=en])), :nth-child(4 of :not([lang=fr]))),
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(5):not(:checked))
+	:is(th, td):is(:nth-child(5 of :not([lang=en])), :nth-child(5 of :not([lang=fr]))),
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(6):not(:checked))
+	:is(th, td):is(:nth-child(6 of :not([lang=en])), :nth-child(6 of :not([lang=fr]))),
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(7):not(:checked))
+	:is(th, td):is(:nth-child(7 of :not([lang=en])), :nth-child(7 of :not([lang=fr]))),
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(8):not(:checked))
+	:is(th, td):is(:nth-child(8 of :not([lang=en])), :nth-child(8 of :not([lang=fr]))),
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(9):not(:checked))
+	:is(th, td):is(:nth-child(9 of :not([lang=en])), :nth-child(9 of :not([lang=fr]))),
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(10):not(:checked))
+	:is(th, td):is(:nth-child(10 of :not([lang=en])), :nth-child(10 of :not([lang=fr]))) {
+	display: none;
+}
+
+/* Grid */
+
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(1):checked) {--column-visibility-1: 1;}
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(2):checked) {--column-visibility-2: 1;}
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(3):checked) {--column-visibility-3: 1;}
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(4):checked) {--column-visibility-4: 1;}
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(5):checked) {--column-visibility-5: 1;}
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(6):checked) {--column-visibility-6: 1;}
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(7):checked) {--column-visibility-7: 1;}
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(8):checked) {--column-visibility-8: 1;}
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(9):checked) {--column-visibility-9: 1;}
+table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(10):checked) {--column-visibility-10: 1;}
+
+/* Grid (instances) */
+
+table#collection.table-grid :is(thead, tr) {
+	grid-template-columns: repeat(
+		calc(
+			var(--column-visibility-1, 0)
+			+ var(--column-visibility-2, 0)
+			+ var(--column-visibility-3, 0)
+			+ var(--column-visibility-4, 0)
+			+ var(--column-visibility-5, 0)
+			+ var(--column-visibility-6, 0)
+			+ var(--column-visibility-7, 0)
+			+ var(--column-visibility-8, 0)
+			+ var(--column-visibility-9, 0)
+			+ var(--column-visibility-10, 0)
+		),
+		minmax(150px, 1fr)
+	);
+}
+
+div.table-custom-columns-container:has(table.table-custom-columns) {
+	width: clamp(500px, 80%, 1500px);
+	margin-inline: auto;
+}

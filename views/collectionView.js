@@ -40,44 +40,48 @@ class CollectionView extends View {
 			.then(collection => collection.filter(collectionItem => collectionItem.puzzle)); // keep puzzles only
 		return [
 			this.createH1Tag({textContent: "Collection"}),
-			this.createTableTag({id: "collection"},
-				this.createTheadTag({},
-					...CollectionView.fields.map(field => this.createThTag({lang: "en", textContent: field.en})),
-					...CollectionView.fields.map(field => this.createThTag({lang: "fr", textContent: field.fr})),
-					this.createInputTag({id: "collectionTableSettingsButton", type:"checkbox", className: "icon"})
-				),
-				this.createTbodyTag({},
-					...collection.map(collectionItem =>
-						this.createTrTag({},
-							this.createTdTag({textContent: collectionItem.puzzle.model ?? "-"}),
-							this.createTdTag({textContent: collectionItem.puzzle.brand ?? "-"}),
-							this.createTdTag({lang: "en", textContent: collectionItem.puzzle.stickerless
-								? "Stickerless"
-								: CollectionView.colors[collectionItem.puzzle.plastic].en}),
-							this.createTdTag({lang: "fr", textContent: collectionItem.puzzle.stickerless
-								? "Stickerless"
-								: CollectionView.colors[collectionItem.puzzle.plastic].fr}),
-							this.createTdTag({lang: "en", textContent: collectionItem.puzzle.main ? "Yes" : "No"}),
-							this.createTdTag({lang: "fr", textContent: collectionItem.puzzle.main ? "Oui" : "Non"}),
-							this.createTdTag({textContent: collectionItem.puzzle.characteristics.type ?? "-"}),
-							this.createTdTag({textContent: collectionItem.puzzle.characteristics.faces}),
-							this.createTdTag({textContent: collectionItem.puzzle.characteristics.layers}),
-							this.createTdTag({textContent: collectionItem.acquisition.date}),
-							this.createTdTag({textContent: collectionItem.acquisition.website}), // todo refine (non-website acquisitions)
-							this.createTdTag({textContent: `${collectionItem.acquisition.price.toFixed(2)} ${collectionItem.acquisition.currency}`})
+			this.createDivTag({className: "table-container"},
+				this.createTableTag({id: "collection", className: "table-custom-columns"},
+					this.createInputTag({id: "collection-table-settings-button", className: "table-settings-button", type: "checkbox"}),
+					this.createDialogTag({className: "table-settings"},
+						...CollectionView.fields.map(field =>
+							[
+								this.createInputTag({type: "checkbox", id: `${field.id}-display-toggler`, className: "display-toggler", checked: field.default}),
+								...["en", "fr"].map(language =>
+									this.createLabelTag({lang: language, className: "display-toggler-label", htmlFor: `${field.id}-display-toggler`, textContent: field[language]})
+								)
+							]
+						).flat()
+					),
+					this.createLabelTag({className: "table-settings-backdrop", htmlFor: "collection-table-settings-button"}),
+					this.createTheadTag({},
+						...["en", "fr"].map(language =>
+							CollectionView.fields.map(field => this.createThTag({lang: language, textContent: field[language]}))
+						).flat()
+					),
+					this.createTbodyTag({},
+						...collection.map(collectionItem =>
+							this.createTrTag({},
+								this.createTdTag({textContent: collectionItem.puzzle.model ?? "-"}),
+								this.createTdTag({textContent: collectionItem.puzzle.brand ?? "-"}),
+								this.createTdTag({lang: "en", textContent: collectionItem.puzzle.stickerless
+									? "Stickerless"
+									: CollectionView.colors[collectionItem.puzzle.plastic].en}),
+								this.createTdTag({lang: "fr", textContent: collectionItem.puzzle.stickerless
+									? "Stickerless"
+									: CollectionView.colors[collectionItem.puzzle.plastic].fr}),
+								this.createTdTag({lang: "en", textContent: collectionItem.puzzle.main ? "Yes" : "No"}),
+								this.createTdTag({lang: "fr", textContent: collectionItem.puzzle.main ? "Oui" : "Non"}),
+								this.createTdTag({textContent: collectionItem.puzzle.characteristics.type ?? "-"}),
+								this.createTdTag({textContent: collectionItem.puzzle.characteristics.faces}),
+								this.createTdTag({textContent: collectionItem.puzzle.characteristics.layers}),
+								this.createTdTag({textContent: collectionItem.acquisition.date}),
+								this.createTdTag({textContent: collectionItem.acquisition.website}), // todo refine (non-website acquisitions)
+								this.createTdTag({textContent: `${collectionItem.acquisition.price.toFixed(2)} ${collectionItem.acquisition.currency}`})
+							)
 						)
 					)
-				),
-				this.createDialogTag({id: "collectionTableSettings"},
-					...CollectionView.fields.map(field =>
-						[
-							this.createInputTag({type: "checkbox", id: `${field.id}DisplayToggler`, className: "displayToggler", checked: field.default}),
-							this.createLabelTag({lang: "en", className: "displayTogglerLabel", htmlFor: `${field.id}DisplayToggler`, textContent: field.en}),
-							this.createLabelTag({lang: "fr", className: "displayTogglerLabel", htmlFor: `${field.id}DisplayToggler`, textContent: field.fr})
-						]
-					).flat()
-				),
-				this.createLabelTag({id: "collectionTableSettingsDialogBackdrop", htmlFor: "collectionTableSettingsButton"})
+				)
 			)
 		];
 	};

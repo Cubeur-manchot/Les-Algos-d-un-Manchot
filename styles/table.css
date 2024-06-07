@@ -1,267 +1,72 @@
-/* General */
+:root {
+	--table-header-height: 60px;
+	--table-row-height: 50px;
+	--table-padding-inline: 50px;
+	--table-dark-color: #363640;
+	--table-light-color: #eaeaea;
+	--table-light-color-odd: #e4e4e4;
+	--table-light-color-middle: #e7e7e7;
+	--table-light-color-hover: #e0e0e0;;
+}
 
-table {
+div.table-container {
 	width: clamp(500px, 80%, 1500px);
 	margin-inline: auto;
+	overflow: hidden;
+	overflow-x: auto;
+	border-radius: 10px;
+}
+
+table {
+	width: 100%;
 	border-radius: 10px;
 	overflow: hidden;
 	border-collapse: collapse;
 	font-family: Open Sans;
-	position: relative;
-	/* table variables */
-	--padding-inline: 50px;
-	--column-gap: 20px;
-	--light-color: #eaeaea;
-	--scrollbar-width: 10px;
-	--scrollbar-track-color: #e7e7e7;
-	--scrollbar-thumb-color: #c7c7c7;
-	--scrollbar-thumb-hover-color: #c0c0c0;
-}
-
-table#records {
-	--padding-right: var(--padding-inline);
-}
-
-table#collection {
-	--base-template-columns: repeat(
-		calc(
-			var(--col-visibility-1, 0)
-			+ var(--col-visibility-2, 0)
-			+ var(--col-visibility-3, 0)
-			+ var(--col-visibility-4, 0)
-			+ var(--col-visibility-5, 0)
-			+ var(--col-visibility-6, 0)
-			+ var(--col-visibility-7, 0)
-			+ var(--col-visibility-8, 0)
-			+ var(--col-visibility-9, 0)
-			+ var(--col-visibility-10, 0)
-		),
-		minmax(150px, 1fr)
-	);
-	--padding-right: calc(var(--padding-inline) + var(--column-gap));
-}
-
-thead,
-tr
-{
-	padding-left: var(--padding-inline);
-	display: grid;
-	column-gap: var(--column-gap);
-	justify-items: start;
-	row-gap: 0;
-	align-items: center;
-}
-
-table#records :is(thead, tr) {
-	grid-template-columns: minmax(200px, 1fr) repeat(6, 1fr);
-}
-
-table#records thead {
-	padding-right: var(--padding-right);
-}
-
-table#collection thead {
-	grid-template-columns: var(--base-template-columns) var(--padding-inline);
-}
-
-table#collection tr {
-	grid-template-columns: var(--base-template-columns);
 }
 
 thead {
-	height: 60px;
-	background-color: #363640;
-	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-	position: relative;
+	height: var(--table-header-height);
+	background-color: var(--table-dark-color);
+	color: var(--table-light-color);
 }
 
 th {
-	color: var(--light-color);
 	font-weight: normal;
+	text-align: left;
 }
 
 tbody {
-	height: clamp(200px, 75vh, calc(100vh - 240px));
-	overflow-y: scroll;
-	display: block;
-	background-color: var(--light-color);
-	color: #222;
+	background-color: var(--table-light-color-middle);
+	color: var(--table-dark-color);
 }
 
 tr {
-	padding-right: calc(var(--padding-right) - var(--scrollbar-width));
-	height: 50px;
+	height: var(--table-row-height);
+}
+
+tr:nth-child(even) {
+	background-color: var(--table-light-color);
 }
 
 tr:nth-child(odd) {
-	background-color: #e4e4e4;
+	background-color: var(--table-light-color-odd);
 }
 
 tr:hover {
-	background-color: #e0e0e0;
+	background-color: var(--table-light-color-hover);
 }
 
-/* Numerical columns aligned to the right */
-
-table#records :is(th, td):not(:first-child), 
-table#collection :is(th, td):is(
-	:nth-child(6 of :not([lang=en])), :nth-child(6 of :not([lang=fr])),
-	:nth-child(7 of :not([lang=en])), :nth-child(7 of :not([lang=fr])),
-	:nth-child(10 of :not([lang=en])), :nth-child(10 of :not([lang=fr]))) {
-	justify-self: end;
+:is(th, td).numeric {
+	text-align: right;
 }
 
-/* Settings */
+/* Non-grid */
 
-input#collectionTableSettingsButton {
-	width: 40px;
-	height: 40px;
-	position: relative;
-	appearance: none;
-	outline: none;
-	z-index: 11; /* over everything, including the dialog backdrop */
+table:not(.table-grid) :is(th, td):is(:nth-child(1 of :not([lang=en])), :nth-child(1 of :not([lang=fr]))) {
+	padding-left: var(--table-padding-inline);
 }
 
-input#collectionTableSettingsButton::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	cursor: pointer;
-	background: url(../images/icons/settings.svg) center / 65% 65% no-repeat;
-}
-
-table#collection:has(input#collectionTableSettingsButton:not(:checked)) :is(dialog#collectionTableSettings, label#collectionTableSettingsDialogBackdrop) {
-	display: none;
-}
-
-dialog#collectionTableSettings {
-	z-index: 11; /* over everything, including the dialog backdrop */
-	height: fit-content;
-	min-height: 180px;
-	max-height: calc(100vh - 260px);
-	margin-left: auto;
-	margin-right: 15px;
-	top: 50px;
-	overflow-y: auto;
-	border: none;
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-	border-radius: 5px;
-	padding: 15px 20px;
-	display: grid;
-	grid-template-columns: 1em 1fr;
-	row-gap: 10px;
-	align-items: center;
-}
-
-dialog#collectionTableSettings input.displayToggler {
-	font-size: 1em;
-	height: calc(1em + 10px);
-	width: 1em;
-	cursor: pointer;
-	padding: 5px;
-	border-radius: 3px;
-}
-
-dialog#collectionTableSettings label.displayTogglerLabel {
-	cursor: pointer;
-	padding: 5px 10px 5px 10px;
-	padding-left: 10px;
-	user-select: none;
-	translate: 0px 1px;
-}
-
-label#collectionTableSettingsDialogBackdrop {
-	display: block;
-	position: absolute;
-	opacity: 20%;
-	inset: 0;
-	z-index: 10; /* over everything, excluding the settings button and the dialog */
-	cursor: not-allowed;
-}
-
-/* Column visibility */
-
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(1):not(:checked))
-	table#collection :is(th, td):is(:nth-child(1 of :not([lang=en])), :nth-child(1 of :not([lang=fr]))),
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(2):not(:checked))
-	table#collection :is(th, td):is(:nth-child(2 of :not([lang=en])), :nth-child(2 of :not([lang=fr]))),
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(3):not(:checked))
-	table#collection :is(th, td):is(:nth-child(3 of :not([lang=en])), :nth-child(3 of :not([lang=fr]))),
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(4):not(:checked))
-	table#collection :is(th, td):is(:nth-child(4 of :not([lang=en])), :nth-child(4 of :not([lang=fr]))),
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(5):not(:checked))
-	table#collection :is(th, td):is(:nth-child(5 of :not([lang=en])), :nth-child(5 of :not([lang=fr]))),
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(6):not(:checked))
-	table#collection :is(th, td):is(:nth-child(6 of :not([lang=en])), :nth-child(6 of :not([lang=fr]))),
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(7):not(:checked))
-	table#collection :is(th, td):is(:nth-child(7 of :not([lang=en])), :nth-child(7 of :not([lang=fr]))),
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(8):not(:checked))
-	table#collection :is(th, td):is(:nth-child(8 of :not([lang=en])), :nth-child(8 of :not([lang=fr]))),
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(9):not(:checked))
-	table#collection :is(th, td):is(:nth-child(9 of :not([lang=en])), :nth-child(9 of :not([lang=fr]))),
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(10):not(:checked))
-	table#collection :is(th, td):is(:nth-child(10 of :not([lang=en])), :nth-child(10 of :not([lang=fr]))) {
-	display: none;
-}
-
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(1):checked) table#collection {
-	--col-visibility-1: 1;
-}
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(2):checked) table#collection {
-	--col-visibility-2: 1;
-}
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(3):checked) table#collection {
-	--col-visibility-3: 1;
-}
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(4):checked) table#collection {
-	--col-visibility-4: 1;
-}
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(5):checked) table#collection {
-	--col-visibility-5: 1;
-}
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(6):checked) table#collection {
-	--col-visibility-6: 1;
-}
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(7):checked) table#collection {
-	--col-visibility-7: 1;
-}
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(8):checked) table#collection {
-	--col-visibility-8: 1;
-}
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(9):checked) table#collection {
-	--col-visibility-9: 1;
-}
-main:has(dialog#collectionTableSettings input.displayToggler:nth-of-type(10):checked) table#collection {
-	--col-visibility-10: 1;
-}
-
-/* Scrollbar */
-
-:is(tbody, dialog#collectionTableSettings)::-webkit-scrollbar {
-	width: var(--scrollbar-width);
-}
-
-:is(tbody, dialog#collectionTableSettings)::-webkit-scrollbar-track {
-	margin-block: 5px;
-	border-radius: calc(var(--scrollbar-width) / 2);
-	background-color: var(--scrollbar-track-color);
-}
-
-:is(tbody, dialog#collectionTableSettings)::-webkit-scrollbar-thumb {
-	border-radius: calc(var(--scrollbar-width) / 2);
-	border: 1px solid var(--scrollbar-track-color);
-	background-color: var(--scrollbar-thumb-color);
-}
-
-:is(tbody, dialog#collectionTableSettings)::-webkit-scrollbar-thumb:hover {
-	background-color: var(--scrollbar-thumb-hover-color);
-}
-
-@supports (-moz-appearance: none) {
-	:is(tbody, dialog#collectionTableSettings) {
-		/* On Chrome, Edge and Opera, the vertical scrollbar takes some place and pushes the content to the left */
-		/* On Firefox, the scrollbar overlaps the content and takes no additional place */
-		--scrollbar-width: 0px;
-		scrollbar-color: var(--scrollbar-thumb-color) transparent;
-	}
+table:not(.table-grid) :is(th, td):is(:nth-last-child(1 of :not([lang=en])), :nth-last-child(1 of :not([lang=fr]))) {
+	padding-right: var(--table-padding-inline);
 }

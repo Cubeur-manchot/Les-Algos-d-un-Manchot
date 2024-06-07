@@ -1,0 +1,37 @@
+:root {
+	--scrollbar-thickness: 10px;
+	--scrollbar-track-color: transparent;
+	--scrollbar-thumb-color: #c7c7c7;
+	--scrollbar-thumb-hover-color: #c0c0c0;
+}
+
+*::-webkit-scrollbar {
+	width: var(--scrollbar-thickness);
+	height: var(--scrollbar-thickness);
+}
+
+*::-webkit-scrollbar-track {
+	margin-block: 5px;
+	margin-inline: 5px;
+	border-radius: calc(var(--scrollbar-thickness) / 2);
+	background-color: var(--scrollbar-track-color);
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: calc(var(--scrollbar-thickness) / 2);
+	border: 1px solid var(--scrollbar-track-color);
+	background-color: var(--scrollbar-thumb-color);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: var(--scrollbar-thumb-hover-color);
+}
+
+@supports (-moz-appearance: none) {
+	* {
+		/* On Chrome, Edge and Opera, the vertical scrollbar takes some place and pushes the content to the left */
+		/* On Firefox, the scrollbar overlaps the content and takes no additional place */
+		--scrollbar-thickness: 0px;
+		scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+	}
+}
