@@ -25,15 +25,15 @@ table {
 	font-family: Open Sans;
 }
 
-thead {
+thead tr {
 	height: var(--table-header-height);
 	background-color: var(--table-dark-color);
 	color: var(--table-light-color);
+	text-align: left;
 }
 
 th {
 	font-weight: normal;
-	text-align: left;
 }
 
 tbody {
@@ -41,19 +41,19 @@ tbody {
 	color: var(--table-dark-color);
 }
 
-tr {
+tbody tr {
 	height: var(--table-row-height);
 }
 
-tr:nth-child(even) {
+tbody tr:nth-child(even) {
 	background-color: var(--table-light-color);
 }
 
-tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
 	background-color: var(--table-light-color-odd);
 }
 
-tr:hover {
+tbody tr:hover {
 	background-color: var(--table-light-color-hover);
 }
 

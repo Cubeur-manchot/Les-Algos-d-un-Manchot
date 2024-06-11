@@ -55,9 +55,11 @@ class CollectionView extends View {
 					),
 					this.createLabelTag({className: "table-settings-backdrop", htmlFor: "collection-table-settings-button"}),
 					this.createTheadTag({},
-						...["en", "fr"].map(language =>
-							CollectionView.fields.map(field => this.createThTag({lang: language, textContent: field[language]}))
-						).flat()
+						this.createTrTag({},
+							...["en", "fr"].map(language =>
+								CollectionView.fields.map(field => this.createThTag({lang: language, textContent: field[language]}))
+							).flat()
+						)
 					),
 					this.createTbodyTag({},
 						...collection.map(collectionItem =>

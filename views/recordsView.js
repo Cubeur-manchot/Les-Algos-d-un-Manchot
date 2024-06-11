@@ -23,8 +23,10 @@ class RecordsView extends View {
 			this.createDivTag({className: "table-container"},
 				this.createTableTag({id: "records", className: "table-grid table-grid-scrollable"},
 					this.createTheadTag({},
-						this.createThTag({textContent: "Event"}),
-						...RecordsView.recordsFormats.map(recordFormat => this.createThTag({className: "numeric", textContent: recordFormat.name}))
+						this.createTrTag({},
+							this.createThTag({textContent: "Event"}),
+							...RecordsView.recordsFormats.map(recordFormat => this.createThTag({className: "numeric", textContent: recordFormat.name}))
+						)
 					),
 					this.createTbodyTag({},
 						...records.map(recordItem =>
