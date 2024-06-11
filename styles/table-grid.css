@@ -2,11 +2,7 @@
 	--table-grid-column-gap: 20px;
 }
 
-table.table-grid {
-	--padding-right: var(--padding-inline);
-}
-
-table.table-grid :is(thead, tr) {
+table.table-grid tr {
 	padding-left: var(--table-padding-inline);
 	display: grid;
 	column-gap: var(--table-grid-column-gap);
@@ -15,15 +11,12 @@ table.table-grid :is(thead, tr) {
 	align-items: center;
 }
 
-table.table-grid thead {
+table.table-grid thead tr,
+table.table-grid:not(.table-grid-scrollable) tbody tr {
 	padding-right: var(--table-padding-inline);
 }
 
-table.table-grid:not(.table-grid-scrollable) tr {
-	padding-right: var(--table-padding-inline);
-}
-
-table.table-grid.table-grid-scrollable tr {
+table.table-grid.table-grid-scrollable tbody tr {
 	padding-right: calc(var(--table-padding-inline) - var(--scrollbar-thickness));
 }
 
