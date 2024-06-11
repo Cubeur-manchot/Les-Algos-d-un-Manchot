@@ -70,3 +70,7 @@ table:not(.table-grid) :is(th, td):is(:nth-child(1 of :not([lang=en])), :nth-chi
 table:not(.table-grid) :is(th, td):is(:nth-last-child(1 of :not([lang=en])), :nth-last-child(1 of :not([lang=fr]))) {
 	padding-right: var(--table-padding-inline);
 }
+
+table:not(.table-grid) :is(th, td):not(:nth-child(1 of :not([lang=en]))):not(:nth-child(1 of :not([lang=fr]))) {
+	padding-left: calc(var(--table-padding-inline) / 2);
+}
