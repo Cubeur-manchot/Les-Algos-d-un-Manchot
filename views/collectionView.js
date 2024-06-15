@@ -24,9 +24,7 @@ class CollectionView extends View {
 		{id: "brand", en: "Brand", fr: "Marque", default: true},
 		{id: "color", en: "Color", fr: "Couleur", default: true},
 		{id: "main", en: "Main", fr: "Main", default: true},
-		{id: "type", en: "Type", fr: "Type", default: false},
-		{id: "faces", en: "Faces", fr: "Faces", default: false},
-		{id: "layers", en: "Layers", fr: "Tranches", default: false},
+		{id: "type", en: "Type (layers)", fr: "Type (tranches)", default: false},
 		{id: "acquisitionDate", en: "Acquisition date", fr: "Date d'acquisition", default: false},
 		{id: "meansOfAcquisition", en: "Means of acquisition", fr: "Moyen d'acquisition", default: false},
 		{id: "price", en: "Price", fr: "Prix", default: false}
@@ -74,9 +72,10 @@ class CollectionView extends View {
 									: CollectionView.colors[collectionItem.puzzle.plastic].fr}),
 								this.createTdTag({lang: "en", textContent: collectionItem.puzzle.main ? "Yes" : "No"}),
 								this.createTdTag({lang: "fr", textContent: collectionItem.puzzle.main ? "Oui" : "Non"}),
-								this.createTdTag({textContent: collectionItem.puzzle.characteristics.type ?? "-"}),
-								this.createTdTag({textContent: collectionItem.puzzle.characteristics.faces}),
-								this.createTdTag({textContent: collectionItem.puzzle.characteristics.layers}),
+								this.createTdTag({lang: "en",
+									textContent: `${collectionItem.puzzle.characteristics.type ?? "Other"} (${collectionItem.puzzle.characteristics.layers})`}),
+								this.createTdTag({lang: "fr",
+									textContent: `${collectionItem.puzzle.characteristics.type ?? "Autre"} (${collectionItem.puzzle.characteristics.layers})`}),
 								this.createTdTag({textContent: collectionItem.acquisition.date}),
 								this.createTdTag({textContent: collectionItem.acquisition.website}), // todo refine (non-website acquisitions)
 								this.createTdTag({textContent: `${collectionItem.acquisition.price.toFixed(2)} ${collectionItem.acquisition.currency}`})

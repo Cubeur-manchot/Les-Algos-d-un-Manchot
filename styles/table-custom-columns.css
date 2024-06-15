@@ -95,11 +95,7 @@ table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-o
 table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(7):not(:checked))
 	:is(th, td):is(:nth-child(7 of :not([lang=en])), :nth-child(7 of :not([lang=fr]))),
 table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(8):not(:checked))
-	:is(th, td):is(:nth-child(8 of :not([lang=en])), :nth-child(8 of :not([lang=fr]))),
-table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(9):not(:checked))
-	:is(th, td):is(:nth-child(9 of :not([lang=en])), :nth-child(9 of :not([lang=fr]))),
-table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(10):not(:checked))
-	:is(th, td):is(:nth-child(10 of :not([lang=en])), :nth-child(10 of :not([lang=fr]))) {
+	:is(th, td):is(:nth-child(8 of :not([lang=en])), :nth-child(8 of :not([lang=fr]))) {
 	display: none;
 }
 
@@ -146,28 +142,7 @@ table.table-custom-columns:not(.table-grid):has(dialog.table-settings
 	~ input.display-toggler:nth-of-type(5):not(:checked)
 	~ input.display-toggler:nth-of-type(6):not(:checked)
 	~ input.display-toggler:nth-of-type(7):not(:checked))
-		:is(th, td):is(:nth-child(8 of :not([lang=en])), :nth-child(8 of :not([lang=fr]))),
-table.table-custom-columns:not(.table-grid):has(dialog.table-settings
-	input.display-toggler:nth-of-type(1):not(:checked)
-	~ input.display-toggler:nth-of-type(2):not(:checked)
-	~ input.display-toggler:nth-of-type(3):not(:checked)
-	~ input.display-toggler:nth-of-type(4):not(:checked)
-	~ input.display-toggler:nth-of-type(5):not(:checked)
-	~ input.display-toggler:nth-of-type(6):not(:checked)
-	~ input.display-toggler:nth-of-type(7):not(:checked)
-	~ input.display-toggler:nth-of-type(8):not(:checked))
-		:is(th, td):is(:nth-child(9 of :not([lang=en])), :nth-child(9 of :not([lang=fr]))),
-table.table-custom-columns:not(.table-grid):has(dialog.table-settings
-	input.display-toggler:nth-of-type(1):not(:checked)
-	~ input.display-toggler:nth-of-type(2):not(:checked)
-	~ input.display-toggler:nth-of-type(3):not(:checked)
-	~ input.display-toggler:nth-of-type(4):not(:checked)
-	~ input.display-toggler:nth-of-type(5):not(:checked)
-	~ input.display-toggler:nth-of-type(6):not(:checked)
-	~ input.display-toggler:nth-of-type(7):not(:checked)
-	~ input.display-toggler:nth-of-type(8):not(:checked)
-	~ input.display-toggler:nth-of-type(9):not(:checked))
-		:is(th, td):is(:nth-child(10 of :not([lang=en])), :nth-child(10 of :not([lang=fr]))) {
+		:is(th, td):is(:nth-child(8 of :not([lang=en])), :nth-child(8 of :not([lang=fr]))) {
 	padding-left: var(--table-padding-inline);
 }
 
@@ -212,28 +187,7 @@ table.table-custom-columns:not(.table-grid):has(dialog.table-settings
 	~ input.display-toggler:nth-last-of-type(3):not(:checked)
 	~ input.display-toggler:nth-last-of-type(2):not(:checked)
 	~ input.display-toggler:nth-last-of-type(1):not(:checked))
-		:is(th, td):is(:nth-last-child(8 of :not([lang=en])), :nth-last-child(8 of :not([lang=fr]))),
-table.table-custom-columns:not(.table-grid):has(dialog.table-settings
-	input.display-toggler:nth-last-of-type(8):not(:checked)
-	~ input.display-toggler:nth-last-of-type(7):not(:checked)
-	~ input.display-toggler:nth-last-of-type(6):not(:checked)
-	~ input.display-toggler:nth-last-of-type(5):not(:checked)
-	~ input.display-toggler:nth-last-of-type(4):not(:checked)
-	~ input.display-toggler:nth-last-of-type(3):not(:checked)
-	~ input.display-toggler:nth-last-of-type(2):not(:checked)
-	~ input.display-toggler:nth-last-of-type(1):not(:checked))
-		:is(th, td):is(:nth-last-child(9 of :not([lang=en])), :nth-last-child(9 of :not([lang=fr]))),
-table.table-custom-columns:not(.table-grid):has(dialog.table-settings
-	input.display-toggler:nth-last-of-type(9):not(:checked)
-	~ input.display-toggler:nth-last-of-type(8):not(:checked)
-	~ input.display-toggler:nth-last-of-type(7):not(:checked)
-	~ input.display-toggler:nth-last-of-type(6):not(:checked)
-	~ input.display-toggler:nth-last-of-type(5):not(:checked)
-	~ input.display-toggler:nth-last-of-type(4):not(:checked)
-	~ input.display-toggler:nth-last-of-type(3):not(:checked)
-	~ input.display-toggler:nth-last-of-type(2):not(:checked)
-	~ input.display-toggler:nth-last-of-type(1):not(:checked))
-		:is(th, td):is(:nth-last-child(10 of :not([lang=en])), :nth-last-child(10 of :not([lang=fr]))) {
+		:is(th, td):is(:nth-last-child(8 of :not([lang=en])), :nth-last-child(8 of :not([lang=fr]))) {
 	padding-right: var(--table-padding-inline);
 }
 
@@ -247,8 +201,6 @@ table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-o
 table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(6):checked) {--column-visibility-6: 1;}
 table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(7):checked) {--column-visibility-7: 1;}
 table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(8):checked) {--column-visibility-8: 1;}
-table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(9):checked) {--column-visibility-9: 1;}
-table.table-custom-columns:has(dialog.table-settings input.display-toggler:nth-of-type(10):checked) {--column-visibility-10: 1;}
 
 /* Grid (instances) */
 
@@ -263,8 +215,6 @@ table#collection.table-grid :is(thead, tr) {
 			+ var(--column-visibility-6, 0)
 			+ var(--column-visibility-7, 0)
 			+ var(--column-visibility-8, 0)
-			+ var(--column-visibility-9, 0)
-			+ var(--column-visibility-10, 0)
 		),
 		minmax(150px, 1fr)
 	);
