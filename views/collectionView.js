@@ -38,8 +38,7 @@ class CollectionView extends View {
 			.then(collection => collection.filter(collectionItem => collectionItem.puzzle)); // keep puzzles only
 		return [
 			this.createH1Tag({textContent: "Collection"}),
-			this.createDivTag({className: "table-container"},
-				this.createTableTag({id: "collection", className: "table-custom-columns"},
+			this.createDivTag({className: "table-outer-container"},
 					this.createInputTag({id: "collection-table-settings-button", className: "table-settings-button", type: "checkbox"}),
 					this.createDialogTag({className: "table-settings"},
 						...CollectionView.fields.map(field =>
@@ -51,6 +50,8 @@ class CollectionView extends View {
 							]
 						).flat()
 					),
+			this.createDivTag({className: "table-inner-container"},
+				this.createTableTag({id: "collection", className: "table-custom-columns table-grid table-grid-scrollable"},
 					this.createLabelTag({className: "table-settings-backdrop", htmlFor: "collection-table-settings-button"}),
 					this.createTheadTag({},
 						this.createTrTag({},
@@ -83,6 +84,7 @@ class CollectionView extends View {
 						)
 					)
 				)
+			)
 			)
 		];
 	};

@@ -9,12 +9,15 @@
 	--table-light-color-hover: #e0e0e0;;
 }
 
-div.table-container {
+div.table-outer-container {
 	width: clamp(500px, 80%, 1500px);
 	margin-inline: auto;
-	overflow: hidden;
-	overflow-x: auto;
 	border-radius: 10px;
+	overflow: hidden;
+}
+
+div.table-inner-container {
+	overflow-x: auto;
 }
 
 table {
