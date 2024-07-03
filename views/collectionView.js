@@ -39,52 +39,52 @@ class CollectionView extends View {
 		return [
 			this.createH1Tag({textContent: "Collection"}),
 			this.createDivTag({className: "table-outer-container"},
-					this.createInputTag({id: "collection-table-settings-button", className: "table-settings-button", type: "checkbox"}),
-					this.createDialogTag({className: "table-settings"},
-						...CollectionView.fields.map(field =>
-							[
-								this.createInputTag({type: "checkbox", id: `${field.id}-display-toggler`, className: "display-toggler", checked: field.default}),
-								...["en", "fr"].map(language =>
-									this.createLabelTag({lang: language, className: "display-toggler-label", htmlFor: `${field.id}-display-toggler`, textContent: field[language]})
-								)
-							]
-						).flat()
-					),
-			this.createDivTag({className: "table-inner-container"},
-				this.createTableTag({id: "collection", className: "table-custom-columns table-grid table-grid-scrollable"},
-					this.createLabelTag({className: "table-settings-backdrop", htmlFor: "collection-table-settings-button"}),
-					this.createTheadTag({},
-						this.createTrTag({},
+				this.createInputTag({id: "collection-table-settings-button", className: "table-settings-button", type: "checkbox"}),
+				this.createDialogTag({className: "table-settings"},
+					...CollectionView.fields.map(field =>
+						[
+							this.createInputTag({type: "checkbox", id: `${field.id}-display-toggler`, className: "display-toggler", checked: field.default}),
 							...["en", "fr"].map(language =>
-								CollectionView.fields.map(field => this.createThTag({lang: language, textContent: field[language]}))
-							).flat()
-						)
-					),
-					this.createTbodyTag({},
-						...collection.map(collectionItem =>
+								this.createLabelTag({lang: language, className: "display-toggler-label", htmlFor: `${field.id}-display-toggler`, textContent: field[language]})
+							)
+						]
+					).flat()
+				),
+				this.createDivTag({className: "table-inner-container"},
+					this.createTableTag({id: "collection", className: "table-custom-columns table-grid table-grid-scrollable"},
+						this.createLabelTag({className: "table-settings-backdrop", htmlFor: "collection-table-settings-button"}),
+						this.createTheadTag({},
 							this.createTrTag({},
-								this.createTdTag({textContent: collectionItem.puzzle.model ?? "-"}),
-								this.createTdTag({textContent: collectionItem.puzzle.brand ?? "-"}),
-								this.createTdTag({lang: "en", textContent: collectionItem.puzzle.stickerless
-									? "Stickerless"
-									: CollectionView.colors[collectionItem.puzzle.plastic].en}),
-								this.createTdTag({lang: "fr", textContent: collectionItem.puzzle.stickerless
-									? "Stickerless"
-									: CollectionView.colors[collectionItem.puzzle.plastic].fr}),
-								this.createTdTag({lang: "en", textContent: collectionItem.puzzle.main ? "Yes" : "No"}),
-								this.createTdTag({lang: "fr", textContent: collectionItem.puzzle.main ? "Oui" : "Non"}),
-								this.createTdTag({lang: "en",
-									textContent: `${collectionItem.puzzle.characteristics.type ?? "Other"} (${collectionItem.puzzle.characteristics.layers})`}),
-								this.createTdTag({lang: "fr",
-									textContent: `${collectionItem.puzzle.characteristics.type ?? "Autre"} (${collectionItem.puzzle.characteristics.layers})`}),
-								this.createTdTag({textContent: collectionItem.acquisition.date}),
-								this.createTdTag({textContent: collectionItem.acquisition.website}), // todo refine (non-website acquisitions)
-								this.createTdTag({textContent: `${collectionItem.acquisition.price.toFixed(2)} ${collectionItem.acquisition.currency}`})
+								...["en", "fr"].map(language =>
+									CollectionView.fields.map(field => this.createThTag({lang: language, textContent: field[language]}))
+								).flat()
+							)
+						),
+						this.createTbodyTag({},
+							...collection.map(collectionItem =>
+								this.createTrTag({},
+									this.createTdTag({textContent: collectionItem.puzzle.model ?? "-"}),
+									this.createTdTag({textContent: collectionItem.puzzle.brand ?? "-"}),
+									this.createTdTag({lang: "en", textContent: collectionItem.puzzle.stickerless
+										? "Stickerless"
+										: CollectionView.colors[collectionItem.puzzle.plastic].en}),
+									this.createTdTag({lang: "fr", textContent: collectionItem.puzzle.stickerless
+										? "Stickerless"
+										: CollectionView.colors[collectionItem.puzzle.plastic].fr}),
+									this.createTdTag({lang: "en", textContent: collectionItem.puzzle.main ? "Yes" : "No"}),
+									this.createTdTag({lang: "fr", textContent: collectionItem.puzzle.main ? "Oui" : "Non"}),
+									this.createTdTag({lang: "en",
+										textContent: `${collectionItem.puzzle.characteristics.type ?? "Other"} (${collectionItem.puzzle.characteristics.layers})`}),
+									this.createTdTag({lang: "fr",
+										textContent: `${collectionItem.puzzle.characteristics.type ?? "Autre"} (${collectionItem.puzzle.characteristics.layers})`}),
+									this.createTdTag({textContent: collectionItem.acquisition.date}),
+									this.createTdTag({textContent: collectionItem.acquisition.website}), // todo refine (non-website acquisitions)
+									this.createTdTag({textContent: `${collectionItem.acquisition.price.toFixed(2)} ${collectionItem.acquisition.currency}`})
+								)
 							)
 						)
 					)
 				)
-			)
 			)
 		];
 	};
