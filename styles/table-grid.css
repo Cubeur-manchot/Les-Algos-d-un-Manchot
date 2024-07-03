@@ -42,3 +42,7 @@ table.table-grid-scrollable tbody {
 table#records.table-grid :is(thead, tr) {
 	grid-template-columns: minmax(200px, 1fr) repeat(6, 1fr);
 }
+
+table#contact.table-grid :is(thead, tr) {
+	grid-template-columns: minmax(200px, 1fr) repeat(2, 1fr);
+}

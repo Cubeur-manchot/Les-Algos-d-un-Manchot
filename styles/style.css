@@ -61,3 +61,7 @@ main {
 	align-items: center;
 	text-align: center;
 }
+
+.navigationCard__image[src$="avatar.png"] {
+	border-radius: 25%;
+}

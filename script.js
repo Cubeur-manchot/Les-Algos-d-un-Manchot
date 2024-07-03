@@ -1,11 +1,12 @@
 "use strict";
 
 import { CollectionView } from "./views/collectionView.js";
+import { ContactView } from "./views/contactView.js";
 import { HomeView } from "./views/homeView.js";
 import { RecordsView } from "./views/recordsView.js";
 
 const displayView = () => { // async ?
-	let views = [HomeView, RecordsView, CollectionView];
+	let views = [HomeView, RecordsView, CollectionView, ContactView];
 	let locationShort = location.pathname.replace(/^.*Manchot/i, "");
 	let view = views.find(view => view.path == locationShort) ?? HomeView;
 	new view().buildView();
@@ -34,4 +35,3 @@ document.addEventListener("DOMContentLoaded", () => { // todo group into a singl
 		});
 	}
 });
-
