@@ -20,11 +20,11 @@ const navigateTo = url => {
 	displayView();
 };
 
+const selectLanguageFromBrowserSettings = () => document.querySelector("input[type=checkbox]#isEnglish").checked = !navigator.language.includes("fr");
+
 document.addEventListener("DOMContentLoaded", displayView);
 
-document.addEventListener("DOMContentLoaded", () => {
-	document.querySelector("input[type=checkbox]#isEnglish").checked = !navigator.language.includes("fr");
-});
+document.addEventListener("DOMContentLoaded", selectLanguageFromBrowserSettings);
 
 document.addEventListener("DOMContentLoaded", () => { // todo group into a single event listener
 	for (let link of document.querySelectorAll("a.navLink")) {
