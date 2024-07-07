@@ -5,44 +5,25 @@ const path = require("path");
 
 const app = express();
 
-// script.js
-app.get(/script\.js/, (req, res) => {
-	res.sendFile(path.resolve(".", "script.js"));
-});
-
-// /views/*.js
-app.get(/views\/.*\.js/, (req, res) => {
-	res.sendFile(path.join(__dirname, req.url));
-});
-
-// /images/*
-app.get(/images/, (req, res) => {
-	res.sendFile(path.join(__dirname, req.url));
-});
-
-// /data/*
-app.get(/data/, (req, res) => {
-	res.sendFile(path.join(__dirname, req.url));
-});
-
-// 404.html
-app.get(/404\.html/, (req, res) => {
-	res.sendFile(path.resolve(".", "404.html"));
-});
-
-// /styles/*.css
-app.get(/styles\/.*\.css/, (req, res) => {
-	res.sendFile(path.join(__dirname, req.url));
-});
-
-// *.html
-app.get(/^.*\.html*$/, (req, res) => {
-	res.sendFile(path.resolve(".", "index.html"));
-});
-
-// no extension
-app.get(/^[^.]*$/, (req, res) => {
-	res.sendFile(path.resolve(".", "index.html"));
+app.get(/.*/, (req, res) => {
+	console.log(req.url);
+	res.sendFile(path.join(__dirname,
+		req.url.includes(".html") || !req.url.includes(".")
+			? "index.html"
+			: req.url.includes("404")
+				? "404.html"
+				: req.url.includes("script.js")
+					? "script.js"
+					: req.url.includes("/views")
+						? `/views/${req.url.split("/").at(-1)}`
+						: req.url.includes("/images")
+							? req.url.replace(/.*(?=\/images\/)/, "")
+							: req.url.includes("/styles")
+								? `/styles/${req.url.split("/").at(-1)}`
+								: req.url.includes("/data")
+									? `/data/${req.url.split("/").at(-1)}`
+									: null
+	));
 });
 
 app.listen(1234, () => console.log("Server started..."));

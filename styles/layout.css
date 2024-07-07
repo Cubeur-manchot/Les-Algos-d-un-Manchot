@@ -54,10 +54,10 @@ input[type=checkbox]#isEnglish::after {
 
 html:has(input[type=checkbox]#isEnglish:checked) input[type=checkbox]#isEnglish::before,
 html:has(input[type=checkbox]#isEnglish:not(:checked)) input[type=checkbox]#isEnglish::after {
-	background-image: url(../images/flags/flagFR.png);
+	background-image: url(/images/flags/flagFR.png);
 }
 
 html:has(input[type=checkbox]#isEnglish:checked) input[type=checkbox]#isEnglish::after,
 html:has(input[type=checkbox]#isEnglish:not(:checked)) input[type=checkbox]#isEnglish::before {
-	background-image: url(../images/flags/flagUK.png);
+	background-image: url(/images/flags/flagUK.png);
 }
