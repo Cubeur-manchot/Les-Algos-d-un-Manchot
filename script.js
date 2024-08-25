@@ -1,15 +1,16 @@
 "use strict";
 
+import { AlgsetView } from "./views/algsetView.js";
 import { CollectionView } from "./views/collectionView.js";
 import { ContactView } from "./views/contactView.js";
 import { HomeView } from "./views/homeView.js";
 import { RecordsView } from "./views/recordsView.js";
 
-	let views = [HomeView, RecordsView, CollectionView, ContactView];
 const displayView = () => {
-	let locationShort = location.pathname.replace(/^.*Manchot/i, "");
+	let views = [HomeView, RecordsView, CollectionView, ContactView, AlgsetView];
+	let [locationShort, ...restOfThePath] = location.pathname.replace(/^.*Manchot/i, "").split(/(?=\/)/);
 	let view = views.find(view => view.path == locationShort) ?? HomeView;
-	new view().buildView();
+	new view(restOfThePath).buildView();
 	if (view === HomeView) {
 		history.replaceState(null, null, location.pathname.replace(/\/(?!.*Manchot).*/, "/home")); // force home URL for home view
 	}

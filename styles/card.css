@@ -61,3 +61,21 @@ a.navigationCard {
 img.navigationCard__image[src$="avatar.png"] {
 	border-radius: 100%;
 }
+
+/* Alg cards */
+
+:root {
+	--alg-card-width: 200px;
+	--alg-card-height: 275px;
+}
+
+ul.algCardList {
+	--card-width: var(--alg-card-width);
+	--card-height: var(--alg-card-height);
+	list-style: none;
+}
+
+p.algCard__content {
+	font-size: 0.85rem;
+	letter-spacing: 0.3px;
+}

@@ -1,0 +1,33 @@
+{
+	"lastLayer": {
+		"1LLL": [
+			{"id": "0Aa0", "name": "PLL Aa", "alg": "x R' U R' D2 R U' R' D2 R2 x'"},
+			{"id": "0Ab0", "name": "PLL Ab", "alg": "x R2' D2 R U R' D2 R U' R x'"},
+			{"id": "0E0", "name": "PLL E", "alg": "x' R U' R' D R U R' D' R U R' D R U' R' D' x", "alt": "R2 U R' U' y R U R' U' R U R' U' R U R' F U' F2"},
+			{"id": "0F0", "name": "PLL F", "alg": "R U' R2' F R U R U' R2' F' R f R' F' R S'", "alt": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R"},
+			{"id": "0Ga0", "name": "PLL Ga", "alg": "R2 U R' U R' U' R U' R2' U' D R' U R D'"},
+			{"id": "0Gb0", "name": "PLL Gb", "alg": "D R' U' R U D' R2 U R' U R U' R U' R2'"},
+			{"id": "0Gc0", "name": "PLL Gc", "alg": "R2' U' R U' R U R' U R2 U D' R U' R' D", "alt": "R2' F2 R U2 R U2' R' F R U R' U' R' F R2"},
+			{"id": "0Gd0", "name": "PLL Gd", "alg": "D' R U R' U' D R2 U' R U' R' U R' U R2"},
+			{"id": "0H0", "name": "PLL H", "alg": "M2' U M2' U2 M2' U M2'", "alt": "M2' U' M2' U2' M2' U' M2'"},
+			{"id": "0Ja0", "name": "PLL Ja", "alg": "x R2' F R F' R U2' r' U r U2' x'", "alt": "R' U2 R U R' U2' z U R' D R U' z'"},
+			{"id": "0Jb0", "name": "PLL Jb", "alg": "R U R' F' R U R' U' R' F R2 U' R'", "alt": "R U2' R' U' R U2' z U' R z' R' U' r x'"},
+			{"id": "0Na0", "name": "PLL Na", "alg": "F' R U R' U' R' F R2 F U' R' U' R U F' R'", "alt": "R U R' U R U2' R' U' R U2' z U' R D' R' U z' U' R U' R'"},
+			{"id": "0Nb0", "name": "PLL Nb", "alg": "R' U L' U2 R U' R' L U L' U2 R U' L"},
+			{"id": "0Ra0", "name": "PLL Ra", "alg": "R U' R' U' R U R D R' U' R D' R' U2 R'", "alt": "R U R' F' R U2' R' U2 R' F R U R U2' R'"},
+			{"id": "0Rb0", "name": "PLL Rb", "alg": "R' U2 R' D' R U' R' D R U R U' R' U' R", "alt": "R' U2 R U2' R' F R U R' U' R' F' R2"},
+			{"id": "0T0", "name": "PLL T", "alg": "R U R' U' R' F R2 U' R' U' R U R' F'"},
+			{"id": "0Ua0", "name": "PLL Ua", "alg": "M2' U M U2 M' U M2'", "alt": ["R2 U' S' U2' S U' R2", "R U' R U R U R U' R' U' R2"]},
+			{"id": "0Ub0", "name": "PLL Ub", "alg": "L2' U S U2 S' U L2'", "alt": "R' U R' U' R' U' R' U R U R2"},
+			{"id": "0V0", "name": "PLL V", "alg": "R' U R' d' R' F' R2 U' R' U R' F R F", "alt": "R U' R' U x U' R' U2' R U R' U R U2' R' U' R U x'"},
+			{"id": "0Y0", "name": "PLL Y", "alg": "R F R' f' R U R' F' U' f R2 U' R2'", "alt": "F R U' R' U' R U R' F' R U R' U' R' F R F'"},
+			{"id": "0Z0", "name": "PLL Z", "alg": "M2' U M U2 M2' U2 M U' M2'", "alt": ["M2' U M2' U M' U2 M2' U2 M'", "R U R' U R' U' R' U R U' R' U' R2 U R"]}
+		],
+		"others": [
+
+		]
+	},
+	"others": [
+
+	]
+}

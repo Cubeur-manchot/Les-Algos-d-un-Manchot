@@ -1,0 +1,22 @@
+[
+	{
+		"name": "PLL",
+		"detailedName": "Permutation of the Last Layer",
+		"puzzle": "3x3",
+		"mask": null,
+		"view": "plan",
+		"subsets": [
+			{"name": "EPLL", "caseList": ["0H0", "0Z0", "0Ua0", "0Ub0"]},
+			{"name": "Adj CP", "caseList": ["0Aa0", "0Ab0", "0F0", "0Ga0", "0Gb0", "0Gc0", "0Gd0", "0Ja0", "0Jb0", "0Ra0", "0Rb0", "0T0"]},
+			{"name": "Diag CP", "caseList": ["0E0", "0Na0", "0Nb0", "0V0", "0Y0"]}
+		]
+	},
+	{
+		"name": "OLL",
+		"puzzle": "3x3",
+		"mask": "OLL",
+		"view": "plan",
+		"subsets": [
+		]
+	}
+]
