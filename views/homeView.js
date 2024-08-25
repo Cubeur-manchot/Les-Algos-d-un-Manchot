@@ -12,7 +12,7 @@ class HomeView extends View {
 		[
 			this.createH2Tag({textContent: "Others", lang: "en"}),
 			this.createH2Tag({textContent: "Autres", lang: "fr"}),
-			this.createNavTag({id: "navigation"},
+			this.createNavTag({className: "cardList navigationCardList"},
 				this.createNavigationCard("Cubeurs Francophones", "Cubeurs Francophones", "../images/logos/discord.svg", "https://discord.gg/MZ75mtHdGZ"),
 				this.createNavigationCard("French UNR List", "Liste UNR de France", "../images/logos/unrList.png", "https://cubeur-manchot.github.io/Liste-UNR-de-France/"),
 				this.createNavigationCard("Records", "Records", "../images/logos/records.png", "/records"),
@@ -22,7 +22,7 @@ class HomeView extends View {
 			)
 		];
 	createNavigationCard = (titleEnglish, titleFrench, src, href) =>
-		this.createATag({className: "navigationCard", href},
+		this.createATag({className: "card imageCard navigationCard", href},
 			this.createImgTag({className: "navigationCard__image", src}),
 			this.createDivTag({className: "navigationCard__textZone"},
 				this.createSpanTag({className: "navigationCard__title", textContent: titleEnglish, lang: "en"}),

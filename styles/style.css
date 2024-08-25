@@ -1,67 +1,56 @@
 /* General */
 
 :root {
-	--color-grey: #d5d5d5;
-	--color-light-grey: #e9e9e9;
-	--font-inter: inter, sans-serif;	
-	--card-section-border-radius: 10px;
+	--general-background-color: #e8e8e8;
+	--general-font-color: black;
+	--general-font-family: inter, sans-serif;
+	--titles-color: black;
+	--titles-font-family: Mulish;
 }
 
 *, ::before, ::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	text-wrap: pretty;
 }
 
 body {
-	background-color: var(--color-grey);
-	font-family: var(--font-inter);
+	background-color: var(--general-background-color);
+	color: var(--general-font-color);
+	font-family: var(--general-font-family);
 	height: 100vh;
 }
 
 main {
-	padding-bottom: 80px;
+	padding: 0 50px 80px 50px;
 }
 
-/* Navigation */
+/* Titles */
 
-#navigation {
-	width: 80%;
-	max-width: 1300px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 150px);
-	gap: 20px;
+h1, h2, h3 {
+	color: var(--titles-color);
+	font-family: var(--titles-font-family);
 }
 
-.navigationCard {
-	background-color: var(--color-light-grey);
-	border-radius: 10px;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	width: auto;
-	align-items: center;
-	aspect-ratio: 1 / 1.3;
-	justify-content: space-between;
-	text-decoration: none;
-	color: black;
-}
-
-.navigationCard__image {
-	width: 100%;
-	aspect-ratio: 1 / 1;
-}
-
-.navigationCard__textZone {
-	width: 100%;
-	aspect-ratio: 3;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+h1, hgroup {
 	text-align: center;
 }
 
-.navigationCard__image[src$="avatar.png"] {
-	border-radius: 25%;
+h1 {
+	margin-top: 0.5em;
+	font-size: 48px;
+}
+
+h2 {
+	margin-top: 1.5em;
+	margin-bottom: 0.75em;
+	font-size: 36px;
+}
+
+hgroup#main-title span.subtitle {
+	display: block;
+	opacity: 0.6;
+	font-size: 28px;
+	font-style: italic;
 }
