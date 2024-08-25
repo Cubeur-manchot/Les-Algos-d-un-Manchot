@@ -8,6 +8,7 @@
 	--table-light-color-odd: #e4e4e4;
 	--table-light-color-middle: #e7e7e7;
 	--table-light-color-hover: #e0e0e0;;
+	--table-font-family: Lato;
 }
 
 div.table-outer-container {
@@ -26,7 +27,7 @@ table {
 	border-radius: var(--table-border-radius);
 	overflow: hidden;
 	border-collapse: collapse;
-	font-family: Open Sans;
+	font-family: var(--table-font-family);
 }
 
 thead tr {
