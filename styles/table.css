@@ -1,4 +1,5 @@
 :root {
+	--table-border-radius: 10px;
 	--table-header-height: 60px;
 	--table-row-height: 50px;
 	--table-padding-inline: 50px;
@@ -22,7 +23,7 @@ div.table-inner-container {
 
 table {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: var(--table-border-radius);
 	overflow: hidden;
 	border-collapse: collapse;
 	font-family: Open Sans;
