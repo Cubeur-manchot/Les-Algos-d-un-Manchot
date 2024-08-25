@@ -4,10 +4,7 @@
 	--table-row-height: 50px;
 	--table-padding-inline: 50px;
 	--table-dark-color: #363640;
-	--table-light-color: #eaeaea;
-	--table-light-color-odd: #e4e4e4;
-	--table-light-color-middle: #e7e7e7;
-	--table-light-color-hover: #e0e0e0;;
+	--table-light-color: #f1f1f1;
 	--table-font-family: Lato;
 }
 
@@ -42,7 +39,7 @@ th {
 }
 
 tbody {
-	background-color: var(--table-light-color-middle);
+	background-color: var(--table-light-color);
 	color: var(--table-dark-color);
 }
 
@@ -51,15 +48,15 @@ tbody tr {
 }
 
 tbody tr:nth-child(even) {
-	background-color: var(--table-light-color);
+	background-color: hsl(from var(--table-light-color) h s calc(l + 1));
 }
 
 tbody tr:nth-child(odd) {
-	background-color: var(--table-light-color-odd);
+	background-color: hsl(from var(--table-light-color) h s calc(l - 1));
 }
 
 tbody tr:hover {
-	background-color: var(--table-light-color-hover);
+	background-color: hsl(from var(--table-light-color) h s calc(l - 3));
 }
 
 :is(th, td).numeric {
