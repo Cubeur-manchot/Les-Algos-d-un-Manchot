@@ -1,3 +1,11 @@
+:root {
+	--flag-width: 32px;
+	--flag-height: calc(var(--flag-width) * 0.6);
+	--input-width: calc(var(--flag-width) * 1.4);
+	--input-height: calc(var(--flag-height) * 1.4);
+	--flag-border-radius: 3px;
+}
+
 /* Language */
 
 html:has(input[type=checkbox]#isEnglish:checked) *[lang|=fr],
@@ -22,10 +30,8 @@ span#siteTitle {
 /* Language toggler */
 
 input[type=checkbox]#isEnglish {
-	--flag-width: 32;
-	--flag-height: calc(var(--flag-width) * 0.6);
-	width: calc(var(--flag-width) * 1.4px);
-	height: calc(var(--flag-height) * 1.4px);
+	width: var(--input-width);
+	height: var(--input-height);
 	appearance: none;
 	cursor: pointer;
 	position: relative;
@@ -35,10 +41,10 @@ input[type=checkbox]#isEnglish::before,
 input[type=checkbox]#isEnglish::after {
 	content: "";
 	position: absolute;
-	width: calc(var(--flag-width) * 1px);
-	height: calc(var(--flag-height) * 1px);
+	width: var(--flag-width);
+	height: var(--flag-height);
 	border: 1px solid black;
-	border-radius: 3px;
+	border-radius: var(--flag-border-radius);
 	background-size: 100% 100%;
 }
 
