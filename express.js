@@ -6,7 +6,6 @@ const path = require("path");
 const app = express();
 
 app.get(/.*/, (req, res) => {
-	console.log(req.url);
 	res.sendFile(path.join(__dirname,
 		req.url.includes(".html") || !req.url.includes(".")
 			? "index.html"
