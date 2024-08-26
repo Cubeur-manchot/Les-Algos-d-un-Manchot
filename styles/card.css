@@ -34,12 +34,11 @@
 	grid-auto-rows: 2fr;
 	place-items: center;
 	text-align: center;
-}
-
-.imageCard :is(img, svg) {
-	width: var(--card-image-size);
-	height: var(--card-image-size);
-	object-fit: contain;
+	img, svg {
+		width: var(--card-image-size);
+		height: var(--card-image-size);
+		object-fit: contain;
+	}
 }
 
 /* Navigation cards */
