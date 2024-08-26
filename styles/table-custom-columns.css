@@ -5,7 +5,7 @@
 	--settings-button-offset: calc((var(--table-header-height) - var(--settings-button-height)) / 2);
 	--settings-button-background-ratio: 45%;
 }
-
+/* todo nesting */
 div.table-outer-container {
 	position: relative;
 }

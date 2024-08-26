@@ -4,45 +4,38 @@
 
 table.table-grid tr {
 	padding-left: var(--table-padding-inline);
+	padding-right: calc(var(--table-padding-inline) - var(--table-scrollbar-thickness, 0px));
 	display: grid;
 	column-gap: var(--table-grid-column-gap);
 	justify-items: start;
 	row-gap: 0;
 	align-items: center;
-}
-
-table.table-grid thead tr,
-table.table-grid:not(.table-grid-scrollable) tbody tr {
-	padding-right: var(--table-padding-inline);
-}
-
-table.table-grid.table-grid-scrollable tbody tr {
-	padding-right: calc(var(--table-padding-inline) - var(--scrollbar-thickness));
-}
-
-table.table-grid :is(th, td).numeric {
-	justify-self: right;
+	& .numeric {
+		justify-self: right;
+	}
 }
 
 /* Scrollable */
 
-table.table-grid-scrollable thead {
-	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-	position: relative;
-}
-
-table.table-grid-scrollable tbody {
-	height: clamp(200px, 75vh, calc(100vh - 240px));
-	display: block;
-	overflow-y: scroll;
+table.table-grid-scrollable {
+	& thead {
+		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+		position: relative;
+	}
+	& tbody {
+		--table-scrollbar-thickness: var(--scrollbar-thickness);
+		height: clamp(200px, 75vh, calc(100vh - 240px));
+		display: block;
+		overflow-y: scroll;
+	}
 }
 
 /* Instances */
 
-table#records.table-grid :is(thead, tr) {
+table#records.table-grid tr {
 	grid-template-columns: minmax(200px, 1fr) repeat(6, 1fr);
 }
 
-table#contact.table-grid :is(thead, tr) {
+table#contact.table-grid tr {
 	grid-template-columns: minmax(200px, 1fr) repeat(2, 1fr);
 }
