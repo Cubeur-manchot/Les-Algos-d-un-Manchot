@@ -5,6 +5,7 @@
 	--settings-button-offset: var(--table-border-radius);
 	--settings-button-background-ratio: 60%;
 }
+
 div.table-outer-container {
 	position: relative;
 }
@@ -87,14 +88,14 @@ div.table-outer-container:has(input.table-settings-button:not(:checked)) {
 /* Column visibility */
 
 div.table-outer-container {
-	&:has(input.column-display-toggler:nth-of-type(1):not(:checked)) tr :is(:nth-child(1 of :not([lang=en])), :nth-child(1 of :not([lang=fr]))),
-	&:has(input.column-display-toggler:nth-of-type(2):not(:checked)) tr :is(:nth-child(2 of :not([lang=en])), :nth-child(2 of :not([lang=fr]))),
-	&:has(input.column-display-toggler:nth-of-type(3):not(:checked)) tr :is(:nth-child(3 of :not([lang=en])), :nth-child(3 of :not([lang=fr]))),
-	&:has(input.column-display-toggler:nth-of-type(4):not(:checked)) tr :is(:nth-child(4 of :not([lang=en])), :nth-child(4 of :not([lang=fr]))),
-	&:has(input.column-display-toggler:nth-of-type(5):not(:checked)) tr :is(:nth-child(5 of :not([lang=en])), :nth-child(5 of :not([lang=fr]))),
-	&:has(input.column-display-toggler:nth-of-type(6):not(:checked)) tr :is(:nth-child(6 of :not([lang=en])), :nth-child(6 of :not([lang=fr]))),
-	&:has(input.column-display-toggler:nth-of-type(7):not(:checked)) tr :is(:nth-child(7 of :not([lang=en])), :nth-child(7 of :not([lang=fr]))),
-	&:has(input.column-display-toggler:nth-of-type(8):not(:checked)) tr :is(:nth-child(8 of :not([lang=en])), :nth-child(8 of :not([lang=fr]))) {
+	&:has(input.column-display-toggler:nth-of-type(1):not(:checked)) tr :is(:nth-child(1 of :not([lang|=en])), :nth-child(1 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(2):not(:checked)) tr :is(:nth-child(2 of :not([lang|=en])), :nth-child(2 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(3):not(:checked)) tr :is(:nth-child(3 of :not([lang|=en])), :nth-child(3 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(4):not(:checked)) tr :is(:nth-child(4 of :not([lang|=en])), :nth-child(4 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(5):not(:checked)) tr :is(:nth-child(5 of :not([lang|=en])), :nth-child(5 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(6):not(:checked)) tr :is(:nth-child(6 of :not([lang|=en])), :nth-child(6 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(7):not(:checked)) tr :is(:nth-child(7 of :not([lang|=en])), :nth-child(7 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(8):not(:checked)) tr :is(:nth-child(8 of :not([lang|=en])), :nth-child(8 of :not([lang|=fr]))) {
 		display: none;
 	}
 }
@@ -103,31 +104,31 @@ div.table-outer-container {
 
 div.table-outer-container:has(table.table-custom-columns:not(.table-grid)) {
 	&:has(input.column-display-toggler:nth-of-type(1):not(:checked)) {
-		tr :is(:nth-child(2 of :not([lang=en])), :nth-child(2 of :not([lang=fr]))) {
+		tr :is(:nth-child(2 of :not([lang|=en])), :nth-child(2 of :not([lang|=fr]))) {
 			padding-left: var(--table-padding-inline);
 		}
 		&:has(input.column-display-toggler:nth-of-type(2):not(:checked)) {
-			tr :is(:nth-child(3 of :not([lang=en])), :nth-child(3 of :not([lang=fr]))) {
+			tr :is(:nth-child(3 of :not([lang|=en])), :nth-child(3 of :not([lang|=fr]))) {
 				padding-left: var(--table-padding-inline);
 			}
 			&:has(input.column-display-toggler:nth-of-type(3):not(:checked)) {
-				tr :is(:nth-child(4 of :not([lang=en])), :nth-child(4 of :not([lang=fr]))) {
+				tr :is(:nth-child(4 of :not([lang|=en])), :nth-child(4 of :not([lang|=fr]))) {
 					padding-left: var(--table-padding-inline);
 				}
 				&:has(input.column-display-toggler:nth-of-type(4):not(:checked)) {
-					tr :is(:nth-child(5 of :not([lang=en])), :nth-child(5 of :not([lang=fr]))) {
+					tr :is(:nth-child(5 of :not([lang|=en])), :nth-child(5 of :not([lang|=fr]))) {
 						padding-left: var(--table-padding-inline);
 					}
 					&:has(input.column-display-toggler:nth-of-type(5):not(:checked)) {
-						tr :is(:nth-child(6 of :not([lang=en])), :nth-child(6 of :not([lang=fr]))) {
+						tr :is(:nth-child(6 of :not([lang|=en])), :nth-child(6 of :not([lang|=fr]))) {
 							padding-left: var(--table-padding-inline);
 						}
 						&:has(input.column-display-toggler:nth-of-type(6):not(:checked)) {
-							tr :is(:nth-child(7 of :not([lang=en])), :nth-child(7 of :not([lang=fr]))) {
+							tr :is(:nth-child(7 of :not([lang|=en])), :nth-child(7 of :not([lang|=fr]))) {
 								padding-left: var(--table-padding-inline);
 							}
 							&:has(input.column-display-toggler:nth-of-type(7):not(:checked)) {
-								tr :is(:nth-child(8 of :not([lang=en])), :nth-child(8 of :not([lang=fr]))) {
+								tr :is(:nth-child(8 of :not([lang|=en])), :nth-child(8 of :not([lang|=fr]))) {
 									padding-left: var(--table-padding-inline);
 								}
 							}
@@ -141,31 +142,31 @@ div.table-outer-container:has(table.table-custom-columns:not(.table-grid)) {
 
 div.table-outer-container:has(table.table-custom-columns:not(.table-grid)) {
 	&:has(input.column-display-toggler:nth-last-of-type(1):not(:checked)) {
-		tr :is(:nth-last-child(2 of :not([lang=en])), :nth-last-child(2 of :not([lang=fr]))) {
+		tr :is(:nth-last-child(2 of :not([lang|=en])), :nth-last-child(2 of :not([lang|=fr]))) {
 			padding-left: var(--table-padding-inline);
 		}
 		&:has(input.column-display-toggler:nth-last-of-type(2):not(:checked)) {
-			tr :is(:nth-last-child(3 of :not([lang=en])), :nth-last-child(3 of :not([lang=fr]))) {
+			tr :is(:nth-last-child(3 of :not([lang|=en])), :nth-last-child(3 of :not([lang|=fr]))) {
 				padding-left: var(--table-padding-inline);
 			}
 			&:has(input.column-display-toggler:nth-last-of-type(3):not(:checked)) {
-				tr :is(:nth-last-child(4 of :not([lang=en])), :nth-last-child(4 of :not([lang=fr]))) {
+				tr :is(:nth-last-child(4 of :not([lang|=en])), :nth-last-child(4 of :not([lang|=fr]))) {
 					padding-left: var(--table-padding-inline);
 				}
 				&:has(input.column-display-toggler:nth-last-of-type(4):not(:checked)) {
-					tr :is(:nth-last-child(5 of :not([lang=en])), :nth-last-child(5 of :not([lang=fr]))) {
+					tr :is(:nth-last-child(5 of :not([lang|=en])), :nth-last-child(5 of :not([lang|=fr]))) {
 						padding-left: var(--table-padding-inline);
 					}
 					&:has(input.column-display-toggler:nth-last-of-type(5):not(:checked)) {
-						tr :is(:nth-last-child(6 of :not([lang=en])), :nth-last-child(6 of :not([lang=fr]))) {
+						tr :is(:nth-last-child(6 of :not([lang|=en])), :nth-last-child(6 of :not([lang|=fr]))) {
 							padding-left: var(--table-padding-inline);
 						}
 						&:has(input.column-display-toggler:nth-last-of-type(6):not(:checked)) {
-							tr :is(:nth-last-child(7 of :not([lang=en])), :nth-last-child(7 of :not([lang=fr]))) {
+							tr :is(:nth-last-child(7 of :not([lang|=en])), :nth-last-child(7 of :not([lang|=fr]))) {
 								padding-left: var(--table-padding-inline);
 							}
 							&:has(input.column-display-toggler:nth-last-of-type(7):not(:checked)) {
-								tr :is(:nth-last-child(8 of :not([lang=en])), :nth-last-child(8 of :not([lang=fr]))) {
+								tr :is(:nth-last-child(8 of :not([lang|=en])), :nth-last-child(8 of :not([lang|=fr]))) {
 									padding-left: var(--table-padding-inline);
 								}
 							}

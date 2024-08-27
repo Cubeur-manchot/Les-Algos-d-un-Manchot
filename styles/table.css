@@ -67,15 +67,15 @@ th, td {
 /* Non-grid */
 
 table:not(.table-grid) :is(th, td) {
-	&:nth-child(1 of :not([lang=en])),
-	&:nth-child(1 of :not([lang=fr])) { /* first shown element */
+	&:nth-child(1 of :not([lang|=en])),
+	&:nth-child(1 of :not([lang|=fr])) { /* first shown element */
 		padding-left: var(--table-padding-inline);	
 	}
-	&:not(:nth-child(1 of :not([lang=en]))):not(:nth-child(1 of :not([lang=fr]))) { /* not first shown element */
+	&:not(:nth-child(1 of :not([lang|=en]))):not(:nth-child(1 of :not([lang|=fr]))) { /* not first shown element */
 		padding-left: calc(var(--table-padding-inline) / 2);
 	}
-	&:nth-last-child(1 of :not([lang=en])),
-	&:nth-last-child(1 of :not([lang=fr])) { /* last shown element */
+	&:nth-last-child(1 of :not([lang|=en])),
+	&:nth-last-child(1 of :not([lang|=fr])) { /* last shown element */
 		padding-right: var(--table-padding-inline);
 	}
 }
