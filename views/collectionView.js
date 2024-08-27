@@ -43,9 +43,9 @@ class CollectionView extends View {
 				this.createDialogTag({className: "table-settings"},
 					...CollectionView.fields.map(field =>
 						[
-							this.createInputTag({type: "checkbox", id: `${field.id}-display-toggler`, className: "display-toggler", checked: field.default}),
+							this.createInputTag({type: "checkbox", id: `${field.id}-column-display-toggler`, className: "column-display-toggler", checked: field.default}),
 							...["en", "fr"].map(language =>
-								this.createLabelTag({lang: language, className: "display-toggler-label", htmlFor: `${field.id}-display-toggler`, textContent: field[language]})
+								this.createLabelTag({lang: language, className: "column-display-toggler-label", htmlFor: `${field.id}-column-display-toggler`, textContent: field[language]})
 							)
 						]
 					).flat()
