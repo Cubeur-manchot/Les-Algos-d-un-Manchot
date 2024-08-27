@@ -1,9 +1,9 @@
 /* Settings button */
 
 :root {
-	--settings-button-height: 50px;
-	--settings-button-offset: calc((var(--table-header-height) - var(--settings-button-height)) / 2);
-	--settings-button-background-ratio: 45%;
+	--settings-button-height: calc(var(--table-header-height) - 2 * var(--table-border-radius));
+	--settings-button-offset: var(--table-border-radius);
+	--settings-button-background-ratio: 60%;
 }
 /* todo nesting */
 div.table-outer-container {
