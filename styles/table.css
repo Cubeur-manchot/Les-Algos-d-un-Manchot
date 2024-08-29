@@ -9,7 +9,7 @@
 }
 
 div.table-outer-container {
-	width: clamp(500px, 80%, 1500px);
+	width: clamp(500px, 80vw, 1500px);
 	margin-inline: auto;
 	border-radius: 10px;
 	overflow: hidden;

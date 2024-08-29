@@ -24,7 +24,7 @@ table.table-grid-scrollable {
 	}
 	& tbody {
 		--table-scrollbar-thickness: var(--scrollbar-thickness);
-		height: clamp(200px, 75vh, calc(100vh - 240px));
+		height: clamp(200px, 75vh, calc(100vh - 250px));
 		display: block;
 		overflow-y: scroll;
 	}
