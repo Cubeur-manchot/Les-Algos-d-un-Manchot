@@ -2,7 +2,7 @@
 	{
 		"name": "PLL",
 		"detailedName": "Permutation of the Last Layer",
-		"puzzle": "3x3",
+		"events": ["3x3", "OH", "big"],
 		"mask": null,
 		"view": "plan",
 		"subsets": [

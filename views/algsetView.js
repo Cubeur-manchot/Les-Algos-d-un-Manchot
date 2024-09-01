@@ -6,6 +6,11 @@ import { Runner } from "https://cubeur-manchot.github.io/Holo-Cube/bundles/holo-
 
 class AlgsetView extends View {
 	static path = "/algs";
+	static events = {
+		"3x3": {holoCubePuzzleName: "cube3x3x3"},
+		"OH": {holoCubePuzzleName: "cube3x3x3"},
+		"big": {holoCubePuzzleName: "cube5x5x5", titleName: "Big cubes"}
+	};
 	constructor(restOfThePath) {
 		super();
 		[this.event, this.setName] = restOfThePath.map(pathChunk => pathChunk.replace(/^\//, ""));
@@ -24,11 +29,12 @@ class AlgsetView extends View {
 		let caseCount = algset.subsets
 			.map(subset => subset.caseList.length)
 			.reduce((total, num) => total + num, 0);
+		let subtitleWithCaseCount = [AlgsetView.events[this.event].titleName ?? this.event, caseCount].join (" - ");
 		return [
 			this.createHgroupTag({id: "main-title"},
 				this.createH1Tag({textContent: [algset.name, algset.detailedName].filter(Boolean).join(" - ")}),
-				this.createSpanTag({lang: "en", className: "subtitle", textContent: `${caseCount} cases`}),
-				this.createSpanTag({lang: "fr", className: "subtitle", textContent: `${caseCount} cas`})
+				this.createSpanTag({lang: "en", className: "subtitle", textContent: `${subtitleWithCaseCount} cases`}),
+				this.createSpanTag({lang: "fr", className: "subtitle", textContent: `${subtitleWithCaseCount} cas`})
 			),
 			...algset.subsets.map(subset =>
 				this.createSectionTag({id: subset.name},
@@ -42,13 +48,10 @@ class AlgsetView extends View {
 			)
 		];
 	};
-	fetchAlgset = async () => {
-		let algsets = await fetch("../data/algsets.json")
-			.then(response => response.json());
-		return algsets.find(algset => algset.puzzle === this.event && algset.name === this.setName);
-	};
-	fetchAlgs = async () => {
-		return fetch("../data/algs.json")
+	fetchAlgset = () => fetch("../data/algsets.json")
+		.then(response => response.json())
+		.then(algsets => algsets.find(algset => algset.events.includes(this.event) && algset.name === this.setName));
+	fetchAlgs = () => fetch("../data/algs.json")
 		.then(response => response.json())
 		.then(algs =>
 			[
@@ -57,11 +60,10 @@ class AlgsetView extends View {
 				...algs["others"]
 			]
 		);
-	};
 	buildHoloCubeRunner = algset => {
 		this.holoCubeRunner = new Runner({
 			puzzle: {
-				fullName: this.getHoloCubePuzzleName(this.event),
+				fullName: AlgsetView.events[this.event].holoCubePuzzleName,
 				colorScheme: ["yellow", "green", "orange", "white", "blue", "red"], // yellow top, green front
 				mask: {
 					stage: algset.mask
@@ -75,16 +77,22 @@ class AlgsetView extends View {
 			}
 		});
 	};
-	getHoloCubePuzzleName = event =>
-		event === "3x3"
-			? "cube3x3x3"
-			: null;
 	createAlgCard = alg => {
+		let algToUse = this.getAlgToUse(alg);
 		return this.createLiTag({className: "card imageCard algCard"},
-			this.createHoloCubeImage(alg.alg),
+			this.createHoloCubeImage(algToUse),
 			this.createH3Tag({className: "algCard__title", textContent: alg.name}),
-			this.createPTag({className: "algCard__content", textContent: alg.alg})
+			this.createPTag({className: "algCard__content", textContent: algToUse})
 		);
+	};
+	getAlgToUse = alg => {
+		if (this.event === "3x3" || !alg.alt) {
+			return alg.alg; // default alg
+		}
+		switch (typeof alg.alt) {
+			case "string": return alg.alt; // one alternative alg for all variations
+			case "object": return alg.alt[this.event] ?? alg.alg; // alternatives per variation
+		}
 	};
 	createHoloCubeImage = alg => this.holoCubeRunner.run(this.reverseAlg(alg)).svg;
 	reverseAlg = alg => alg.split(" ").map(move => move.endsWith("'") ? move.slice(0, -1) : `${move}'`).reverse().join(" ");
