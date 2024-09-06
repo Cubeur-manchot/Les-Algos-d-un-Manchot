@@ -13,10 +13,15 @@
 	},
 	{
 		"name": "OLL",
-		"puzzle": "3x3",
+		"detailedName": "Orientation of the Last Layer",
+		"events": ["3x3", "OH", "big"],
 		"mask": "OLL",
 		"view": "plan",
 		"subsets": [
+			{"name": "Corners oriented", "caseList": ["OLL28", "OLL57", "OLL20"]},
+			{"name": "2 corners", "caseList": ["OLL23", "OLL24", "OLL25", "OLL43", "OLL44", "OLL45", "OLL46", "OLL33", "OLL37", "OLL35", "OLL31", "OLL32", "OLL39", "OLL40", "OLL36", "OLL38", "OLL34", "OLL29", "OLL30", "OLL41", "OLL42", "OLL17", "OLL18", "OLL19"]},
+			{"name": "3 corners", "caseList": ["OLL26", "OLL27", "OLL5", "OLL6", "OLL7", "OLL8", "OLL9", "OLL10", "OLL11", "OLL12", "OLL13", "OLL14", "OLL15", "OLL16", "OLL3", "OLL4"]},
+			{"name": "4 corners", "caseList": ["OLL21", "OLL22", "OLL47", "OLL48", "OLL51", "OLL49", "OLL50", "OLL53", "OLL54", "OLL55", "OLL52", "OLL56", "OLL1", "OLL2"]}
 		]
 	}
 ]
