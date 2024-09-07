@@ -29,16 +29,24 @@ const handleNavigationClick = event => {
 	}
 };
 
-const setupNavigationLinks = () => {
-	for (let nav of document.querySelectorAll("nav")) {
-		nav.removeEventListener("click", handleNavigationClick);
-		nav.addEventListener("click", handleNavigationClick);
-	}
-};
+const setupNavigationLinks = () => new MutationObserver(
+	mutationRecords =>
+		mutationRecords
+		.filter(mutationRecord => mutationRecord.type === "childList")
+		.forEach(childListMutationRecord =>
+			Array.from(childListMutationRecord.addedNodes)
+			.filter(addedNode => addedNode.localName === "nav")
+			.forEach(navAddedNode =>
+				navAddedNode.addEventListener("click", handleNavigationClick)
+			)
+		)
+	)
+	.observe(document.querySelector("main"), {childList: true});
 
 const selectLanguageFromBrowserSettings = () => document.querySelector("input[type=checkbox]#isEnglish").checked = !navigator.language.includes("fr");
 
 window.addEventListener("popstate", displayView); // back and forth navigation in history
+
+document.addEventListener("DOMContentLoaded", setupNavigationLinks); // permanent event listener for navigation
 document.addEventListener("DOMContentLoaded", displayView); // initial loading of the page
-document.addEventListener("DOMContentLoaded", setupNavigationLinks);
 document.addEventListener("DOMContentLoaded", selectLanguageFromBrowserSettings);
