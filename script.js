@@ -22,10 +22,10 @@ const navigateTo = url => {
 };
 
 const handleNavigationClick = event => {
-	let aTag = event.target.closest("a.navigationCard");
-	if (aTag) {
+	let internalNavigationLink = event.target.closest("a.internalNavigation");
+	if (internalNavigationLink) {
 		event.preventDefault();
-		navigateTo(aTag.href);
+		navigateTo(internalNavigationLink.href);
 	}
 };
 
