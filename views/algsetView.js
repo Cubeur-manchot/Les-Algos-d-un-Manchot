@@ -42,7 +42,14 @@ class AlgsetView extends View {
 					this.createUlTag({className: "cardList algCardList"},
 						...subset.caseList
 							.map(algCase => algs.find(alg => alg.id === algCase))
-							.map(alg => this.createAlgCard(alg))
+							.map(alg => Object.assign(alg, {algToUse: this.getAlgToUse(alg)}))
+							.map(alg =>
+								this.createLiTag({className: "card imageCard algCard"},
+									this.holoCubeService.createHoloCubeImage(alg.algToUse),
+									this.createH3Tag({className: "algCard__title", textContent: alg.name}),
+									this.createPTag({className: "algCard__content", textContent: alg.algToUse})
+								)
+							)
 					)
 				)
 			)
@@ -60,14 +67,6 @@ class AlgsetView extends View {
 				...algs["others"]
 			]
 		);
-	createAlgCard = alg => {
-		let algToUse = this.getAlgToUse(alg);
-		return this.createLiTag({className: "card imageCard algCard"},
-			this.createHoloCubeImage(algToUse),
-			this.createH3Tag({className: "algCard__title", textContent: alg.name}),
-			this.createPTag({className: "algCard__content", textContent: algToUse})
-		);
-	};
 	getAlgToUse = alg => {
 		if (this.event === "3x3" || !alg.alt) {
 			return alg.alg; // default alg
