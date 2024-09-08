@@ -15,13 +15,15 @@ app.get(/.*/, (req, res) => {
 					? "script.js"
 					: req.url.includes("/views")
 						? `/views/${req.url.split("/").at(-1)}`
-						: req.url.includes("/images")
-							? req.url.replace(/.*(?=\/images\/)/, "")
-							: req.url.includes("/styles")
-								? `/styles/${req.url.split("/").at(-1)}`
-								: req.url.includes("/data")
-									? `/data/${req.url.split("/").at(-1)}`
-									: null
+						: req.url.includes("/services")
+							? `/services/${req.url.split("/").at(-1)}`
+							: req.url.includes("/images")
+								? req.url.replace(/.*(?=\/images\/)/, "")
+								: req.url.includes("/styles")
+									? `/styles/${req.url.split("/").at(-1)}`
+									: req.url.includes("/data")
+										? `/data/${req.url.split("/").at(-1)}`
+										: null
 	));
 });
 

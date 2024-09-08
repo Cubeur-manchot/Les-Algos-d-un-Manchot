@@ -1,8 +1,7 @@
 "use strict";
 
+import { HoloCubeService } from "../services/holoCubeService.js";
 import { View } from "./view.js";
-
-import { Runner } from "https://cubeur-manchot.github.io/Holo-Cube/bundles/holo-cube-algorithm.node-bundle.js";
 
 class AlgsetView extends View {
 	static path = "/algs";
@@ -14,6 +13,7 @@ class AlgsetView extends View {
 	constructor(restOfThePath) {
 		super();
 		[this.event, this.setName] = restOfThePath.map(pathChunk => pathChunk.replace(/^\//, ""));
+		this.holoCubeService = new HoloCubeService();
 	};
 	getTitle = () => [this.event, this.setName].join(" ");
 	getContent = async () => {
@@ -24,7 +24,7 @@ class AlgsetView extends View {
 				this.createPTag({lang: "fr", textContent: "Set d'algos introuvable."}),
 			];
 		}
-		this.buildHoloCubeRunner(algset);
+		this.holoCubeService.buildHoloCubeRunner(AlgsetView.events[this.event].holoCubePuzzleName, algset.mask);
 		let algs = await this.fetchAlgs();
 		let caseCount = algset.subsets
 			.map(subset => subset.caseList.length)
@@ -60,23 +60,6 @@ class AlgsetView extends View {
 				...algs["others"]
 			]
 		);
-	buildHoloCubeRunner = algset => {
-		this.holoCubeRunner = new Runner({
-			puzzle: {
-				fullName: AlgsetView.events[this.event].holoCubePuzzleName,
-				colorScheme: ["yellow", "green", "orange", "white", "blue", "red"], // yellow top, green front
-				mask: {
-					stage: algset.mask
-				}
-			},
-			drawingOptions: {
-				puzzleScale: 0.85
-			},
-			logger: {
-				mode: "none"
-			}
-		});
-	};
 	createAlgCard = alg => {
 		let algToUse = this.getAlgToUse(alg);
 		return this.createLiTag({className: "card imageCard algCard"},
@@ -94,8 +77,6 @@ class AlgsetView extends View {
 			case "object": return alg.alt[this.event] ?? alg.alg; // alternatives per variation
 		}
 	};
-	createHoloCubeImage = alg => this.holoCubeRunner.run(this.reverseAlg(alg)).svg;
-	reverseAlg = alg => alg.split(" ").map(move => move.endsWith("'") ? move.slice(0, -1) : `${move}'`).reverse().join(" ");
 };
 
 export {AlgsetView};
