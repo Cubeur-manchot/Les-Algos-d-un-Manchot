@@ -43,7 +43,7 @@
 			{"id": "OLL17", "name": "OLL 17", "alg": "F R' F' R U S' R U' R' S", "alt": {"OH": "F R' F' R U2 R U' y R U' R' F'", "big": "R U R' U R' F R F' U2' R' F R F'"}},
 			{"id": "OLL18", "name": "OLL 18", "alg": "r U R' U R U2' r2' U' R U' R' U2' r"},
 			{"id": "OLL19", "name": "OLL 19", "alg": "r' U2' R U R' U r2 U2' R' U' R U' r'"},
-			{"id": "OLL20", "name": "OLL 20", "alg": "r U R' U' M2' U R U' R' U' M'"},
+			{"id": "OLL20", "name": "OLL 20", "alg": "r U R' U' M2' U R U' R' U' M'", "alt": {"OH": "r U R' U' r2 R2 U R U' R' U' r R'", "big": "r U R' U' r2 R2' U R U' R' U' r R'"}},
 			{"id": "OLL21", "name": "OLL 21", "alg": "R U2 R' U' R U R' U' R U' R'"},
 			{"id": "OLL22", "name": "OLL 22", "alg": "R U2' R2' U' R2 U' R2' U2' R"},
 			{"id": "OLL23", "name": "OLL 23", "alg": "R2' D' R U2 R' D R U2 R", "alt": {"OH": "R2 D' R U2' R' D R U2' R"}},
@@ -51,7 +51,7 @@
 			{"id": "OLL25", "name": "OLL 25", "alg": "R U2 R D R' U2 R D' R2'", "alt": {"OH": "R U2' R D R' U2' R D' R2"}},
 			{"id": "OLL26", "name": "OLL 26", "alg": "R U2' R' U' R U' R'"},
 			{"id": "OLL27", "name": "OLL 27", "alg": "R U R' U R U2' R'"},
-			{"id": "OLL28", "name": "OLL 28", "alg": "r' U' R U M' U' R' U R"},
+			{"id": "OLL28", "name": "OLL 28", "alg": "r' U' R U M' U' R' U R", "alt": "r U R' U' r' R U R U' R'"},
 			{"id": "OLL29", "name": "OLL 29", "alg": "r2' D' r U r' D r2 U' r' U' r", "alt": "R U R' U' R U' R' F' U' F R U R'"},
 			{"id": "OLL30", "name": "OLL 30", "alg": "r2 D r' U' r D' r2 U r U r'", "alt": "F U R U2' R' U' R U2' R' U' F'"},
 			{"id": "OLL31", "name": "OLL 31", "alg": "R' U' F U R U' R' F' R"},
@@ -80,7 +80,7 @@
 			{"id": "OLL54", "name": "OLL 54", "alg": "r U2' R' U' R U R' U' R U' r'"},
 			{"id": "OLL55", "name": "OLL 55", "alg": "R U2' R2' U' R U' R' U2' F R F'"},
 			{"id": "OLL56", "name": "OLL 56", "alg": "r U r' U R U' R' U R U' R' r U' r'"},
-			{"id": "OLL57", "name": "OLL 57", "alg": "R U R' U' M' U R U' r'"}
+			{"id": "OLL57", "name": "OLL 57", "alg": "R U R' U' M' U R U' r'", "alt": "R U R' U' r R' U R U' r'"}
 
 		]
 	},
