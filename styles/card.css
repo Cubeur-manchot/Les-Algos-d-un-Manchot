@@ -16,12 +16,12 @@
 	gap: var(--card-list-gap);
 }
 
-.card {	
+.card {
 	border-radius: var(--card-border-radius);
 	box-shadow:
 		0px 4px 3px 0px rgba(0, 0, 0, 0.1),
 		0px 6px 10px 0px rgba(0, 0, 0, 0.1);
-	padding: var(--card-padding);
+	padding: var(--card-padding) var(--card-padding) 0 var(--card-padding);
 	background-color: var(--card-background-color);
 	color: var(--card-font-color);
 	font-family: var(--card-font-family);
