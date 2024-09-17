@@ -26,7 +26,7 @@ class AlgsetView extends View {
 				this.createPTag({lang: "fr", textContent: "Set d'algos introuvable."}),
 			];
 		}
-		this.holoCubeService.buildHoloCubeRunner(AlgsetView.events[this.event].holoCubePuzzleName, algset.mask);
+		this.holoCubeService.buildHoloCubeRunner(HoloCubeService.holoCubePuzzleNames[this.event], algset.mask, 0.8);
 		return [
 			this.createHgroupTag({id: "main-title"},
 				this.createH1Tag({textContent: [algset.name, algset.detailedName].filter(Boolean).join(" - ")}),

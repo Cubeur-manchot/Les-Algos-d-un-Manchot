@@ -6,7 +6,7 @@ class HoloCubeService {
 	constructor() {
 		this.holoCubeRunner = null;
 	};
-	buildHoloCubeRunner = (puzzleName, mask) => {
+	buildHoloCubeRunner = (puzzleName, mask, puzzleScale) => {
 		this.holoCubeRunner = new Runner({
 			puzzle: {
 				fullName: puzzleName,
@@ -16,7 +16,7 @@ class HoloCubeService {
 				}
 			},
 			drawingOptions: {
-				puzzleScale: 0.85
+				puzzleScale: puzzleScale
 			},
 			logger: {
 				mode: "none"
