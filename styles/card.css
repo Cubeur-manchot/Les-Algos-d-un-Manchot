@@ -74,6 +74,10 @@ ul.algCardList {
 	list-style: none;
 }
 
+h3.algCard__title {
+	align-self: end;
+}
+
 p.algCard__content {
 	font-size: 0.85rem;
 	letter-spacing: 0.3px;
