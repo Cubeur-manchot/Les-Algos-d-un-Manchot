@@ -3,6 +3,11 @@
 import { Runner } from "https://cubeur-manchot.github.io/Holo-Cube/bundles/holo-cube-algorithm.node-bundle.js";
 
 class HoloCubeService {
+	static holoCubePuzzleNames = {
+		"3x3": "cube3x3x3",
+		"OH": "cube3x3x3",
+		"big": "cube5x5x5"
+	};
 	constructor() {
 		this.holoCubeRunner = null;
 	};

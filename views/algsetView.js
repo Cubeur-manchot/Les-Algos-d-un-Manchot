@@ -6,11 +6,6 @@ import { View } from "./view.js";
 
 class AlgsetView extends View {
 	static path = "/algs";
-	static events = {
-		"3x3": {holoCubePuzzleName: "cube3x3x3"},
-		"OH": {holoCubePuzzleName: "cube3x3x3"},
-		"big": {holoCubePuzzleName: "cube5x5x5", titleName: "Big cubes"}
-	};
 	constructor(restOfThePath) {
 		super();
 		[this.event, this.setName] = restOfThePath.map(pathChunk => pathChunk.replace(/^\//, ""));
@@ -30,15 +25,15 @@ class AlgsetView extends View {
 		return [
 			this.createHgroupTag({id: "main-title"},
 				this.createH1Tag({textContent: [algset.name, algset.detailedName].filter(Boolean).join(" - ")}),
-				this.createSpanTag({lang: "en", className: "subtitle", textContent: `${AlgsetView.events[this.event].titleName ?? this.event} - ${algset.caseCount} cases`}),
-				this.createSpanTag({lang: "fr", className: "subtitle", textContent: `${AlgsetView.events[this.event].titleName ?? this.event} - ${algset.caseCount} cas`})
+				this.createSpanTag({lang: "en", className: "subtitle", textContent: `${AlgService.getEventTitleName([this.event])} - ${algset.caseCount} cases`}),
+				this.createSpanTag({lang: "fr", className: "subtitle", textContent: `${AlgService.getEventTitleName([this.event])} - ${algset.caseCount} cas`})
 			),
 			...algset.subsets.map(subset =>
 				this.createSectionTag({id: subset.name},
 					this.createH2Tag({textContent: subset.name}),
 					this.createUlTag({className: "cardList algCardList"},
 						...subset.caseList
-							.map(algCase => this.algService.algs.find(alg => alg.id === algCase))
+							.map(algId => this.algService.findAlg(algId))
 							.map(alg => Object.assign(alg, {algToUse: this.algService.getAlgToUse(alg, this.event)}))
 							.map(alg =>
 								this.createLiTag({className: "card imageCard algCard"},

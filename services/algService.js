@@ -1,6 +1,10 @@
 "use strict";
 
 class AlgService {
+	static eventTitleNames = {
+		"big": "Big cubes"
+	};
+	static getEventTitleName = eventName => AlgService.eventTitleNames[eventName] ?? eventName;
 	constructor() {
 		this.algsets = null;
 		this.algs = null;
@@ -28,6 +32,7 @@ class AlgService {
 			algset => algset.events.includes(eventName)
 			&& algset.name === setName
 		);
+	findAlg = algId => this.algs.find(alg => alg.id === algId);
 	countCases = algset => algset.subsets
 		.map(subset => subset.caseList.length)
 		.reduce((total, num) => total + num, 0);
