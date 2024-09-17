@@ -27,10 +27,8 @@ class HomeView extends View {
 	createNavigationCard = (isInternal, titleEnglish, titleFrench, src, href) =>
 		this.createATag({className: `card imageCard navigationCard${isInternal ? " internalNavigation" : ""}`, href},
 			this.createImgTag({className: "navigationCard__image", src}),
-			this.createDivTag({className: "navigationCard__textZone"},
-				this.createSpanTag({className: "navigationCard__title", textContent: titleEnglish, lang: "en"}),
-				this.createSpanTag({className: "navigationCard__title", textContent: titleFrench, lang: "fr"})
-			)
+			this.createSpanTag({className: "navigationCard__title", textContent: titleEnglish, lang: "en"}),
+			this.createSpanTag({className: "navigationCard__title", textContent: titleFrench, lang: "fr"})
 		);
 };
 
