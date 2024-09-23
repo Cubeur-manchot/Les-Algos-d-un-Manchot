@@ -21,7 +21,33 @@
 			{"id": "0Ub0", "name": "PLL Ub", "alg": "L2' U S U2 S' U L2'", "alt": "R' U R' U' R' U' R' U R U R2"},
 			{"id": "0V0", "name": "PLL V", "alg": "R' U R' d' R' F' R2 U' R' U R' F R F", "alt": {"OH": "R U' R' U x U' R' U2' R U R' U R U2' R' U' R U x'"}},
 			{"id": "0Y0", "name": "PLL Y", "alg": "R F R' f' R U R' F' U' f R2 U' R2'", "alt": "F R U' R' U' R U R' F' R U R' U' R' F R F'"},
-			{"id": "0Z0", "name": "PLL Z", "alg": "M2' U M U2 M2' U2 M U' M2'", "alt": "R' U' R U' R U R U' R' U R U R2 U' R'"}
+			{"id": "0Z0", "name": "PLL Z", "alg": "M2' U M U2 M2' U2 M U' M2'", "alt": "R' U' R U' R U R U' R' U R U R2 U' R'"},
+			{"id": "20-0", "name": "Pure OLL 20", "alg": "M' U2 M U2 M' U M U2 M' U2 M", "alt": "r R' U2 r' R U2 r R' U r' R U2 r R' U2 r' R"},
+			{"id": "20H0", "name": "H 4-flip", "alg": "r U R' U' M2' U R U' R' U' M'", "alt": {"OH": "r U R' U' r2 R2 U R U' R' U' r R'", "big": "r U R' U' r2 R2' U R U' R' U' r R'"}},
+			{"id": "20Ua0", "name": "Ua 4-flip", "alg": "R U R' U M' U' R U' r' U2 M' U' M", "alt": {"big": "R U R' U m' U' R U' r' U2 m' U' m"}},
+			{"id": "20Ub0", "name": "Ub 4-flip", "alg": "L' U' L U' M' U L' U l U2 M' U M", "alt": {"big": "L' U' L U' m' U L' U l U2 m' U m"}},
+			{"id": "20Z0", "name": "Z 4-flip", "alg": "l U' M2' U l' U2 l U' M2' U l'", "alt": {"big": "l U' m2' U l' U2 l U' m2' U l'"}},
+			{"id": "OLL28", "name": "OLL 28", "alg": "r' U' R U M' U' R' U R", "alt": "r U R' U' r' R U R U' R'"},
+			{"id": "28-0", "name": "Pure OLL 28", "alg": "r U R' U' r' U2' R U R U' R2' U2 R"},
+			{"id": "28H0", "name": "H 2-flip adj", "alg": "M' U M U M' U M U M' U M", "alt": {"OH": "R U2' R' U' z F' U' R2 U R F z'", "big": "L' U2 L U F R U2 R' U' F'"}},
+			{"id": "28Z0", "name": "Z 2-flip adj pairs", "alg": "F R U R' U' F2 L' U' L U F"},
+			{"id": "28Z1", "name": "Z 2-flip adj no pair", "alg": "M' U M U M' U2 M U' M' U' M", "alt": "F R U R' U' F' R' U' R' F R F' U R"},
+			{"id": "28Ua0", "name": "Ua 2-flip adj opp", "alg": "M' U M U2 M' U M U M2' U M U2 M' U M2'", "alt": {"big": "m' U m U2 m' U m U m2' U m U2 m' U m2'"}},
+			{"id": "28Ua1", "name": "Ua 3-cycle adj adj", "alg": "M' U' M U2 M' U' M", "alt": {"big": "m' U' m U2 m' U' m"}},
+			{"id": "28Ua2", "name": "Ua 3-cycle adj opp", "alg": "r' U' R U M' U' R' U R", "alt": {"OH": "r' U' R U r R' U' R' U R", "big": "r' U' R U m' U' R' U R"}},
+			{"id": "28Ua3", "name": "Ua 2-flip adj adj", "alg": "M' U M' U2 M U M2' U M'", "alt": {"big": "m' U m' U2 m U m2' U m'"}},
+			{"id": "28Ub0", "name": "Ub 2-flip adj adj", "alg": "M' U' M' U2 M U' M2' U' M'", "alt": {"big": "m' U' m' U2 m U' m2' U' m'"}},
+			{"id": "28Ub1", "name": "Ub 3-cycle adj opp", "alg": "r U R' U' r' R U R U' R'"},
+			{"id": "28Ub2", "name": "Ub 3-cycle adj adj", "alg": "M' U M U2 M' U M", "alt": {"big": "m' U m U2 m' U m"}},
+			{"id": "28Ub3", "name": "Ub 2-flip adj opp", "alg": "M' U M U2 M' U M U' M2' U M U2 M' U M2'", "alt": {"big": "m' U m U2 m' U m U' m2' U m U2 m' U m2'"}},
+			{"id": "57-0", "name": "Pure OLL 57", "alg": "M' U2 M U R' F' R S R' F R S'", "alt": {"OH": "M' U' M' U' M' d2 M' U' M' U' M'", "big": "m' U m' U m' U2 m U m U m"}},
+			{"id": "57H0", "name": "H 2-flip opp", "alg": "R2' F R U R U' R2' F' R U R U R' U2 R", "alt": {"OH": "R2 F R U R U' R2 F' R U R U R' U2' R"}},
+			{"id": "57Ua0", "name": "Ua 2-flip opp opp", "alg": "L' U2 L U L' U L F' U' L F' L' F L' U L F"},
+			{"id": "57Ua1", "name": "Ua 3-cycle opp", "alg": "R U R' U' M' U R U' r'", "alt": "R U R' U' r R' U R U' r'"},
+			{"id": "57Ub0", "name": "Ub 2-flip opp opp", "alg": "R U2 R' U' R U' R' F U R' F R F' R U' R' F'"},
+			{"id": "57Ub1", "name": "Ub 3-cycle opp", "alg": "L' U' L U M' U' L' U l", "alt": {"OH": "R' U' R U r' R U' R' U r", "big": "L' U' L U r R' U' L' U l"}},
+			{"id": "57Z0", "name": "Z 2-flip opp right", "alg": "M' U' M U M' U' M U' M' U2 M", "alt": {"OH": "m' U' m U m' U' m U' m' U2 m"}},
+			{"id": "57Z1", "name": "Z 2-flip opp left", "alg": "M' U M U' M' U M U M' U2 M", "alt": {"big": "m' U m U' m' U m U m' U2 m"}}
 		],
 		"others": [
 			{"id": "OLL1", "name": "OLL 1", "alg": "R U2' R2' F R F' U2' R' F R F'"},
@@ -43,7 +69,6 @@
 			{"id": "OLL17", "name": "OLL 17", "alg": "F R' F' R U S' R U' R' S", "alt": {"OH": "F R' F' R U2 R U' y R U' R' F'", "big": "R U R' U R' F R F' U2' R' F R F'"}},
 			{"id": "OLL18", "name": "OLL 18", "alg": "r U R' U R U2' r2' U' R U' R' U2' r"},
 			{"id": "OLL19", "name": "OLL 19", "alg": "r' U2' R U R' U r2 U2' R' U' R U' r'"},
-			{"id": "OLL20", "name": "OLL 20", "alg": "r U R' U' M2' U R U' R' U' M'", "alt": {"OH": "r U R' U' r2 R2 U R U' R' U' r R'", "big": "r U R' U' r2 R2' U R U' R' U' r R'"}},
 			{"id": "OLL21", "name": "OLL 21", "alg": "R U2 R' U' R U R' U' R U' R'"},
 			{"id": "OLL22", "name": "OLL 22", "alg": "R U2' R2' U' R2 U' R2' U2' R"},
 			{"id": "OLL23", "name": "OLL 23", "alg": "R2' D' R U2 R' D R U2 R", "alt": {"OH": "R2 D' R U2' R' D R U2' R"}},
@@ -51,7 +76,6 @@
 			{"id": "OLL25", "name": "OLL 25", "alg": "R U2 R D R' U2 R D' R2'", "alt": {"OH": "R U2' R D R' U2' R D' R2"}},
 			{"id": "OLL26", "name": "OLL 26", "alg": "R U2' R' U' R U' R'"},
 			{"id": "OLL27", "name": "OLL 27", "alg": "R U R' U R U2' R'"},
-			{"id": "OLL28", "name": "OLL 28", "alg": "r' U' R U M' U' R' U R", "alt": "r U R' U' r' R U R U' R'"},
 			{"id": "OLL29", "name": "OLL 29", "alg": "r2' D' r U r' D r2 U' r' U' r", "alt": "R U R' U' R U' R' F' U' F R U R'"},
 			{"id": "OLL30", "name": "OLL 30", "alg": "r2 D r' U' r D' r2 U r U r'", "alt": "F U R U2' R' U' R U2' R' U' F'"},
 			{"id": "OLL31", "name": "OLL 31", "alg": "R' U' F U R U' R' F' R"},
@@ -79,9 +103,7 @@
 			{"id": "OLL53", "name": "OLL 53", "alg": "r' U2' R U R' U' R U R' U r"},
 			{"id": "OLL54", "name": "OLL 54", "alg": "r U2' R' U' R U R' U' R U' r'"},
 			{"id": "OLL55", "name": "OLL 55", "alg": "R U2' R2' U' R U' R' U2' F R F'"},
-			{"id": "OLL56", "name": "OLL 56", "alg": "r U r' U R U' R' U R U' R' r U' r'"},
-			{"id": "OLL57", "name": "OLL 57", "alg": "R U R' U' M' U R U' r'", "alt": "R U R' U' r R' U R U' r'"}
-
+			{"id": "OLL56", "name": "OLL 56", "alg": "r U r' U R U' R' U R U' R' r U' r'"}
 		]
 	},
 	"others": [
