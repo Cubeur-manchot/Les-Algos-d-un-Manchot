@@ -107,6 +107,32 @@
 		]
 	},
 	"others": [
-
+		{"id": "WV000", "name": "WV 000", "alg": "L' U2 R U R' U2 L", "alt": {"OH": "z U' R2 z' R U R' U2 r x'"}},
+		{"id": "WV00+", "name": "WV 00+", "alg": "R U R' U' R U' R'"},
+		{"id": "WV00-", "name": "WV 00-", "alg": "U' R U' R' U2 R U' R' U2 R U R'"},
+		{"id": "WV0+0", "name": "WV 0+0", "alg": "R U' R' U R' U' R U' R' U2' R"},
+		{"id": "WV0++", "name": "WV 0++", "alg": "U R' U' R2 U' R2' U2' R"},
+		{"id": "WV0+-", "name": "WV 0+-", "alg": "R U R2' U' R2 U' R2' U2' R", "alt": {"OH": "R U R2 U' R2 U' R2 U2' R"}},
+		{"id": "WV0-0", "name": "WV 0-0", "alg": "R2 D R' U' R D' R2'", "alt": {"OH": "R2 D R' U' R D' R2"}},
+		{"id": "WV0-+", "name": "WV 0-+", "alg": "U F' R U2' R' U2 R' F R"},
+		{"id": "WV0--", "name": "WV 0--", "alg": "U R U' R' U R U2' R'"},
+		{"id": "WV+00", "name": "WV +00", "alg": "U' R' F R U R U' R' F'"},
+		{"id": "WV+0+", "name": "WV +0+", "alg": "U' L' U R U' R' L"},
+		{"id": "WV+0-", "name": "WV +0-", "alg": "U R2 D R' U2 R D' R2'", "alt": {"OH": "U z U' R D R' U R2 z' R'", "big": "U L' U R U' L U2 R'"}},
+		{"id": "WV++0", "name": "WV ++0", "alg": "U L' U R U' R' L U' R U' R'"},
+		{"id": "WV+++", "name": "WV +++", "alg": "R U R' U' R U R' U' R U' R'"},
+		{"id": "WV++-", "name": "WV ++-", "alg": "U R U2' R2' U2' R U R' U R", "alt": {"OH": "U R U2' R2 U2' R U R' U R"}},
+		{"id": "WV+-0", "name": "WV +-0", "alg": "U R U2' R'"},
+		{"id": "WV+-+", "name": "WV +-+", "alg": "U' R2 U R' U R' U' R U R U2' R2'", "alt": {"OH": "U' R2 U R' U R' U' R U R U2' R2"}},
+		{"id": "WV+--", "name": "WV +--", "alg": "R U' R2' U2' R U R' U R"},
+		{"id": "WV-00", "name": "WV -00", "alg": "R U' R'"},
+		{"id": "WV-0+", "name": "WV -0+", "alg": "U R U2' R2' U' R U' R' U2' R"},
+		{"id": "WV-0-", "name": "WV -0-", "alg": "U' R' F2 R F2 U L' U L"},
+		{"id": "WV-+0", "name": "WV -+0", "alg": "U' R' F' R U2 R U2' R' F", "alt": {"OH": "U' R' F' R U2' R U2' R' F"}},
+		{"id": "WV-++", "name": "WV -++", "alg": "R U' R2' U' R U' R' U2' R"},
+		{"id": "WV-+-", "name": "WV -+-", "alg": "U R U' R' U R U' R' U R U2' R'"},
+		{"id": "WV--0", "name": "WV --0", "alg": "U L' R U R' U' L R U2' R'"},
+		{"id": "WV--+", "name": "WV --+", "alg": "U R U2' R' U R' U' R U' R' U2' R"},
+		{"id": "WV---", "name": "WV ---", "alg": "R U' R' U' R U R' U R U2' R'"}
 	]
 }

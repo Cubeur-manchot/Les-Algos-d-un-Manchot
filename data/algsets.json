@@ -40,5 +40,19 @@
 			{"name": "Other U", "caseList": ["28Ua3", "28Ub0", "57Ua0", "57Ub0", "28Ua0", "28Ub3", "20Ua0", "20Ub0"]}
 		],
 		"exampleCase": "28Z0"
+	},
+	{
+		"name": "WV",
+		"detailedName": "Winter Variation",
+		"events": ["3x3", "OH", "big"],
+		"mask": "WV",
+		"view": "plan",
+		"subsets": [
+			{"name": "Sexy", "caseList": ["WV-00", "WV+-0", "WV00+", "WV0--", "WV+++", "WV-+-"]},
+			{"name": "Sune", "caseList": ["WV-++", "WV+--", "WV---", "WV0+0", "WV-0+", "WV++-", "WV--+"]},
+			{"name": "Smart insertions", "caseList": ["WV000", "WV+0+", "WV++0", "WV--0", "WV0-0", "WV+0-", "WV0++", "WV0+-", "WV+00"]},
+			{"name": "Others", "caseList": ["WV00-", "WV-0-", "WV-+0", "WV0-+", "WV+-+"]}
+		],
+		"exampleCase": "WV0--"
 	}
 ]
