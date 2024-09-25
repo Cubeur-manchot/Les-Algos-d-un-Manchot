@@ -25,7 +25,7 @@ class AlgService {
 		}
 	};
 	fetchJson = jsonName =>
-		fetch(`/data/${jsonName}.json`)
+		fetch(`./data/${jsonName}.json`)
 			.then(response => response.json());
 	findAlgset = (eventName, setName) =>
 		this.algsets.find(
