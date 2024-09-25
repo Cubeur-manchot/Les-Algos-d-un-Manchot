@@ -1,0 +1,58 @@
+[
+	{
+		"name": "PLL",
+		"detailedName": "Permutation of the Last Layer",
+		"events": ["3x3", "OH", "big"],
+		"mask": null,
+		"view": "plan",
+		"subsets": [
+			{"name": "EPLL", "caseList": ["0H0", "0Z0", "0Ua0", "0Ub0"]},
+			{"name": "Adj CP", "caseList": ["0Aa0", "0Ab0", "0F0", "0Ga0", "0Gb0", "0Gc0", "0Gd0", "0Ja0", "0Jb0", "0Ra0", "0Rb0", "0T0"]},
+			{"name": "Diag CP", "caseList": ["0E0", "0Na0", "0Nb0", "0V0", "0Y0"]}
+		],
+		"exampleCase": "0T0"
+	},
+	{
+		"name": "OLL",
+		"detailedName": "Orientation of the Last Layer",
+		"events": ["3x3", "OH", "big"],
+		"mask": "OLL",
+		"view": "plan",
+		"subsets": [
+			{"name": "Corners oriented", "caseList": ["OLL28", "57Ua1", "20H0"]},
+			{"name": "2 corners", "caseList": ["OLL23", "OLL24", "OLL25", "OLL43", "OLL44", "OLL45", "OLL46", "OLL33", "OLL37", "OLL35", "OLL31", "OLL32", "OLL39", "OLL40", "OLL36", "OLL38", "OLL34", "OLL29", "OLL30", "OLL41", "OLL42", "OLL17", "OLL18", "OLL19"]},
+			{"name": "3 corners", "caseList": ["OLL26", "OLL27", "OLL5", "OLL6", "OLL7", "OLL8", "OLL9", "OLL10", "OLL11", "OLL12", "OLL13", "OLL14", "OLL15", "OLL16", "OLL3", "OLL4"]},
+			{"name": "4 corners", "caseList": ["OLL21", "OLL22", "OLL47", "OLL48", "OLL51", "OLL49", "OLL50", "OLL53", "OLL54", "OLL55", "OLL52", "OLL56", "OLL1", "OLL2"]}
+		],
+		"exampleCase": "OLL40"
+	},
+	{
+		"name": "ELL",
+		"detailedName": "Edges of the Last Layer",
+		"events": ["3x3", "OH", "big"],
+		"mask": null,
+		"view": "plan",
+		"subsets": [
+			{"name": "Pures", "caseList": ["28-0", "57-0", "20-0"]},
+			{"name": "H", "caseList": ["0H0", "28H0", "57H0", "20H0"]},
+			{"name": "Z", "caseList": ["0Z0", "28Z0", "28Z1", "57Z0", "57Z1", "20Z0"]},
+			{"name": "3-cycles", "caseList": ["0Ua0", "0Ub0", "57Ua1", "57Ub1", "28Ua2", "28Ub1", "28Ua1", "28Ub2"]},
+			{"name": "Other U", "caseList": ["28Ua3", "28Ub0", "57Ua0", "57Ub0", "28Ua0", "28Ub3", "20Ua0", "20Ub0"]}
+		],
+		"exampleCase": "28Z0"
+	},
+	{
+		"name": "WV",
+		"detailedName": "Winter Variation",
+		"events": ["3x3", "OH", "big"],
+		"mask": "WV",
+		"view": "plan",
+		"subsets": [
+			{"name": "Sexy", "caseList": ["WV-00", "WV+-0", "WV00+", "WV0--", "WV+++", "WV-+-"]},
+			{"name": "Sune", "caseList": ["WV-++", "WV+--", "WV---", "WV0+0", "WV-0+", "WV++-", "WV--+"]},
+			{"name": "Smart insertions", "caseList": ["WV000", "WV+0+", "WV++0", "WV--0", "WV0-0", "WV+0-", "WV0++", "WV0+-", "WV+00"]},
+			{"name": "Others", "caseList": ["WV00-", "WV-0-", "WV-+0", "WV0-+", "WV+-+"]}
+		],
+		"exampleCase": "WV0--"
+	}
+]

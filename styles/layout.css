@@ -1,0 +1,61 @@
+:root {
+	--flag-width: 32px;
+	--flag-height: calc(var(--flag-width) * 0.6);
+	--input-width: calc(var(--flag-width) * 1.4);
+	--input-height: calc(var(--flag-height) * 1.4);
+	--flag-border-radius: 3px;
+}
+
+/* Header general */
+
+header {
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+span#siteTitle {
+	display: flex;
+	align-items: center;
+}
+
+/* Language toggler */
+
+input[type=checkbox]#isEnglish {
+	html:has(&:checked) *[lang|=fr],
+	html:has(&:not(:checked)) *[lang|=en] {
+		display: none;
+	}
+	width: var(--input-width);
+	height: var(--input-height);
+	appearance: none;
+	cursor: pointer;
+	position: relative;
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		width: var(--flag-width);
+		height: var(--flag-height);
+		border: 1px solid black;
+		border-radius: var(--flag-border-radius);
+		background-size: 100% 100%;
+	}
+	&::before {
+		top: 0;
+		right: 0;
+	}
+	&::after{
+		bottom: 0;
+		left: 0;
+	}
+	html:has(&:checked) &::before,
+	html:has(&:not(:checked)) &::after {
+		background-image: url(/images/flags/flagFR.png);
+	}
+	html:has(&:checked) &::after,
+	html:has(&:not(:checked)) &::before {
+		background-image: url(/images/flags/flagUK.png);
+	}
+}

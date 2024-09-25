@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8"/>
     <title>404 ?</title>
-    <link href="images/avatar.png" type="img/ico" rel="icon"/>
+	<meta http-equiv="refresh" content="0;url=.">
 </head>
-<body>
-Nope !
+<body onload="document.querySelector('a#redirectLink').click()">
+	<main>
+		<a id="redirectLink" href=".">Redirection failed, please click here.</a>
+	</main>
 </body>
 </html>

@@ -1,0 +1,81 @@
+:root {
+	--table-border-radius: 10px;
+	--table-header-height: 60px;
+	--table-row-height: 50px;
+	--table-padding-inline: 50px;
+	--table-dark-color: #363640;
+	--table-light-color: #f1f1f1;
+	--table-font-family: Lato;
+}
+
+div.table-outer-container {
+	width: clamp(500px, 80vw, 1500px);
+	margin-inline: auto;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+div.table-inner-container {
+	overflow-x: auto;
+}
+
+table {
+	width: 100%;
+	border-radius: var(--table-border-radius);
+	overflow: hidden;
+	border-collapse: collapse;
+	font-family: var(--table-font-family);
+}
+
+thead {
+	background-color: var(--table-dark-color);
+	color: var(--table-light-color);
+	& tr {
+		height: var(--table-header-height);
+		& th {
+			font-weight: normal;
+		}
+	}
+}
+
+tbody {
+	background-color: var(--table-light-color);
+	color: var(--table-dark-color);
+	& tr {
+		height: var(--table-row-height);
+		&:nth-child(even) {
+			background-color: hsl(from var(--table-light-color) h s calc(l + 1));
+		}
+		&:nth-child(odd) {
+			background-color: hsl(from var(--table-light-color) h s calc(l - 1));
+		}
+		&:hover {
+			background-color: hsl(from var(--table-light-color) h s calc(l - 3));
+		}
+	}
+}
+
+th, td {
+	&.numeric{
+		text-align: right;
+	}
+	&:not(.numeric) {
+		text-align: left;
+	}
+}
+
+/* Non-grid */
+
+table:not(.table-grid) :is(th, td) {
+	&:nth-child(1 of :not([lang|=en])),
+	&:nth-child(1 of :not([lang|=fr])) { /* first shown element */
+		padding-left: var(--table-padding-inline);	
+	}
+	&:not(:nth-child(1 of :not([lang|=en]))):not(:nth-child(1 of :not([lang|=fr]))) { /* not first shown element */
+		padding-left: calc(var(--table-padding-inline) / 2);
+	}
+	&:nth-last-child(1 of :not([lang|=en])),
+	&:nth-last-child(1 of :not([lang|=fr])) { /* last shown element */
+		padding-right: var(--table-padding-inline);
+	}
+}

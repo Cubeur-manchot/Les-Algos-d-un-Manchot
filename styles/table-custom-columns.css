@@ -1,0 +1,209 @@
+/* Settings button */
+
+:root {
+	--settings-button-height: calc(var(--table-header-height) - 2 * var(--table-border-radius));
+	--settings-button-offset: var(--table-border-radius);
+	--settings-button-background-ratio: 60%;
+}
+
+div.table-outer-container {
+	position: relative;
+}
+
+input.table-settings-button {
+	width: var(--table-header-height);
+	height: var(--settings-button-height);
+	position: absolute;
+	right: 0;
+	top: var(--settings-button-offset);
+	appearance: none;
+	outline: none;
+	z-index: 11; /* over everything, including the dialog backdrop */
+	backdrop-filter: blur(2px);
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		cursor: pointer;
+		background: url(../images/icons/settings.svg) center / var(--settings-button-background-ratio) var(--settings-button-background-ratio) no-repeat;
+	}
+}
+
+/* Settings dialog */
+
+dialog.table-settings {
+	z-index: 11; /* over everything, including the dialog backdrop */
+	height: fit-content;
+	min-height: 180px;
+	max-height: calc(100vh - 260px);
+	margin-left: auto;
+	margin-right: 15px;
+	top: 50px;
+	overflow-y: auto;
+	border: none;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	padding: 15px 20px;
+	display: grid;
+	grid-template-columns: 1em 1fr;
+	row-gap: 10px;
+	align-items: center;
+	& input.column-display-toggler {
+		font-size: 1em;
+		height: calc(1em + 10px);
+		width: 1em;
+		cursor: pointer;
+		padding: 5px;
+		border-radius: 3px;
+	}
+	& label.column-display-toggler-label {
+		cursor: pointer;
+		padding: 5px 10px 5px 10px;
+		padding-left: 10px;
+		user-select: none;
+		translate: 0px 1px;
+	}
+}
+
+/* Settings dialog backdrop */
+
+label.table-settings-backdrop {
+	display: block;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.25);
+	inset: 0;
+	z-index: 10; /* over everything, excluding the settings button and the dialog */
+}
+
+/* Settings dialog and backdrop visibility */
+
+div.table-outer-container:has(input.table-settings-button:not(:checked)) {
+	dialog.table-settings,
+	label.table-settings-backdrop {
+		display: none;
+	}
+}
+
+/* Column visibility */
+
+div.table-outer-container {
+	&:has(input.column-display-toggler:nth-of-type(1):not(:checked)) tr :is(:nth-child(1 of :not([lang|=en])), :nth-child(1 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(2):not(:checked)) tr :is(:nth-child(2 of :not([lang|=en])), :nth-child(2 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(3):not(:checked)) tr :is(:nth-child(3 of :not([lang|=en])), :nth-child(3 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(4):not(:checked)) tr :is(:nth-child(4 of :not([lang|=en])), :nth-child(4 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(5):not(:checked)) tr :is(:nth-child(5 of :not([lang|=en])), :nth-child(5 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(6):not(:checked)) tr :is(:nth-child(6 of :not([lang|=en])), :nth-child(6 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(7):not(:checked)) tr :is(:nth-child(7 of :not([lang|=en])), :nth-child(7 of :not([lang|=fr]))),
+	&:has(input.column-display-toggler:nth-of-type(8):not(:checked)) tr :is(:nth-child(8 of :not([lang|=en])), :nth-child(8 of :not([lang|=fr]))) {
+		display: none;
+	}
+}
+
+/* Non-grid (inline padding) */
+
+div.table-outer-container:has(table.table-custom-columns:not(.table-grid)) {
+	&:has(input.column-display-toggler:nth-of-type(1):not(:checked)) {
+		tr :is(:nth-child(2 of :not([lang|=en])), :nth-child(2 of :not([lang|=fr]))) {
+			padding-left: var(--table-padding-inline);
+		}
+		&:has(input.column-display-toggler:nth-of-type(2):not(:checked)) {
+			tr :is(:nth-child(3 of :not([lang|=en])), :nth-child(3 of :not([lang|=fr]))) {
+				padding-left: var(--table-padding-inline);
+			}
+			&:has(input.column-display-toggler:nth-of-type(3):not(:checked)) {
+				tr :is(:nth-child(4 of :not([lang|=en])), :nth-child(4 of :not([lang|=fr]))) {
+					padding-left: var(--table-padding-inline);
+				}
+				&:has(input.column-display-toggler:nth-of-type(4):not(:checked)) {
+					tr :is(:nth-child(5 of :not([lang|=en])), :nth-child(5 of :not([lang|=fr]))) {
+						padding-left: var(--table-padding-inline);
+					}
+					&:has(input.column-display-toggler:nth-of-type(5):not(:checked)) {
+						tr :is(:nth-child(6 of :not([lang|=en])), :nth-child(6 of :not([lang|=fr]))) {
+							padding-left: var(--table-padding-inline);
+						}
+						&:has(input.column-display-toggler:nth-of-type(6):not(:checked)) {
+							tr :is(:nth-child(7 of :not([lang|=en])), :nth-child(7 of :not([lang|=fr]))) {
+								padding-left: var(--table-padding-inline);
+							}
+							&:has(input.column-display-toggler:nth-of-type(7):not(:checked)) {
+								tr :is(:nth-child(8 of :not([lang|=en])), :nth-child(8 of :not([lang|=fr]))) {
+									padding-left: var(--table-padding-inline);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+div.table-outer-container:has(table.table-custom-columns:not(.table-grid)) {
+	&:has(input.column-display-toggler:nth-last-of-type(1):not(:checked)) {
+		tr :is(:nth-last-child(2 of :not([lang|=en])), :nth-last-child(2 of :not([lang|=fr]))) {
+			padding-left: var(--table-padding-inline);
+		}
+		&:has(input.column-display-toggler:nth-last-of-type(2):not(:checked)) {
+			tr :is(:nth-last-child(3 of :not([lang|=en])), :nth-last-child(3 of :not([lang|=fr]))) {
+				padding-left: var(--table-padding-inline);
+			}
+			&:has(input.column-display-toggler:nth-last-of-type(3):not(:checked)) {
+				tr :is(:nth-last-child(4 of :not([lang|=en])), :nth-last-child(4 of :not([lang|=fr]))) {
+					padding-left: var(--table-padding-inline);
+				}
+				&:has(input.column-display-toggler:nth-last-of-type(4):not(:checked)) {
+					tr :is(:nth-last-child(5 of :not([lang|=en])), :nth-last-child(5 of :not([lang|=fr]))) {
+						padding-left: var(--table-padding-inline);
+					}
+					&:has(input.column-display-toggler:nth-last-of-type(5):not(:checked)) {
+						tr :is(:nth-last-child(6 of :not([lang|=en])), :nth-last-child(6 of :not([lang|=fr]))) {
+							padding-left: var(--table-padding-inline);
+						}
+						&:has(input.column-display-toggler:nth-last-of-type(6):not(:checked)) {
+							tr :is(:nth-last-child(7 of :not([lang|=en])), :nth-last-child(7 of :not([lang|=fr]))) {
+								padding-left: var(--table-padding-inline);
+							}
+							&:has(input.column-display-toggler:nth-last-of-type(7):not(:checked)) {
+								tr :is(:nth-last-child(8 of :not([lang|=en])), :nth-last-child(8 of :not([lang|=fr]))) {
+									padding-left: var(--table-padding-inline);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Grid */
+
+div.table-outer-container {
+	&:has(input.column-display-toggler:nth-of-type(1):checked) {--column-visibility-1: 1;}
+	&:has(input.column-display-toggler:nth-of-type(2):checked) {--column-visibility-2: 1;}
+	&:has(input.column-display-toggler:nth-of-type(3):checked) {--column-visibility-3: 1;}
+	&:has(input.column-display-toggler:nth-of-type(4):checked) {--column-visibility-4: 1;}
+	&:has(input.column-display-toggler:nth-of-type(5):checked) {--column-visibility-5: 1;}
+	&:has(input.column-display-toggler:nth-of-type(6):checked) {--column-visibility-6: 1;}
+	&:has(input.column-display-toggler:nth-of-type(7):checked) {--column-visibility-7: 1;}
+	&:has(input.column-display-toggler:nth-of-type(8):checked) {--column-visibility-8: 1;}
+}
+
+/* Grid (instances) */
+
+table#collection.table-grid tr {
+	grid-template-columns: repeat(
+		calc(
+			var(--column-visibility-1, 0)
+			+ var(--column-visibility-2, 0)
+			+ var(--column-visibility-3, 0)
+			+ var(--column-visibility-4, 0)
+			+ var(--column-visibility-5, 0)
+			+ var(--column-visibility-6, 0)
+			+ var(--column-visibility-7, 0)
+			+ var(--column-visibility-8, 0)
+		),
+		minmax(150px, 1fr)
+	);
+}
