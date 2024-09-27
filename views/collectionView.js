@@ -33,9 +33,8 @@ class CollectionView extends View {
 		super();
 	};
 	getContent = async () => {
-		let collection = await fetch("../data/collection.json") // todo add the end (ZiiCube, CubeZZ, PiCubeShop, Axel, gifts, prices)
-			.then(response => response.json())
-			.then(collection => collection.filter(collectionItem => collectionItem.puzzle)); // keep puzzles only
+		let collection = await this.dataService.getJson("collection");
+		// todo add the end (ZiiCube, CubeZZ, PiCubeShop, Axel, gifts, prices)
 		return [
 			this.createH1Tag({textContent: "Collection"}),
 			this.createDivTag({className: "table-outer-container"},
