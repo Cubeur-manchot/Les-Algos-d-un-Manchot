@@ -17,7 +17,7 @@ class RecordsView extends View {
 		super();
 	};
 	getContent = async () => {
-		let records = await (await fetch("../data/records.json")).json();
+		let records = await this.dataService.getJson("records");
 		return [
 			this.createH1Tag({textContent: "Records"}),
 			this.createDivTag({className: "table-outer-container"},
