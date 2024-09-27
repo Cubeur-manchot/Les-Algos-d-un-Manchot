@@ -1,0 +1,68 @@
+[
+	{
+		"platform": "Discord",
+		"pseudo": "Cubeur-manchot (@cubeurmanchot)",
+		"link": {
+			"href": "https://discord.com/channels/329175643877015553",
+			"text": {
+				"en": "Cubeurs Francophones (Discord server)",
+				"fr": "Cubeurs Francophones (serveur Discord)"
+			}
+		}
+	},
+	{
+		"platform": "Francocube",
+		"pseudo": "Cubeur-manchot",
+		"link": {
+			"href": "https://forum.francocube.com/ucp.php?i=pm&mode=compose&u=4736",
+			"text": {
+				"en": "DM on Francocube forum",
+				"fr": "MP sur le forum Francocube"
+			}
+		}
+	},
+	{
+		"platform": "GitHub",
+		"pseudo": "Cubeur-manchot",
+		"link": {
+			"href": "https://github.com/Cubeur-manchot",
+			"text": {
+				"en": "GitHub profile",
+				"fr": "Profil GitHub"
+			}
+		}
+	},
+	{
+		"platform": "Gmail",
+		"pseudo": "cubeurmanchot@gmail.com",
+		"link": {
+			"href": "mailto:cubeurmanchot@gmail.com",
+			"text": {
+				"en": "Email to cubeurmanchot@gmail.com",
+				"fr": "Email à cubeurmanchot@gmail.com"
+			}
+		}
+	},
+	{
+		"platform": "Instagram",
+		"pseudo": "Matthieu Aubert (@cubeur_manchot)",
+		"link": {
+			"href": "https://www.instagram.com/cubeur_manchot/",
+			"text": {
+				"en": "Instagram profile",
+				"fr": "Profil Instagram"
+			}
+		}
+	},
+	{
+		"platform": "YouTube",
+		"pseudo": "Matthieu Aubert (@MatthieuAubert)",
+		"link": {
+			"href": "https://www.youtube.com/@MatthieuAubert",
+			"text": {
+				"en": "YouTube channel",
+				"fr": "Chaîne YouTube"
+			}
+		}
+	}
+]
