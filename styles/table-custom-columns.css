@@ -25,7 +25,7 @@ input.table-settings-button {
 		position: absolute;
 		inset: 0;
 		cursor: pointer;
-		background: url(../images/icons/settings.svg) center / var(--settings-button-background-ratio) var(--settings-button-background-ratio) no-repeat;
+		background: url(./images/icons/settings.svg) center / var(--settings-button-background-ratio) var(--settings-button-background-ratio) no-repeat;
 	}
 }
 
