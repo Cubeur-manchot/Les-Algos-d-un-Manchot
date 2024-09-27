@@ -3,6 +3,7 @@
 class View {
 	constructor() {
 		this.mainTag = document.querySelector("main");
+		this.dataService = window.dataService;
 	};
 	getContent = () => {
 		throw "Exception : getting content of abstract view.";
