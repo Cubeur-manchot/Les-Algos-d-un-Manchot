@@ -28,7 +28,7 @@ main {
 
 /* Titles */
 
-h1, h2, h3 {
+h1, h2, h3, header {
 	color: var(--titles-color);
 	font-family: var(--titles-font-family);
 }
@@ -50,7 +50,7 @@ h2 {
 
 hgroup#main-title span.subtitle {
 	display: block;
-	opacity: 0.6;
+	color: rgb(from var(--titles-color) r g b / 0.6);
 	font-size: 28px;
 	font-style: italic;
 }

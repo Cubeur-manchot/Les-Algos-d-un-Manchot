@@ -30,19 +30,24 @@ const handleNavigationClick = event => {
 	}
 };
 
-const setupNavigationLinks = () => new MutationObserver(
-	mutationRecords =>
-		mutationRecords
-		.filter(mutationRecord => mutationRecord.type === "childList")
-		.forEach(childListMutationRecord =>
-			Array.from(childListMutationRecord.addedNodes)
-			.filter(addedNode => addedNode.localName === "nav")
-			.forEach(navAddedNode =>
-				navAddedNode.addEventListener("click", handleNavigationClick)
+const setupNavigationLinks = () => {
+	// simple event listener for immutable header
+	document.querySelector("header a#siteTitle").addEventListener("click", handleNavigationClick);
+	// mutation observer for mutable main
+	new MutationObserver(
+		mutationRecords =>
+			mutationRecords
+			.filter(mutationRecord => mutationRecord.type === "childList")
+			.forEach(childListMutationRecord =>
+				Array.from(childListMutationRecord.addedNodes)
+				.filter(addedNode => addedNode.localName === "nav")
+				.forEach(navAddedNode =>
+					navAddedNode.addEventListener("click", handleNavigationClick)
+				)
 			)
 		)
-	)
-	.observe(document.querySelector("main"), {childList: true});
+		.observe(document.querySelector("main"), {childList: true});
+}
 
 const selectLanguageFromBrowserSettings = () => document.querySelector("input[type=checkbox]#isEnglish").checked = !navigator.language.includes("fr");
 

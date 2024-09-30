@@ -1,23 +1,39 @@
 :root {
-	--flag-width: 32px;
+	--flag-width: 40px;
 	--flag-height: calc(var(--flag-width) * 0.6);
+	--flag-border-radius: calc(var(--flag-width) * 0.1);
 	--input-width: calc(var(--flag-width) * 1.4);
 	--input-height: calc(var(--flag-height) * 1.4);
-	--flag-border-radius: 3px;
 }
 
 /* Header general */
 
 header {
 	display: flex;
-	padding: 10px;
+	padding-block: 20px;
+	padding-inline: 30px;
 	justify-content: space-between;
-	align-items: stretch;
-}
-
-span#siteTitle {
-	display: flex;
 	align-items: center;
+	position: sticky;
+	top: 0;
+	backdrop-filter: blur(4px);
+	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.7) 80%, rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0) 100%);
+	& a#siteTitle {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		text-decoration: none;
+		& img {
+			border-radius: 100%;
+			width: 40px;
+		}
+		& span {
+			color: var(--titles-color);
+			text-shadow: 1px 1px 5px white;
+			font-size: 20px;
+			font-weight: 500;
+		}
+	}
 }
 
 /* Language toggler */
