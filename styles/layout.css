@@ -17,7 +17,13 @@ header {
 	position: sticky;
 	top: 0;
 	backdrop-filter: blur(4px);
-	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.7) 80%, rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0) 100%);
+	mask-image: linear-gradient(to bottom,
+		rgba(0, 0, 0, 1) 60%,
+		rgba(0, 0, 0, 0.9) 70%,
+		rgba(0, 0, 0, 0.7) 80%,
+		rgba(0, 0, 0, 0.4) 90%,
+		rgba(0, 0, 0, 0) 100%
+	);
 	& a#siteTitle {
 		display: flex;
 		align-items: center;

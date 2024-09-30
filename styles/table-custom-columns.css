@@ -1,9 +1,7 @@
 /* Settings button */
 
 :root {
-	--settings-button-height: calc(var(--table-header-height) - 2 * var(--table-border-radius));
-	--settings-button-offset: var(--table-border-radius);
-	--settings-button-background-ratio: 60%;
+	--settings-button-background-ratio: 40%;
 }
 
 div.table-outer-container {
@@ -11,22 +9,24 @@ div.table-outer-container {
 }
 
 input.table-settings-button {
-	width: var(--table-header-height);
-	height: var(--settings-button-height);
+	height: var(--table-header-height);
+	aspect-ratio: 1;
 	position: absolute;
+	top: 0;
 	right: 0;
-	top: var(--settings-button-offset);
 	appearance: none;
 	outline: none;
 	z-index: 11; /* over everything, including the dialog backdrop */
-	backdrop-filter: blur(2px);
-	&::after {
-		content: "";
-		position: absolute;
-		inset: 0;
-		cursor: pointer;
-		background: url(./images/icons/settings.svg) center / var(--settings-button-background-ratio) var(--settings-button-background-ratio) no-repeat;
-	}
+	backdrop-filter: blur(3px);
+	mask-image: radial-gradient(circle closest-side, 
+		rgba(0, 0, 0, 1) 60%,
+		rgba(0, 0, 0, 0.9) 70%,
+		rgba(0, 0, 0, 0.7) 80%,
+		rgba(0, 0, 0, 0.4) 90%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	cursor: pointer;
+	background: url(./images/icons/settings.svg) center / var(--settings-button-background-ratio) var(--settings-button-background-ratio) no-repeat;
 }
 
 /* Settings dialog */
