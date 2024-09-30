@@ -74,10 +74,10 @@ input[type=checkbox]#isEnglish {
 	}
 	html:has(&:checked) &::before,
 	html:has(&:not(:checked)) &::after {
-		background-image: url(/images/flags/flagFR.png);
+		background-image: url("./images/flags/flagFR.png");
 	}
 	html:has(&:checked) &::after,
 	html:has(&:not(:checked)) &::before {
-		background-image: url(/images/flags/flagUK.png);
+		background-image: url("./images/flags/flagUK.png");
 	}
 }
