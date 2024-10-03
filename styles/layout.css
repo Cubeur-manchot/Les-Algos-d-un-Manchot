@@ -11,7 +11,7 @@
 header {
 	display: flex;
 	padding-block: 20px;
-	padding-inline: 30px;
+	padding-inline: var(--general-padding-inline);
 	justify-content: space-between;
 	align-items: center;
 	position: sticky;
