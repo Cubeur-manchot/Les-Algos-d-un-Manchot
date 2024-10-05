@@ -14,6 +14,15 @@
 	grid-template-columns: repeat(auto-fill, var(--card-width, 200px));
 	grid-auto-rows: var(--card-height, 275px);
 	gap: var(--card-list-gap);
+	padding-left: /* manually center the content when only 1 element fits per row; keep alignment to the left when 2+ elements can fit */
+		max(0px, /* ensure the padding is positive */
+			0.5 * /* half the dimension for centering */
+			(
+				100% - var(--card-width) /* space left after 1 element fits */
+				- round(down, 100% - var(--card-width), var(--card-width) + var(--card-list-gap)) /* space taken by elements fitting after the first one */
+				* 2 /* double the dimension to force the padding to be negative */
+			)
+		);
 }
 
 .card {
