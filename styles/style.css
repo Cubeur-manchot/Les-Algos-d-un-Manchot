@@ -9,18 +9,10 @@
 	--general-padding-inline: clamp(25px, 5vw, 50px);
 }
 
-*, ::before, ::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	text-wrap: pretty;
-}
-
 body {
 	background-color: var(--general-background-color);
 	color: var(--general-font-color);
 	font-family: var(--general-font-family);
-	min-height: 100vh;
 }
 
 main {

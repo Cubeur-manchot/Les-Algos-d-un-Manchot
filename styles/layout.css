@@ -28,7 +28,6 @@ header {
 		display: flex;
 		align-items: center;
 		gap: 10px;
-		text-decoration: none;
 		& img {
 			border-radius: 100%;
 			width: 40px;

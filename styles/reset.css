@@ -1,0 +1,33 @@
+@layer reset {
+	*, ::before, ::after {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overscroll-behavior: contain;
+	}
+
+	body {
+		min-height: 100vh;
+	}
+
+	h1, h2, h3, h4, hgroup * {
+		text-wrap: balance;
+	}
+
+	p {
+		text-wrap: pretty;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
+
+	ul {
+		list-style: none;
+	}
+}

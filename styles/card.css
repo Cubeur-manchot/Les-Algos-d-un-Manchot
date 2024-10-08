@@ -62,10 +62,6 @@ nav.navigationCardList {
 	--card-height: var(--navigation-card-height);
 }
 
-a.navigationCard {
-	text-decoration: none;
-}
-
 img.navigationCard__image[src$="avatar.png"] {
 	border-radius: 100%;
 }
@@ -80,7 +76,6 @@ img.navigationCard__image[src$="avatar.png"] {
 ul.algCardList {
 	--card-width: var(--alg-card-width);
 	--card-height: var(--alg-card-height);
-	list-style: none;
 }
 
 h3.algCard__title {
