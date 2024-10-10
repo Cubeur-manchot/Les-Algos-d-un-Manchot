@@ -30,4 +30,8 @@
 	ul {
 		list-style: none;
 	}
+
+	input, button, select, option {
+		font-size: inherit;
+	}
 }

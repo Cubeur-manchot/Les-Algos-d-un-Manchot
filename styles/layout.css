@@ -1,11 +1,3 @@
-:root {
-	--flag-width: 40px;
-	--flag-height: calc(var(--flag-width) * 0.6);
-	--flag-border-radius: calc(var(--flag-width) * 0.1);
-	--input-width: calc(var(--flag-width) * 1.4);
-	--input-height: calc(var(--flag-height) * 1.4);
-}
-
 /* Header general */
 
 header {
@@ -16,6 +8,7 @@ header {
 	align-items: center;
 	position: sticky;
 	top: 0;
+	font-size: clamp(16px, 4vw, 20px);
 	backdrop-filter: blur(4px);
 	mask-image: linear-gradient(to bottom,
 		rgba(0, 0, 0, 1) 60%,
@@ -28,7 +21,6 @@ header {
 		display: flex;
 		align-items: center;
 		gap: 10px;
-		font-size: clamp(16px, 4vw, 20px);
 		& img {
 			border-radius: 100%;
 			width: 2em;
@@ -48,8 +40,10 @@ input[type=checkbox]#isEnglish {
 	html:has(&:not(:checked)) *[lang|=en] {
 		display: none;
 	}
-	width: var(--input-width);
-	height: var(--input-height);
+	--flag-width: 2em;
+	--flag-height: calc(var(--flag-width) * 0.6);
+	width: calc(var(--flag-width) * 1.4);
+	height: calc(var(--flag-height) * 1.4);
 	appearance: none;
 	cursor: pointer;
 	position: relative;
@@ -60,7 +54,7 @@ input[type=checkbox]#isEnglish {
 		width: var(--flag-width);
 		height: var(--flag-height);
 		border: 1px solid black;
-		border-radius: var(--flag-border-radius);
+		border-radius: calc(var(--flag-width) * 0.1);
 		background-size: 100% 100%;
 	}
 	&::before {
