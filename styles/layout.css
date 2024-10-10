@@ -35,7 +35,7 @@ header {
 		& span {
 			color: var(--titles-color);
 			text-shadow: 1px 1px 5px white;
-			font-size: 20px;
+			font-size: clamp(16px, 4vw, 20px);
 			font-weight: 500;
 		}
 	}
