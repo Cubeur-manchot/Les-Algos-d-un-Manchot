@@ -7,18 +7,20 @@ import { HomeView } from "./views/homeView.js";
 import { RecordsView } from "./views/recordsView.js";
 import { DataService } from "./services/dataService.js";
 
+const urlPrefix = location.pathname.match(/^\/Les-Algos-d-un-Manchot/i)?.[0] ?? "";
+
 const displayView = () => {
 	let views = [HomeView, RecordsView, CollectionView, ContactView, AlgsetView];
-	let [locationShort, ...restOfThePath] = location.pathname.replace(/^.*Manchot/i, "").split(/(?=\/)/);
+	let [locationShort, ...restOfThePath] = location.pathname.replace(urlPrefix, "").split(/(?=\/)/);
 	let view = views.find(view => view.path == locationShort) ?? HomeView;
 	new view(restOfThePath).buildView();
 	if (view === HomeView) {
-		history.replaceState(null, null, location.pathname.replace(/\/(?!.*Manchot).*/, "/home")); // force home URL for home view
+		history.replaceState(null, null, `${urlPrefix}${HomeView.path}`); // force home URL for home view
 	}
 };
 
 const navigateTo = url => {
-	history.pushState(null, null, url);
+	history.pushState(null, null, `${urlPrefix}${url}`);
 	displayView();
 };
 
