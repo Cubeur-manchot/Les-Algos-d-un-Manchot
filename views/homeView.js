@@ -23,6 +23,7 @@ class HomeView extends View {
 			.flat()
 		);
 		return [
+			this.createH1Tag({textContent: "Les algos d'un Manchot"}),
 			...algsetsGroupedByEvent.map(algsetsGroup =>
 				[
 					this.createH2Tag({textContent: DataService.getEventTitleName([algsetsGroup.event])}),
