@@ -7,20 +7,18 @@ import { HomeView } from "./views/homeView.js";
 import { RecordsView } from "./views/recordsView.js";
 import { DataService } from "./services/dataService.js";
 
-const urlPrefix = location.pathname.match(/^\/Les-Algos-d-un-Manchot/i)?.[0] ?? "";
-
 const displayView = () => {
 	let views = [HomeView, RecordsView, CollectionView, ContactView, AlgsetView];
-	let [locationShort, ...restOfThePath] = location.pathname.replace(urlPrefix, "").split(/(?=\/)/);
+	let [locationShort, ...restOfThePath] = location.pathname.replace(window.urlPrefix, "").split(/(?=\/)/);
 	let view = views.find(view => view.path == locationShort) ?? HomeView;
 	new view(restOfThePath).buildView();
 	if (view === HomeView) {
-		history.replaceState(null, null, `${urlPrefix}${HomeView.path}`); // force home URL for home view
+		history.replaceState(null, null, `${window.urlPrefix}${HomeView.path}`); // force home URL for home view
 	}
 };
 
 const navigateTo = url => {
-	history.pushState(null, null, `${urlPrefix}${url}`);
+	history.pushState(null, null, url);
 	displayView();
 };
 
@@ -51,12 +49,15 @@ const setupNavigationLinks = () => {
 		.observe(document.querySelector("main"), {childList: true});
 }
 
+const setupUrlPrefix = () => window.urlPrefix = location.pathname.match(/^\/Les-Algos-d-un-Manchot/i)?.[0] ?? ""; // "/Les-Algos-d-un-Manchot" for deployed version, "" for local version
+
 const selectLanguageFromBrowserSettings = () => document.querySelector("input[type=checkbox]#isEnglish").checked = !navigator.language.includes("fr");
 
 const setupDataService = () => window.dataService = new DataService();
 
 window.addEventListener("popstate", displayView); // back and forth navigation in history
 
+document.addEventListener("DOMContentLoaded", setupUrlPrefix);
 document.addEventListener("DOMContentLoaded", setupNavigationLinks); // permanent event listener for navigation
 document.addEventListener("DOMContentLoaded", setupDataService);
 document.addEventListener("DOMContentLoaded", displayView); // initial loading of the page
