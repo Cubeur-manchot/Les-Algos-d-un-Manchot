@@ -54,7 +54,7 @@ class HomeView extends View {
 		);
 	createAlgNavigationCard = algset => {
 		this.holoCubeService.buildHoloCubeRunner(HoloCubeService.holoCubePuzzleNames[algset.event], algset.mask);
-		return this.createATag({className: "card imageCard navigationCard internalNavigation", href: `${AlgsetView.path}/${algset.event}/${algset.name}`},
+		return this.createATag({className: "card imageCard navigationCard internalNavigation", href: `${window.urlPrefix}${AlgsetView.path}/${algset.event}/${algset.name}`},
 			this.holoCubeService.createHoloCubeImage(
 				this.dataService.findAlg(algset.exampleCase).alg
 			),
