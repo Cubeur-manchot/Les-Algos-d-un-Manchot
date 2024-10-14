@@ -33,11 +33,11 @@ h1, hgroup {
 }
 
 h1 {
-	font-size: 48px;
+	font-size: clamp(2rem, 5vw, 3rem);
 }
 
 h2 {
-	font-size: 36px;
+	font-size: clamp(1.5rem, 3vw, 2rem);
 	margin-top: 0.5em;
 	margin-bottom: 0.75em;
 }
@@ -50,6 +50,6 @@ h2:not(:first-of-type),
 hgroup#main-title span.subtitle {
 	display: block;
 	color: rgb(from var(--titles-color) r g b / 0.6);
-	font-size: 28px;
+	font-size: clamp(1.25rem, 2.5vw, 1.75rem);
 	font-style: italic;
 }

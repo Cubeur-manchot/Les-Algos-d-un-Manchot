@@ -8,7 +8,7 @@ header {
 	align-items: center;
 	position: sticky;
 	top: 0;
-	font-size: clamp(16px, 4vw, 20px);
+	font-size: clamp(1rem, 4vw, 1.25rem);
 	backdrop-filter: blur(4px);
 	mask-image: linear-gradient(to bottom,
 		rgba(0, 0, 0, 1) 60%,
