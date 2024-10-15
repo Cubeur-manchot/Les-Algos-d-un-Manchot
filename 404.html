@@ -11,7 +11,7 @@
 		let urlSplit = location.pathname.split(/^(\/Les-Algos-d-un-Manchot)/); // "", "/Les-Algos-d-un-Manchot", then the rest
 		location.replace(location.pathname.replace(
 			urlSplit[2], // removes the custom part of URL
-			`index.html?redirect=${urlSplit[2]}` // replaces by a redirect to index
+			`/index.html?redirect=${urlSplit[2]}` // replaces by a redirect to index
 		));
 		alert("after")
 		alert(location.pathname)
