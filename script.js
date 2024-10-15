@@ -9,7 +9,12 @@ import { DataService } from "./services/dataService.js";
 
 const displayView = () => {
 	let views = [HomeView, RecordsView, CollectionView, ContactView, AlgsetView];
-	let [locationShort, ...restOfThePath] = location.pathname.replace(window.urlPrefix, "").split(/(?=\/)/);
+	let [locationShort, ...restOfThePath] =
+		(
+			new URLSearchParams(location.search).get("redirect") // if a redirection is provided (coming from 404.html), use it
+			?? location.pathname.replace(window.urlPrefix, "") // otherwise use standard path after website name
+		)
+		.split(/(?=\/)/); // split by /
 	let view = views.find(view => view.path == locationShort) ?? HomeView;
 	new view(restOfThePath).buildView();
 	if (view === HomeView) {
