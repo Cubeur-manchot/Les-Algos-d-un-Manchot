@@ -17,9 +17,6 @@ const displayView = () => {
 		.split(/(?=\/)/); // split by /
 	let view = views.find(view => view.path == locationShort) ?? HomeView;
 	new view(restOfThePath).buildView();
-	if (view === HomeView) {
-		history.replaceState(null, null, `${window.urlPrefix}${HomeView.path}`); // force home URL for home view
-	}
 };
 
 const navigateTo = url => {

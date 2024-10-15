@@ -9,10 +9,12 @@ class View {
 		throw "Exception : getting content of abstract view.";
 	};
 	getTitle = () => this.constructor.title;
+	getPath() { return this.constructor.path };
 	buildView = async () => {
 		this.mainTag.innerHTML = "";
 		this.mainTag.append(...(await this.getContent()));
 		document.title = ["Les Algos d'un Manchot", this.getTitle()].filter(Boolean).join(" | ");
+		history.replaceState(null, null, `${window.urlPrefix}${this.getPath()}`);
 	};
 	createHtmlTag = (type, options, children = []) => {
 		let tag = Object.assign(document.createElement(type), options);

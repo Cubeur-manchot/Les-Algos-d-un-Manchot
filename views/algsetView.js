@@ -12,6 +12,7 @@ class AlgsetView extends View {
 		this.holoCubeService = new HoloCubeService();
 	};
 	getTitle = () => [this.event, this.setName].join(" ");
+	getPath = () => [super.getPath(), this.event, this.setName].join("/");
 	getContent = async () => {
 		await this.dataService.getManyJson(["algs", "algsets"]);
 		let algset = this.findAlgset(this.event, this.setName);
