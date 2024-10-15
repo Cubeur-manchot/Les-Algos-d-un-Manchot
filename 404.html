@@ -3,11 +3,18 @@
 <head>
     <meta charset="utf-8"/>
     <title>404 ?</title>
-	<meta http-equiv="refresh" content="0;url=.">
 </head>
 <body></body>
-	<main>
-		<a id="redirectLink" href=".">Redirection failed, please click here.</a>
-	</main>
+	<script type="text/javascript">
+		alert("before")
+		alert(location.pathname)
+		let urlSplit = location.pathname.split(/^(\/Les-Algos-d-un-Manchot)/); // "", "/Les-Algos-d-un-Manchot", then the rest
+		location.replace(location.pathname.replace(
+			urlSplit[2], // removes the custom part of URL
+			`index.html?redirect=${urlSplit[2]}` // replaces by a redirect to index
+		));
+		alert("after")
+		alert(location.pathname)
+	</script>
 </body>
 </html>
