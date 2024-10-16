@@ -13,6 +13,7 @@ class View {
 	buildView = async () => {
 		this.mainTag.innerHTML = "";
 		this.mainTag.append(...(await this.getContent()));
+		window.scrollTo({top: 0, behavior: "auto"});
 		document.title = ["Les Algos d'un Manchot", this.getTitle()].filter(Boolean).join(" | ");
 		history.replaceState(null, null, `${window.urlPrefix}${this.getPath()}`);
 	};
