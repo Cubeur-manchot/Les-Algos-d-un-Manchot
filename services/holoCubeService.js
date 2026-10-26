@@ -1,6 +1,6 @@
 "use strict";
 
-import { Runner } from "https://cubeur-manchot.github.io/Holo-Cube/bundles/holo-cube-algorithm.module-bundle.js";
+import { Runner } from "https://cubeur-manchot.github.io/Holo-Cube/bundles/holo-cube-algorithm.module.js";
 
 class HoloCubeService {
 	static holoCubePuzzleNames = {
